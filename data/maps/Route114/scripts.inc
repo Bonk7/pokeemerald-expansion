@@ -187,7 +187,7 @@ Route114_Text_ExplainRoar:
 	.string "A ROAR sends POKéMON scurrying.$"
 
 Route114_Text_Poochyena:
-	.string "Bow! Bowwow!$"
+	.string "WAZAA!!$"
 
 Route114_Text_MeteorFallsSign:
 	.string "METEOR FALLS\n"
