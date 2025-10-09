@@ -1306,11 +1306,12 @@ Double Battle: No
 AI: Basic Trainer
 
 Swellow
-Level: 26
+Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Quick Attack
-- Agility
-- Wing Attack
+
+Blissey
+Level: 50
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_PARKER ===
 Name: PARKER
@@ -1339,12 +1340,14 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Slakoth @ Sitrus Berry
-Level: 26
+Exploud @ Sitrus Berry
+Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Slack Off
-- Counter
-- Shadow Ball
+
+Ursaring
+Level: 50
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
 
 === TRAINER_BERKE ===
 Name: BERKE
@@ -1696,11 +1699,13 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Delcatty
-Level: 26
+Snorlax
+Level: 49
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Feint Attack
-- Shock Wave
+
+Stantler
+Level: 50
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_ALEXIA ===
 Name: ALEXIA
@@ -1712,12 +1717,13 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Wigglytuff
-Level: 26
+Blissey
+Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Defense Curl
-- Double Edge
-- Shadow Ball
+
+Lickilicky
+Level: 50
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_JODY ===
 Name: JODY
@@ -3249,8 +3255,8 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Machop
-Level: 13
+Tyrogue
+Level: 15
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_HITOSHI ===
@@ -3453,20 +3459,15 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Electrike
-Level: 17
+Galvantula
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Quick Attack
-- Thunder Wave
-- Spark
-- Leer
 
-Voltorb
-Level: 17
+
+Rotom
+Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Charge
-- Shock Wave
-- Screech
+
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_7 ===
 Name: GRUNT
@@ -3507,12 +3508,12 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Voltorb
-Level: 17
+Minun
+Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Magnemite
-Level: 17
+Chinchou
+Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_FERNANDO_1 ===
@@ -3642,9 +3643,13 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Numel
-Level: 23
+Emboar
+Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Typhlosion
+Level: 38
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_JEFF ===
 Name: JEFF
@@ -3655,12 +3660,12 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Slugma
-Level: 22
+Simisear
+Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Slugma
-Level: 22
+Magmar
+Level: 38
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_AXLE ===
@@ -3672,9 +3677,13 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Numel
-Level: 23
+Chandelure
+Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Heatmor
+Level: 40
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_JACE ===
 Name: JACE
@@ -3685,8 +3694,8 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Slugma
-Level: 23
+Houndoom
+Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_KEEGAN ===
@@ -4903,7 +4912,7 @@ Pic: Leader Roxanne
 Gender: Female
 Music: Female
 Items: Potion / Potion
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
 Geodude
@@ -4953,7 +4962,7 @@ Pic: Leader Brawly
 Gender: Male
 Music: Male
 Items: Super Potion / Super Potion
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
 Machop
@@ -4980,6 +4989,20 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Reversal
 - Bulk Up
 
+Timburr @ Lum Berry
+Level: 18
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Riolu
+Level: 18
+Shiny: Yes
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Mankey
+Level: 19
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
 Class: Leader
@@ -4990,21 +5013,13 @@ Items: Super Potion / Super Potion
 Double Battle: No
 AI: Basic Trainer
 
-Voltorb
-Level: 20
+Flaaffy
+Level: 22
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rollout
-- Spark
-- Self Destruct
-- Shock Wave
 
-Electrike
-Level: 20
+Manectric @ Manectite
+Level: 25
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Shock Wave
-- Leer
-- Quick Attack
-- Howl
 
 Magneton
 Level: 22
@@ -5014,13 +5029,17 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Thunder Wave
 - Sonic Boom
 
-Manectric @ Sitrus Berry
+Raichu
 Level: 24
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Quick Attack
-- Thunder Wave
-- Shock Wave
-- Howl
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Electabuzz
+Level: 24
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Jolteon 
+Level: 25
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_FLANNERY_1 ===
 Name: FLANNERY
@@ -5029,40 +5048,37 @@ Pic: Leader Flannery
 Gender: Female
 Music: Female
 Items: Hyper Potion / Hyper Potion
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Numel
-Level: 24
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
-- Take Down
-- Magnitude
-- Sunny Day
 
-Slugma
-Level: 24
+Ninetales
+Level: 42
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
-- Smog
-- Light Screen
-- Sunny Day
 
-Camerupt
-Level: 26
+Darmanitan
+Level: 44
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Overheat
-- Tackle
-- Sunny Day
-- Attract
 
 Torkoal @ White Herb
-Level: 29
+Level: 46
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Overheat
 - Sunny Day
 - Body Slam
 - Attract
+
+Magmortar @ Charcoal
+Level: 45
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
+Arcanine @ Lum Berry
+Level: 45
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
+Charizard @ Charizardite Y
+Level: 45
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_NORMAN_1 ===
 Name: NORMAN
@@ -6174,13 +6190,9 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Zigzagoon
-Level: 17
+Elekid
+Level: 24
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Headbutt
-- Sand Attack
-- Growl
-- Thunderbolt
 
 Gulpin
 Level: 17
@@ -8009,7 +8021,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Meditite
-Level: 13
+Level: 15
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_LAURA ===
@@ -8021,8 +8033,8 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Meditite
-Level: 13
+Mankey
+Level: 15
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_CYNDY_1 ===
@@ -9329,8 +9341,8 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Numel
-Level: 23
+Simisear
+Level: 38
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ANNIKA ===
@@ -10766,8 +10778,8 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Meditite
-Level: 13
+Timburr
+Level: 15
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_CRISTIAN ===
@@ -10780,7 +10792,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Makuhita
-Level: 13
+Level: 15
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_SYLVIA ===
@@ -12078,13 +12090,9 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Kecleon
-Level: 23
+Heatmor
+Level: 38
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Flamethrower
-- Fury Swipes
-- Feint Attack
-- Bind
 
 === TRAINER_VIVIAN ===
 Name: VIVIAN
@@ -12095,21 +12103,13 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Meditite
-Level: 17
+Emolga
+Level: 21
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Bide
-- Detect
-- Confusion
-- Thunder Punch
 
-Meditite
-Level: 17
+Pikachu
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Thunder Punch
-- Detect
-- Confusion
-- Meditate
 
 === TRAINER_DANIELLE ===
 Name: DANIELLE
@@ -12120,13 +12120,9 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Meditite
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Bide
-- Detect
-- Confusion
-- Fire Punch
+Rapidash
+Level: 40
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_HIDEO ===
 Name: HIDEO
@@ -13414,11 +13410,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Skarmory
-Level: 17
+Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Swellow
-Level: 19
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LAWRENCE ===
@@ -16134,19 +16130,13 @@ Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
 
-Illumise
-Level: 17
+Eelektrik
+Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Shock Wave
-- Quick Attack
-- Charm
 
-Volbeat
-Level: 17
+Luxio
+Level: 22
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Shock Wave
-- Quick Attack
-- Confuse Ray
 
 === TRAINER_DARIUS ===
 Name: DARIUS
