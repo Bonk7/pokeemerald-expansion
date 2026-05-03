@@ -17169,3 +17169,20 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_FRANK_DEWFORD ===
+Name: Frank
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: Yes
+
+Charmeleon
+Level: 16
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+
+Poliwhirl @ Oran Berry
+Level: 14
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
