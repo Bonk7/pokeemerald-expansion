@@ -17177,13 +17177,20 @@ Pic: Factory Head Noland
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Basic Trainer
+AI: Basic Trainer 
 
-Charmeleon
+Croconaw
 Level: 16
 IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
 
-Poliwhirl @ Oran Berry
+Zangoose @ Oran Berry
 Level: 14
 IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
+
+Heracross 
+Level: 18
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+
+
+
 

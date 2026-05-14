@@ -794,7 +794,7 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 `
 
 script DewfordTown_Eventscript_BattleFrank {
-    trainerbattle_single(TRAINER_FRANK_DEWFORD,"My name is frank, and I want to show you \n what I've got! \n Are you ready to battle?",
+    trainerbattle_single(TRAINER_FRANK_DEWFORD,"My name is Frank, and I want to show you \nwhat I've got! \nAre you ready to battle?",
 	"Next time, I wont hold back..!")
 	msgbox("That was a great battle, \n hopefully i will meet you again!", MSGBOX_AUTOCLOSE)
 	waitmessage
