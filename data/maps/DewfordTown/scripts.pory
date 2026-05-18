@@ -801,7 +801,7 @@ script DewfordTown_Eventscript_BattleFrank {
 	end
 }
 
-script DewfordTown_Eventscript_RewardFrank{
-	lock
-	msgbox("Congratulations on winning the battle against Frank! \n Here, take this TM for your efforts!", MSGBOX_AUTOCLOSE)
-}
+// script DewfordTown_Eventscript_RewardFrank{
+// 	lock
+// 	msgbox("Congratulations on winning the battle against Frank! \n Here, take this TM for your efforts!", MSGBOX_AUTOCLOSE)
+// }

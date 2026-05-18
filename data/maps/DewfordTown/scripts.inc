@@ -1603,4 +1603,5 @@ DewfordTown_Eventscript_BattleFrank_Text_1:
 
 DewfordTown_Eventscript_BattleFrank_Text_2:
 # 799 "data/maps/DewfordTown/scripts.pory"
-	.string "That was a great battle, \n hopefully i will meet you again!$"
+	.string "Keep it up! We might meet each other\n"
+	.string "again!$"
