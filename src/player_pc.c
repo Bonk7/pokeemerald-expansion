@@ -233,8 +233,33 @@ static const struct MenuAction sItemStorage_MenuActions[] =
 };
 
 static const u16 sNewGamePCItems[][2] =
-{
-    { ITEM_POTION, 1 },
+{   
+    { ITEM_OVAL_CHARM, 1},
+    { ITEM_POKEMON_BOX_LINK, 1},
+    { ITEM_SHINY_CHARM, 1 },
+    { ITEM_LONELY_MINT ,99},
+    { ITEM_ADAMANT_MINT, 99 },
+    { ITEM_NAUGHTY_MINT, 99 },
+    { ITEM_BRAVE_MINT, 99 }, 
+    { ITEM_BOLD_MINT, 99 },
+    { ITEM_IMPISH_MINT, 99 },
+    { ITEM_LAX_MINT, 99 },
+    { ITEM_RELAXED_MINT ,99 },
+    { ITEM_MODEST_MINT, 99 },
+    { ITEM_MILD_MINT ,99 },
+    { ITEM_RASH_MINT ,99 },
+    { ITEM_QUIET_MINT, 99 },
+    { ITEM_CALM_MINT ,99 },
+    { ITEM_GENTLE_MINT, 99 },
+    { ITEM_CAREFUL_MINT, 99 },
+    { ITEM_SASSY_MINT ,99 },
+    { ITEM_TIMID_MINT ,99 },
+    { ITEM_HASTY_MINT ,99 },
+    { ITEM_JOLLY_MINT ,99 },
+    { ITEM_NAIVE_MINT ,99 },
+    { ITEM_SERIOUS_MINT, 99},
+    { ITEM_ABILITY_PATCH, 99},
+    { ITEM_ABILITY_CAPSULE, 99},
     { ITEM_NONE, 0 }
 };
 
