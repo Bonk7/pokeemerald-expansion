@@ -17172,24 +17172,46 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FRANK_DEWFORD ===
 Name: Frank
-Class: Rival
+Class: Pyramid King
 Pic: Factory Head Noland
 Gender: Male
-Music: Male
+Music: Rich
+Items: Master Ball
 Double Battle: Yes
 AI: Basic Trainer 
-
-Croconaw
-Level: 16
-IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+Mugshot: Purple
 
 Zangoose @ Oran Berry
-Level: 14
-IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
+Level: 15
+IVs: 15 HP / 0 Atk / 15 Def / 0 SpA / 15 SpD / 7 Spe
+- Quick Attack
+- Metal Claw
+- Slash
+- Leer
 
 Heracross 
 Level: 18
-IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+IVs: 0 HP / 15 Atk / 0 Def / 15 SpA / 0 SpD / 15 Spe
+- Bug Bite
+- Arm Thrust
+- Aerial Ace
+- Endure
+
+Sudowoodo @ Hard Stone
+Level: 15
+IVs: 0 HP / 31 Atk / 0 Def / 0 SpA / 0 SpD / 12 Spe
+- Rock Throw
+- Flail
+- Faint Attack
+- Mimic
+
+Croconaw @ Mystic Water
+Level: 16
+IVs: 0 HP / 15 Atk / 0 Def / 15 SpA / 0 SpD / 15 Spe
+- Bite
+- Water Gun
+- Ice Fang
+- Leer
 
 
 
