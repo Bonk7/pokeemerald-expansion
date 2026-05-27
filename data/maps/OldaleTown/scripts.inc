@@ -147,7 +147,7 @@ OldaleTown_EventScript_ExplainPokemonMart::
 # 74 "data/maps/OldaleTown/scripts.pory"
 	msgbox OldaleTown_Text_ThisIsAPokemonMart, MSGBOX_DEFAULT
 # 75 "data/maps/OldaleTown/scripts.pory"
-	giveitem ITEM_POTION
+	giveitem ITEM_LUCKY_EGG
 # 76 "data/maps/OldaleTown/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, OldaleTown_EventScript_BagIsFull
 # 77 "data/maps/OldaleTown/scripts.pory"
