@@ -338,7 +338,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Poochyena
-Level: 11
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Nuzleaf
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lombre 
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_WEATHER_INST_1 ===
@@ -3460,12 +3468,12 @@ Double Battle: No
 AI: Basic Trainer
 
 Galvantula
-Level: 20
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
 Rotom
-Level: 23
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
@@ -3508,12 +3516,12 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Minun
-Level: 23
+Emolga
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Chinchou
-Level: 23
+Lanturn
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_FERNANDO_1 ===
@@ -5010,19 +5018,19 @@ Pic: Leader Wattson
 Gender: Male
 Music: Male
 Items: Super Potion / Super Potion
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
 Flaaffy
-Level: 22
+Level: 27
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Manectric @ Manectite
-Level: 25
+Level: 32
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Magneton
-Level: 22
+Level: 28
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Supersonic
 - Shock Wave
@@ -5030,15 +5038,15 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Sonic Boom
 
 Raichu
-Level: 24
+Level: 30
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Electabuzz
-Level: 24
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Jolteon 
-Level: 25
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_FLANNERY_1 ===
@@ -6110,6 +6118,7 @@ Class: Youngster
 Pic: Youngster
 Gender: Male
 Music: Male
+Items: Revive
 Double Battle: Yes
 AI: Basic Trainer
 Mugshot: Yellow
@@ -6191,11 +6200,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Elekid
-Level: 24
+Level: 27
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-Gulpin
-Level: 17
+Swalot
+Level: 27
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Amnesia
 - Sludge
@@ -11827,16 +11836,16 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Geodude
-Level: 16
+Graveler
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Geodude
-Level: 16
+Boldore
+Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Machop
-Level: 16
+Sawk
+Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TRENT_2 ===
@@ -12104,11 +12113,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Emolga
-Level: 21
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Pikachu
-Level: 20
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_DANIELLE ===
@@ -12243,15 +12252,15 @@ Class: Rival
 Pic: Wally
 Gender: Male
 Music: Male
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Ralts
-Level: 16
+Kirlia
+Level: 25
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Buneary
-Level: 16
+Lopunny
+Level: 27
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_WALLY_VR_2 ===
@@ -16131,11 +16140,11 @@ Double Battle: No
 AI: Basic Trainer
 
 Eelektrik
-Level: 23
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Luxio
-Level: 22
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_DARIUS ===
