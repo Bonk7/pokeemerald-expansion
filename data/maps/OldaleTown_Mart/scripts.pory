@@ -34,6 +34,9 @@ OldaleTown_Mart_Pokemart_Expanded:
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
+	.2byte ITEM_MYSTIC_WATER
+	.2byte ITEM_CHARCOAL
+	.2byte ITEM_MIRACLE_SEED
 	pokemartlistend
 
 OldaleTown_Mart_EventScript_Woman::
