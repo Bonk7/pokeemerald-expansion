@@ -1220,3 +1220,25 @@ Route119_Text_TrainerTipsDecoration:
 	.string "your very own SECRET BASE exactly the\l"
 # 611 "data/maps/Route119/scripts.pory"
 	.string "way you want.$"
+
+Route119_Eventscript_BattleFrank::
+# 615 "data/maps/Route119/scripts.pory"
+	trainerbattle_single TRAINER_FRANK_119, Route119_Eventscript_BattleFrank_Text_0, Route119_Eventscript_BattleFrank_Text_1
+# 616 "data/maps/Route119/scripts.pory"
+	msgbox Route119_Eventscript_BattleFrank_Text_2, MSGBOX_AUTOCLOSE
+# 617 "data/maps/Route119/scripts.pory"
+	waitmessage
+	end
+
+
+Route119_Eventscript_BattleFrank_Text_0:
+# 615 "data/maps/Route119/scripts.pory"
+	.string "It has been a while\n$"
+
+Route119_Eventscript_BattleFrank_Text_1:
+# 615 "data/maps/Route119/scripts.pory"
+	.string "I lose again?$"
+
+Route119_Eventscript_BattleFrank_Text_2:
+# 616 "data/maps/Route119/scripts.pory"
+	.string "You've got some potential$"

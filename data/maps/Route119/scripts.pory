@@ -610,3 +610,15 @@ Route119_Text_TrainerTipsDecoration:
 	.string "your very own SECRET BASE exactly the\l"
 	.string "way you want.$"
 `
+
+script Route119_Eventscript_BattleFrank {
+	if (flag(FLAG_FRANK_ROUTE119,) == false) {
+    trainerbattle_single(TRAINER_FRANK_119, "It has been a while.\n", "I lose again?")
+    setflag(TRAINER_FRANK_119)
+	}
+else {
+    msgbox(format("You've got some potential."), MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+	}	
+}

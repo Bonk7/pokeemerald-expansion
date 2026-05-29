@@ -17167,17 +17167,6 @@ Groudon
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MAY_PLACEHOLDER ===
-Name: MAY
-Class: RS Protag
-Pic: RS May
-Gender: Female
-Music: Male
-Double Battle: No
-
-Kyogre
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FRANK_DEWFORD ===
 Name: Frank
@@ -17222,6 +17211,64 @@ IVs: 0 HP / 15 Atk / 0 Def / 15 SpA / 0 SpD / 15 Spe
 - Ice Fang
 - Leer
 
+=== TRAINER_FRANK_119 ===
+Name: Frank
+Class: Pyramid King
+Pic: Factory Head Noland
+Gender: Male
+Music: Rich
+Items: Revive / Hyper Potion 
+Double Battle: Yes
+AI: Basic Trainer 
+Mugshot: Purple
 
+Slaking @ Silk Scarf
+Level: 55
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- Giga Impact
+- Earthquake
+- Shadow Claw
+- Brick Break
+
+Lucario @ Lucarionite
+Level: 55
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- Vacuum Wave
+- Aura Sphere
+- Flash Cannon
+- Nasty Plot
+
+Zoroark @ Life Orb
+Level: 55
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- U-Turn
+- Flamethrower
+- Dark Pulse
+- Focus Blast
+
+Rampardos @ Choice Band
+Level: 55
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- Rock Slide
+- Fire Punch
+- Zen Headbutt
+- Superpower
+
+Kingdra @ Scope Lens
+Ability: Sniper
+Level: 57
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- Focus Energy
+- Draco Meteor
+- Surf
+- Dragon Pulse
+
+Cofagrigus @ Leftovers
+Level: 55
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- Shadow Ball
+- Hidden Power
+- Toxic
+- Nasty Plot
 
 

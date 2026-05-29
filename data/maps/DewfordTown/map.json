@@ -103,7 +103,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "DewfordTown_Eventscript_BattleFrank",
-      "flag": "FLAG_RED_DEWFORD"
+      "flag": "FLAG_FRANK_DEWFORD"
     }
   ],
   "warp_events": [
