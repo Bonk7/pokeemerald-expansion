@@ -277,7 +277,7 @@
 
 #define FIRST_MAIL_INDEX ITEM_ORANGE_MAIL
 
-// Evolution Items
+// Evolution Items all found in SlateportCity_Mart_Pokemart:
 #define ITEM_FIRE_STONE 211
 #define ITEM_WATER_STONE 212
 #define ITEM_THUNDER_STONE 213
@@ -575,7 +575,7 @@
 #define ITEM_LUMINOUS_MOSS 457
 #define ITEM_SNOWBALL 458
 
-// Misc. Held Items
+// Misc. Held Items // all found at pokemon league clerk
 #define ITEM_BRIGHT_POWDER 459
 #define ITEM_BRIGHTPOWDER ITEM_BRIGHT_POWDER // Pre-Gen VI name
 #define ITEM_WHITE_HERB 460
@@ -834,7 +834,7 @@
 #define ITEM_CATCHING_CHARM 692
 #define ITEM_EXP_CHARM 693
 
-// Form-changing Key Items
+// Form-changing Key Items   // more fun i found in wild or given after battle
 #define ITEM_ROTOM_CATALOG 694
 #define ITEM_GRACIDEA 695
 #define ITEM_REVEAL_GLASS 696
