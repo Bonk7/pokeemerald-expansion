@@ -612,7 +612,7 @@ Route119_Text_TrainerTipsDecoration:
 `
 
 script Route119_Eventscript_BattleFrank {
-	if (flag(FLAG_FRANK_ROUTE119,) == false) {
+	if (flag(FLAG_FRANK_ROUTE119) == false) {
     trainerbattle_single(TRAINER_FRANK_119, "It has been a while.\n", "I lose again?")
     setflag(TRAINER_FRANK_119)
 	}

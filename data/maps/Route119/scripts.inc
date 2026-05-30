@@ -1223,7 +1223,7 @@ Route119_Text_TrainerTipsDecoration:
 
 Route119_Eventscript_BattleFrank::
 # 615 "data/maps/Route119/scripts.pory"
-	goto_if_unset FLAG_FRANK_ROUTE119 ,, Route119_Eventscript_BattleFrank_1
+	goto_if_unset FLAG_FRANK_ROUTE119, Route119_Eventscript_BattleFrank_1
 # 620 "data/maps/Route119/scripts.pory"
 	msgbox Route119_Eventscript_BattleFrank_Text_2, MSGBOX_AUTOCLOSE
 # 621 "data/maps/Route119/scripts.pory"

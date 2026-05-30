@@ -282,9 +282,9 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_LEAF_STONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_ABOMASITE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_119_LEAF_STONE"
+      "flag": "FLAG_ITEM_ROUTE_119_ABOMASITE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -439,9 +439,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_HYPER_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_PINSIRITE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_ROUTE_119_HYPER_POTION_2"
+      "flag": "FLAG_ITEM_ROUTE_119_PINSIRITE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_2",

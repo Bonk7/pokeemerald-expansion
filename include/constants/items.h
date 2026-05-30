@@ -325,7 +325,7 @@
 
 // Plates
 #define ITEM_FLAME_PLATE 250
-#define ITEM_SPLASH_PLATEF 251
+#define ITEM_SPLASH_PLATE 251
 #define ITEM_ZAP_PLATE 252
 #define ITEM_MEADOW_PLATE 253
 #define ITEM_ICICLE_PLATE 254
@@ -385,43 +385,43 @@
 #define ITEM_SLOWBRONITE 299 // route 123
 #define ITEM_GENGARITE 300 // mt pyre 5f
 #define ITEM_KANGASKHANITE 301 // route 104 behind cut tree
-#define ITEM_PINSIRITE 302
+#define ITEM_PINSIRITE 302 // route 119 
 #define ITEM_GYARADOSITE 303 // route 120 near surf pool
-#define ITEM_AERODACTYLITE 304
-#define ITEM_MEWTWONITE_X 305
-#define ITEM_MEWTWONITE_Y 306
-#define ITEM_AMPHAROSITE 307
-#define ITEM_STEELIXITE 308
+#define ITEM_AERODACTYLITE 304 //route 114
+#define ITEM_MEWTWONITE_X 305 // victory road
+#define ITEM_MEWTWONITE_Y 306 // victory road
+#define ITEM_AMPHAROSITE 307 // new mauville
+#define ITEM_STEELIXITE 308 // mt chimney
 #define ITEM_SCIZORITE 309 // petalburg woods behind cut tree
-#define ITEM_HERACRONITE 310
-#define ITEM_HOUNDOOMINITE 311
-#define ITEM_TYRANITARITE 312
-#define ITEM_SCEPTILITE 313
-#define ITEM_BLAZIKENITE 314
-#define ITEM_SWAMPERTITE 315
-#define ITEM_GARDEVOIRITE 316
-#define ITEM_SABLENITE 317
-#define ITEM_MAWILITE 318
-#define ITEM_AGGRONITE 319
-#define ITEM_MEDICHAMITE 320
-#define ITEM_MANECTITE 321
+#define ITEM_HERACRONITE 310 // rustboro city
+#define ITEM_HOUNDOOMINITE 311 // mt chimney
+#define ITEM_TYRANITARITE 312 // desert ruins
+#define ITEM_SCEPTILITE 313 // mt pyre outside
+#define ITEM_BLAZIKENITE 314 // mt pyre outside
+#define ITEM_SWAMPERTITE 315 // mt pyre outside
+#define ITEM_GARDEVOIRITE 316 // route 102
+#define ITEM_SABLENITE 317 // granite cave b1f
+#define ITEM_MAWILITE 318 // granite cave b1f
+#define ITEM_AGGRONITE 319 // magma hideout 3f 2R
+#define ITEM_MEDICHAMITE 320 // granite cave
+#define ITEM_MANECTITE 321 // new mauville
 #define ITEM_SHARPEDONITE 322 // done rusturf tunnel
-#define ITEM_CAMERUPTITE 323
-#define ITEM_ALTARIANITE 324
-#define ITEM_BANETTITE 325
+#define ITEM_CAMERUPTITE 323 // magma hideout 1f
+#define ITEM_ALTARIANITE 324 // route 127
+#define ITEM_BANETTITE 325 // mt pyre
 #define ITEM_ABSOLITE 326 // done meteor falls
-#define ITEM_GLALITITE 327
-#define ITEM_SALAMENCITE 328
-#define ITEM_METAGROSSITE 329
-#define ITEM_LATIASITE 330
-#define ITEM_LATIOSITE 331
-#define ITEM_LOPUNNITE 332
-#define ITEM_GARCHOMPITE 333
-#define ITEM_LUCARIONITE 334
-#define ITEM_ABOMASITE 335
-#define ITEM_GALLADITE 336
-#define ITEM_AUDINITE 337
-#define ITEM_DIANCITE 338
+#define ITEM_GLALITITE 327 // route 124 instead of red shard afer diving
+#define ITEM_SALAMENCITE 328 // scorched slab
+#define ITEM_METAGROSSITE 329 // room steven granite cave
+#define ITEM_LATIASITE 330 // mossdeep city
+#define ITEM_LATIOSITE 331 //mossdeep city
+#define ITEM_LOPUNNITE 332 // route 115
+#define ITEM_GARCHOMPITE 333 // aqua hideout b1f
+#define ITEM_LUCARIONITE 334 // Jagged pass
+#define ITEM_ABOMASITE 335 // route 119 instead of leaf stone
+#define ITEM_GALLADITE 336 // cave of origin b1f
+#define ITEM_AUDINITE 337 // abandoned ship room 2 B1F
+#define ITEM_DIANCITE 338 // excluded, is gen 6 mon.
 
 // Gems
 #define ITEM_NORMAL_GEM 339
