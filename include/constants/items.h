@@ -325,7 +325,7 @@
 
 // Plates
 #define ITEM_FLAME_PLATE 250
-#define ITEM_SPLASH_PLATE 251
+#define ITEM_SPLASH_PLATEF 251
 #define ITEM_ZAP_PLATE 252
 #define ITEM_MEADOW_PLATE 253
 #define ITEM_ICICLE_PLATE 254
@@ -375,24 +375,24 @@
 #define ITEM_BLUE_ORB 291
 
 // Mega Stones
-#define ITEM_VENUSAURITE 292
-#define ITEM_CHARIZARDITE_X 293
-#define ITEM_CHARIZARDITE_Y 294
-#define ITEM_BLASTOISINITE 295
-#define ITEM_BEEDRILLITE 296
-#define ITEM_PIDGEOTITE 297
-#define ITEM_ALAKAZITE 298
-#define ITEM_SLOWBRONITE 299
-#define ITEM_GENGARITE 300
-#define ITEM_KANGASKHANITE 301
+#define ITEM_VENUSAURITE 292 // done route 115
+#define ITEM_CHARIZARDITE_X 293 // route 111
+#define ITEM_CHARIZARDITE_Y 294 // route 111
+#define ITEM_BLASTOISINITE 295 //route 115
+#define ITEM_BEEDRILLITE 296 // petalburg woods behind cut tree
+#define ITEM_PIDGEOTITE 297 // route 120
+#define ITEM_ALAKAZITE 298 // route 123
+#define ITEM_SLOWBRONITE 299 // route 123
+#define ITEM_GENGARITE 300 // mt pyre 5f
+#define ITEM_KANGASKHANITE 301 // route 104 behind cut tree
 #define ITEM_PINSIRITE 302
-#define ITEM_GYARADOSITE 303
+#define ITEM_GYARADOSITE 303 // route 120 near surf pool
 #define ITEM_AERODACTYLITE 304
 #define ITEM_MEWTWONITE_X 305
 #define ITEM_MEWTWONITE_Y 306
 #define ITEM_AMPHAROSITE 307
 #define ITEM_STEELIXITE 308
-#define ITEM_SCIZORITE 309
+#define ITEM_SCIZORITE 309 // petalburg woods behind cut tree
 #define ITEM_HERACRONITE 310
 #define ITEM_HOUNDOOMINITE 311
 #define ITEM_TYRANITARITE 312
@@ -405,11 +405,11 @@
 #define ITEM_AGGRONITE 319
 #define ITEM_MEDICHAMITE 320
 #define ITEM_MANECTITE 321
-#define ITEM_SHARPEDONITE 322
+#define ITEM_SHARPEDONITE 322 // done rusturf tunnel
 #define ITEM_CAMERUPTITE 323
 #define ITEM_ALTARIANITE 324
 #define ITEM_BANETTITE 325
-#define ITEM_ABSOLITE 326
+#define ITEM_ABSOLITE 326 // done meteor falls
 #define ITEM_GLALITITE 327
 #define ITEM_SALAMENCITE 328
 #define ITEM_METAGROSSITE 329
@@ -525,17 +525,17 @@
 #define ITEM_POWER_ANKLET 424
 
 // Type-boosting Held Items
-#define ITEM_SILK_SCARF 425
-#define ITEM_CHARCOAL 426
-#define ITEM_MYSTIC_WATER 427
-#define ITEM_MAGNET 428
-#define ITEM_MIRACLE_SEED 429
-#define ITEM_NEVER_MELT_ICE 430
+#define ITEM_SILK_SCARF 425 
+#define ITEM_CHARCOAL 426  // shop oldale
+#define ITEM_MYSTIC_WATER 427 // shop oldale
+#define ITEM_MAGNET 428 // mauville city
+#define ITEM_MIRACLE_SEED 429 // shop oldale
+#define ITEM_NEVER_MELT_ICE 430 // shop mauville
 #define ITEM_NEVERMELTICE ITEM_NEVER_MELT_ICE // Pre-Gen VI name
-#define ITEM_BLACK_BELT 431
+#define ITEM_BLACK_BELT 431 // shop mauville
 #define ITEM_BLACKBELT ITEM_BLACK_BELT // Gen II name
-#define ITEM_POISON_BARB 432
-#define ITEM_SOFT_SAND 433
+#define ITEM_POISON_BARB 432 // shop mauville
+#define ITEM_SOFT_SAND 433 // shop mauville
 #define ITEM_SHARP_BEAK 434
 #define ITEM_TWISTED_SPOON 435
 #define ITEM_TWISTEDSPOON ITEM_TWISTED_SPOON // Pre-Gen VI name
