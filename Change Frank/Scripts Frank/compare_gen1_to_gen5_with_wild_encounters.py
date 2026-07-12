@@ -91,6 +91,16 @@ def write_species_export(path: Path, species: list[str], name_map: dict[str, str
             handle.write(f"{format_entry(item, name_map, fallback_names.get(item))}\n")
 
 
+def write_checklist_export(path: Path, species: list[str], name_map: dict[str, str], fallback_names: dict[str, str] | None = None) -> None:
+    if fallback_names is None:
+        fallback_names = {}
+    with path.open("w", encoding="utf-8") as handle:
+        handle.write("# Checklist: Pokémon die nog moeten worden toegevoegd aan wild encounters\n")
+        handle.write(f"Count: {len(species)}\n\n")
+        for item in species:
+            handle.write(f"- [ ] {format_entry(item, name_map, fallback_names.get(item))}\n")
+
+
 def main() -> None:
     gen_species = read_species_list(GEN_LIST)
     wild_entries = read_wild_encounter_entries(WILD_ENCOUNTERS)
@@ -133,6 +143,11 @@ def main() -> None:
 
     write_species_export(
         FACTS_DIR / "gen1_to_gen5_missing_from_wild_encounters.txt",
+        missing_from_wild,
+        species_name_map,
+    )
+    write_checklist_export(
+        FACTS_DIR / "wild_encounters_missing_pokemon_checklist.md",
         missing_from_wild,
         species_name_map,
     )
