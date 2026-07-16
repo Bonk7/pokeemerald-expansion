@@ -1,220 +1,441 @@
-Count: 218
+Count: 439
 
-Abra — SPECIES_ABRA
-Absol — SPECIES_ABSOL
-Aerodactyl — SPECIES_AERODACTYL
-Aggron — SPECIES_AGGRON
-Aipom — SPECIES_AIPOM
-Alakazam — SPECIES_ALAKAZAM
-Altaria — SPECIES_ALTARIA
-Anorith — SPECIES_ANORITH
-Aron — SPECIES_ARON
-Bagon — SPECIES_BAGON
-Baltoy — SPECIES_BALTOY
-Banette — SPECIES_BANETTE
-Barboach — SPECIES_BARBOACH
-Breloom — SPECIES_BRELOOM
-Budew — SPECIES_BUDEW
-Bulbasaur — SPECIES_BULBASAUR
-Cacnea — SPECIES_CACNEA
-Cacturne — SPECIES_CACTURNE
-Carnivine — SPECIES_CARNIVINE
-Carvanha — SPECIES_CARVANHA
-Chansey — SPECIES_CHANSEY
-Charizard — SPECIES_CHARIZARD
-Charmander — SPECIES_CHARMANDER
-Charmeleon — SPECIES_CHARMELEON
-Chimecho — SPECIES_CHIMECHO
-Chinchou — SPECIES_CHINCHOU
-Clamperl — SPECIES_CLAMPERL
-Claydol — SPECIES_CLAYDOL
-Combee — SPECIES_COMBEE
-Combusken — SPECIES_COMBUSKEN
-Corphish — SPECIES_CORPHISH
-Corsola — SPECIES_CORSOLA
-Crawdaunt — SPECIES_CRAWDAUNT
-Cubone — SPECIES_CUBONE
-Dewgong — SPECIES_DEWGONG
-Dewott — SPECIES_DEWOTT
-Diglett — SPECIES_DIGLETT
-Ditto — SPECIES_DITTO
-Dodrio — SPECIES_DODRIO
-Doduo — SPECIES_DODUO
-Donphan — SPECIES_DONPHAN
-Dragonair — SPECIES_DRAGONAIR
-Dratini — SPECIES_DRATINI
-Dugtrio — SPECIES_DUGTRIO
-Dusclops — SPECIES_DUSCLOPS
-Duskull — SPECIES_DUSKULL
-Electivire — SPECIES_ELECTIVIRE
-Electrike — SPECIES_ELECTRIKE
-Electrode — SPECIES_ELECTRODE
-Elekid — SPECIES_ELEKID
-Exeggutor — SPECIES_EXEGGUTOR
-Fearow — SPECIES_FEAROW
-Feebas — SPECIES_FEEBAS
-Finneon — SPECIES_FINNEON
-Floatzel — SPECIES_FLOATZEL
-Flygon — SPECIES_FLYGON
-Furret — SPECIES_FURRET
-Garchomp — SPECIES_GARCHOMP
-Gengar — SPECIES_GENGAR
-Geodude — SPECIES_GEODUDE
-Gible — SPECIES_GIBLE
-Girafarig — SPECIES_GIRAFARIG
-Gligar — SPECIES_GLIGAR
-Gloom — SPECIES_GLOOM
-Golbat — SPECIES_GOLBAT
-Goldeen — SPECIES_GOLDEEN
-Golduck — SPECIES_GOLDUCK
-Graveler — SPECIES_GRAVELER
-Grovyle — SPECIES_GROVYLE
-Gulpin — SPECIES_GULPIN
-Gyarados — SPECIES_GYARADOS
-Hariyama — SPECIES_HARIYAMA
-Haunter — SPECIES_HAUNTER
-Heracross — SPECIES_HERACROSS
-Hippopotas — SPECIES_HIPPOPOTAS
-Hitmonchan — SPECIES_HITMONCHAN
-Hitmonlee — SPECIES_HITMONLEE
-Hitmontop — SPECIES_HITMONTOP
-Hoothoot — SPECIES_HOOTHOOT
-Hoppip — SPECIES_HOPPIP
-Horsea — SPECIES_HORSEA
-Houndour — SPECIES_HOUNDOUR
-Illumise — SPECIES_ILLUMISE
-Ivysaur — SPECIES_IVYSAUR
-Kabutops — SPECIES_KABUTOPS
-Kangaskhan — SPECIES_KANGASKHAN
-Kecleon — SPECIES_KECLEON
-Koffing — SPECIES_KOFFING
-Krabby — SPECIES_KRABBY
-Lairon — SPECIES_LAIRON
-Lapras — SPECIES_LAPRAS
-Larvitar — SPECIES_LARVITAR
-Ledyba — SPECIES_LEDYBA
-Lickitung — SPECIES_LICKITUNG
-Liepard — SPECIES_LIEPARD
-Lillipup — SPECIES_LILLIPUP
-Linoone — SPECIES_LINOONE
-Lombre — SPECIES_LOMBRE
-Lotad — SPECIES_LOTAD
-Loudred — SPECIES_LOUDRED
-Lumineon — SPECIES_LUMINEON
-Lunatone — SPECIES_LUNATONE
-Luvdisc — SPECIES_LUVDISC
-Machoke — SPECIES_MACHOKE
-Machop — SPECIES_MACHOP
-Magby — SPECIES_MAGBY
-Magikarp — SPECIES_MAGIKARP
-Magmortar — SPECIES_MAGMORTAR
-Magnemite — SPECIES_MAGNEMITE
-Magneton — SPECIES_MAGNETON
-Makuhita — SPECIES_MAKUHITA
-Mamoswine — SPECIES_MAMOSWINE
-Manectric — SPECIES_MANECTRIC
-Mantyke — SPECIES_MANTYKE
-Mareep — SPECIES_MAREEP
-Marill — SPECIES_MARILL
-Marshtomp — SPECIES_MARSHTOMP
-Mawile — SPECIES_MAWILE
-Meditite — SPECIES_MEDITITE
-Metang — SPECIES_METANG
-Mightyena — SPECIES_MIGHTYENA
-Milotic — SPECIES_MILOTIC
-Miltank — SPECIES_MILTANK
-Minun — SPECIES_MINUN
-Monferno — SPECIES_MONFERNO
-Natu — SPECIES_NATU
-Nincada — SPECIES_NINCADA
-Nosepass — SPECIES_NOSEPASS
-Numel — SPECIES_NUMEL
-Octillery — SPECIES_OCTILLERY
-Oddish — SPECIES_ODDISH
-Omastar — SPECIES_OMASTAR
-Onix — SPECIES_ONIX
-Pelipper — SPECIES_PELIPPER
-Phanpy — SPECIES_PHANPY
-Pidgey — SPECIES_PIDGEY
-Pignite — SPECIES_PIGNITE
-Pikachu — SPECIES_PIKACHU
-Pineco — SPECIES_PINECO
-Pinsir — SPECIES_PINSIR
-Plusle — SPECIES_PLUSLE
-Poochyena — SPECIES_POOCHYENA
-Psyduck — SPECIES_PSYDUCK
-Pupitar — SPECIES_PUPITAR
-Purrloin — SPECIES_PURRLOIN
-Quagsire — SPECIES_QUAGSIRE
-Qwilfish — SPECIES_QWILFISH
-Raichu — SPECIES_RAICHU
-Ralts — SPECIES_RALTS
-Relicanth — SPECIES_RELICANTH
-Remoraid — SPECIES_REMORAID
-Rhyhorn — SPECIES_RHYHORN
-Riolu — SPECIES_RIOLU
-Sableye — SPECIES_SABLEYE
-Sandshrew — SPECIES_SANDSHREW
-Scyther — SPECIES_SCYTHER
-Seadra — SPECIES_SEADRA
-Seaking — SPECIES_SEAKING
-Seedot — SPECIES_SEEDOT
-Seel — SPECIES_SEEL
-Sentret — SPECIES_SENTRET
-Seviper — SPECIES_SEVIPER
-Sharpedo — SPECIES_SHARPEDO
-Shelgon — SPECIES_SHELGON
-Shellder — SPECIES_SHELLDER
-Shinx — SPECIES_SHINX
-Shroomish — SPECIES_SHROOMISH
-Shuckle — SPECIES_SHUCKLE
-Shuppet — SPECIES_SHUPPET
-Skitty — SPECIES_SKITTY
-Slakoth — SPECIES_SLAKOTH
-Slugma — SPECIES_SLUGMA
-Smeargle — SPECIES_SMEARGLE
-Sneasel — SPECIES_SNEASEL
-Snorunt — SPECIES_SNORUNT
-Snubbull — SPECIES_SNUBBULL
-Solrock — SPECIES_SOLROCK
-Spheal — SPECIES_SPHEAL
-Spinarak — SPECIES_SPINARAK
-Spinda — SPECIES_SPINDA
-Spiritomb — SPECIES_SPIRITOMB
-Spoink — SPECIES_SPOINK
-Squirtle — SPECIES_SQUIRTLE
-Stantler — SPECIES_STANTLER
-Staryu — SPECIES_STARYU
-Sunkern — SPECIES_SUNKERN
-Swablu — SPECIES_SWABLU
-Taillow — SPECIES_TAILLOW
-Teddiursa — SPECIES_TEDDIURSA
-Tentacool — SPECIES_TENTACOOL
-Tentacruel — SPECIES_TENTACRUEL
-Togetic — SPECIES_TOGETIC
-Torkoal — SPECIES_TORKOAL
-Totodile — SPECIES_TOTODILE
-Trapinch — SPECIES_TRAPINCH
-Tropius — SPECIES_TROPIUS
-Tyrogue — SPECIES_TYROGUE
-Venusaur — SPECIES_VENUSAUR
-Vespiquen — SPECIES_VESPIQUEN
-Vigoroth — SPECIES_VIGOROTH
-Volbeat — SPECIES_VOLBEAT
-Voltorb — SPECIES_VOLTORB
-Vulpix — SPECIES_VULPIX
-Wailmer — SPECIES_WAILMER
-Wailord — SPECIES_WAILORD
-Wartortle — SPECIES_WARTORTLE
-Weedle — SPECIES_WEEDLE
-Whiscash — SPECIES_WHISCASH
-Whismur — SPECIES_WHISMUR
-Wingull — SPECIES_WINGULL
-Wobbuffet — SPECIES_WOBBUFFET
-Wooper — SPECIES_WOOPER
-Wurmple — SPECIES_WURMPLE
-Wynaut — SPECIES_WYNAUT
-Xatu — SPECIES_XATU
-Zangoose — SPECIES_ZANGOOSE
-Zigzagoon — SPECIES_ZIGZAGOON
-Zubat — SPECIES_ZUBAT
+Sunkern (Grass, BST 180) — SPECIES_SUNKERN
+Azurill (Normal/Fairy, BST 190) — SPECIES_AZURILL
+Weedle (Bug/Poison, BST 195) — SPECIES_WEEDLE
+Wurmple (Bug, BST 195) — SPECIES_WURMPLE
+Ralts (Psychic/Ralts_Family_Type2, BST 198) — SPECIES_RALTS
+Feebas (Water, BST 200) — SPECIES_FEEBAS
+Magikarp (Water, BST 200) — SPECIES_MAGIKARP
+Metapod (Bug, BST 205) — SPECIES_METAPOD
+Pichu (Electric, BST 205) — SPECIES_PICHU
+Igglybuff (BST 210) — SPECIES_IGGLYBUFF
+Tyrogue (Fighting, BST 210) — SPECIES_TYROGUE
+Wooper (Water/Ground, BST 210) — SPECIES_WOOPER
+Sentret (Normal, BST 215) — SPECIES_SENTRET
+Cleffa (BST 218) — SPECIES_CLEFFA
+Happiny (Normal, BST 220) — SPECIES_HAPPINY
+Lotad (Water/Grass, BST 220) — SPECIES_LOTAD
+Poochyena (Dark, BST 220) — SPECIES_POOCHYENA
+Seedot (Grass, BST 220) — SPECIES_SEEDOT
+Shedinja (Bug/Ghost, BST 236) — SPECIES_SHEDINJA
+Makuhita (Fighting, BST 237) — SPECIES_MAKUHITA
+Whismur (Normal, BST 240) — SPECIES_WHISMUR
+Zigzagoon (Normal, BST 240) — SPECIES_ZIGZAGOON
+Combee (Bug/Flying, BST 244) — SPECIES_COMBEE
+Starly (Normal/Flying, BST 245) — SPECIES_STARLY
+Togepi (Togepi_Family_Type, BST 245) — SPECIES_TOGEPI
+Zubat (Poison/Flying, BST 245) — SPECIES_ZUBAT
+Hoppip (Grass/Flying, BST 250) — SPECIES_HOPPIP
+Marill (Water/Fairy, BST 250) — SPECIES_MARILL
+Slugma (Fire, BST 250) — SPECIES_SLUGMA
+Smeargle (Normal, BST 250) — SPECIES_SMEARGLE
+Spinarak (Bug/Poison, BST 250) — SPECIES_SPINARAK
+Swinub (Ice/Ground, BST 250) — SPECIES_SWINUB
+Pidgey (Normal/Flying, BST 251) — SPECIES_PIDGEY
+Rattata (Normal, BST 253) — SPECIES_RATTATA
+Skitty (Normal, BST 260) — SPECIES_SKITTY
+Wynaut (Psychic, BST 260) — SPECIES_WYNAUT
+Hoothoot (Normal/Flying, BST 262) — SPECIES_HOOTHOOT
+Shinx (Electric, BST 263) — SPECIES_SHINX
+Pidove (Normal/Flying, BST 264) — SPECIES_PIDOVE
+Diglett (Ground, BST 265) — SPECIES_DIGLETT
+Ledyba (Bug/Flying, BST 265) — SPECIES_LEDYBA
+Nincada (Bug/Ground, BST 266) — SPECIES_NINCADA
+Surskit (Bug/Water, BST 269) — SPECIES_SURSKIT
+Jigglypuff (BST 270) — SPECIES_JIGGLYPUFF
+Taillow (Normal/Flying, BST 270) — SPECIES_TAILLOW
+Wingull (Water/Flying, BST 270) — SPECIES_WINGULL
+Cherubi (Grass, BST 275) — SPECIES_CHERUBI
+Lillipup (Normal, BST 275) — SPECIES_LILLIPUP
+Budew (Grass/Poison, BST 280) — SPECIES_BUDEW
+Mareep (Electric, BST 280) — SPECIES_MAREEP
+Meditite (Fighting/Psychic, BST 280) — SPECIES_MEDITITE
+Slakoth (Normal, BST 280) — SPECIES_SLAKOTH
+Purrloin (Dark, BST 281) — SPECIES_PURRLOIN
+Chingling (Psychic, BST 285) — SPECIES_CHINGLING
+Paras (Bug/Grass, BST 285) — SPECIES_PARAS
+Riolu (Fighting, BST 285) — SPECIES_RIOLU
+Barboach (Water/Ground, BST 288) — SPECIES_BARBOACH
+Ditto (Normal, BST 288) — SPECIES_DITTO
+Ekans (Poison, BST 288) — SPECIES_EKANS
+Bonsly (Rock, BST 290) — SPECIES_BONSLY
+Pineco (Bug, BST 290) — SPECIES_PINECO
+Spheal (Ice/Water, BST 290) — SPECIES_SPHEAL
+Trapinch (Ground, BST 290) — SPECIES_TRAPINCH
+Duskull (Ghost, BST 295) — SPECIES_DUSKULL
+Electrike (Electric, BST 295) — SPECIES_ELECTRIKE
+Horsea (Water, BST 295) — SPECIES_HORSEA
+Shroomish (Grass, BST 295) — SPECIES_SHROOMISH
+Shuppet (Ghost, BST 295) — SPECIES_SHUPPET
+Bagon (Dragon, BST 300) — SPECIES_BAGON
+Baltoy (Ground/Psychic, BST 300) — SPECIES_BALTOY
+Beldum (Steel/Psychic, BST 300) — SPECIES_BELDUM
+Bellsprout (Grass/Poison, BST 300) — SPECIES_BELLSPROUT
+Bronzor (Steel/Psychic, BST 300) — SPECIES_BRONZOR
+Croagunk (Poison/Fighting, BST 300) — SPECIES_CROAGUNK
+Dratini (Dragon, BST 300) — SPECIES_DRATINI
+Geodude (Rock/Ground, BST 300) — SPECIES_GEODUDE
+Gible (Dragon/Ground, BST 300) — SPECIES_GIBLE
+Larvitar (Rock/Ground, BST 300) — SPECIES_LARVITAR
+Poliwag (Water, BST 300) — SPECIES_POLIWAG
+Remoraid (Water, BST 300) — SPECIES_REMORAID
+Sandshrew (Ground, BST 300) — SPECIES_SANDSHREW
+Snorunt (Ice, BST 300) — SPECIES_SNORUNT
+Snubbull (Fairy, BST 300) — SPECIES_SNUBBULL
+Gulpin (Poison, BST 302) — SPECIES_GULPIN
+Carvanha (Water/Dark, BST 305) — SPECIES_CARVANHA
+Machop (Fighting, BST 305) — SPECIES_MACHOP
+Mankey (Fighting, BST 305) — SPECIES_MANKEY
+Numel (Fire/Ground, BST 305) — SPECIES_NUMEL
+Shellder (Water, BST 305) — SPECIES_SHELLDER
+Venonat (Bug/Poison, BST 305) — SPECIES_VENONAT
+Corphish (Water, BST 308) — SPECIES_CORPHISH
+Snivy (Grass, BST 308) — SPECIES_SNIVY
+Tepig (Fire, BST 308) — SPECIES_TEPIG
+Charmander (Fire, BST 309) — SPECIES_CHARMANDER
+Cyndaquil (Fire, BST 309) — SPECIES_CYNDAQUIL
+Abra (Psychic, BST 310) — SPECIES_ABRA
+Doduo (Normal/Flying, BST 310) — SPECIES_DODUO
+Mudkip (Water, BST 310) — SPECIES_MUDKIP
+Swablu (Normal/Flying, BST 310) — SPECIES_SWABLU
+Torchic (Fire, BST 310) — SPECIES_TORCHIC
+Treecko (Grass, BST 310) — SPECIES_TREECKO
+Piplup (Water, BST 314) — SPECIES_PIPLUP
+Squirtle (Water, BST 314) — SPECIES_SQUIRTLE
+Totodile (Water, BST 314) — SPECIES_TOTODILE
+Slowpoke (Water/Psychic, BST 315) — SPECIES_SLOWPOKE
+Panpour (Water, BST 316) — SPECIES_PANPOUR
+Pansage (Grass, BST 316) — SPECIES_PANSAGE
+Pansear (Fire, BST 316) — SPECIES_PANSEAR
+Bulbasaur (Grass/Poison, BST 318) — SPECIES_BULBASAUR
+Turtwig (Grass, BST 318) — SPECIES_TURTWIG
+Cubone (Ground, BST 320) — SPECIES_CUBONE
+Goldeen (Water, BST 320) — SPECIES_GOLDEEN
+Natu (Psychic/Flying, BST 320) — SPECIES_NATU
+Oddish (Grass/Poison, BST 320) — SPECIES_ODDISH
+Pikachu (Electric, BST 320) — SPECIES_PIKACHU
+Psyduck (Water, BST 320) — SPECIES_PSYDUCK
+Clefairy (BST 323) — SPECIES_CLEFAIRY
+Eevee (Normal, BST 325) — SPECIES_EEVEE
+Krabby (Water, BST 325) — SPECIES_KRABBY
+Magnemite (Electric/Steel, BST 325) — SPECIES_MAGNEMITE
+Seel (Water, BST 325) — SPECIES_SEEL
+Drowzee (Psychic, BST 328) — SPECIES_DROWZEE
+Stunky (Poison/Dark, BST 329) — SPECIES_STUNKY
+Aron (Steel/Rock, BST 330) — SPECIES_ARON
+Buizel (Water, BST 330) — SPECIES_BUIZEL
+Chinchou (Water/Electric, BST 330) — SPECIES_CHINCHOU
+Delibird (Ice/Flying, BST 330) — SPECIES_DELIBIRD
+Finneon (Water, BST 330) — SPECIES_FINNEON
+Hippopotas (Ground, BST 330) — SPECIES_HIPPOPOTAS
+Houndour (Dark/Fire, BST 330) — SPECIES_HOUNDOUR
+Luvdisc (Water, BST 330) — SPECIES_LUVDISC
+Phanpy (Ground, BST 330) — SPECIES_PHANPY
+Skorupi (Poison/Bug, BST 330) — SPECIES_SKORUPI
+Spoink (Psychic, BST 330) — SPECIES_SPOINK
+Teddiursa (Normal, BST 330) — SPECIES_TEDDIURSA
+Voltorb (Electric, BST 330) — SPECIES_VOLTORB
+Snover (Grass/Ice, BST 334) — SPECIES_SNOVER
+Cacnea (Grass, BST 335) — SPECIES_CACNEA
+Tentacool (Water/Poison, BST 335) — SPECIES_TENTACOOL
+Koffing (Poison, BST 340) — SPECIES_KOFFING
+Lombre (Water/Grass, BST 340) — SPECIES_LOMBRE
+Skiploom (Grass/Flying, BST 340) — SPECIES_SKIPLOOM
+Staravia (Normal/Flying, BST 340) — SPECIES_STARAVIA
+Staryu (Water, BST 340) — SPECIES_STARYU
+Clamperl (Water, BST 345) — SPECIES_CLAMPERL
+Mantyke (Water/Flying, BST 345) — SPECIES_MANTYKE
+Rhyhorn (Ground/Rock, BST 345) — SPECIES_RHYHORN
+Drifloon (Ghost/Flying, BST 348) — SPECIES_DRIFLOON
+Pidgeotto (Normal/Flying, BST 349) — SPECIES_PIDGEOTTO
+Buneary (Normal, BST 350) — SPECIES_BUNEARY
+Cranidos (Rock, BST 350) — SPECIES_CRANIDOS
+Growlithe (Fire, BST 350) — SPECIES_GROWLITHE
+Anorith (Rock/Bug, BST 355) — SPECIES_ANORITH
+Omanyte (Rock/Water, BST 355) — SPECIES_OMANYTE
+Aipom (Normal, BST 360) — SPECIES_AIPOM
+Elekid (Electric, BST 360) — SPECIES_ELEKID
+Loudred (Normal, BST 360) — SPECIES_LOUDRED
+Spinda (Normal, BST 360) — SPECIES_SPINDA
+Luxio (Electric, BST 363) — SPECIES_LUXIO
+Flaaffy (Electric, BST 365) — SPECIES_FLAAFFY
+Magby (Fire, BST 365) — SPECIES_MAGBY
+Nidorina (Poison, BST 365) — SPECIES_NIDORINA
+Nidorino (Poison, BST 365) — SPECIES_NIDORINO
+Herdier (Normal, BST 370) — SPECIES_HERDIER
+Nosepass (Rock, BST 375) — SPECIES_NOSEPASS
+Mawile (BST 380) — SPECIES_MAWILE
+Sableye (Dark/Ghost, BST 380) — SPECIES_SABLEYE
+Dustox (Bug/Poison, BST 385) — SPECIES_DUSTOX
+Lickitung (Normal, BST 385) — SPECIES_LICKITUNG
+Onix (Rock/Ground, BST 385) — SPECIES_ONIX
+Poliwhirl (Water, BST 385) — SPECIES_POLIWHIRL
+Graveler (Rock/Ground, BST 390) — SPECIES_GRAVELER
+Ledian (Bug/Flying, BST 390) — SPECIES_LEDIAN
+Munchlax (Normal, BST 390) — SPECIES_MUNCHLAX
+Weepinbell (Grass/Poison, BST 390) — SPECIES_WEEPINBELL
+Yanma (Bug/Flying, BST 390) — SPECIES_YANMA
+Beautifly (Bug/Flying, BST 395) — SPECIES_BEAUTIFLY
+Butterfree (Bug/Flying, BST 395) — SPECIES_BUTTERFREE
+Gloom (Grass/Poison, BST 395) — SPECIES_GLOOM
+Porygon (Normal, BST 395) — SPECIES_PORYGON
+Ariados (Bug/Poison, BST 400) — SPECIES_ARIADOS
+Delcatty (Normal, BST 400) — SPECIES_DELCATTY
+Wailmer (Water, BST 400) — SPECIES_WAILMER
+Bayleef (Grass, BST 405) — SPECIES_BAYLEEF
+Charmeleon (Fire, BST 405) — SPECIES_CHARMELEON
+Combusken (Fire/Fighting, BST 405) — SPECIES_COMBUSKEN
+Croconaw (Water, BST 405) — SPECIES_CROCONAW
+Grovyle (Grass, BST 405) — SPECIES_GROVYLE
+Haunter (Ghost/Poison, BST 405) — SPECIES_HAUNTER
+Ivysaur (Grass/Poison, BST 405) — SPECIES_IVYSAUR
+Machoke (Fighting, BST 405) — SPECIES_MACHOKE
+Marshtomp (Water/Ground, BST 405) — SPECIES_MARSHTOMP
+Minun (Electric, BST 405) — SPECIES_MINUN
+Monferno (Fire/Fighting, BST 405) — SPECIES_MONFERNO
+Murkrow (Dark/Flying, BST 405) — SPECIES_MURKROW
+Pachirisu (Electric, BST 405) — SPECIES_PACHIRISU
+Parasect (Bug/Grass, BST 405) — SPECIES_PARASECT
+Plusle (Electric, BST 405) — SPECIES_PLUSLE
+Prinplup (Water, BST 405) — SPECIES_PRINPLUP
+Quilava (Fire, BST 405) — SPECIES_QUILAVA
+Togetic (Togepi_Family_Type/Flying, BST 405) — SPECIES_TOGETIC
+Wartortle (Water, BST 405) — SPECIES_WARTORTLE
+Wobbuffet (Psychic, BST 405) — SPECIES_WOBBUFFET
+Bibarel (Normal/Water, BST 410) — SPECIES_BIBAREL
+Gabite (Dragon/Ground, BST 410) — SPECIES_GABITE
+Medicham (Fighting/Psychic, BST 410) — SPECIES_MEDICHAM
+Ponyta (Fire, BST 410) — SPECIES_PONYTA
+Pupitar (Rock/Ground, BST 410) — SPECIES_PUPITAR
+Sealeo (Ice/Water, BST 410) — SPECIES_SEALEO
+Sudowoodo (Rock, BST 410) — SPECIES_SUDOWOODO
+Chatot (Normal/Flying, BST 411) — SPECIES_CHATOT
+Dewott (Water, BST 413) — SPECIES_DEWOTT
+Raticate (Normal, BST 413) — SPECIES_RATICATE
+Dunsparce (Normal, BST 415) — SPECIES_DUNSPARCE
+Furret (Normal, BST 415) — SPECIES_FURRET
+Pignite (Fire/Fighting, BST 418) — SPECIES_PIGNITE
+Azumarill (Water/Fairy, BST 420) — SPECIES_AZUMARILL
+Dragonair (Dragon, BST 420) — SPECIES_DRAGONAIR
+Linoone (Normal, BST 420) — SPECIES_LINOONE
+Metang (Steel/Psychic, BST 420) — SPECIES_METANG
+Mightyena (Dark, BST 420) — SPECIES_MIGHTYENA
+Shelgon (Dragon, BST 420) — SPECIES_SHELGON
+Watchog (Normal, BST 420) — SPECIES_WATCHOG
+Dugtrio (Ground, BST 425) — SPECIES_DUGTRIO
+Marowak (Ground, BST 425) — SPECIES_MAROWAK
+Sunflora (Grass, BST 425) — SPECIES_SUNFLORA
+Gligar (Ground/Flying, BST 430) — SPECIES_GLIGAR
+Illumise (Bug, BST 430) — SPECIES_ILLUMISE
+Lairon (Steel/Rock, BST 430) — SPECIES_LAIRON
+Magcargo (Fire/Rock, BST 430) — SPECIES_MAGCARGO
+Quagsire (Water/Ground, BST 430) — SPECIES_QUAGSIRE
+Sneasel (Dark/Ice, BST 430) — SPECIES_SNEASEL
+Volbeat (Bug, BST 430) — SPECIES_VOLBEAT
+Misdreavus (Ghost, BST 435) — SPECIES_MISDREAVUS
+Tangela (Grass, BST 435) — SPECIES_TANGELA
+Kecleon (Normal, BST 440) — SPECIES_KECLEON
+Pelipper (Water/Flying, BST 440) — SPECIES_PELIPPER
+Persian (Normal, BST 440) — SPECIES_PERSIAN
+Qwilfish (Water/Poison, BST 440) — SPECIES_QWILFISH
+Rotom (Electric/Ghost, BST 440) — SPECIES_ROTOM
+Seadra (Water, BST 440) — SPECIES_SEADRA
+Vigoroth (Normal, BST 440) — SPECIES_VIGOROTH
+Fearow (Normal/Flying, BST 442) — SPECIES_FEAROW
+Liepard (Dark, BST 446) — SPECIES_LIEPARD
+Arbok (Poison, BST 448) — SPECIES_ARBOK
+Chansey (Normal, BST 450) — SPECIES_CHANSEY
+Granbull (Fairy, BST 450) — SPECIES_GRANBULL
+Piloswine (Ice/Ground, BST 450) — SPECIES_PILOSWINE
+Sandslash (Ground, BST 450) — SPECIES_SANDSLASH
+Seaking (Water, BST 450) — SPECIES_SEAKING
+Venomoth (Bug/Poison, BST 450) — SPECIES_VENOMOTH
+Noctowl (Normal/Flying, BST 452) — SPECIES_NOCTOWL
+Purugly (Normal, BST 452) — SPECIES_PURUGLY
+Carnivine (Grass, BST 454) — SPECIES_CARNIVINE
+Masquerain (Bug/Flying, BST 454) — SPECIES_MASQUERAIN
+Banette (Ghost, BST 455) — SPECIES_BANETTE
+Chimecho (Psychic, BST 455) — SPECIES_CHIMECHO
+Dusclops (Ghost, BST 455) — SPECIES_DUSCLOPS
+Girafarig (Normal/Psychic, BST 455) — SPECIES_GIRAFARIG
+Golbat (Poison/Flying, BST 455) — SPECIES_GOLBAT
+Hitmonchan (Fighting, BST 455) — SPECIES_HITMONCHAN
+Hitmonlee (Fighting, BST 455) — SPECIES_HITMONLEE
+Hitmontop (Fighting, BST 455) — SPECIES_HITMONTOP
+Jynx (Ice/Psychic, BST 455) — SPECIES_JYNX
+Primeape (Fighting, BST 455) — SPECIES_PRIMEAPE
+Swellow (Normal/Flying, BST 455) — SPECIES_SWELLOW
+Ninjask (Bug/Flying, BST 456) — SPECIES_NINJASK
+Seviper (Poison, BST 458) — SPECIES_SEVIPER
+Zangoose (Normal, BST 458) — SPECIES_ZANGOOSE
+Breloom (Grass/Fighting, BST 460) — SPECIES_BRELOOM
+Camerupt (Fire/Ground, BST 460) — SPECIES_CAMERUPT
+Jumpluff (Grass/Flying, BST 460) — SPECIES_JUMPLUFF
+Lanturn (Water/Electric, BST 460) — SPECIES_LANTURN
+Lumineon (Water, BST 460) — SPECIES_LUMINEON
+Lunatone (Rock/Psychic, BST 460) — SPECIES_LUNATONE
+Sharpedo (Water/Dark, BST 460) — SPECIES_SHARPEDO
+Solrock (Rock/Psychic, BST 460) — SPECIES_SOLROCK
+Tropius (Grass/Flying, BST 460) — SPECIES_TROPIUS
+Absol (Dark, BST 465) — SPECIES_ABSOL
+Forretress (Bug/Steel, BST 465) — SPECIES_FORRETRESS
+Magneton (Electric/Steel, BST 465) — SPECIES_MAGNETON
+Skarmory (Steel/Flying, BST 465) — SPECIES_SKARMORY
+Stantler (Normal, BST 465) — SPECIES_STANTLER
+Swalot (Poison, BST 467) — SPECIES_SWALOT
+Crawdaunt (Water/Dark, BST 468) — SPECIES_CRAWDAUNT
+Whiscash (Water/Ground, BST 468) — SPECIES_WHISCASH
+Dodrio (Normal/Flying, BST 470) — SPECIES_DODRIO
+Grumpig (Psychic, BST 470) — SPECIES_GRUMPIG
+Torkoal (Fire, BST 470) — SPECIES_TORKOAL
+Xatu (Psychic/Flying, BST 470) — SPECIES_XATU
+Hariyama (Fighting, BST 474) — SPECIES_HARIYAMA
+Vespiquen (Bug/Flying, BST 474) — SPECIES_VESPIQUEN
+Cacturne (Grass/Dark, BST 475) — SPECIES_CACTURNE
+Dewgong (Water/Ice, BST 475) — SPECIES_DEWGONG
+Kingler (Water, BST 475) — SPECIES_KINGLER
+Manectric (Electric, BST 475) — SPECIES_MANECTRIC
+Skuntank (Poison/Dark, BST 479) — SPECIES_SKUNTANK
+Froslass (Ice/Ghost, BST 480) — SPECIES_FROSLASS
+Glalie (Ice, BST 480) — SPECIES_GLALIE
+Lopunny (Normal, BST 480) — SPECIES_LOPUNNY
+Ludicolo (Water/Grass, BST 480) — SPECIES_LUDICOLO
+Octillery (Water, BST 480) — SPECIES_OCTILLERY
+Phione (Water, BST 480) — SPECIES_PHIONE
+Shiftry (Grass/Dark, BST 480) — SPECIES_SHIFTRY
+Ambipom (Normal, BST 482) — SPECIES_AMBIPOM
+Clefable (BST 483) — SPECIES_CLEFABLE
+Hypno (Psychic, BST 483) — SPECIES_HYPNO
+Gorebyss (Water, BST 485) — SPECIES_GOREBYSS
+Huntail (Water, BST 485) — SPECIES_HUNTAIL
+Mantine (Water/Flying, BST 485) — SPECIES_MANTINE
+Relicanth (Water/Rock, BST 485) — SPECIES_RELICANTH
+Rhydon (Ground/Rock, BST 485) — SPECIES_RHYDON
+Spiritomb (Ghost/Dark, BST 485) — SPECIES_SPIRITOMB
+Staraptor (Normal/Flying, BST 485) — SPECIES_STARAPTOR
+Musharna (Psychic, BST 487) — SPECIES_MUSHARNA
+Unfezant (Normal/Flying, BST 488) — SPECIES_UNFEZANT
+Altaria (Dragon/Flying, BST 490) — SPECIES_ALTARIA
+Bellossom (Grass, BST 490) — SPECIES_BELLOSSOM
+Electabuzz (Electric, BST 490) — SPECIES_ELECTABUZZ
+Electrode (Electric, BST 490) — SPECIES_ELECTRODE
+Exploud (Normal, BST 490) — SPECIES_EXPLOUD
+Kangaskhan (Normal, BST 490) — SPECIES_KANGASKHAN
+Miltank (Normal, BST 490) — SPECIES_MILTANK
+Slowbro (Water/Psychic, BST 490) — SPECIES_SLOWBRO
+Slowking (Water/Psychic, BST 490) — SPECIES_SLOWKING
+Tauros (Normal, BST 490) — SPECIES_TAUROS
+Toxicroak (Poison/Fighting, BST 490) — SPECIES_TOXICROAK
+Vileplume (Grass/Poison, BST 490) — SPECIES_VILEPLUME
+Weezing (Poison, BST 490) — SPECIES_WEEZING
+Abomasnow (Grass/Ice, BST 494) — SPECIES_ABOMASNOW
+Armaldo (Rock/Bug, BST 495) — SPECIES_ARMALDO
+Bastiodon (Rock/Steel, BST 495) — SPECIES_BASTIODON
+Cradily (Rock/Grass, BST 495) — SPECIES_CRADILY
+Floatzel (Water, BST 495) — SPECIES_FLOATZEL
+Kabutops (Rock/Water, BST 495) — SPECIES_KABUTOPS
+Magmar (Fire, BST 495) — SPECIES_MAGMAR
+Mismagius (Ghost, BST 495) — SPECIES_MISMAGIUS
+Omastar (Rock/Water, BST 495) — SPECIES_OMASTAR
+Rampardos (Rock, BST 495) — SPECIES_RAMPARDOS
+Drifblim (Ghost/Flying, BST 498) — SPECIES_DRIFBLIM
+Simipour (Water, BST 498) — SPECIES_SIMIPOUR
+Simisage (Grass, BST 498) — SPECIES_SIMISAGE
+Simisear (Fire, BST 498) — SPECIES_SIMISEAR
+Bronzong (Steel/Psychic, BST 500) — SPECIES_BRONZONG
+Claydol (Ground/Psychic, BST 500) — SPECIES_CLAYDOL
+Donphan (Ground, BST 500) — SPECIES_DONPHAN
+Drapion (Poison/Dark, BST 500) — SPECIES_DRAPION
+Gengar (Ghost/Poison, BST 500) — SPECIES_GENGAR
+Golduck (Water, BST 500) — SPECIES_GOLDUCK
+Heracross (Bug/Fighting, BST 500) — SPECIES_HERACROSS
+Houndoom (Dark/Fire, BST 500) — SPECIES_HOUNDOOM
+Muk (Poison, BST 500) — SPECIES_MUK
+Pinsir (Bug, BST 500) — SPECIES_PINSIR
+Politoed (Water, BST 500) — SPECIES_POLITOED
+Rapidash (Fire, BST 500) — SPECIES_RAPIDASH
+Scizor (Bug/Steel, BST 500) — SPECIES_SCIZOR
+Scyther (Bug/Flying, BST 500) — SPECIES_SCYTHER
+Stoutland (Normal, BST 500) — SPECIES_STOUTLAND
+Ursaring (Normal, BST 500) — SPECIES_URSARING
+Wailord (Water, BST 500) — SPECIES_WAILORD
+Honchkrow (Dark/Flying, BST 505) — SPECIES_HONCHKROW
+Machamp (Fighting, BST 505) — SPECIES_MACHAMP
+Nidoking (Poison/Ground, BST 505) — SPECIES_NIDOKING
+Nidoqueen (Poison/Ground, BST 505) — SPECIES_NIDOQUEEN
+Ninetales (Fire, BST 505) — SPECIES_NINETALES
+Shuckle (Bug/Rock, BST 505) — SPECIES_SHUCKLE
+Gliscor (Ground/Flying, BST 510) — SPECIES_GLISCOR
+Poliwrath (Water/Fighting, BST 510) — SPECIES_POLIWRATH
+Weavile (Dark/Ice, BST 510) — SPECIES_WEAVILE
+Aerodactyl (Rock/Flying, BST 515) — SPECIES_AERODACTYL
+Lickilicky (Normal, BST 515) — SPECIES_LICKILICKY
+Porygon2 (Normal, BST 515) — SPECIES_PORYGON2
+Roserade (Grass/Poison, BST 515) — SPECIES_ROSERADE
+Tentacruel (Water/Poison, BST 515) — SPECIES_TENTACRUEL
+Yanmega (Bug/Flying, BST 515) — SPECIES_YANMEGA
+Gallade (Psychic/Fighting, BST 518) — SPECIES_GALLADE
+Gardevoir (Psychic/Ralts_Family_Type2, BST 518) — SPECIES_GARDEVOIR
+Flygon (Ground/Dragon, BST 520) — SPECIES_FLYGON
+Starmie (Water/Psychic, BST 520) — SPECIES_STARMIE
+Luxray (Electric, BST 523) — SPECIES_LUXRAY
+Cloyster (Water/Ice, BST 525) — SPECIES_CLOYSTER
+Dusknoir (Ghost, BST 525) — SPECIES_DUSKNOIR
+Espeon (Psychic, BST 525) — SPECIES_ESPEON
+Flareon (Fire, BST 525) — SPECIES_FLAREON
+Glaceon (Ice, BST 525) — SPECIES_GLACEON
+Hippowdon (Ground, BST 525) — SPECIES_HIPPOWDON
+Jolteon (Electric, BST 525) — SPECIES_JOLTEON
+Leafeon (Grass, BST 525) — SPECIES_LEAFEON
+Lucario (Fighting/Steel, BST 525) — SPECIES_LUCARIO
+Meganium (Grass, BST 525) — SPECIES_MEGANIUM
+Probopass (Rock/Steel, BST 525) — SPECIES_PROBOPASS
+Torterra (Grass/Ground, BST 525) — SPECIES_TORTERRA
+Umbreon (Dark, BST 525) — SPECIES_UMBREON
+Vaporeon (Water, BST 525) — SPECIES_VAPOREON
+Venusaur (Grass/Poison, BST 525) — SPECIES_VENUSAUR
+Emboar (Fire/Fighting, BST 528) — SPECIES_EMBOAR
+Samurott (Water, BST 528) — SPECIES_SAMUROTT
+Serperior (Grass, BST 528) — SPECIES_SERPERIOR
+Aggron (Steel/Rock, BST 530) — SPECIES_AGGRON
+Blastoise (Water, BST 530) — SPECIES_BLASTOISE
+Blaziken (Fire/Fighting, BST 530) — SPECIES_BLAZIKEN
+Empoleon (Water/Steel, BST 530) — SPECIES_EMPOLEON
+Feraligatr (Water, BST 530) — SPECIES_FERALIGATR
+Mamoswine (Ice/Ground, BST 530) — SPECIES_MAMOSWINE
+Sceptile (Grass, BST 530) — SPECIES_SCEPTILE
+Walrein (Ice/Water, BST 530) — SPECIES_WALREIN
+Charizard (Fire/Flying, BST 534) — SPECIES_CHARIZARD
+Infernape (Fire/Fighting, BST 534) — SPECIES_INFERNAPE
+Typhlosion (Fire, BST 534) — SPECIES_TYPHLOSION
+Crobat (Poison/Flying, BST 535) — SPECIES_CROBAT
+Lapras (Water/Ice, BST 535) — SPECIES_LAPRAS
+Magnezone (Electric/Steel, BST 535) — SPECIES_MAGNEZONE
+Rhyperior (Ground/Rock, BST 535) — SPECIES_RHYPERIOR
+Swampert (Water/Ground, BST 535) — SPECIES_SWAMPERT
+Tangrowth (Grass, BST 535) — SPECIES_TANGROWTH
+Blissey (Normal, BST 540) — SPECIES_BLISSEY
+Electivire (Electric, BST 540) — SPECIES_ELECTIVIRE
+Gyarados (Water/Flying, BST 540) — SPECIES_GYARADOS
+Kingdra (Water/Dragon, BST 540) — SPECIES_KINGDRA
+Magmortar (Fire, BST 540) — SPECIES_MAGMORTAR
+Milotic (Water, BST 540) — SPECIES_MILOTIC
+Snorlax (Normal, BST 540) — SPECIES_SNORLAX
+Togekiss (Togepi_Family_Type/Flying, BST 545) — SPECIES_TOGEKISS
+Arcanine (Fire, BST 555) — SPECIES_ARCANINE
+Garchomp (Dragon/Ground, BST 600) — SPECIES_GARCHOMP
+Manaphy (Water, BST 600) — SPECIES_MANAPHY
+Tyranitar (Rock/Dark, BST 600) — SPECIES_TYRANITAR
+Alakazam (Psychic) — SPECIES_ALAKAZAM
+Ampharos (Electric) — SPECIES_AMPHAROS
+Beedrill (Bug/Poison) — SPECIES_BEEDRILL
+Corsola (Water/Rock) — SPECIES_CORSOLA
+Exeggutor (Grass/Psychic) — SPECIES_EXEGGUTOR
+Farfetch'd (Normal/Flying) — SPECIES_FARFETCHD
+Golem (Rock/Ground) — SPECIES_GOLEM
+Pidgeot (Normal/Flying) — SPECIES_PIDGEOT
+Raichu (Electric) — SPECIES_RAICHU
+Unown — SPECIES_UNOWN
+Victreebel (Grass/Poison) — SPECIES_VICTREEBEL
+Wigglytuff — SPECIES_WIGGLYTUFF
