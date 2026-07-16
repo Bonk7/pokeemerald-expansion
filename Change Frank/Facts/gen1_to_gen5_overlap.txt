@@ -1,4 +1,4 @@
-Count: 439
+Count: 443
 
 Sunkern (Grass, BST 180) — SPECIES_SUNKERN
 Azurill (Normal/Fairy, BST 190) — SPECIES_AZURILL
@@ -182,11 +182,13 @@ Gloom (Grass/Poison, BST 395) — SPECIES_GLOOM
 Porygon (Normal, BST 395) — SPECIES_PORYGON
 Ariados (Bug/Poison, BST 400) — SPECIES_ARIADOS
 Delcatty (Normal, BST 400) — SPECIES_DELCATTY
+Roselia (Grass/Poison, BST 400) — SPECIES_ROSELIA
 Wailmer (Water, BST 400) — SPECIES_WAILMER
 Bayleef (Grass, BST 405) — SPECIES_BAYLEEF
 Charmeleon (Fire, BST 405) — SPECIES_CHARMELEON
 Combusken (Fire/Fighting, BST 405) — SPECIES_COMBUSKEN
 Croconaw (Water, BST 405) — SPECIES_CROCONAW
+Grotle (Grass, BST 405) — SPECIES_GROTLE
 Grovyle (Grass, BST 405) — SPECIES_GROVYLE
 Haunter (Ghost/Poison, BST 405) — SPECIES_HAUNTER
 Ivysaur (Grass/Poison, BST 405) — SPECIES_IVYSAUR
@@ -213,6 +215,7 @@ Sudowoodo (Rock, BST 410) — SPECIES_SUDOWOODO
 Chatot (Normal/Flying, BST 411) — SPECIES_CHATOT
 Dewott (Water, BST 413) — SPECIES_DEWOTT
 Raticate (Normal, BST 413) — SPECIES_RATICATE
+Servine (Grass, BST 413) — SPECIES_SERVINE
 Dunsparce (Normal, BST 415) — SPECIES_DUNSPARCE
 Furret (Normal, BST 415) — SPECIES_FURRET
 Pignite (Fire/Fighting, BST 418) — SPECIES_PIGNITE
@@ -368,6 +371,7 @@ Ninetales (Fire, BST 505) — SPECIES_NINETALES
 Shuckle (Bug/Rock, BST 505) — SPECIES_SHUCKLE
 Gliscor (Ground/Flying, BST 510) — SPECIES_GLISCOR
 Poliwrath (Water/Fighting, BST 510) — SPECIES_POLIWRATH
+Steelix (Steel/Ground, BST 510) — SPECIES_STEELIX
 Weavile (Dark/Ice, BST 510) — SPECIES_WEAVILE
 Aerodactyl (Rock/Flying, BST 515) — SPECIES_AERODACTYL
 Lickilicky (Normal, BST 515) — SPECIES_LICKILICKY

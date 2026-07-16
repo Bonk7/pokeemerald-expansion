@@ -116,8 +116,9 @@ def read_species_list(path: Path) -> list[str]:
         line = line.strip()
         if not line or line.startswith("Gen") or line.startswith("=") or line.startswith("Aantal"):
             continue
-        if line.startswith("SPECIES_"):
-            species.append(line)
+        m = re.match(r"^(SPECIES_[A-Z0-9_]+)", line)
+        if m:
+            species.append(m.group(1))
     return species
 
 
@@ -229,6 +230,19 @@ def write_checklist_export(path: Path, species: list[str], name_map: dict[str, s
         for item in species:
             handle.write(f"- [ ] {format_entry(item, name_map, details_map, fallback_names.get(item))}\n")
 
+def write_missing_bst_list(path: Path, species: list[str], name_map: dict[str, str], details_map: dict[str, dict[str, str | int | None]]) -> None:
+    """Write a simple list of missing Pokémon with name, species constant and BST (if available)."""
+    with path.open("w", encoding="utf-8") as handle:
+        handle.write("Gen 1-5 Pokémon missing from wild encounters\n")
+        handle.write("=====================================\n\n")
+        handle.write(f"Count: {len(species)}\n\n")
+        for species_id in species:
+            display_name = name_map.get(species_id, species_id.removeprefix('SPECIES_').replace('_', ' ').title())
+            bst = details_map.get(species_id, {}).get("bst")
+            if bst is None:
+                handle.write(f"{display_name} — {species_id}\n")
+            else:
+                handle.write(f"{display_name} — {species_id} — BST {bst}\n")
 
 def main() -> None:
     gen_species = read_species_list(GEN_LIST)
@@ -270,7 +284,7 @@ def main() -> None:
         for species in extra_in_wild:
             handle.write(f"- {format_entry(species, species_name_map, species_details, wild_name_map.get(species))}\n")
 
-    write_species_export(
+    write_missing_bst_list(
         FACTS_DIR / "gen1_to_gen5_missing_from_wild_encounters.txt",
         missing_from_wild,
         species_name_map,

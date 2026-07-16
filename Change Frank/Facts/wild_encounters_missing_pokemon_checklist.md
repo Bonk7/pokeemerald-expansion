@@ -1,5 +1,5 @@
 # Checklist: Pokémon die nog moeten worden toegevoegd aan wild encounters
-Count: 65
+Count: 61
 
 - [ ] Kricketot (Bug, BST 194) — SPECIES_KRICKETOT
 - [ ] Caterpie (Bug, BST 195) — SPECIES_CATERPIE
@@ -29,10 +29,6 @@ Count: 65
 - [ ] Tranquill (Normal/Flying, BST 358) — SPECIES_TRANQUILL
 - [ ] Kricketune (Bug, BST 384) — SPECIES_KRICKETUNE
 - [ ] Kadabra (Psychic, BST 400) — SPECIES_KADABRA
-- [ ] Roselia (Grass/Poison, BST 400) — SPECIES_ROSELIA
-- [ ] Grotle (Grass, BST 405) — SPECIES_GROTLE
-- [ ] Servine (Grass, BST 413) — SPECIES_SERVINE
-- [ ] Steelix (Steel/Ground, BST 510) — SPECIES_STEELIX
 - [ ] Articuno (Ice/Flying, BST 580) — SPECIES_ARTICUNO
 - [ ] Azelf (Psychic, BST 580) — SPECIES_AZELF
 - [ ] Cresselia (Psychic, BST 580) — SPECIES_CRESSELIA

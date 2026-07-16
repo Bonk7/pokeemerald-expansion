@@ -2,9 +2,9 @@ Gen 1-5 vs Wild Encounters Report
 ================================
 
 Gen 1-5 lijst: 504
-Wild encounters: 491
-Overlap: 439
-Gen 1-5 zonder wild-encounter: 65
+Wild encounters: 495
+Overlap: 443
+Gen 1-5 zonder wild-encounter: 61
 Wild encounters zonder Gen 1-5: 52
 
 ## Gen 1-5 lijst
@@ -710,12 +710,14 @@ Wild encounters zonder Gen 1-5: 52
 - Porygon (Normal, BST 395) — SPECIES_PORYGON
 - Ariados (Bug/Poison, BST 400) — SPECIES_ARIADOS
 - Delcatty (Normal, BST 400) — SPECIES_DELCATTY
+- Roselia (Grass/Poison, BST 400) — SPECIES_ROSELIA
 - Wailmer (Water, BST 400) — SPECIES_WAILMER
 - Bayleef (Grass, BST 405) — SPECIES_BAYLEEF
 - Charmeleon (Fire, BST 405) — SPECIES_CHARMELEON
 - Combusken (Fire/Fighting, BST 405) — SPECIES_COMBUSKEN
 - Croconaw (Water, BST 405) — SPECIES_CROCONAW
 - Eelektrik (Electric, BST 405) — SPECIES_EELEKTRIK
+- Grotle (Grass, BST 405) — SPECIES_GROTLE
 - Grovyle (Grass, BST 405) — SPECIES_GROVYLE
 - Haunter (Ghost/Poison, BST 405) — SPECIES_HAUNTER
 - Ivysaur (Grass/Poison, BST 405) — SPECIES_IVYSAUR
@@ -742,6 +744,7 @@ Wild encounters zonder Gen 1-5: 52
 - Chatot (Normal/Flying, BST 411) — SPECIES_CHATOT
 - Dewott (Water, BST 413) — SPECIES_DEWOTT
 - Raticate (Normal, BST 413) — SPECIES_RATICATE
+- Servine (Grass, BST 413) — SPECIES_SERVINE
 - Dunsparce (Normal, BST 415) — SPECIES_DUNSPARCE
 - Furret (Normal, BST 415) — SPECIES_FURRET
 - Pignite (Fire/Fighting, BST 418) — SPECIES_PIGNITE
@@ -913,6 +916,7 @@ Wild encounters zonder Gen 1-5: 52
 - Medicham (Fighting/Psychic, BST 510) — SPECIES_MEDICHAM_MEGA
 - Mienshao (Fighting, BST 510) — SPECIES_MIENSHAO
 - Poliwrath (Water/Fighting, BST 510) — SPECIES_POLIWRATH
+- Steelix (Steel/Ground, BST 510) — SPECIES_STEELIX
 - Weavile (Dark/Ice, BST 510) — SPECIES_WEAVILE
 - Aerodactyl (Rock/Flying, BST 515) — SPECIES_AERODACTYL
 - Lickilicky (Normal, BST 515) — SPECIES_LICKILICKY
@@ -1189,11 +1193,13 @@ Wild encounters zonder Gen 1-5: 52
 - Porygon (Normal, BST 395) — SPECIES_PORYGON
 - Ariados (Bug/Poison, BST 400) — SPECIES_ARIADOS
 - Delcatty (Normal, BST 400) — SPECIES_DELCATTY
+- Roselia (Grass/Poison, BST 400) — SPECIES_ROSELIA
 - Wailmer (Water, BST 400) — SPECIES_WAILMER
 - Bayleef (Grass, BST 405) — SPECIES_BAYLEEF
 - Charmeleon (Fire, BST 405) — SPECIES_CHARMELEON
 - Combusken (Fire/Fighting, BST 405) — SPECIES_COMBUSKEN
 - Croconaw (Water, BST 405) — SPECIES_CROCONAW
+- Grotle (Grass, BST 405) — SPECIES_GROTLE
 - Grovyle (Grass, BST 405) — SPECIES_GROVYLE
 - Haunter (Ghost/Poison, BST 405) — SPECIES_HAUNTER
 - Ivysaur (Grass/Poison, BST 405) — SPECIES_IVYSAUR
@@ -1220,6 +1226,7 @@ Wild encounters zonder Gen 1-5: 52
 - Chatot (Normal/Flying, BST 411) — SPECIES_CHATOT
 - Dewott (Water, BST 413) — SPECIES_DEWOTT
 - Raticate (Normal, BST 413) — SPECIES_RATICATE
+- Servine (Grass, BST 413) — SPECIES_SERVINE
 - Dunsparce (Normal, BST 415) — SPECIES_DUNSPARCE
 - Furret (Normal, BST 415) — SPECIES_FURRET
 - Pignite (Fire/Fighting, BST 418) — SPECIES_PIGNITE
@@ -1375,6 +1382,7 @@ Wild encounters zonder Gen 1-5: 52
 - Shuckle (Bug/Rock, BST 505) — SPECIES_SHUCKLE
 - Gliscor (Ground/Flying, BST 510) — SPECIES_GLISCOR
 - Poliwrath (Water/Fighting, BST 510) — SPECIES_POLIWRATH
+- Steelix (Steel/Ground, BST 510) — SPECIES_STEELIX
 - Weavile (Dark/Ice, BST 510) — SPECIES_WEAVILE
 - Aerodactyl (Rock/Flying, BST 515) — SPECIES_AERODACTYL
 - Lickilicky (Normal, BST 515) — SPECIES_LICKILICKY
@@ -1476,10 +1484,6 @@ Wild encounters zonder Gen 1-5: 52
 - Tranquill (Normal/Flying, BST 358) — SPECIES_TRANQUILL
 - Kricketune (Bug, BST 384) — SPECIES_KRICKETUNE
 - Kadabra (Psychic, BST 400) — SPECIES_KADABRA
-- Roselia (Grass/Poison, BST 400) — SPECIES_ROSELIA
-- Grotle (Grass, BST 405) — SPECIES_GROTLE
-- Servine (Grass, BST 413) — SPECIES_SERVINE
-- Steelix (Steel/Ground, BST 510) — SPECIES_STEELIX
 - Articuno (Ice/Flying, BST 580) — SPECIES_ARTICUNO
 - Azelf (Psychic, BST 580) — SPECIES_AZELF
 - Cresselia (Psychic, BST 580) — SPECIES_CRESSELIA
