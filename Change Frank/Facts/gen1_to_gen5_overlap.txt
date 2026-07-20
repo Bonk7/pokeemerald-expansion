@@ -1,4 +1,4 @@
-Count: 443
+Count: 457
 
 Sunkern (Grass, BST 180) — SPECIES_SUNKERN
 Azurill (Normal/Fairy, BST 190) — SPECIES_AZURILL
@@ -7,6 +7,7 @@ Wurmple (Bug, BST 195) — SPECIES_WURMPLE
 Ralts (Psychic/Ralts_Family_Type2, BST 198) — SPECIES_RALTS
 Feebas (Water, BST 200) — SPECIES_FEEBAS
 Magikarp (Water, BST 200) — SPECIES_MAGIKARP
+Kakuna (Bug/Poison, BST 205) — SPECIES_KAKUNA
 Metapod (Bug, BST 205) — SPECIES_METAPOD
 Pichu (Electric, BST 205) — SPECIES_PICHU
 Igglybuff (BST 210) — SPECIES_IGGLYBUFF
@@ -48,6 +49,7 @@ Taillow (Normal/Flying, BST 270) — SPECIES_TAILLOW
 Wingull (Water/Flying, BST 270) — SPECIES_WINGULL
 Cherubi (Grass, BST 275) — SPECIES_CHERUBI
 Lillipup (Normal, BST 275) — SPECIES_LILLIPUP
+Kirlia (Psychic/Ralts_Family_Type2, BST 278) — SPECIES_KIRLIA
 Budew (Grass/Poison, BST 280) — SPECIES_BUDEW
 Mareep (Electric, BST 280) — SPECIES_MAREEP
 Meditite (Fighting/Psychic, BST 280) — SPECIES_MEDITITE
@@ -63,11 +65,11 @@ Bonsly (Rock, BST 290) — SPECIES_BONSLY
 Pineco (Bug, BST 290) — SPECIES_PINECO
 Spheal (Ice/Water, BST 290) — SPECIES_SPHEAL
 Trapinch (Ground, BST 290) — SPECIES_TRAPINCH
+Munna (Psychic, BST 292) — SPECIES_MUNNA
 Duskull (Ghost, BST 295) — SPECIES_DUSKULL
 Electrike (Electric, BST 295) — SPECIES_ELECTRIKE
 Horsea (Water, BST 295) — SPECIES_HORSEA
 Shroomish (Grass, BST 295) — SPECIES_SHROOMISH
-Shuppet (Ghost, BST 295) — SPECIES_SHUPPET
 Bagon (Dragon, BST 300) — SPECIES_BAGON
 Baltoy (Ground/Psychic, BST 300) — SPECIES_BALTOY
 Beldum (Steel/Psychic, BST 300) — SPECIES_BELDUM
@@ -91,12 +93,15 @@ Numel (Fire/Ground, BST 305) — SPECIES_NUMEL
 Shellder (Water, BST 305) — SPECIES_SHELLDER
 Venonat (Bug/Poison, BST 305) — SPECIES_VENONAT
 Corphish (Water, BST 308) — SPECIES_CORPHISH
+Oshawott (Water, BST 308) — SPECIES_OSHAWOTT
 Snivy (Grass, BST 308) — SPECIES_SNIVY
 Tepig (Fire, BST 308) — SPECIES_TEPIG
 Charmander (Fire, BST 309) — SPECIES_CHARMANDER
+Chimchar (Fire, BST 309) — SPECIES_CHIMCHAR
 Cyndaquil (Fire, BST 309) — SPECIES_CYNDAQUIL
 Abra (Psychic, BST 310) — SPECIES_ABRA
 Doduo (Normal/Flying, BST 310) — SPECIES_DODUO
+Gastly (Ghost/Poison, BST 310) — SPECIES_GASTLY
 Mudkip (Water, BST 310) — SPECIES_MUDKIP
 Swablu (Normal/Flying, BST 310) — SPECIES_SWABLU
 Torchic (Fire, BST 310) — SPECIES_TORCHIC
@@ -118,6 +123,7 @@ Pikachu (Electric, BST 320) — SPECIES_PIKACHU
 Psyduck (Water, BST 320) — SPECIES_PSYDUCK
 Clefairy (BST 323) — SPECIES_CLEFAIRY
 Eevee (Normal, BST 325) — SPECIES_EEVEE
+Grimer (Poison, BST 325) — SPECIES_GRIMER
 Krabby (Water, BST 325) — SPECIES_KRABBY
 Magnemite (Electric/Steel, BST 325) — SPECIES_MAGNEMITE
 Seel (Water, BST 325) — SPECIES_SEEL
@@ -141,9 +147,11 @@ Cacnea (Grass, BST 335) — SPECIES_CACNEA
 Tentacool (Water/Poison, BST 335) — SPECIES_TENTACOOL
 Koffing (Poison, BST 340) — SPECIES_KOFFING
 Lombre (Water/Grass, BST 340) — SPECIES_LOMBRE
+Nuzleaf (Grass/Dark, BST 340) — SPECIES_NUZLEAF
 Skiploom (Grass/Flying, BST 340) — SPECIES_SKIPLOOM
 Staravia (Normal/Flying, BST 340) — SPECIES_STARAVIA
 Staryu (Water, BST 340) — SPECIES_STARYU
+Vibrava (Ground/Dragon, BST 340) — SPECIES_VIBRAVA
 Clamperl (Water, BST 345) — SPECIES_CLAMPERL
 Mantyke (Water/Flying, BST 345) — SPECIES_MANTYKE
 Rhyhorn (Ground/Rock, BST 345) — SPECIES_RHYHORN
@@ -152,8 +160,12 @@ Pidgeotto (Normal/Flying, BST 349) — SPECIES_PIDGEOTTO
 Buneary (Normal, BST 350) — SPECIES_BUNEARY
 Cranidos (Rock, BST 350) — SPECIES_CRANIDOS
 Growlithe (Fire, BST 350) — SPECIES_GROWLITHE
+Shieldon (Rock/Steel, BST 350) — SPECIES_SHIELDON
 Anorith (Rock/Bug, BST 355) — SPECIES_ANORITH
+Kabuto (Rock/Water, BST 355) — SPECIES_KABUTO
+Lileep (Rock/Grass, BST 355) — SPECIES_LILEEP
 Omanyte (Rock/Water, BST 355) — SPECIES_OMANYTE
+Tranquill (Normal/Flying, BST 358) — SPECIES_TRANQUILL
 Aipom (Normal, BST 360) — SPECIES_AIPOM
 Elekid (Electric, BST 360) — SPECIES_ELEKID
 Loudred (Normal, BST 360) — SPECIES_LOUDRED
@@ -182,6 +194,7 @@ Gloom (Grass/Poison, BST 395) — SPECIES_GLOOM
 Porygon (Normal, BST 395) — SPECIES_PORYGON
 Ariados (Bug/Poison, BST 400) — SPECIES_ARIADOS
 Delcatty (Normal, BST 400) — SPECIES_DELCATTY
+Kadabra (Psychic, BST 400) — SPECIES_KADABRA
 Roselia (Grass/Poison, BST 400) — SPECIES_ROSELIA
 Wailmer (Water, BST 400) — SPECIES_WAILMER
 Bayleef (Grass, BST 405) — SPECIES_BAYLEEF
@@ -431,6 +444,7 @@ Arcanine (Fire, BST 555) — SPECIES_ARCANINE
 Garchomp (Dragon/Ground, BST 600) — SPECIES_GARCHOMP
 Manaphy (Water, BST 600) — SPECIES_MANAPHY
 Tyranitar (Rock/Dark, BST 600) — SPECIES_TYRANITAR
+Slaking (Normal, BST 670) — SPECIES_SLAKING
 Alakazam (Psychic) — SPECIES_ALAKAZAM
 Ampharos (Electric) — SPECIES_AMPHAROS
 Beedrill (Bug/Poison) — SPECIES_BEEDRILL

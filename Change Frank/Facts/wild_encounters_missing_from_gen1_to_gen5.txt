@@ -1,4 +1,4 @@
-Count: 52
+Count: 62
 
 Nidoran♂ (Poison, BST 273) — SPECIES_NIDORAN_M
 Nidoran♀ (Poison, BST 275) — SPECIES_NIDORAN_F
@@ -17,24 +17,31 @@ Zorua (Dark, BST 330) — SPECIES_ZORUA
 Eelektrik (Electric, BST 405) — SPECIES_EELEKTRIK
 Castform (Ice, BST 420) — SPECIES_CASTFORM_SNOWY
 Castform (Fire, BST 420) — SPECIES_CASTFORM_SUNNY
+Zweilous (Dark/Dragon, BST 420) — SPECIES_ZWEILOUS
 Swoobat (Psychic/Flying, BST 425) — SPECIES_SWOOBAT
 Klang (Steel, BST 440) — SPECIES_KLANG
 Audino (Normal, BST 445) — SPECIES_AUDINO
 Doublade (Steel/Ghost, BST 448) — SPECIES_DOUBLADE
 Maractus (Grass, BST 461) — SPECIES_MARACTUS
+Sawk (Fighting, BST 465) — SPECIES_SAWK
 Throh (Fighting, BST 465) — SPECIES_THROH
 Pidgeot (Normal/Flying, BST 478) — SPECIES_PIDGEOT_MEGA
+Whimsicott (BST 480) — SPECIES_WHIMSICOTT
 Durant (Bug/Steel, BST 484) — SPECIES_DURANT
+Druddigon (Dragon, BST 485) — SPECIES_DRUDDIGON
 Sigilyph (Psychic/Flying, BST 490) — SPECIES_SIGILYPH
 Accelgor (Bug, BST 495) — SPECIES_ACCELGOR
 Escavalier (Bug/Steel, BST 495) — SPECIES_ESCAVALIER
+Conkeldurr (Fighting, BST 505) — SPECIES_CONKELDURR
 Seismitoad (Water/Ground, BST 509) — SPECIES_SEISMITOAD
 Medicham (Fighting/Psychic, BST 510) — SPECIES_MEDICHAM_MEGA
 Mienshao (Fighting, BST 510) — SPECIES_MIENSHAO
+Zoroark (Dark, BST 510) — SPECIES_ZOROARK
 Absol (Dark, BST 565) — SPECIES_ABSOL_MEGA
 Altaria (Dragon/Fairy, BST 590) — SPECIES_ALTARIA_MEGA
 Slowbro (Water/Psychic, BST 590) — SPECIES_SLOWBRO_MEGA
 Alakazam (Psychic, BST 600) — SPECIES_ALAKAZAM_MEGA
+Gengar (Ghost/Poison, BST 600) — SPECIES_GENGAR_MEGA
 Heracross (Bug/Fighting, BST 600) — SPECIES_HERACROSS_MEGA
 Pinsir (Bug/Flying, BST 600) — SPECIES_PINSIR_MEGA
 Aerodactyl (Rock/Flying, BST 615) — SPECIES_AERODACTYL_MEGA
@@ -44,11 +51,14 @@ Venusaur (Grass/Poison, BST 625) — SPECIES_VENUSAUR_MEGA
 Blastoise (Water, BST 630) — SPECIES_BLASTOISE_MEGA
 Blaziken (Fire/Fighting, BST 630) — SPECIES_BLAZIKEN_MEGA
 Charizard (Fire/Dragon, BST 634) — SPECIES_CHARIZARD_MEGA_X
+Charizard (Fire/Flying, BST 634) — SPECIES_CHARIZARD_MEGA_Y
 Swampert (Water/Ground, BST 635) — SPECIES_SWAMPERT_MEGA
 Gyarados (Water/Dark, BST 640) — SPECIES_GYARADOS_MEGA
+Metagross (Steel/Psychic, BST 700) — SPECIES_METAGROSS_MEGA
 Salamence (Dragon/Flying, BST 700) — SPECIES_SALAMENCE_MEGA
 Tyranitar (Rock/Dark, BST 700) — SPECIES_TYRANITAR_MEGA
 Mewtwo (Psychic/Fighting, BST 780) — SPECIES_MEWTWO_MEGA_X
 Castform — SPECIES_CASTFORM
+Darmanitan — SPECIES_DARMANITAN
 Gastrodon — SPECIES_GASTRODON
 None — SPECIES_NONE

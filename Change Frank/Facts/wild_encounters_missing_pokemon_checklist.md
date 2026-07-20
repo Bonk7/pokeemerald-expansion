@@ -1,34 +1,21 @@
 # Checklist: Pokémon die nog moeten worden toegevoegd aan wild encounters
-Count: 61
+Count: 47
 
 - [ ] Kricketot (Bug, BST 194) — SPECIES_KRICKETOT
 - [ ] Caterpie (Bug, BST 195) — SPECIES_CATERPIE
 - [ ] Cascoon (Bug, BST 205) — SPECIES_CASCOON
-- [ ] Kakuna (Bug/Poison, BST 205) — SPECIES_KAKUNA
 - [ ] Silcoon (Bug, BST 205) — SPECIES_SILCOON
 - [ ] Bidoof (Normal, BST 250) — SPECIES_BIDOOF
 - [ ] Patrat (Normal, BST 255) — SPECIES_PATRAT
 - [ ] Spearow (Normal/Flying, BST 262) — SPECIES_SPEAROW
-- [ ] Kirlia (Psychic/Ralts_Family_Type2, BST 278) — SPECIES_KIRLIA
 - [ ] Meowth (Normal, BST 290) — SPECIES_MEOWTH
-- [ ] Munna (Psychic, BST 292) — SPECIES_MUNNA
+- [ ] Shuppet (Ghost, BST 295) — SPECIES_SHUPPET
 - [ ] Vulpix (Fire, BST 299) — SPECIES_VULPIX
 - [ ] Smoochum (Ice/Psychic, BST 305) — SPECIES_SMOOCHUM
-- [ ] Oshawott (Water, BST 308) — SPECIES_OSHAWOTT
-- [ ] Chimchar (Fire, BST 309) — SPECIES_CHIMCHAR
-- [ ] Gastly (Ghost/Poison, BST 310) — SPECIES_GASTLY
 - [ ] Glameow (Normal, BST 310) — SPECIES_GLAMEOW
 - [ ] Chikorita (Grass, BST 318) — SPECIES_CHIKORITA
 - [ ] Exeggcute (Grass/Psychic, BST 325) — SPECIES_EXEGGCUTE
-- [ ] Grimer (Poison, BST 325) — SPECIES_GRIMER
-- [ ] Nuzleaf (Grass/Dark, BST 340) — SPECIES_NUZLEAF
-- [ ] Vibrava (Ground/Dragon, BST 340) — SPECIES_VIBRAVA
-- [ ] Shieldon (Rock/Steel, BST 350) — SPECIES_SHIELDON
-- [ ] Kabuto (Rock/Water, BST 355) — SPECIES_KABUTO
-- [ ] Lileep (Rock/Grass, BST 355) — SPECIES_LILEEP
-- [ ] Tranquill (Normal/Flying, BST 358) — SPECIES_TRANQUILL
 - [ ] Kricketune (Bug, BST 384) — SPECIES_KRICKETUNE
-- [ ] Kadabra (Psychic, BST 400) — SPECIES_KADABRA
 - [ ] Articuno (Ice/Flying, BST 580) — SPECIES_ARTICUNO
 - [ ] Azelf (Psychic, BST 580) — SPECIES_AZELF
 - [ ] Cresselia (Psychic, BST 580) — SPECIES_CRESSELIA
@@ -56,7 +43,6 @@ Count: 61
 - [ ] Groudon (Ground, BST 670) — SPECIES_GROUDON
 - [ ] Kyogre (Water, BST 670) — SPECIES_KYOGRE
 - [ ] Regigigas (Normal, BST 670) — SPECIES_REGIGIGAS
-- [ ] Slaking (Normal, BST 670) — SPECIES_SLAKING
 - [ ] Dialga (Steel/Dragon, BST 680) — SPECIES_DIALGA
 - [ ] Lugia (Psychic/Flying, BST 680) — SPECIES_LUGIA
 - [ ] Mewtwo (Psychic, BST 680) — SPECIES_MEWTWO
