@@ -277,7 +277,7 @@
 
 #define FIRST_MAIL_INDEX ITEM_ORANGE_MAIL
 
-// Evolution Items all found in SlateportCity_Mart_Pokemart:
+// Evolution Items all found in SlateportCity_Mart_Pokemart/mauville:
 #define ITEM_FIRE_STONE 211
 #define ITEM_WATER_STONE 212
 #define ITEM_THUNDER_STONE 213
