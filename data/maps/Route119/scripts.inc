@@ -1223,11 +1223,9 @@ Route119_Text_TrainerTipsDecoration:
 
 Route119_Eventscript_BattleFrank::
 # 615 "data/maps/Route119/scripts.pory"
-	trainerbattle_single TRAINER_FRANK_119, Route119_Eventscript_BattleFrank_Text_0, Route119_Eventscript_BattleFrank_Text_1
-# 616 "data/maps/Route119/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_EXP_CHARM, Route119_GiveExpCharm
+	trainerbattle_single TRAINER_FRANK_119, Route119_Eventscript_BattleFrank_Text_0, Route119_Eventscript_BattleFrank_Text_1, Route119_GiveExpCharm
 # 617 "data/maps/Route119/scripts.pory"
-	msgbox Route119_Eventscript_BattleFrank_Text_2, MSGBOX_AUTOCLOSE
+	msgbox Route119_Eventscript_BattleFrank_Text_2, MSGBOX_NPC
 	end
 
 

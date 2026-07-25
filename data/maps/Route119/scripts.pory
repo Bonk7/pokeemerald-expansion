@@ -612,9 +612,8 @@ Route119_Text_TrainerTipsDecoration:
 `
 
 script Route119_Eventscript_BattleFrank {
-    trainerbattle_single(TRAINER_FRANK_119, "It has been a while.\n", "I lost again?")
-	goto_if_unset (FLAG_RECEIVED_EXP_CHARM, Route119_GiveExpCharm)
-	msgbox(format("You've got some potential.\n Next time i will beat you!"), MSGBOX_AUTOCLOSE)
+    trainerbattle_single(TRAINER_FRANK_119, "It has been a while.\n", "I lost again?", Route119_GiveExpCharm)
+	msgbox(format("You've got some potential.\n Next time i will beat you!"), MSGBOX_NPC)
 	end
 }	
 
