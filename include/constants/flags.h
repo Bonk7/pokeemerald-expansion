@@ -46,8 +46,8 @@
 #define FLAG_UNUSED_0x020    0x20 // Unused Flag // exp share
 #define FLAG_UNUSED_0x021    0x21 // Unused Flag // vs seeker
 #define FLAG_UNUSED_0x022    0x22 // Unused Flag // Repel
-#define FLAG_FRANK_DEWFORD    0x23 // Unused Flag // Battle Red Dewford
-#define FLAG_FRANK_ROUTE119    0x24 // Battle Frank 119
+#define FLAG_FRANK_DEWFORD   0x23 // Unused Flag // Battle Red Dewford
+#define FLAG_FRANK_ROUTE119  0x24 // Battle Frank 119
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
@@ -120,7 +120,7 @@
 #define FLAG_MOSSDEEP_GYM_SWITCH_3           0x66 //
 #define FLAG_MOSSDEEP_GYM_SWITCH_4           0x67 //
 
-#define FLAG_UNUSED_0x068                    0x68  // Unused Flag
+#define FLAG_RECEIVED_EXP_CHARM              0x68  // exp charm flag
 
 #define FLAG_OCEANIC_MUSEUM_MET_REPORTER     0x69
 #define FLAG_RECEIVED_HM_STRENGTH            0x6A
