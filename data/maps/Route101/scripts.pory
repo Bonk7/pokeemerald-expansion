@@ -299,3 +299,26 @@ Route101_Text_RouteSign:
 	.string "{UP_ARROW} OLDALE TOWN$"
 
 `
+
+script Route101_Battle_Meloetta {
+	lockall
+	playmoncry(SPECIES_MELOETTA, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_MELOETTA, 14, ITEM_TWISTEDSPOON)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Meloetta_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Meloetta_Caught{
+	setflag(FLAG_STATIC_MELOETTA)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(9)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

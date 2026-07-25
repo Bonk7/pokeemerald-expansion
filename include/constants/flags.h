@@ -1233,9 +1233,9 @@
 #define FLAG_ITEM_MT_PYRE_EXTERIOR_SWAMPERTITE                      0x49B 
 #define FLAG_ITEM_MOSSDEEP_CITY_LATIOSITE                           0x49C 
 #define FLAG_ITEM_DESERTRUINS_TYRANITARITE                          0x49D   
-#define FLAG_ITEM_CAVEOFORIGIN_B1F_GALLADITE                        0x49E // Unused Flag
-#define FLAG_ITEM_ROUTE_102_GARDEVOIRITE                            0x49F // Unused Flag
-#define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
+#define FLAG_ITEM_CAVEOFORIGIN_B1F_GALLADITE                        0x49E 
+#define FLAG_ITEM_ROUTE_102_GARDEVOIRITE                            0x49F 
+#define FLAG_STATIC_MELOETTA                                        0x4A0 // meloetta
 #define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
 #define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
 #define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag

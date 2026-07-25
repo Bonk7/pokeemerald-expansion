@@ -596,3 +596,46 @@ Route101_Text_RouteSign:
 	.string "ROUTE 101\n"
 # 299 "data/maps/Route101/scripts.pory"
 	.string "{UP_ARROW} OLDALE TOWN$"
+
+Route101_Battle_Meloetta::
+# 304 "data/maps/Route101/scripts.pory"
+	lockall
+# 305 "data/maps/Route101/scripts.pory"
+	playmoncry SPECIES_MELOETTA, CRY_MODE_ENCOUNTER
+# 306 "data/maps/Route101/scripts.pory"
+	delay 40
+# 307 "data/maps/Route101/scripts.pory"
+	waitmoncry
+# 308 "data/maps/Route101/scripts.pory"
+	setwildbattle SPECIES_MELOETTA, 14, ITEM_TWISTEDSPOON
+# 309 "data/maps/Route101/scripts.pory"
+	dowildbattle
+# 310 "data/maps/Route101/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 311 "data/maps/Route101/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route101_Battle_Meloetta_2
+Route101_Battle_Meloetta_1:
+# 314 "data/maps/Route101/scripts.pory"
+	waitmessage
+# 315 "data/maps/Route101/scripts.pory"
+	releaseall
+	return
+
+Route101_Battle_Meloetta_2:
+# 312 "data/maps/Route101/scripts.pory"
+	call Meloetta_Caught
+	goto Route101_Battle_Meloetta_1
+
+
+Meloetta_Caught::
+# 319 "data/maps/Route101/scripts.pory"
+	setflag FLAG_STATIC_MELOETTA
+# 320 "data/maps/Route101/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 321 "data/maps/Route101/scripts.pory"
+	removeobject 9
+# 322 "data/maps/Route101/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+
