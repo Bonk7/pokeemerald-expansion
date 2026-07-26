@@ -1,0 +1,354 @@
+# Macro-overzicht: asm/macros/event.inc
+
+Dit document bevat alle macrodefinities uit `asm/macros/event.inc`, inclusief hun parameters en een korte omschrijving.
+
+**Gebruik:** `macroNaam(param1, param2, ...)`
+
+- `nop(.byte SCR_OP_NOP)` — Doet niets.
+- `nop1(.byte SCR_OP_NOP1)` — Doet niets.
+- `end(.byte SCR_OP_END)` — Beëindigt de scriptuitvoering.
+- `return(.byte SCR_OP_RETURN)` — Springt terug naar na de laatst uitgevoerde call-opdracht en gaat daar verder met de scriptuitvoering.
+- `call(destination:req)` — Springt naar destination en gaat daar verder met de scriptuitvoering. De locatie van het oproepende script wordt onthouden en kan later worden teruggekeerd.
+- `goto(destination:req)` — Springt naar destination en gaat daar verder met de scriptuitvoering.
+- `goto_if(condition:req, destination:req)` — Als het resultaat van de laatste vergelijking overeenkomt met condition (zie Comparison operators), springt het naar destination en gaat daar verder met de scriptuitvoering.
+- `call_if(condition:req, destination:req)` — Als het resultaat van de laatste vergelijking overeenkomt met condition (zie Comparison operators), roept het destination aan.
+- `gotostd(function:req)` — Springt naar het script in gStdScripts op index function.
+- `callstd(function:req)` — Roep het script in gStdScripts op index function aan.
+- `gotostd_if(condition:req, function:req)` — Als het resultaat van de laatste vergelijking overeenkomt met condition (zie Comparison operators), springt het naar het script in gStdScripts op index function.
+- `callstd_if(condition:req, function:req)` — Als het resultaat van de laatste vergelijking overeenkomt met condition (zie Comparison operators), roept het script in gStdScripts op index function aan.
+- `returnram(.byte SCR_OP_RETURNRAM)` — Gelijk aan de 'return'-opdracht voor een RAM-script.
+- `endram(.byte SCR_OP_ENDRAM)` — Gelijk aan de 'end'-opdracht voor een RAM-script.
+- `setmysteryeventstatus(value:req)` — Stelt de Mystery Event scriptstatus in (MEVENT_STATUS_*).
+- `loadword(destIndex:req, value:req)` — Stelt de waarde op de opgegeven scriptgegevensindex in op een vaste 4-byte waarde.
+- `loadbyte(destIndex:req, value:req)` — Stelt de waarde op de opgegeven scriptgegevensindex in op een vaste bytewaarde.
+- `setptr(value:req, ptr:req)` — Stelt de waarde op de opgegeven pointer in.
+- `loadbytefromptr(destIndex:req, source:req)` — Stelt de waarde op de opgegeven scriptgegevensindex in op de waarde bij pointer 'source'.
+- `setptrbyte(srcIndex:req, destination:req)` — Stelt de waarde bij pointer 'destination' in op de inhoud van de scriptgegevens bij 'srcIndex'.
+- `copylocal(destIndex:req, srcIndex:req)` — Kopieert de inhoud van de scriptgegevens van de ene index naar de andere.
+- `copybyte(destination:req, source:req)` — Kopieert de byte van source naar destination en vervangt daarmee de vorige byte.
+- `setvar(destination:req, value:req, warn=TRUE)` — Wijzigt de waarde van destination in value.
+- `addvar(destination:req, value:req)` — Wijzigt de waarde van destination door er value bij op te tellen. Overflow wordt niet voorkomen (0xFFFF + 1 = 0x0000).
+- `subvar(destination:req, value:req)` — Wijzigt de waarde van destination door er value van af te trekken. Overflow wordt niet voorkomen (0x0000 - 1 = 0xFFFF).
+- `copyvar(destination:req, source:req)` — Kopieert de waarde van source naar destination.
+- `setorcopyvar(destination:req, source:req)` — Als source geen variabele is, werkt deze macro als setvar. Anders werkt het als copyvar.
+- `compare_local_to_local(local1:req, local2:req)` — Vergelijkt de waarden van de scriptgegevens op indexen 'local1' en 'local2'. Het resultaat wordt in comparisonResult opgeslagen en verwerkt door goto_if / call_if.
+- `compare_local_to_value(local:req, value:req)` — Vergelijkt de waarde van de scriptgegevens op index 'local' met een vaste waarde. Het resultaat wordt in comparisonResult opgeslagen en verwerkt door goto_if / call_if.
+- `compare_local_to_ptr(local:req, ptr:req)` — Vergelijkt de waarde van de scriptgegevens op index 'local' met de waarde bij 'ptr'. Het resultaat wordt in comparisonResult opgeslagen en verwerkt door goto_if / call_if.
+- `compare_ptr_to_local(ptr:req, local:req)` — Vergelijkt de waarde bij 'ptr' met de waarde van de scriptgegevens op index 'local'. Het resultaat wordt in comparisonResult opgeslagen en verwerkt door goto_if / call_if.
+- `compare_ptr_to_value(ptr:req, value:req)` — Vergelijkt de waarde bij 'ptr' met een vaste waarde. Het resultaat wordt in comparisonResult opgeslagen en verwerkt door goto_if / call_if.
+- `compare_ptr_to_ptr(ptr1:req, ptr2:req)` — Vergelijkt de waarde bij 'ptr1' met de waarde bij 'ptr2'. Het resultaat wordt in comparisonResult opgeslagen en verwerkt door goto_if / call_if.
+- `compare_var_to_value(var:req, value:req)` — Vergelijkt de waarde van 'var' met een vaste waarde. Het resultaat wordt in comparisonResult opgeslagen en verwerkt door goto_if / call_if.
+- `compare_var_to_var(var1:req, var2:req)` — Vergelijkt de waarde van 'var1' met de waarde van 'var2'. Het resultaat wordt in comparisonResult opgeslagen en verwerkt door goto_if / call_if.
+- `compare(var:req, arg:req)` — Generieke compare-macro die probeert het type argumenten af te leiden op basis van hun waarden. Alle waarden tussen VARS_START en VARS_END en SPECIAL_VARS_START en SPECIAL_VARS_END worden beschouwd als event-variabele-identifiers.
+- `callnative(func:req, requests_effects=0)` — Roep de native C-functie op die in func is opgeslagen. callnative's moeten requests_effects=1 instellen als de native een oproep naar Script_RequestEffects bevat, zodat deze kan worden geanalyseerd door RunScriptImmediatelyUntilEffect.
+- `gotonative(func:req, requests_effects=0)` — Vervangt het script door de functie die in func is opgeslagen. De uitvoering keert terug naar het bytecode-script wanneer func TRUE retourneert.
+- `special(function:req)` — Roep een functie aan die in de tabel in data/specials.inc staat.
+- `specialvar(output:req, function:req)` — Roep een functie aan die in de tabel in data/specials.inc staat. De uitvoer van die functie (indien aanwezig) wordt naar de variabele output geschreven.
+- `waitstate(.byte SCR_OP_WAITSTATE)` — Blokkeert de scriptuitvoering totdat een opdracht of C-code deze handmatig deblokkeert. Dit wordt meestal gebruikt met specifieke opdrachten en specials. Het aanroepen van ScriptContext_Enable laat bijvoorbeeld de uitvoering doorgaan.
+- `delay(frames:req)` — Blokkeert de scriptuitvoering voor een aantal frames. (Pokemon Emerald loopt op iets minder dan 60 frames per seconde.)
+- `setflag(flag:req)` — Stelt flag naar TRUE.
+- `clearflag(flag:req)` — Stelt flag naar FALSE.
+- `checkflag(flag:req)` — Compares flag naar TRUE en stores de result in comparisonResult naar be used door goto_if, etc See additional _if_unset en _if_set macros
+- `initclock(hour:req, minute:req)` — Initializes de RTC`s local time offset naar de given hour en minute.
+- `dotimebasedevents(.byte SCR_OP_DOTIMEBASEDEVENTS)` — Updates local time met de RTC en runs time based events.
+- `gettime(.byte SCR_OP_GETTIME)` — Stelt de values of variabelen VAR_0x8000, VAR_0x8001, en VAR_0x8002 naar de huidige hour, minute, en tweede.
+- `gettimeofday(callnative ScrCmd_gettimeofday, requests_effects=1)` — Stelt de values of variabele VAR_0x8000 naar de time of day according naar those found in rtc.h. 0 = MORNING, 1 = DAY, 2 = EVENING, 3 = NIGHT
+- `playse(song:req)` — Speelt het opgegeven geluid af. Alleen één geluid kan tegelijk spelen; nieuwere geluiden onderbreken oudere.
+- `waitse(.byte SCR_OP_WAITSE)` — Blokkeert de scriptuitvoering totdat het huidige geluid (gestart door playse) klaar is met afspelen.
+- `playfanfare(song:req)` — Speelt de fanfare af die door het opgegeven nummer wordt bepaald. Als het nummer geen fanfare is, speelt het in plaats daarvan het eerste nummer in sFanfares.
+- `waitfanfare(.byte SCR_OP_WAITFANFARE)` — Blokkeert de scriptuitvoering totdat alle huidige fanfares klaar zijn.
+- `playbgm(song:req, save_song:req)` — Speelt het opgegeven nummer. Als save_song TRUE is, wordt het nummer opgeslagen alsof savebgm ermee was aangeroepen.
+- `savebgm(song:req)` — Slaat het opgegeven nummer op om later af te spelen. Opgeslagen muziek kan worden afgespeeld wanneer Overworld_PlaySpecialMapMusic wordt aangeroepen. Dit gebeurt bij het verlaten van de meeste warps.
+- `fadedefaultbgm(.byte SCR_OP_FADEDEFAULTBGM)` — Fade het huidige nummer over naar het standaardnummer van de map.
+- `fadenewbgm(song:req)` — Fade het huidige nummer over naar het opgegeven nummer.
+- `fadeoutbgm(speed:req)` — Fadeert het huidige nummer uit.
+- `fadeinbgm(speed:req)` — Fadeert het eerder gespeelde nummer weer in.
+- `formatwarp(map:req, a, b, c)` — Hulpmacro voor warp-opdrachten die hun argumenten formatteert. Het laat warp-opdrachten toe om ofwel 1. een geldige id voor een warp-locatie te geven, of 2. een paar x/y-coördinaten te gebruiken. Beide kunnen worden opgegeven, maar minimaal één wordt genegeerd door SetPlayerCoordsFromWarp. Als er geen argumenten worden opgegeven, gebruikt het dummyargumenten en stuurt de warp de speler naar het midden van de map. Voorbeelden van geldige invoer voor een warp-opdracht: - warp MAP, x, y - warp MAP, warpId - warp MAP - warp MAP, warpId, x, y
+- `warp(map:req, a, b, c)` — Warp de speler naar de opgegeven map. Warp-opdrachten kunnen ofwel de id van een warp-locatie op de doelmap gebruiken, of een paar x/y-coördinaten om daar direct heen te gaan.
+- `warpsilent(map:req, a, b, c)` — Warp de speler naar de opgegeven map zonder geluidseffect te spelen. Warp-opdrachten kunnen ofwel de id van een warp-locatie op de doelmap gebruiken, of een paar x/y-coördinaten om daar direct heen te gaan.
+- `warpdoor(map:req, a, b, c)` — Warp de speler naar de opgegeven map en speelt een deur-open animatie voordat de speler er omhoog instapt. Warp-opdrachten kunnen ofwel de id van een warp-locatie op de doelmap gebruiken, of een paar x/y-coördinaten om daar direct heen te gaan.
+- `warphole(map:req)` — Warp de speler naar een andere map met een hole-animatie. Als de opgegeven map MAP_UNDEFINED is, gebruikt het in plaats daarvan de map die door setholewarp is ingesteld. In beide gevallen worden de doelcoördinaten op de doelmap de huidige positie van de speler.
+- `warpteleport(map:req, a, b, c)` — Warp de speler naar de opgegeven map met een teleport-effect. Het effect lijkt op warpspinenter, maar deze warp fadeert eerst uit en behoudt niet de oorspronkelijke kijkrichting. Warp-opdrachten kunnen ofwel de id van een warp-locatie op de doelmap gebruiken, of een paar x/y-coördinaten om daar direct heen te gaan.
+- `setwarp(map:req, a, b, c)` — Stelt de warp-bestemming in die later gebruikt wordt. Warp-opdrachten kunnen ofwel de id van een warp-locatie op de doelmap gebruiken, of een paar x/y-coördinaten om daar direct heen te gaan.
+- `setdynamicwarp(map:req, a, b, c)` — Stelt de dynamische warp-bestemming in. Warps met een doelmap van MAP_DYNAMIC richten zich op deze bestemming. Warp-opdrachten kunnen ofwel de id van een warp-locatie op de doelmap gebruiken, of een paar x/y-coördinaten om daar direct heen te gaan.
+- `setdivewarp(map:req, a, b, c)` — Stelt de bestemming in waar duiken of opduiken de speler naartoe brengt. Dit geldt alleen als de huidige map geen duik/opheem-verbinding heeft. Als er wel een overeenkomende mapverbinding is, wordt in plaats daarvan die map en de huidige coördinaten van de speler als bestemming gebruikt. Warp-opdrachten kunnen ofwel de id van een warp-locatie op de doelmap gebruiken, of een paar x/y-coördinaten om daar direct heen te gaan.
+- `setholewarp(map:req, a=0, b=0, c)` — Stelt de bestemming in waarheen de speler valt wanneer hij in een gat valt. Hoewel het de x/y-coördinaten en warpId accepteert en instelt, worden die uiteindelijk genegeerd. Dit wordt alleen gebruikt om de map te bepalen waar de speler naartoe moet vallen. De exacte locatie op die map wordt bepaald door warphole. Warp-opdrachten kunnen ofwel de id van een warp-locatie op de doelmap gebruiken, of een paar x/y-coördinaten om daar direct heen te gaan.
+- `getplayerxy(x:req, y:req)` — Haalt de nulgebaseerde x- en y-coördinaten van de speler in de map op en slaat ze op in de opgegeven variabelen.
+- `getpartysize(.byte SCR_OP_GETPARTYSIZE)` — Haalt het aantal Pokémon in de partij van de speler op en slaat dat op in VAR_RESULT.
+- `additem(itemId:req, quantity=1)` — Probeert quantity van het opgegeven item aan de tas van de speler toe te voegen. Als de speler genoeg ruimte heeft, wordt het item toegevoegd en wordt VAR_RESULT op TRUE gezet; anders wordt VAR_RESULT op FALSE gezet.
+- `removeitem(itemId:req, quantity=1)` — Verwijdert quantity van het opgegeven item uit de tas van de speler. Als de speler minder dan quantity heeft, wordt er niets verwijderd en wordt VAR_RESULT op FALSE gezet. Anders wordt VAR_RESULT op TRUE gezet.
+- `checkitemspace(itemId:req, quantity=1)` — Controleert of de speler genoeg ruimte in de tas heeft om quantity meer van het opgegeven item op te slaan. Zet VAR_RESULT op TRUE als er ruimte is, of op FALSE als er geen ruimte is.
+- `checkitem(itemId:req, quantity=1)` — Controleert als de speler has quantity of meer of de opgegeven item in their Bag. Stelt VAR_RESULT naar TRUE als de speler has enough of de item, of FALSE als they have fewer dan quantity of de item.
+- `checkitemtype(itemId:req)` — Controleert die Bag pocket de opgegeven item belongs in, en writes de pocket value (POCKET_*) naar VAR_RESULT. Dit is used naar show de name of de proper Bag pocket wanneer de speler receives an item via callstd.
+- `addpcitem(itemId:req, quantity=1)` — Voegt toe quantity of de opgegeven item naar de speler's PC.
+- `checkpcitem(itemId:req, quantity=1)` — Controleert voor quantity of de opgegeven item in de speler's PC.
+- `adddecoration(decoration:req)` — Voegt toe een decoration naar de speler's PC.
+- `removedecoration(decoration:req)` — Verwijdert een decoration van de speler's PC.
+- `checkdecor(decoration:req)` — Controleert voor decoration in de speler's PC.
+- `checkdecorspace(decoration:req)` — Controleert als de speler has enough space in their PC naar hold de decoration. Stelt VAR_RESULT naar TRUE als there is room, of FALSE is there is no room.
+- `applymovement(localId:req, movements:req, map)` — Applies de movement data op movements naar de opgegeven (localId) object. Als no map is opgegeven, then de huidige map is used.
+- `waitmovement(localId=LOCALID_NONE, map)` — Blokkeert script execution tot de movements being applied naar de opgegeven (localId) object finish. Als localId is LOCALID_NONE (0), then de id of de laatste-moved object zal be used instead. Als de opgegeven object is niet currently being manipulated met applymovement, then dit command does nothing. Als no map is opgegeven, then de huidige map is used.
+- `removeobject(localId:req, map)` — Probeert naar despawn de opgegeven (localId) object on de opgegeven map. It also sets de object's visibility flag als it has one. Als no map is opgegeven, then de huidige map is used.
+- `addobject(localId:req, map)` — Probeert naar spawn de opgegeven (localId) object de opgegeven map. Note dat unlike removeobject dit does niet modify de object's flag. Als no map is opgegeven, then de huidige map is used.
+- `setobjectxy(localId:req, x:req, y:req)` — Stelt de opgegeven (localId) object's position on de huidige map.
+- `showobjectat(localId:req, map:req)` — Stelt de opgegeven object's invisibility naar FALSE.
+- `hideobjectat(localId:req, map:req)` — Stelt de opgegeven object's invisibility naar TRUE.
+- `faceplayer(.byte SCR_OP_FACEPLAYER)` — Draait de currently geselecteerde object (als there is one) naar face de speler.
+- `turnobject(localId:req, direction:req)` — Draait de opgegeven object in de opgegeven direction.
+- `trainerbattle(type:req localIdA:req, trainer_a:req, intro_text_a:req, lose_text_a:req, event_script_a:req, localIdB:req, trainer_b:req, intro_text_b:req, lose_text_b:req, event_script_b:req, victory_text:req, cannot_battle:req, isDouble:req, playMusicA:req, playMusicB:req, isRematch:req)` — Configures de arguments voor een trainer battle, then jumps naar de appropriate script in scripts/trainer_battle.inc
+- `trainerbattle_single(trainer:req, intro_text:req, lose_text:req, event_script=FALSE, music=TRUE)` — Start een single trainer battle. Takes een trainer, intro text, loss text, en an optional event script. Wanneer used met an event script, you kan also pass in an optional flag naar disable music
+- `trainerbattle_double(trainer:req, intro_text:req, lose_text:req, not_enough_pkmn_text:req, event_script=FALSE, music=TRUE)` — Start een double trainer battle. Takes een trainer, intro text, loss text, text voor wanneer you have too few pokemon en an optional event script. Wanneer used met an event script you kan pass in an optional flag naar disable music
+- `trainerbattle_rematch(trainer:req, intro_text:req, lose_text:req)` — Start een rematch battle. Takes een trainer, intro text en loss text
+- `trainerbattle_rematch_double(trainer:req, intro_text:req, lose_text:req, not_enough_pkmn_text:req)` — Start een rematch double battle. Takes een trainer, intro text, loss text, en text voor wanneer you have too few pokemon
+- `trainerbattle_no_intro(trainer:req, lose_text:req)` — Start een trainer battle, skipping intro text. Takes een trainer en loss text
+- `trainerbattle_two_trainers(trainer_a:req, lose_text_a:req, trainer_b:req, lose_text_b:req)` — Start een double battle met de speler against two trainers Takes two trainers en defeat text voor each
+- `dotrainerbattle(.byte SCR_OP_DOTRAINERBATTLE)` — Start een trainer battle met de battle information stored in RAM (usually door de scripts in trainer_battle.inc, die zijn run door trainerbattle), en blocks script execution tot de battle finishes.
+- `gotopostbattlescript(.byte SCR_OP_GOTOPOSTBATTLESCRIPT)` — Goes naar address na de trainerbattle command (called door de battle functions, see battle_setup.c)
+- `gotobeatenscript(.byte SCR_OP_GOTOBEATENSCRIPT)` — Goes naar address opgegeven in de trainerbattle command (called door de battle functions, see battle_setup.c)
+- `checktrainerflag(trainer:req)` — Controleert als de trainer has been defeated door de speler (door comparing de flag 'trainer + TRAINER_FLAGS_START' naar TRUE).
+- `settrainerflag(trainer:req)` — Stelt de trainer flag (trainer + TRAINER_FLAGS_START) naar TRUE (defeated).
+- `cleartrainerflag(trainer:req)` — Stelt de trainer flag (trainer + TRAINER_FLAGS_START) naar FALSE (niet defeated).
+- `setobjectxyperm(localId:req, x:req, y:req)` — Stelt de coördinaten of an object's template, so dat als de sprite goes off screen it'll still be there wanneer it comes back on screen.
+- `copyobjectxytoperm(localId:req)` — Kopieert een live object event's xy position naar its template, so dat als de sprite goes off screen it'll still be there wanneer it comes back on screen.
+- `setobjectmovementtype(localId:req, movementType:req)` — Stelt de movement type (MOVEMENT_TYPE_*) voor an object's template.
+- `waitmessage(.byte SCR_OP_WAITMESSAGE)` — Als een standard bericht box (of its text) is being drawn on-screen, dit command blocks script execution tot de box en its text have been fully drawn.
+- `message(text:req)` — Start displaying een standard bericht box containing de opgegeven text. Als text is een pointer, then de string op dat offset zal be loaded en used. Als text is NULL, then de value of script data 0 zal be treated as een pointer naar de text. The 'loadword 0' in msgbox sets dit value, voor instance.
+- `closemessage(.byte SCR_OP_CLOSEMESSAGE)` — Sluit de huidige bericht box.
+- `lockall(.byte SCR_OP_LOCKALL)` — Bevriezen alle objects immediately except de speler. The speler is frozen once their movement is finished.
+- `lock(.byte SCR_OP_LOCK)` — Bevriezen alle objects immediately except de speler en de geselecteerde object. The speler en geselecteerde object zijn frozen once their movement is finished.
+- `releaseall(.byte SCR_OP_RELEASEALL)` — Hervat normal movement voor alle objects on-screen, en closes elke standard bericht boxes dat zijn still open.
+- `release(.byte SCR_OP_RELEASE)` — Hervat normal movement voor de geselecteerde object (als there is one) en de speler. Also closes elke standard bericht boxes dat zijn still open.
+- `waitbuttonpress(.byte SCR_OP_WAITBUTTONPRESS)` — Blokkeert script execution tot de speler presses de A of B button.
+- `yesnobox(x:req, y:req)` — Toont een YES/NO multichoice box op de opgegeven coördinaten, en blocks script execution tot de gebruiker makes een selectie. Their selectie is stored in VAR_RESULT as NO (0) of YES (1). Pressing B is equivalent naar answering NO
+- `multichoice(x:req, y:req, multichoiceId:req, ignoreBPress:req)` — Toont een multichoice box van die de gebruiker kan choose een selectie, en blocks script execution tot een selectie is made. Lists of opties zijn predefined (sMultichoiceLists) en de one naar be used is opgegeven met multichoiceId. Als ignoreBPress is zet naar een non-zero value, then de gebruiker zal niet be allowed naar back out of de multichoice met de B button.
+- `multichoicedefault(x:req, y:req, multichoiceId:req, default:req, ignoreBPress:req)` — Toont een multichoice box van die de gebruiker kan choose een selectie, en blocks script execution tot een selectie is made. Lists of opties zijn predefined (sMultichoiceLists) en de one naar be used is opgegeven met multichoiceId. The default argument determines de initial position of de cursor wanneer de box is eerste opened; it is zero-indexed, en als it is too large, it is treated as 0. Als ignoreBPress is zet naar een non-zero value, then de gebruiker zal niet be allowed naar back out of de multichoice met de B button.
+- `multichoicegrid(x:req, y:req, multichoiceId:req, per_row:req, ignoreBPress:req)` — Toont een multichoice box van die de gebruiker kan choose een selectie, en blocks script execution tot een selectie is made. Lists of opties zijn predefined (sMultichoiceLists) en de one naar be used is opgegeven met multichoiceId. The per_row argument determines how many list items zal be shown on een single row of de box. Als ignoreBPress is zet naar een non-zero value, then de gebruiker zal niet be allowed naar back out of de multichoice met de B button.
+- `drawbox(.byte SCR_OP_DRAWBOX)` — Nopped in Emerald.
+- `erasebox(left:req, top:req, right:req, bottom:req)` — Genopte uitvoering in Emerald, maar verbruikt nog steeds parameters.
+- `drawboxtext(left:req, top:req, multichoiceId:req, ignoreBPress:req)` — Genopte uitvoering in Emerald, maar verbruikt nog steeds parameters.
+- `showmonpic(species:req, x:req, y:req)` — Toont een box containing de front sprite voor de opgegeven Pokemon species.
+- `hidemonpic(.byte SCR_OP_HIDEMONPIC)` — Hides de box displayed door showmonpic.
+- `showcontestpainting(winnerId:req)` — Draws an image of de winner of de contest. winnerId is elke CONTEST_WINNER_* constant.
+- `braillemessage(text:req)` — Toont de given string as braille text in een standard bericht box. The string moet use de.braille directive naar convert text naar braille, en be preceded door brailleformat. The brailleformat data is skipped over (in RS, deze bytes determined de box's size en position, but in Emerald deze zijn calculated automatically).
+- `brailleformat(winLeft:req, winTop:req, winRight:req, winBottom:req, textLeft:req, textTop:req)` — Formatting voor de braille window, naar be put op de start of een pointer used door braillemessage. These zijn van RS en zijn ignored in Emerald (see ScrCmd_braillemessage, en comment above)
+- `givemon(species:req, level:req, item, ball, nature, abilityNum, gender, hpEv, atkEv, defEv, speedEv, spAtkEv, spDefEv, hpIv, atkIv, defIv, speedIv, spAtkIv, spDefIv, move1, move2, move3, move4, isShiny, gmaxFactor, teraType, dmaxLevel)` — Gives de speler een Pokémon of de opgegeven species en level, en allows naar customize extra parameters. VAR_RESULT zal be zet naar MON_GIVEN_TO_PARTY, MON_GIVEN_TO_PC, of MON_CANT_GIVE depending on de outcome.
+- `createmon(side:req, slot:req, species:req, level:req, item, ball, nature, abilityNum, gender, hpEv, atkEv, defEv, speedEv, spAtkEv, spDefEv, hpIv, atkIv, defIv, speedIv, spAtkIv, spDefIv, move1, move2, move3, move4, isShiny, gmaxFactor, teraType, dmaxLevel)` — Creates een mon voor een given party en slot anders
+- `giveegg(species:req)` — Gives de speler an Egg of de opgegeven species. VAR_RESULT zal be zet naar MON_GIVEN_TO_PARTY, MON_GIVEN_TO_PC, of MON_CANT_GIVE depending on de outcome.
+- `setmonmove(partyIndex:req, slot:req, move:req)` — Replaces de move op 'slot' of de Pokémon in de speler's party op 'partyIndex' met de opgegeven move. Als een value greater dan PARTY_SIZE is given voor partyIndex it zal use de laatste Pokémon in de party instead. Note dat dit means in vanilla een value equal naar PARTY_SIZE voor partyIndex zal go out of bounds.
+- `checkfieldmove(fieldMove:req, checkUnlocked=FALSE)` — Controleert als op least one Pokemon in de speler's party knows de opgegeven field move en als de field move is unlocked. Als so, VAR_RESULT is zet naar de (zero-indexed) slot number of de eerste Pokemon dat knows de move. Als niet, VAR_RESULT is zet naar PARTY_SIZE. VAR_0x8004 is also zet naar dit Pokemon's species.
+- `stringvar(id:req)` — Zet om STR_VAR_1, STR_VAR_2, of STR_VAR_3 naar its corresponding index naar sScriptStringVars (0, 1, of 2). Als given anything else it zal output it directly. Note: Because de STR_VAR_# arguments given naar dit macro zijn niet part of een processed string they zijn niet replaced met their charmap values, they zijn just passed as de literal characters "STR_VAR_#".
+- `bufferspeciesname(stringVarId:req, species:req)` — Schrijft de name of de given Pokemon species naar de opgegeven buffer.
+- `bufferleadmonspeciesname(stringVarId:req)` — Schrijft de name of de species of de eerste Pokemon in de speler's party naar de opgegeven buffer.
+- `bufferpartymonnick(stringVarId:req, slot:req)` — Schrijft de nickname of de Pokemon in 'slot' (zero-indexed) of de speler's party naar de opgegeven buffer. Als an empty of invalid slot is opgegeven, ten spaces ("") zijn written naar de buffer.
+- `bufferitemname(stringVarId:req, item:req)` — Schrijft de name of de opgegeven item naar de opgegeven buffer. Als itemId is >= ITEMS_COUNT, then de name of ITEM_NONE ("????????") is buffered instead.
+- `bufferdecorationname(stringVarId:req, decoration:req)` — Schrijft de name of de opgegeven decoration naar de opgegeven buffer.
+- `buffermovename(stringVarId:req, move:req)` — Schrijft de name of de opgegeven move naar de opgegeven buffer.
+- `buffernumberstring(stringVarId:req, input:req)` — Zet om de value of input naar een decimal string, en writes dat string naar de opgegeven buffer.
+- `bufferstdstring(stringVarId:req, index:req)` — Schrijft de given standard string (STDSTRING_*) naar de opgegeven buffer. Invalid std string ids zijn niet handled.
+- `bufferstring(stringVarId:req, text:req)` — Kopieert de string op de given pointer naar de opgegeven buffer.
+- `pokemart(products:req)` — Opent de Pokemart system, offering de opgegeven products voor sale. Products moet be een list of.2byte item values preceded door an.align 2
+- `pokemartlistend(.2byte ITEM_NONE)` — Used as de endpoint voor een Pokemart item list
+- `pokemartdecoration(products:req)` — Opent de Pokemart system en treats de list of items as decorations. Products moet be een list of.2byte decoration values preceded door an.align 2
+- `pokemartdecoration2(products:req)` — Identical naar pokemartdecoration, but met slight changes naar de clerk dialogue. See uses of MART_TYPE_DECOR2.
+- `playslotmachine(id:req)` — Start omhoog de slot machine minigame. id is een SLOT_MACHINE_* value dat influences probabilities of certain reel outcomes.
+- `setberrytree(treeId:req, berry:req, growthStage:req)` — Stelt een berry tree's berry en growth stage. treeId is elke BERRY_TREE_* constant (an index naar berryTrees in SaveBlock1), berry is elke ITEM_TO_BERRY(ITEM_BERRY_NAME) value, en growthStage is elke BERRY_STAGE_* constant.
+- `choosecontestmon(.byte SCR_OP_CHOOSECONTESTMON)` — Opent de party menu naar select een Pokemon voor een contest.
+- `startcontest(.byte SCR_OP_STARTCONTEST)` — Start de appeals round of een contest.
+- `showcontestresults(.byte SCR_OP_SHOWCONTESTRESULTS)` — Shows de results screen of een contest.
+- `contestlinktransfer(.byte SCR_OP_CONTESTLINKTRANSFER)` — Start communication naar initialize een link contest.
+- `random(limit:req)` — Stores een random integer between 0 en limit (exclusive of limit) in VAR_RESULT.
+- `addmoney(value:req, disable=0)` — Voegt toe value naar de speler's money. Als adding 'value' money would exceed MAX_MONEY, de speler's money is zet naar MAX_MONEY. Als 'disable' is zet naar anything but 0 then dit command does nothing.
+- `removemoney(value:req, disable=0)` — Subtracts value van de speler's money. Als de speler has minder dan 'value' money, their money is zet naar 0. Als 'disable' is zet naar anything but 0 then dit command does nothing.
+- `checkmoney(value:req, disable=0)` — Controleert als de speler has money >= value. VAR_RESULT is zet naar TRUE als de speler has enough money, of FALSE als they do niet. Als 'disable' is zet naar anything but 0 then dit command does nothing.
+- `showmoneybox(x:req, y:req, disable=0)` — Maakt een window showing how much money de speler has. Als 'disable' is zet naar anything but 0 then dit command does nothing.
+- `hidemoneybox(.byte SCR_OP_HIDEMONEYBOX)` — Destroys de window created door showmoneybox. Consumption of de x en y arguments was dummied out.
+- `updatemoneybox(disable=0)` — Updates de window created door showmoneybox. Consumption of de x en y arguments was dummied out. Als 'disable' is zet naar anything but 0 then dit command does nothing.
+- `getpokenewsactive(newsKind:req)` — Gets whether de effects of de opgegeven PokeNews program zijn active. newsKind is een POKENEWS_* constant.
+- `fadescreen(mode:req)` — Fades de screen naar en van black en white. Modes zijn FADE_(TO/FROM)_(WHITE/BLACK)
+- `fadescreenspeed(mode:req, speed:req)` — Fades de screen naar en van black en white. Modes zijn FADE_(TO/FROM)_(WHITE/BLACK)
+- `setflashlevel(level:req)` — Stelt de flash level. A level of 0 is fully bright, een level of 1 is de largest flash radius, een level of 7 is de smallest flash radius, een level of 8 is fully black.
+- `animateflash(level:req)` — Animates de flash radius van its huidige size naar de size it would be op de opgegeven level. Note dat dit does niet actually change de huidige flash level. It's typically used just voordat een setflashlevel.
+- `messageautoscroll(text:req)` — Automatically scrolls door de bericht zonder speler input en op een fixed speed.
+- `dofieldeffect(animation:req)` — Executes de opgegeven field effect animation (FLDEFF_*).
+- `setfieldeffectargument(argNum:req, value:req)` — Stelt de field effect argument op index 'argNum' naar 'value.'
+- `waitfieldeffect(animation:req)` — Blokkeert script execution tot alle playing field effect animations complete.
+- `setrespawn(heallocation:req)` — Stelt die healing locatie (HEAL_LOCATION_*) de speler zal return naar als alle of de Pokemon in their party faint.
+- `checkplayergender(.byte SCR_OP_CHECKPLAYERGENDER)` — Controleert de speler's gender. Stores de result (MALE (0) of FEMALE (1)) in VAR_RESULT.
+- `playmoncry(species:req, mode:req)` — Plays de cry of de given species. Mode is elke CRY_MODE_* constant. You kan use waitmoncry naar block script execution tot de cry finishes.
+- `setmetatile(x:req, y:req, metatileId:req, impassable:req)` — Set de metatile op (x, y) on de huidige map naar de given metatile en impassability.
+- `resetweather(.byte SCR_OP_RESETWEATHER)` — Queues een weather change naar de default weather voor de map.
+- `setweather(type:req)` — Queues een weather change naar type weather.
+- `doweather(.byte SCR_OP_DOWEATHER)` — Executes de weather change queued met resetweather of setweather. The huidige weather zal smoothly fade naar de queued weather.
+- `setstepcallback(stepCbId:req)` — Enables de overworld task opgegeven door stepCbId (STEP_CB_*). Only 1 kan be active op een time. See src/field_tasks.c voor meer.
+- `setmaplayoutindex(index:req)` — Stelt de huidige map layout naar de one opgegeven door index (LAYOUT_*). Dit moet be done voordat de layout is loaded, typically in de ON_TRANSITION map script.
+- `setobjectsubpriority(localId:req, map:req, subpriority:req)` — Stelt de opgegeven object's sprite's subpriority, en sets fixedPriority naar TRUE. Only used naar hide de speler en Briney behind de boat.
+- `resetobjectsubpriority(localId:req, map:req)` — Stelt de opgegeven object's fixedPriority naar FALSE. Does niet change de subpriority field.
+- `createvobject(graphicsId:req, id:req, x:req, y:req, elevation=3, direction=DIR_SOUTH)` — Maakt een sprite met object graphics. Used wanneer creating large groups of static NPCs dat exceed de object event limit (e.g. Contest / Battle Dome audiences en Union Room group members). The opgegeven id kan be used naar refer naar de sprite again later met turnvobject.
+- `turnvobject(id:req, direction:req)` — Draait een sprite created met createvobject.
+- `opendoor(x:req, y:req)` — Opent de door metatile op (x, y) met an animation.
+- `closedoor(x:req, y:req)` — Sluit de door metatile op (x, y) met an animation.
+- `waitdooranim(.byte SCR_OP_WAITDOORANIM)` — Waits voor de door animation started met opendoor of closedoor naar finish.
+- `setdooropen(x:req, y:req)` — Stelt de door metatile op (x, y) naar be open zonder an animation.
+- `setdoorclosed(x:req, y:req)` — Stelt de door metatile op (x, y) naar be closed zonder an animation.
+- `addelevmenuitem(a:req, b:req, c:req, d:req)` — Consumes its parameters en does nothing. It is implemented but unused in Ruby/Sapphire.
+- `showelevmenu(.byte SCR_OP_SHOWELEVMENU)` — Doet niets. It is implemented but unused in Ruby/Sapphire.
+- `checkcoins(out:req)` — Gets de number of coins de speler has en stores it in de variabele 'out'.
+- `addcoins(count:req)` — Gives 'count' coins naar de speler, omhoog naar een total of MAX_COINS. Als de speler already has MAX_COINS then VAR_RESULT is zet naar TRUE, anders it is zet naar FALSE.
+- `removecoins(count:req)` — Takes 'count' coins van de speler. Als de speler has fewer dan 'count' coins then no coins zijn taken en VAR_RESULT is zet naar TRUE. Anders VAR_RESULT is zet naar FALSE.
+- `setwildbattle(species:req, level:req, item=ITEM_NONE, species2=SPECIES_NONE, level2=0, item2=ITEM_NONE)` — Prepares naar start een wild battle against een 'species' op 'level' holding 'item'. Als 'species2' is something other dan SPECIES_NONE, then de battle is een double battle dat is also against 'species2' op 'level2' holding 'item2'. Running dit command zal niet affect normal wild battles. You start de prepared battle met dowildbattle. Als de speler only has one Pokemon, een scripted double battle zal be buggy.
+- `dowildbattle(.byte SCR_OP_DOWILDBATTLE)` — Start een wild battle against de Pokemon generated door setwildbattle. Blokkeert script execution tot de battle finishes.
+- `setvaddress(pointer:req)` — Stelt een relative address naar be used door de other vcommands as part of een Mystery Gift script.
+- `vgoto(destination:req)` — Equivalent naar goto met de relative address zet door setvaddress.
+- `vcall(destination:req)` — Equivalent naar call met de relative address zet door setvaddress.
+- `vgoto_if(condition:req, destination:req)` — Equivalent naar goto_if met de relative address zet door setvaddress.
+- `vcall_if(condition:req, destination:req)` — Equivalent naar call_if met de relative address zet door setvaddress.
+- `vmessage(text:req)` — Equivalent naar bericht met de relative address zet door setvaddress.
+- `vbuffermessage(text:req)` — Expands de gegeven tekst op de pointer (- de relative address zet door setvaddress) naar gStringVar4
+- `vbufferstring(stringVarIndex:req, text:req)` — Equivalent naar bufferstring met de relative address zet door setvaddress.
+- `showcoinsbox(x:req, y:req)` — Create een window showing how many Coins de speler has.
+- `hidecoinsbox(x:req, y:req)` — Destroys de window created door showcoins. It consumes its arguments but doesn't use them.
+- `updatecoinsbox(x:req, y:req)` — Updates de window created door showcoins. It consumes its arguments but doesn't use them.
+- `incrementgamestat(stat:req)` — Increases de value of de opgegeven game stat door 1. The maximum value of een stat is 0xFFFFFF. See include/constants/game_stat.h
+- `setescapewarp(map:req, a, b, c)` — Stelt de bestemming dat met an Escape Rope of Dig zal take de speler naar. Warp commands kan be given either de id of die warp locatie naar go naar on de bestemming map of een pair of x/y coördinaten naar go naar directly on de bestemming map.
+- `waitmoncry(.byte SCR_OP_WAITMONCRY)` — Blokkeert script execution tot cry finishes.
+- `bufferboxname(stringVarId:req, box:req)` — Schrijft de name of de opgegeven PC box naar de opgegeven buffer.
+- `textcolor(color:req)` — Alleen gebruikt in FireRed/LeafGreen, doet niets in Emerald.
+- `loadhelp(text:req)` — Alleen gebruikt in FireRed/LeafGreen, doet niets in Emerald.
+- `unloadhelp(.byte SCR_OP_UNLOADHELP)` — Alleen gebruikt in FireRed/LeafGreen, doet niets in Emerald.
+- `signmsg(.byte SCR_OP_SIGNMSG)` — Alleen gebruikt in FireRed/LeafGreen, doet niets in Emerald.
+- `normalmsg(.byte SCR_OP_NORMALMSG)` — Alleen gebruikt in FireRed/LeafGreen, doet niets in Emerald.
+- `comparehiddenvar(a:req, value:req)` — Alleen gebruikt in FireRed/LeafGreen, doet niets in Emerald.
+- `setmodernfatefulencounter(slot:req)` — Stelt de modernFatefulEncounter bit voor de Pokemon in de opgegeven slot of de speler's party.
+- `checkmodernfatefulencounter(slot:req)` — Controleert als de modernFatefulEncounter bit is zet voor de Pokemon in de opgegeven slot of de speler's party. Als it isn't zet, VAR_RESULT is TRUE. Als de bit is zet (of als de opgegeven slot is empty of invalid), VAR_RESULT is FALSE.
+- `trywondercardscript(.byte SCR_OP_TRYWONDERCARDSCRIPT)` — Jumps naar de ram script opgeslagen van een Wonder Card. Als there is no valid opgeslagen Wonder Card of als de ram script is invalid then dit does nothing.
+- `setworldmapflag(worldmapflag:req)` — Alleen gebruikt in FireRed/LeafGreen, doet niets in Emerald.
+- `warpspinenter(map:req, a, b, c)` — Warps de speler naar de opgegeven map met een teleport effect. Effect is similar naar warpteleport, but dit warp has no fade out en maintains de original facing direction. Warp commands kan be given either de id of die warp locatie naar go naar on de bestemming map of een pair of x/y coördinaten naar go naar directly on de bestemming map.
+- `setmonmetlocation(slot:req, location:req)` — Changes de locatie waar de speler caught de Pokemon in de opgegeven slot of their party.
+- `moverotatingtileobjects(puzzleNumber:req)` — For de rotating tile puzzles in Mossdeep Gym / Trick House Room 7. Moves de objects one rotation on de colored puzzle opgegeven door puzzleNumber.
+- `turnrotatingtileobjects(.byte SCR_OP_TURNROTATINGTILEOBJECTS)` — For de rotating tile puzzles in Mossdeep Gym / Trick House Room 7. Updates de facing direction of alle objects on de puzzle tiles
+- `initrotatingtilepuzzle(isTrickHouse:req)` — For de rotating tile puzzles in Mossdeep Gym / Trick House Room 7. Allocates memory voor de puzzle objects. isTrickHouse is needed naar determine die of de two maps de puzzle is on, in order naar know waar in de tileset de puzzle tiles start (TRUE voor Trick House Room, FALSE voor Mossdeep Gym).
+- `freerotatingtilepuzzle(.byte SCR_OP_FREEROTATINGTILEPUZZLE)` — For de rotating tile puzzles in Mossdeep Gym / Trick House Room 7. Frees de memory allocated voor de puzzle objects.
+- `warpmossdeepgym(map:req, a, b, c)` — Warp used door de teleport tiles in de Mossdeep Gym. Plays SE_WARP_IN en does een simple fade transition. Also skips reloading object events door setting SKIP_OBJECT_EVENT_LOAD. Warp commands kan be given either de id of die warp locatie naar go naar on de bestemming map of een pair of x/y coördinaten naar go naar directly on de bestemming map.
+- `selectapproachingtrainer(.byte SCR_OP_SELECTAPPROACHINGTRAINER)` — Stelt de geselecteerde object naar de id of de currently approaching trainer.
+- `lockfortrainer(.byte SCR_OP_LOCKFORTRAINER)` — Bevriezen alle objects immediately except de speler en de approaching trainers. The speler en trainers zijn frozen once their movement is finished.
+- `closebraillemessage(.byte SCR_OP_CLOSEBRAILLEMESSAGE)` — Destroys de window created door braillemessage.
+- `messageinstant(text:req)` — Prints en draws de bericht alle op once rather dan character door character. Does niet wait voor speler input naar continue.
+- `fadescreenswapbuffers(mode:req, nowait=0)` — Equivalent naar fadescreen but uses een hardware fade en darken/lighten blend modes, naar avoid modifying palettes op alle. Useful voor fade-out/fade-in zonder leaving de overworld of entering een new scene. Als nowait zet, doesn't wait voor de fade naar complete
+- `buffertrainerclassname(stringVarId:req, trainerId:req)` — Buffer de opgegeven trainer's class name naar de gegeven stringvar. Als de trainer id is >= TRAINERS_COUNT it zal be treated as TRAINER_NONE.
+- `buffertrainername(stringVarId:req, trainerId:req)` — Buffer de opgegeven trainer's name naar de gegeven stringvar. Als de trainer id is >= TRAINERS_COUNT it zal be treated as TRAINER_NONE.
+- `pokenavcall(text:req)` — Start een Pokenav call met de gegeven tekst.
+- `warpwhitefade(map:req, a, b, c)` — Warp met een fade naar white. Used tijdens de Sootopolis legendary fight. Warp commands kan be given either de id of die warp locatie naar go naar on de bestemming map of een pair of x/y coördinaten naar go naar directly on de bestemming map.
+- `buffercontestname(stringVarId:req, category:req)` — Buffer de name of de contest category naar de buffer. For voorbeeld een category of CONTEST_CATEGORY_COOL zal buffer de string "COOLNESS CONTEST".
+- `bufferitemnameplural(stringVarId:req, item:req, quantity:req)` — Schrijft de name of de opgegeven item naar de opgegeven buffer. Als 'item' is een Berry of ITEM_POKE_BALL en als de quantity is 2 of meer, de buffered string zal be pluralized ("IES" of "S" appended). Als de opgegeven item is >= ITEMS_COUNT then de name of ITEM_NONE ("????????") is buffered instead.
+- `_dynmultichoice(left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req argv:vararg)` — Geen omschrijving beschikbaar.
+- `dynmultichoice(left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, initialSelected:req, callbacks:req argv:vararg)` — Toont een multichoice box van die de gebruiker kan choose een selectie, en blocks script execution tot een selectie is made. Lists of opties zijn provided in argv. Als ignoreBPress is zet naar een non-zero value, then de gebruiker zal niet be allowed naar back out of de multichoice met de B button. For een simple menu supply DYN_MULTICHOICE_CB_NONE in callbacks.
+- `dynmultipush(name:req, id:req)` — Geen omschrijving beschikbaar.
+- `dynmultistack(left:req, top:req, ignoreBPress:req, maxBeforeScroll:req, shouldSort:req, initialSelected:req, callbacks:req)` — Geen omschrijving beschikbaar.
+- `goto_if_unset(flag:req, dest:req)` — Supplementary
+- `goto_if_set(flag:req, dest:req)` — Geen omschrijving beschikbaar.
+- `trycompare(jump:req, condition:req, a:req, b, c)` — Allows 'compare' followed door een conditional goto/call naar be combined naar een single statement. The following zijn voorbeelden of de two acceptable formats dit facilitates: compare VAR_RESULT, TRUE goto_if_eq MyScript - of - goto_if_eq VAR_RESULT, TRUE, MyScript The eerste two arguments naar dit macro zijn de base command, e.g. 'goto_if 1' voor goto_if_eq. The remaining arguments 'een, b, c' depend on de format: For een single statement, 'een' en 'b' zijn de values naar compare en 'c' is de bestemming pointer. For een statement preceded door een compare, 'een' is de bestemming pointer en 'b/c' zijn niet provided.
+- `goto_if_lt(a:req, b, c @ LESS THAN)` — Geen omschrijving beschikbaar.
+- `goto_if_eq(a:req, b, c @ EQUAL)` — Geen omschrijving beschikbaar.
+- `goto_if_gt(a:req, b, c @ GREATER THAN)` — Geen omschrijving beschikbaar.
+- `goto_if_le(a:req, b, c @ LESS THAN OR EQUAL)` — Geen omschrijving beschikbaar.
+- `goto_if_ge(a:req, b, c @ GREATER THAN OR EQUAL)` — Geen omschrijving beschikbaar.
+- `goto_if_ne(a:req, b, c @ NOT EQUAL)` — Geen omschrijving beschikbaar.
+- `call_if_unset(flag:req, dest:req)` — Geen omschrijving beschikbaar.
+- `call_if_set(flag:req, dest:req)` — Geen omschrijving beschikbaar.
+- `call_if_lt(a:req, b, c @ LESS THAN)` — Geen omschrijving beschikbaar.
+- `call_if_eq(a:req, b, c @ EQUAL)` — Geen omschrijving beschikbaar.
+- `call_if_gt(a:req, b, c @ GREATER THAN)` — Geen omschrijving beschikbaar.
+- `call_if_le(a:req, b, c @ LESS THAN OR EQUAL)` — Geen omschrijving beschikbaar.
+- `call_if_ge(a:req, b, c @ GREATER THAN OR EQUAL)` — Geen omschrijving beschikbaar.
+- `call_if_ne(a:req, b, c @ NOT EQUAL)` — Geen omschrijving beschikbaar.
+- `vgoto_if_eq(a:req, b, c)` — Geen omschrijving beschikbaar.
+- `vgoto_if_ne(a:req, b, c)` — Geen omschrijving beschikbaar.
+- `vgoto_if_unset(flag:req, dest:req)` — Geen omschrijving beschikbaar.
+- `vgoto_if_set(flag:req, dest:req)` — Geen omschrijving beschikbaar.
+- `goto_if_defeated(trainer:req, dest:req)` — Geen omschrijving beschikbaar.
+- `goto_if_not_defeated(trainer:req, dest:req)` — Geen omschrijving beschikbaar.
+- `call_if_defeated(trainer:req, dest:req)` — Geen omschrijving beschikbaar.
+- `call_if_not_defeated(trainer:req, dest:req)` — Geen omschrijving beschikbaar.
+- `switch(var:req)` — Geen omschrijving beschikbaar.
+- `case(condition:req, dest:req)` — Geen omschrijving beschikbaar.
+- `msgbox(text:req, type=MSGBOX_DEFAULT)` — Buffer de gegeven tekst en calls de relevant standard bericht script (see gStdScripts).
+- `giveitem(item:req, amount=1)` — Gives 'amount' of de opgegeven 'item' naar de speler en prints een bericht met fanfare. Als de speler doesn't have space voor alle de items then as many zijn added as possible, de bericht indicates there is no room, en VAR_RESULT is zet naar FALSE. Anders VAR_RESULT is zet naar TRUE, en de bericht indicates they have received de item(s).
+- `finditem(item:req, amount=1)` — For picking omhoog items in de overworld. Similar naar giveitem, but met different language en sets de flag of de laatste-talked naar object (de item de speler picked omhoog).
+- `givedecoration(decoration:req)` — Equivalent naar giveitem but voor een single decoration.
+- `register_matchcall(trainer:req)` — Registers de opgegeven trainer in Match Call en plays een fanfare met een notification bericht.
+- `dofieldeffectsparkle(x:req, y:req, priority:req)` — Does een sparkle field effect (e.g. wanneer de Trick Master is hiding) op de given coördinaten.
+- `braillemsgbox(text:req)` — Prints een braille bericht, waits voor an A of B press, then closes de bericht.
+- `seteventmon(species:req, level:req, item=ITEM_NONE)` — Maakt een Pokémon met de modernFatefulEncounter bit zet voor an encounter
+- `setdynamicaifunc(func:req)` — Geen omschrijving beschikbaar.
+- `settotemboost(battler:req, atk=0,def=0,speed=0,spatk=0,spdef=0,acc=0,evas=0)` — Set omhoog een totem boost voor de next battle. 'battler' is de position of de mon you want naar gain een boost. see B_POSITION_xx in include/constants/battle.h. The rest of de arguments zijn de stat change values naar each stat. For voorbeeld, giving de eerste opponent +1 naar atk en -2 naar speed would be: settotemboost B_POSITION_OPPONENT_LEFT, 1, 0, -2
+- `totemboost_atk1(battler:req)` — Useful totem boost macros
+- `totemboost_def1(battler:req)` — Geen omschrijving beschikbaar.
+- `totemboost_speed1(battler:req)` — Geen omschrijving beschikbaar.
+- `totemboost_spatk1(battler:req)` — Geen omschrijving beschikbaar.
+- `totemboost_spdef1(battler:req)` — Geen omschrijving beschikbaar.
+- `totemboost_acc1(battler:req)` — Geen omschrijving beschikbaar.
+- `totemboost_evas1(battler:req)` — Geen omschrijving beschikbaar.
+- `totemboost_atk2(battler:req)` — Geen omschrijving beschikbaar.
+- `totemboost_def2(battler:req)` — Geen omschrijving beschikbaar.
+- `totemboost_speed2(battler:req)` — Geen omschrijving beschikbaar.
+- `totemboost_spatk2(battler:req)` — Geen omschrijving beschikbaar.
+- `totemboost_spdef2(battler:req)` — Geen omschrijving beschikbaar.
+- `totemboost_acc2(battler:req)` — Geen omschrijving beschikbaar.
+- `totemboost_evas2(battler:req)` — Geen omschrijving beschikbaar.
+- `tryspecialevo(evoMethod:req, canStopEvo=TRUE, tryMultiple=TRUE)` — Probeert naar trigger een special evolution method in de overworld. There kan be other conditions required die zijn coded voor in GetEvolutionTargetSpecies. EX: tryspecialevo EVO_WATER_SCROLL, FALSE, FALSE triggers Kubfu's EVO_WATER_SCROLL evolution method, cannot be cancelled in de evolution scene, en zal only evolve one Kubfu als there zijn multiple in de speler's party.
+- `ai_vs_ai_battle(trainer1:req, trainer2:req)` — Geen omschrijving beschikbaar.
+- `canhypertrain(stat:req, slot:req)` — Stelt VAR_RESULT naar TRUE als stat kan be hyper trained, of naar FALSE anders.
+- `hypertrain(stat:req, slot:req)` — Hyper Trains een stat.
+- `hasgigantamaxfactor(slot:req)` — Stelt VAR_RESULT naar TRUE als de Pokemon has de Gigantamax Factor, of naar FALSE anders.
+- `togglegigantamaxfactor(slot:req)` — Toggles de Gigantamax Factor voor een Pokemon. Fails voor Melmetal (vanilla behavior). Stelt VAR_RESULT naar TRUE als it succeeds, en FALSE anders.
+- `randomelement(element:req, elements:vararg)` — Stelt VAR_RESULT naar one of de arguments (via setorcopyvar).
+- `randompercentage(percent:req)` — Stelt VAR_RESULT naar TRUE met probability 'percent', en FALSE met probability '100% - percent'.
+- `setstatus1(status1:req, slot:req)` — Inflicts \status1 naar de Pokémon in \slot. Als \slot is greater of equal dan PARTY_SIZE, de status is inflicted on each of de van de speler Pokémon.
+- `checkteratype(slot:req)` — Stelt VAR_RESULT naar de Pokémon in \slot's Tera Type
+- `setteratype(type:req, slot:req)` — Stelt de Pokémon in \slot's Tera Type
+- `getdaycaregfx(varSpecies1:req varSpecies2:req varForm1:req varForm2:req)` — Saves species en forms of Daycare Pokémon naar specific vars. Saves de amount of Daycare mon naar VAR_RESULT.
+- `playfirstmoncry(callnative PlayFirstMonCry, requests_effects=1)` — Plays de cry of de eerste alive party member.
+- `bufferlivemonnickname(out:req)` — Buffer de nickname of de eerste alive party member.
+- `getfolloweraction(callnative GetFollowerAction)` — Executes Follower actions
+- `isfollowerfieldmoveuser(var:req)` — Controleert als Field move is being used door de huidige follower.
+- `getdirectiontoface(var:req, sourceId:req, targetId:req)` — Saves de direction van waar bron object event would need naar turn naar naar face de target naar de opgegeven var.
+- `setwilddoubleflag(callnative ScriptSetDoubleBattleFlag, requests_effects=1)` — Zet de wild double battle flag kan be used in conjunection met createmon naar zet omhoog een wild battle met 2 speler mons vs. 1 enemy mon
+- `pausefakertc(callnative Script_PauseFakeRtc, requests_effects=1)` — ============================ @ FAKE RTC MACROS Zal only function als OW_USE_FAKE_RTC is true. Als it has elke additional requirements, it zal be listed accordingly. Wanneer OW_USE_FAKE_RTC is true en OW_FLAG_PAUSE_TIME is assigned, dit macro zal stop de flow of time.
+- `resumefakertc(callnative Script_ResumeFakeRtc, requests_effects=1)` — Wanneer OW_USE_FAKE_RTC en OW_FLAG_PAUSE_TIME is assigned, dit macro zal resume de flow of time.
+- `togglefakertc(callnative Script_ToggleFakeRtc, requests_effects=1)` — Wanneer OW_USE_FAKE_RTC en OW_FLAG_PAUSE_TIME is assigned, dit macro zal resume de flow of time als paused, en stop de flow of time anders.
+- `addtime(days:req, hours:req, minutes:req)` — Wanneer OW_USE_FAKE_RTC is true, adds een opgegeven amount of time.
+- `adddays(days:req)` — Wanneer OW_USE_FAKE_RTC is true, adds een opgegeven number of days naar de time.
+- `addhours(hours:req)` — Wanneer OW_USE_FAKE_RTC is true, adds een opgegeven number of days, hours, en minutes naar de time.
+- `addminutes(minutes:req)` — Wanneer OW_USE_FAKE_RTC is true, adds een opgegeven number of days, hours, en minutes naar de time.
+- `fwdtime(hours:req, minutes:req)` — Forwards de time naar een opgegeven hour en minute. Dit causes de time naar go naar de next day als de time has already been past.
+- `fwdweekday(weekday:req)` — Forwards de time naar een opgegeven day of de week. Uses een 0-index starting van Sunday.
+- `showitemdescription(callnative ScriptShowItemDescription, requests_effects=1)` — ============================ @ ITEM DESCRIPTION HEADER MACROS Used met OW_SHOW_ITEM_DESCRIPTIONS config
+- `showberrydescription(callnative ScriptShowItemDescription, requests_effects=1)` — Geen omschrijving beschikbaar.
+- `hideitemdescription(callnative ScriptHideItemDescription, requests_effects=1)` — Geen omschrijving beschikbaar.
+- `removeallitem(itemId:req)` — Remove alle of opgegeven item van de speler's bag en return de number of removed items naar VAR_RESULT
+- `getobjectxy(localId:req, posType:req, destX:req, destY:req)` — Stores de position of de given object in destX en destY. Mode CURRENT_POSITION zal take de object's huidige position. Mode TEMPLATE_POSITION zal take de object's template position.
+- `getobjecttemplatexy(localId:req, posType = TEMPLATE_POSITION, destX:req, destY:req)` — Geen omschrijving beschikbaar.
+- `getobjectcurrentxy(localId:req, posType = CURRENT_POSITION, destX:req, destY:req)` — Geen omschrijving beschikbaar.
+- `checkobjectat(x:req, y:req, dest = VAR_RESULT)` — Return TRUE naar dest als there is an object op de position x en y.
+- `getseenmon(species:req)` — Returns de state of de Pokedex Seen Flag naar VAR_RESULT voor de Pokemon met speciesId
+- `getcaughtmon(species:req)` — Returns de state of de Pokedex Caught Flag naar VAR_RESULT voor de Pokemon met speciesId
+- `setseenmon(species:req)` — Stelt de Pokedex Seen Flag voor de Pokemon met speciesId
+- `setcaughtmon(species:req)` — Stelt de Pokedex Caught Flag voor de Pokemon met speciesId
+- `checkspecies(speciesId:req, mode=NO_PARTY_SCREEN)` — Check als de Player has speciesId in their party. OPEN_PARTY_SCREEN zal have de speler select een mon van their party. NO_PARTY_SCREEN zal automatically check every mon in de speler's party.
+- `checkspecies_choose(speciesId:req)` — Geen omschrijving beschikbaar.
+- `getobjectfacingdirection(localId:req, dest:req)` — Gets de facing direction of een given event object en stores it in de variabele dest.
+- `hidefollower(wait=1)` — Hides elke follower Pokémon als present, putting them naar their Poké Ball; door default waits voor their movement naar finish.
+- `increasedifficulty(callnative Script_IncreaseDifficulty, requests_effects=1)` — Geen omschrijving beschikbaar.
+- `decreasedifficulty(callnative Script_DecreaseDifficulty, requests_effects=1)` — Geen omschrijving beschikbaar.
+- `getdifficulty(var:req)` — Geen omschrijving beschikbaar.
+- `setdifficulty(difficulty:req)` — Geen omschrijving beschikbaar.
+- `forcesave(callnative Script_ForceSaveGame)` — Geen omschrijving beschikbaar.
+- `cant_see(cant_see_if_unset 0 @ flag 0 is always FALSE.)` — Geen omschrijving beschikbaar.
+- `setfollowernpc(localId:req, flags:req, script=0, battlePartner=0)` — Follower NPCs Stelt an existing NPC omhoog naar follow de speler. Follower flags zijn defined in include/constants/follower_npc.h Als you want naar specify een battle partner zonder specifying een custom script, you kan zet de script parameter naar 0.
+- `createfollowernpc(gfx:req, flags:req, script=0, battlePartner=0)` — Maakt een new follower NPC met de opgegeven graphics id.
+- `destroyfollowernpc(.if FNPC_ENABLE_NPC_FOLLOWERS)` — Remove de follower NPC (assumes there zal only ever be one).
+- `facefollowernpc(callnative ScriptFaceFollowerNPC)` — Makes de speler en follower NPC face one another.
+- `hidefollowernpc(speed=1)` — Makes de follower NPC walk naar de speler en get hidden. Optionally, you kan zet de walk speed voor de movement: 0 = Slow 1 = Normal (default) 2 = Fast 3 = Faster
+- `checkfollowernpc(callnative ScriptCheckFollowerNPC)` — Controleert als you have een follower NPC. Returns de result naar VAR_RESULT.
+- `updatefollowingmon(callnative ScriptUpdateFollowingMon)` — Updates Pokemon follower.
+- `changefollowerbattler(battlePartner:req)` — Changes de battle partner of de existing follower NPC.
