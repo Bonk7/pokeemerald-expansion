@@ -375,6 +375,7 @@ const u32 gObjectEventPic_SkittyOld[] = INCBIN_U32("graphics/object_events/pics/
 const u32 gObjectEventPic_PoochyenaOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/poochyena.4bpp");
 const u32 gObjectEventPic_LugiaOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/lugia.4bpp");
 const u32 gObjectEventPic_HoOhOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/ho_oh.4bpp");
+const u32 gObjectEventPic_Meloetta[] = INCBIN_U32("graphics/pokemon/meloetta/overworld.4bpp");
 const u32 gObjectEventPic_GroudonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/groudon.4bpp");
 const u32 gObjectEventPic_KyogreOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/kyogre.4bpp");
 
@@ -383,6 +384,7 @@ const u32 gObjectEventPic_SudowoodoTree[] = INCBIN_U32("graphics/object_events/p
 const u32 gObjectEventPic_RayquazaCutscene[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/rayquaza_cutscene.4bpp");
 
 const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/ho_oh.gbapal");
+const u16 gObjectEventPal_Meloetta[] = INCBIN_U16("graphics/pokemon/meloetta/overworld_normal.gbapal");
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 
 const u16 gObjectEventPaletteLight[] = INCBIN_U16("graphics/object_events/palettes/light.gbapal");
