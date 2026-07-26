@@ -1224,17 +1224,17 @@ Route119_Text_TrainerTipsDecoration:
 Route119_Eventscript_BattleFrank::
 # 615 "data/maps/Route119/scripts.pory"
 	trainerbattle_single TRAINER_FRANK_119, Route119_Eventscript_BattleFrank_Text_0, Route119_Eventscript_BattleFrank_Text_1, Route119_GiveExpCharm
-# 617 "data/maps/Route119/scripts.pory"
+# 616 "data/maps/Route119/scripts.pory"
 	msgbox Route119_Eventscript_BattleFrank_Text_2, MSGBOX_NPC
 	end
 
 
 Route119_GiveExpCharm::
-# 622 "data/maps/Route119/scripts.pory"
+# 621 "data/maps/Route119/scripts.pory"
 	giveitem ITEM_EXP_CHARM
-# 623 "data/maps/Route119/scripts.pory"
+# 622 "data/maps/Route119/scripts.pory"
 	msgbox Route119_GiveExpCharm_Text_0, MSGBOX_AUTOCLOSE
-# 624 "data/maps/Route119/scripts.pory"
+# 623 "data/maps/Route119/scripts.pory"
 	setflag FLAG_RECEIVED_EXP_CHARM
 	end
 
@@ -1248,10 +1248,10 @@ Route119_Eventscript_BattleFrank_Text_1:
 	.string "I lost again?$"
 
 Route119_Eventscript_BattleFrank_Text_2:
-# 617 "data/maps/Route119/scripts.pory"
+# 616 "data/maps/Route119/scripts.pory"
 	.string "You've got some potential.\n"
 	.string "Next time i will beat you!$"
 
 Route119_GiveExpCharm_Text_0:
-# 623 "data/maps/Route119/scripts.pory"
+# 622 "data/maps/Route119/scripts.pory"
 	.string "This is a gift for you. \nIt will help you gain more experience\p in battle.$"
