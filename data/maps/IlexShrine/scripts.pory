@@ -1,0 +1,28 @@
+raw
+`
+IlexShrine_MapScripts::
+	.byte 0
+`
+
+script Route101_Battle_Celebi {
+	lockall
+	playmoncry(SPECIES_CELEBI, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_CELEBI, 14, ITEM_TWISTEDSPOON)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Celebi_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Celebi_Caught{
+	setflag(FLAG_STATIC_CELEBI)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(9)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

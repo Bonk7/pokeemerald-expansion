@@ -9540,7 +9540,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_Celebi[] = INCBIN_U8("graphics/pokemon/celebi/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Celebi[] = INCBIN_COMP("graphics/pokemon/celebi/overworld.4bpp");
+    extern const u32 gObjectEventPic_Celebi[];
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
     const u16 gOverworldPalette_Celebi[] = INCBIN_U16("graphics/pokemon/celebi/overworld_normal.gbapal");
     const u16 gShinyOverworldPalette_Celebi[] = INCBIN_U16("graphics/pokemon/celebi/overworld_shiny.gbapal");

@@ -228,6 +228,13 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE104",
       "dest_warp_id": "7"
+    },
+    {
+      "x": 34,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_ILEX_SHRINE",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

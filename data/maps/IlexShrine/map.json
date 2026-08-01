@@ -1,0 +1,56 @@
+{
+  "id": "MAP_ILEX_SHRINE",
+  "name": "IlexShrine",
+  "layout": "LAYOUT_ILEX_SHRINE",
+  "music": "MUS_CAVE_OF_ORIGIN",
+  "region_map_section": "MAPSEC_PETALBURG_WOODS",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CELEBI",
+      "x": 3,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route101_Battle_Celebi",
+      "flag": "FLAG_STATIC_CELEBI"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 2,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_PETALBURG_WOODS",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_PETALBURG_WOODS",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_PETALBURG_WOODS",
+      "dest_warp_id": "6"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

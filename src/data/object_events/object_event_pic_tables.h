@@ -1349,6 +1349,10 @@ static const struct SpriteFrameImage sPicTable_Meloetta[] = {
     obj_frame_tiles(gObjectEventPic_Meloetta),
 };
 
+static const struct SpriteFrameImage sPicTable_Celebi[] = {
+    obj_frame_tiles(gObjectEventPic_Celebi),
+};
+
 static const struct SpriteFrameImage sPicTable_RubySapphireBrendan[] = {
     overworld_ascending_frames(gObjectEventPic_RubySapphireBrendanNormal, 2, 4),
 };
