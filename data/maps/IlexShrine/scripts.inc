@@ -42,7 +42,7 @@ Celebi_Caught::
 # 24 "data/maps/IlexShrine/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 25 "data/maps/IlexShrine/scripts.pory"
-	removeobject 9
+	removeobject 1
 # 26 "data/maps/IlexShrine/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 	return
