@@ -100,19 +100,19 @@ Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Mightyena
-Level: 62
+Mightyena @ Expert Belt
+Level: 75
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Dragonite
-Level: 62
+Dragonite @ Life Orb
+Level: 75
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Lapras
-Level: 62
+Lapras @ Leftovers
+Level: 75
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
@@ -121,15 +121,16 @@ Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Zubat
-Level: 31
+Crobat
+Shiny: Yes
+Level: 76
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Carvanha
-Level: 31
+Sharpedo @ Sharpedonite
+Level: 76
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
@@ -141,8 +142,8 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Zubat
-Level: 32
+Kingdra @ Scope Lens
+Level: 76
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
@@ -154,8 +155,15 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Carvanha
-Level: 32
+Blastoise Mega
+Shiny: Yes
+Ball: Master Ball
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Swampert @ Swampertite
+Shiny: Yes
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
@@ -573,11 +581,16 @@ Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Carvanha
-Level: 32
+Poliwrath 
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Politoed @ Damp Rock
+Ability: Drizzle
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
@@ -586,11 +599,16 @@ Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Zubat
-Level: 32
+Milotic @ Flame Orb
+Ability: Marvel Scale
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Manaphy @ White Herb
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FREDRICK ===
@@ -616,17 +634,58 @@ Class: Aqua Admin
 Pic: Aqua Admin M
 Gender: Male
 Music: Aqua
-Items: Super Potion
-Double Battle: No
+Items: Full Restore
+Double Battle: Yes
 AI: Basic Trainer
 
-Mightyena
-Level: 34
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Golbat
-Level: 34
+Swampert @ Swampertite
+Level: 79
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Rock Slide
+- Earthquake
+- Muddy Water
+- Giga Impact
+
+Crobat @ Scope Lens
+Level: 77
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Toxic
+- Confuse Ray
+- Air Slash
+- Sludge Bomb
+
+Zoroark @ Brightpowder
+Level: 77
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Dark Pulse
+- Sucker Punch
+- Focus Blast 
+- U-Turn
+
+Starmie @ Expert Belt
+Level: 77
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Thunderbolt
+- Ice Beam
+- Hydro Pump
+- Recover
+
+Suicune @ Leftovers
+Level: 79
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Calm Mind
+- Surf
+- Ice Beam
+- Protect
+
+Sharpedo Mega
+Level: 79
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Aqua Jet
+- Waterfall
+- Crunch'
+- Swords Dance
 
 === TRAINER_ZANDER ===
 Name: ZANDER
@@ -1553,12 +1612,18 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Cacturne
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Metagross Mega @ Choice Band
+Ability: Clear Body
+Level: 92
+EVs: 248 HP / 252 Atk / 8 Spe
+Adamant Nature
+- Meteor Mash
+- Zen Headbutt
+- Bullet Punch
+- Ice Punch
 
 Pelipper
-Level: 43
+Level: 92
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ALBERT ===
@@ -1568,16 +1633,40 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Items: Full Restore
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smart Trainer
 
-Magneton
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Shaymin Sky @ Leftovers  
+Ability: Serene Grace  
+Level: 92
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Seed Flare  
+- Air Slash  
+- Substitute  
+- Protect  
 
-Muk
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Cresselia @ Expert Belt  
+Ability: Levitate  
+EVs: 248 HP / 252 SpA / 8 Spe  
+Level: 92
+Modest Nature  
+IVs: 3 Atk / 30 SpA / 30 SpD  
+- Psyshock  
+- Ice Beam  
+- Hidden Power 
+- Thunder Wave  
+
+Cobalion @ Lum Berry  
+Ability: Justified  
+Level: 92
+EVs: 164 HP / 92 Atk / 252 Spe  
+Jolly Nature  
+- Close Combat  
+- Iron Head  
+- Thunder Wave  
+- Protect  
 
 === TRAINER_SAMUEL ===
 Name: SAMUEL
@@ -1747,12 +1836,16 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Graveler
-Level: 33
+Darkrai
+Level: 93
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Ludicolo
-Level: 33
+Landorus
+Level: 94
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Kyurem Black
+Level: 94
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MARY ===
@@ -2662,15 +2755,19 @@ Class: Expert
 Pic: Expert F
 Gender: Female
 Music: Intense
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smart Trainer
 
-Whiscash
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Uxie
+Level: 92
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Meditite
-Level: 33
+Mesprit
+Level: 92
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
+Azelf
+Level: 92
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_GARRET ===
@@ -3073,12 +3170,17 @@ Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
 Tentacruel
-Level: 34
+Level: 82
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Swanna
+Level: 82
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 
 === TRAINER_STAN ===
 Name: STAN
@@ -3089,9 +3191,15 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Horsea
-Level: 34
+Kingdra
+Shiny: Yes
+Ability: Swift Swim
+Level: 85
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rain Dance
+- Hydro Pump
+- Dragon Pulse
+- Hyper Beam
 
 === TRAINER_BARRY ===
 Name: BARRY
@@ -3099,11 +3207,19 @@ Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
 Gyarados
-Level: 34
+Level: 86
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Alomomola
+Level: 86
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lumineon
+Level: 86
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DEAN ===
@@ -3133,11 +3249,15 @@ Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Gyarados
-Level: 34
+Latios @ Latiosite
+Level: 90
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Latias @ Latiasite
+Level: 90
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_RICHARD ===
@@ -3149,8 +3269,8 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Pelipper
-Level: 34
+Kingler
+Level: 82
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HERMAN ===
@@ -3159,16 +3279,23 @@ Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Wingull
-Level: 33
+Pelipper
+Ability: Drizzle
+Level: 87
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacruel
-Level: 33
+Ludicolo
+Ability: Swift Swim
+Level: 87
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Crawdaunt @ Mystic Water 
+Level: 87
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 
 === TRAINER_SANTIAGO ===
 Name: SANTIAGO
@@ -3179,13 +3306,18 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Tentacruel
-Level: 33
+Rotom Wash @ Expert Belt
+Level: 90
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wailmer
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cloyster @ White Herb
+Ability: Skill Link
+Level: 90
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Icicle Spear
+- Shell Smash
+- Rock Blast
+- Razor Shell
 
 === TRAINER_GILBERT ===
 Name: GILBERT
@@ -3193,11 +3325,15 @@ Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Sharpedo
-Level: 34
+Regice
+Level: 92
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Registeel
+Level: 92
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FRANKLIN ===
@@ -3206,11 +3342,15 @@ Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Sealeo
-Level: 34
+Raikou
+Level: 88
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Swampert Mega
+Level: 88
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KEVIN ===
@@ -3219,12 +3359,17 @@ Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Spheal
-Level: 34
+Walrein
+Level: 75
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Empoleon 
+Level: 75
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 
 === TRAINER_JACK ===
 Name: JACK
@@ -3236,7 +3381,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Gyarados
-Level: 34
+Level: 100
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DUDLEY ===
@@ -3361,16 +3506,72 @@ Class: Black Belt
 Pic: Black Belt
 Gender: Male
 Music: Intense
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smart Trainer
 
-Machop
-Level: 32
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Politoed @ Leftovers  
+Ability: Drizzle  
+Level: 92
+EVs: 252 HP / 252 Def / 4 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Scald  
+- Ice Beam  
+- Protect  
+- Toxic  
 
-Machoke
-Level: 32
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Keldeo-Resolute @ Leftovers  
+Ability: Justified  
+EVs: 252 SpA / 4 SpD / 252 Spe
+Level: 92  
+Timid Nature  
+IVs: 2 Atk / 30 SpA  
+- Hydro Pump  
+- Secret Sword  
+- Hidden Power 
+- Substitute  
+
+Jirachi @ Choice Scarf  
+Ability: Serene Grace  
+Level: 92
+EVs: 132 HP / 216 Atk / 160 Spe  
+Adamant Nature  
+- U-turn  
+- Healing Wish  
+- Iron Head  
+- Ice Punch  
+
+Tentacruel @ Black Sludge  
+Ability: Rain Dish  
+Level: 92
+EVs: 252 HP / 68 Def / 188 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Rapid Spin  
+- Protect  
+- Scald  
+- Substitute  
+
+Ferrothorn @ Lum Berry  
+Ability: Iron Barbs  
+Level: 92
+EVs: 252 HP / 184 Atk / 72 SpD  
+Brave Nature  
+- Stealth Rock  
+- Spikes  
+- Explosion  
+- Power Whip  
+
+Thundurus-Therian (M) @ Leftovers  
+Ability: Volt Absorb  
+Level: 92
+EVs: 24 HP / 176 SpA / 56 SpD / 252 Spe  
+Timid Nature  
+IVs: 2 Atk / 30 Def  
+- Nasty Plot  
+- Thunder  
+- Focus Blast  
+- Hidden Power 
 
 === TRAINER_KIYO ===
 Name: KIYO
@@ -3381,8 +3582,8 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Hariyama
-Level: 34
+Zekrom
+Level: 92
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_KOICHI ===
@@ -3586,15 +3787,15 @@ Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Poochyena
-Level: 31
+Sharpedo
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
-Level: 31
+Seismitoad
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_8 ===
@@ -6334,15 +6535,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Slaking
-Level: 43
+Level: 92
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Attract
 - Ice Beam
 - Thunderbolt
 - Flamethrower
 
-Dusclops
-Level: 43
+Dusknoir
+Level: 92
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Skill Swap
 - Protect
@@ -6359,8 +6560,8 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Gardevoir
-Level: 43
+Gardevoir Mega @ Twisted Spoon
+Level: 92
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Skill Swap
 - Psychic
@@ -6368,10 +6569,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Calm Mind
 
 Slaking
-Level: 43
+Level: 92
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Earthquake
-- Shadow Ball
+- Giga Impact
 - Aerial Ace
 - Brick Break
 
@@ -6892,32 +7093,63 @@ Class: Fisherman
 Pic: Fisherman
 Gender: Male
 Music: Hiker
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
 Magikarp
-Level: 19
+Shiny: Yes
+Ball: Master Ball
+Level: 100
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Splash
 
-Gyarados
-Level: 21
+Magikarp
+Ball: Master Ball
+Level: 100
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Splash
 
-Gyarados
-Level: 23
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gyarados @ Gyaradosite
+Level: 90
+Ability: Moxie
+Ball: Cherish Ball
+Shiny: Yes
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- Waterfall
+- Dragon Dance
+- Iron Head
+- Crunch
 
-Gyarados
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gyarados @ Leftovers
+Level: 90
+Ball: Dive Ball
+Ability: Intimidate
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- Thunder Wave
+- Scald
+- Hurricane
+- Dragon Pulse
 
-Gyarados
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gyarados Mega @ Lum Berry
+Level: 90
+Ball: Heavy Ball
+Shiny: Yes
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- Dragon Dance
+- Waterfall
+- Crunch
+- Stone Edge
 
-Gyarados
-Level: 35
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gyarados Mega @ Mystic Water
+Level: 90
+Ball: Level Ball
+Ability: Intimidate
+Shiny: No
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- Dragon Dance
+- Waterfall
+- Ice Fang
+- Bounce
 
 === TRAINER_JACOB ===
 Name: JACOB
@@ -7253,15 +7485,18 @@ Class: Triathlete
 Pic: Swimming Triathlete M
 Gender: Male
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Staryu
-Level: 33
+Swampert Mega
+Ball: Dive Ball
+Level: 82
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
-Level: 33
+Staraptor
+Ball: Love Ball
+Shiny: Yes
+Level: 83
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DEMETRIUS ===
@@ -7399,15 +7634,19 @@ Class: Triathlete
 Pic: Swimming Triathlete F
 Gender: Female
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Wingull
-Level: 26
+Seismitoad
+Level: 82
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Staryu
-Level: 34
+Lapras
+Level: 83
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+
+Vaporeon 
+Level: 83
 IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 
 === TRAINER_TALIA ===
@@ -7416,12 +7655,16 @@ Class: Triathlete
 Pic: Swimming Triathlete F
 Gender: Female
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Staryu
-Level: 34
+Flygon
+Level: 75
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Blastoise Mega
+Level: 75
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_KATELYN_1 ===
 Name: KATELYN
@@ -7432,8 +7675,20 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Staryu
-Level: 35
+Omastar
+Level: 83
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Kabutops
+Level: 83
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Cloyster
+Level: 83
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Dewgong
+Level: 83
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALLISON ===
@@ -7608,16 +7863,39 @@ Class: Dragon Tamer
 Pic: Dragon Tamer
 Gender: Male
 Music: Intense
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smart Trainer
 
-Bagon
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dragon Breath
-- Headbutt
-- Focus Energy
-- Ember
+Tyranitar Mega @ Focus Sash
+Ability: Sand Stream
+Level: 92
+EVs: 252 Atk / 4 SpA / 252 Spe
+Hasty Nature
+- Stealth Rock
+- Crunch
+- Low Kick
+- Fire Blast
+
+Kyogre @ Leftovers
+Ability: Drizzle
+Level: 92
+EVs: 248 HP / 8 Def / 252 SpD
+Calm Nature
+IVs: 0 Atk
+- Rest
+- Sleep Talk
+- Roar
+- Scald
+
+Ferrothorn @ Leftovers
+Ability: Iron Barbs
+Level: 92
+EVs: 252 HP / 4 Atk / 252 SpD
+Careful Nature
+- Leech Seed
+- Spikes
+- Knock Off
+- Power Whip
 
 === TRAINER_PERRY ===
 Name: PERRY
@@ -7718,11 +7996,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Tropius
-Level: 33
+Level: 83
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Xatu
-Level: 33
+Level: 83
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Slowbro Mega
+Level: 83
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_EDWARDO ===
@@ -7892,16 +8174,28 @@ Class: Bird Keeper
 Pic: Bird Keeper
 Gender: Male
 Music: Cool
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smart Trainer
 
-Natu
-Level: 33
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Whimsicott @ Leftovers
+Ability: Prankster
+Level: 95
+EVs: 252 HP / 252 Def / 4 SpD
+Bold Nature
+- Stun Spore
+- U-turn
+- Encore
+- Taunt
 
-Swellow
-Level: 33
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Victini @ Choice Band
+Ability: Victory Star
+Level: 96
+EVs: 252 Atk / 4 SpD / 252 Spe
+Jolly Nature
+- V-create
+- Bolt Strike
+- U-turn
+- Trick
 
 === TRAINER_BECK ===
 Name: BECK
@@ -7912,9 +8206,17 @@ Music: Cool
 Double Battle: No
 AI: Basic Trainer
 
-Tropius
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Virizion
+Level: 94
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Terrakion
+Level: 94
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Cobalion
+Level: 94
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_YASU ===
 Name: YASU
@@ -8621,8 +8923,12 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Luvdisc
-Level: 34
+Pelipper
+Level: 84
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Manaphy
+Level: 84
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SHARON ===
@@ -8631,11 +8937,15 @@ Class: Swimmer F
 Pic: Swimmer F
 Gender: Female
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
 Seaking
-Level: 34
+Level: 82
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Starmie
+Level: 82
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_NIKKI ===
@@ -8664,8 +8974,16 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Goldeen
-Level: 34
+Walrein @ Leftovers
+Level: 84
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Huntail @ Mystic Water
+Level: 83
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel @ Expert Belt
+Level: 84
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KATIE ===
@@ -8674,15 +8992,20 @@ Class: Swimmer F
 Pic: Swimmer F
 Gender: Female
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Goldeen
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Palkia @ Lustrous Orb
+Level: 90
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Spacial Rend
+- Hydro Pump
+- Dragon Pulse
+- Thunder
 
-Spheal
-Level: 33
+Ludicolo @ Leftovers
+Ability: Swift Swim
+Level: 90
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SUSIE ===
@@ -8694,8 +9017,13 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Luvdisc
-Level: 34
+Golduck
+Shiny: Yes
+Level: 86
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Whiscash
+Level: 86
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KARA ===
@@ -8704,11 +9032,19 @@ Class: Swimmer F
 Pic: Swimmer F
 Gender: Female
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Seaking
-Level: 34
+Manaphy 
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Floatzel
+Level: 77
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Quagsire
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DANA ===
@@ -8720,8 +9056,8 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-Azumarill
-Level: 34
+Kyurem
+Level: 92
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SIENNA ===
@@ -8730,16 +9066,21 @@ Class: Swimmer F
 Pic: Swimmer F
 Gender: Female
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Luvdisc
-Level: 33
+Gorebyss
+Level: 86
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Luvdisc
-Level: 33
+Ludicolo
+Level: 86
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Gastrodon
+Level: 86
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 
 === TRAINER_DEBRA ===
 Name: DEBRA
@@ -8747,11 +9088,22 @@ Class: Swimmer F
 Pic: Swimmer F
 Gender: Female
 Music: Swimmer
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smart Trainer
 
-Seaking
-Level: 34
+Zapdos
+Level: 90
+Shiny: Yes
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Articuno
+Level: 90
+Shiny: Yes
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Moltres 
+Level: 90
+Shiny: Yes
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LINDA ===
@@ -8794,16 +9146,47 @@ Class: Swimmer F
 Pic: Swimmer F
 Gender: Female
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Luvdisc
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Charizard-Mega-X @ Charizardite X  
+Ability: Tough Claws  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Dragon Dance  
+- Flare Blitz  
+- Dragon Claw  
+- Earthquake  
 
-Luvdisc
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Serperior @ Rocky Helmet  
+Ability: Contrary  
+EVs: 208 HP / 48 Def / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Leaf Storm  
+- Taunt  
+- Glare  
+- Defog  
+
+Volcarona @ Lum Berry  
+Ability: Flame Body  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Quiver Dance  
+- Flamethrower  
+- Giga Drain  
+- Hidden Power
+
+Mew @ Mental Herb  
+Ability: Synchronize  
+EVs: 224 HP / 68 Def / 216 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Stealth Rock  
+- Ice Beam  
+- Taunt  
+- Thunder Wave  
 
 === TRAINER_CARLEE ===
 Name: CARLEE
@@ -8811,11 +9194,19 @@ Class: Swimmer F
 Pic: Swimmer F
 Gender: Female
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Seaking
-Level: 35
+Kingdra
+Level: 87   
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lugia 
+Level: 87
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Samurott
+Level: 87
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JENNY_2 ===
@@ -9614,12 +10005,16 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Manectric
-Level: 33
+Manectric Mega
+Level: 82
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Machamp
-Level: 33
+Level: 82
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Conkeldurr 
+Level: 82
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KELVIN ===
@@ -9628,16 +10023,40 @@ Class: Sailor
 Pic: Sailor
 Gender: Male
 Music: Male
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smart Trainer
 
-Machoke
-Level: 33
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Tyranitar Mega @ Focus Sash  
+Ability: Sand Stream  
+Level: 92
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+- Crunch  
+- Rock Slide  
+- Thunder Wave  
+- Taunt  
 
-Spheal
-Level: 33
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Excadrill @ Life Orb  
+Ability: Sand Rush  
+Level: 92
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Earthquake  
+- Rock Slide  
+- Iron Head  
+- Protect  
+
+
+Thundurus (M) @ Leftovers  
+Ability: Prankster  
+Level: 92
+EVs: 104 HP / 116 Def / 152 SpD / 136 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Thunderbolt  
+- Thunder Wave  
+- Substitute  
+- Hidden Power
 
 === TRAINER_MARLEY ===
 Name: MARLEY
@@ -9646,16 +10065,38 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Items: Hyper Potion
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smart Trainer
 
-Manectric
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bite
-- Roar
-- Thunder Wave
-- Thunderbolt
+Arceus-Fighting @ Fist Plate
+Ability: Multitype
+Level: 92
+EVs: 248 HP / 8 Def / 252 Spe
+Timid Nature
+- Judgment
+- Toxic
+- Recover
+- Stone Edge
+
+Giratina Origin @ Griseous Orb
+Ability: Levitate
+Level: 92
+EVs: 156 Atk / 248 Def / 104 Spe
+Adamant Nature
+- Substitute
+- Dragon Tail
+- Earthquake
+- Shadow Sneak
+
+Genesect @ Choice Scarf
+Ability: Download
+Level: 92
+EVs: 8 Atk / 248 SpA / 252 Spe
+Naive Nature
+- U-turn
+- Thunder
+- Bug Buzz
+- Ice Beam
 
 === TRAINER_REYNA ===
 Name: REYNA
@@ -9664,15 +10105,71 @@ Pic: Battle Girl
 Gender: Female
 Music: Intense
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer
 
-Meditite
-Level: 33
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Tyranitar @ Chople Berry  
+Level: 92
+Ability: Sand Stream  
+EVs: 252 HP / 64 Atk / 192 SpD  
+Adamant Nature  
+- Crunch  
+- Pursuit  
+- Thunder Wave  
+- Superpower  
 
-Hariyama
-Level: 33
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Landorus-Therian (M) @ Leftovers  
+Ability: Intimidate  
+Level: 92
+EVs: 252 HP / 4 Def / 252 Spe  
+Naive Nature  
+- Earthquake  
+- Hidden Power 
+- U-turn  
+- Stealth Rock  
+
+Rotom-Wash @ Leftovers  
+Ability: Levitate  
+Level: 92
+EVs: 252 HP / 200 Def / 56 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Hydro Pump  
+- Volt Switch  
+- Will-O-Wisp  
+- Pain Split  
+
+Ferrothorn @ Lum Berry  
+Ability: Iron Barbs  
+Level: 92
+EVs: 252 HP / 128 Def / 128 SpD  
+Careful Nature  
+IVs: 0 Spe  
+- Power Whip  
+- Gyro Ball  
+- Knock Off  
+- Spikes  
+
+Alakazam @ Focus Sash  
+Ability: Magic Guard  
+Level: 92
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 2 Atk / 30 Def  
+- Psyshock  
+- Hidden Power 
+- Focus Blast  
+- Signal Beam  
+
+Latios (M) @ Choice Specs  
+Ability: Levitate  
+Level: 92
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Draco Meteor  
+- Surf  
+- Trick  
+- Roost  
 
 === TRAINER_HUDSON ===
 Name: HUDSON
@@ -9680,12 +10177,65 @@ Class: Sailor
 Pic: Sailor
 Gender: Male
 Music: Male
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smart Trainer
 
-Wailmer
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Abomasnow @ Focus Sash  
+Ability: Snow Warning  
+EVs: 36 Atk / 252 SpA / 220 Spe  
+Rash Nature  
+- Blizzard  
+- Wood Hammer  
+- Hidden Power
+- Ice Shard  
+
+Garchomp @ Yache Berry  
+Ability: Rough Skin  
+EVs: 252 Atk / 4 Def / 252 Spe  
+Jolly Nature  
+- Stealth Rock  
+- Outrage  
+- Earthquake  
+- Swords Dance  
+
+Dragonite @ Leftovers  
+Ability: Multiscale  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Dragon Dance  
+- Outrage  
+- Fire Punch  
+- Extreme Speed  
+
+Jirachi @ Choice Scarf  
+Ability: Serene Grace  
+EVs: 252 HP / 72 Atk / 184 Spe  
+Jolly Nature  
+- U-turn  
+- Iron Head  
+- Ice Punch  
+- Healing Wish  
+
+Starmie @ Air Balloon  
+Ability: Analytic  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 2 Atk / 30 SpA / 30 Spe  
+- Hydro Pump  
+- Thunderbolt  
+- Hidden Power
+- Rapid Spin  
+
+Kyurem Black @ Choice Band  
+Ability: Teravolt  
+EVs: 252 Atk / 4 Def / 252 Spe  
+Adamant Nature  
+- Outrage  
+- Dragon Claw  
+- Fusion Bolt  
+- Ice Beam  
+
+
 
 === TRAINER_CONOR ===
 Name: CONOR
@@ -9693,15 +10243,20 @@ Class: Expert
 Pic: Expert M
 Gender: Male
 Music: Intense
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smart Trainer
 
-Chinchou
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Regigigas
+Level: 92
+Ability: Huge Power
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Hariyama
-Level: 33
+Heatran
+Level: 92
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
+Cresselia
+Level: 92
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_EDWIN_1 ===
@@ -9835,35 +10390,32 @@ Pic: Wally
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smart Trainer
 
-Altaria
-Level: 44
+Altaria Mega @ Life Orb
+Level: 93
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Aerial Ace
-- Safeguard
-- Dragon Breath
+- Dragon Claw
+- Dragon Pulse
 - Dragon Dance
 
-Delcatty
-Level: 43
+Zangoose @ Toxic Orb
+Ability: Guts   
+Level: 93 
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Sing
-- Assist
-- Charm
-- Feint Attack
 
-Roselia
-Level: 44
+Roserade @ Expert Belt
+Level: 93
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Magical Leaf
 - Leech Seed
 - Giga Drain
 - Toxic
 
-Magneton
-Level: 41
+Magnezone @ Magnet
+Level: 93
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Thunder Wave
 - Thunderbolt
@@ -9871,12 +10423,23 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Zap Cannon
 
 Gardevoir @ Gardevoirite
-Level: 45
+Level: 93
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Double Team
 - Calm Mind
 - Psychic
 - Moonblast
+
+Metagross Mega @ Choice Band
+Ability: Clear Body
+Level: 93
+EVs: 248 HP / 252 Atk / 8 Spe
+Adamant Nature
+- Meteor Mash
+- Zen Headbutt
+- Bullet Punch
+- Hammer Arm
+
 
 === TRAINER_BRENDAN_ROUTE_103_MUDKIP ===
 Name: BRENDAN
@@ -10989,12 +11552,12 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Wailmer
-Level: 30
+Milotic
+Level: 73
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
-Level: 30
+Tyranitar @ Tyranitarite
+Level: 75
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_JAGGED_PASS ===
@@ -11103,21 +11666,17 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Items: Hyper Potion
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Manectric
-Level: 32
+Manectric Mega
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Thunder
-- Thunder Wave
-- Quick Attack
 
-Linoone
-Level: 32
+
+Ludicolo
+Level: 77
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Surf
-- Thief
 
 === TRAINER_HARRISON ===
 Name: HARRISON
@@ -11125,11 +11684,19 @@ Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Tentacruel
-Level: 35
+Keldeo
+Level: 86
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Octillery
+Level: 86
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Mantine
+Level: 86
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_MT_CHIMNEY_2 ===
@@ -11347,15 +11914,15 @@ Class: Expert
 Pic: Expert M
 Gender: Male
 Music: Intense
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Swellow
-Level: 33
+Salamence Mega
+Level: 92
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Breloom
-Level: 33
+Level: 92
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ISABELLA ===
@@ -11424,15 +11991,15 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Items: Hyper Potion
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer 
 
-Kecleon
-Level: 33
+Latios
+Level: 92
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Loudred
-Level: 33
+Ho-oh
+Level: 92
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRENDAN_RUSTBORO_TORCHIC ===
@@ -12589,44 +13156,67 @@ Pic: Wally
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smart Trainer
 
-Altaria
-Level: 47
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Aerial Ace
-- Dragon Claw
-- Dragon Breath
-- Dragon Dance
+Politoed @ Eject Button  
+Ability: Drizzle  
+EVs: 252 HP / 200 Def / 56 SpD  
+Relaxed Nature  
+IVs: 0 Atk / 0 Spe  
+- Scald  
+- Encore  
+- Helping Hand  
+- Hypnosis  
 
-Lopunny @ Lopunnite
-Level: 46
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+flashbacer (Kingdra) @ Life Orb  
+Ability: Swift Swim  
+EVs: 4 Def / 252 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Muddy Water  
+- Draco Meteor  
+- Hydro Pump  
+- Protect  
 
-Roserade
-Level: 47
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Magical Leaf
-- Leech Seed
-- Giga Drain
-- Toxic
+Shaymin-Sky @ Leftovers  
+Ability: Serene Grace  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Seed Flare  
+- Air Slash  
+- Substitute  
+- Protect  
 
-Magneton
-Level: 44
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Thunder Wave
-- Thunderbolt
-- Tri Attack
-- Zap Cannon
+Thundurus (M) @ Electric Gem  
+Ability: Prankster  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 30 HP / 2 Atk / 30 Def / 30 SpA / 30 SpD  
+- Thunder  
+- Hidden Power  
+- Thunder Wave  
+- Protect  
 
-Gardevoir @ Gardevoirite
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Team
-- Calm Mind
-- Psychic
-- Moonblast
+Scizor @ Steel Gem  
+Ability: Technician  
+EVs: 252 HP / 252 Atk / 4 Def  
+Adamant Nature  
+- Bullet Punch  
+- Bug Bite  
+- Swords Dance  
+- Protect  
+
+Landorus-Therian (M) @ Focus Sash  
+Ability: Intimidate  
+Level: 100
+EVs: 252 Atk / 4 Def / 252 Spe  
+Adamant Nature  
+- Earthquake  
+- Stone Edge  
+- U-turn  
+- Stealth Rock  
 
 === TRAINER_WALLY_VR_3 ===
 Name: WALLY
@@ -12638,41 +13228,63 @@ Items: Full Restore / Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Altaria
-Level: 50
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Aerial Ace
-- Safeguard
-- Dragon Breath
-- Dragon Dance
+Scrafty @ Sitrus Berry  
+Ability: Intimidate  
+EVs: 252 HP / 176 Atk / 80 SpD  
+Careful Nature  
+- Low Kick  
+- Crunch  
+- Fake Out  
+- Super Fang  
 
-Lopunny @ Lopunnite
-Level: 49
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Latios (M) @ Dragon Gem  
+Ability: Levitate  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Draco Meteor  
+- Psychic  
+- Surf  
+- Protect  
 
-Roserade
-Level: 50
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Magical Leaf
-- Leech Seed
-- Giga Drain
-- Toxic
+Gastrodon-East @ Sitrus Berry  
+Ability: Storm Drain  
+EVs: 232 HP / 88 Def / 108 SpA / 80 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Earth Power  
+- Ice Beam  
+- Toxic  
+- Recover  
 
-Magneton
-Level: 47
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Thunder Wave
-- Thunderbolt
-- Tri Attack
-- Zap Cannon
+Landorus-Therian (M) @ Focus Sash  
+Ability: Intimidate  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+- Earthquake  
+- Stone Edge  
+- U-turn  
+- Stealth Rock  
 
-Gardevoir
-Level: 51
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Team
-- Calm Mind
-- Psychic
-- Moonblast
+Genesect @ Choice Band  
+Ability: Download  
+Shiny: Yes  
+EVs: 252 Atk / 28 SpD / 228 Spe  
+Hasty Nature  
+- Extreme Speed  
+- U-turn  
+- Iron Head  
+- Flamethrower  
+
+Thundurus @ Sitrus Berry  
+Ability: Prankster  
+EVs: 236 HP / 176 SpD / 96 Spe  
+Calm Nature  
+IVs: 2 Atk / 30 Def  
+- Thunderbolt  
+- Hidden Power  
+- Thunder Wave  
+- Taunt  
 
 === TRAINER_WALLY_VR_4 ===
 Name: WALLY
@@ -12942,16 +13554,16 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-Wailmer
-Level: 30
+Wailord
+Level: 78
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
-Level: 31
+Ludicolo
+Level: 80
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Sharpedo
-Level: 32
+Sharpedo Mega
+Level: 81
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HENRY ===
@@ -12960,15 +13572,15 @@ Class: Fisherman
 Pic: Fisherman
 Gender: Male
 Music: Hiker
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Carvanha
-Level: 31
+Sharpedo @ Sharpedonite
+Level: 80
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacruel
-Level: 34
+Mawile @ Mawilite
+Level: 80
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROGER ===
@@ -12977,20 +13589,47 @@ Class: Fisherman
 Pic: Fisherman
 Gender: Male
 Music: Hiker
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Magikarp
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gyarados @ Gyaradosite
+Level: 80
+Ability: Moxie
+Shiny: Yes
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- Waterfall
+- Dragon Dance
+- Iron Head
+- Crunch
 
-Magikarp
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gyarados @ Leftovers
+Level: 80
+Ability: Intimidate
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- Thunder Wave
+- Scald
+- Hurricane
+- Dragon Pulse
 
-Gyarados
-Level: 35
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gyarados Mega @ Lum Berry
+Level: 80
+Shiny: Yes
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- Dragon Dance
+- Waterfall
+- Crunch
+- Stone Edge
+
+Gyarados Mega @ Mystic Water
+Level: 80
+Ability: Intimidate
+Shiny: No
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- Dragon Dance
+- Waterfall
+- Ice Fang
+- Bounce
+
 
 === TRAINER_ALEXA ===
 Name: ALEXA
@@ -12999,15 +13638,15 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Items: Full Restore
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Gloom
-Level: 34
+Bellossom @ Leftovers
+Level: 82
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Azumarill
-Level: 34
+Level: 83
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RUBEN ===
@@ -13017,15 +13656,15 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Items: Hyper Potion
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
 Shiftry
-Level: 34
+Level: 83
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Nosepass
-Level: 34
+Probopass
+Level: 83
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_KOJI_1 ===
@@ -13034,11 +13673,23 @@ Class: Black Belt
 Pic: Black Belt
 Gender: Male
 Music: Intense
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Machoke
-Level: 34
+Hariyama
+Level: 80
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Machamp
+Level: 80
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Hitmontop
+Level: 80
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Lucario Mega
+Level: 80
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WAYNE ===
@@ -13047,19 +13698,20 @@ Class: Fisherman
 Pic: Fisherman
 Gender: Male
 Music: Hiker
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Tentacool
-Level: 31
+Tentacruel @ Shell Bell
+Shiny: Yes
+Level: 80
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Empoleon @ Leftovers
+Level: 80
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Wailmer
-Level: 36
+Omastar
+Level: 80
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_AIDAN ===
@@ -13068,15 +13720,15 @@ Class: Bird Keeper
 Pic: Bird Keeper
 Gender: Male
 Music: Cool
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Swellow
-Level: 32
+Pidgeot Mega
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Skarmory
-Level: 32
+Level: 77
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_REED ===
@@ -13137,19 +13789,19 @@ Music: Twins
 Double Battle: Yes
 AI: Basic Trainer
 
-Swablu
-Level: 32
+Altaria
+Level: 82
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sing
-- Fury Attack
-- Safeguard
+- Dragon Claw
+- Dragon Dance
 - Aerial Ace
 
-Numel
-Level: 35
+Camerupt
+Level: 82
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flamethrower
-- Take Down
+- Earth Power
 - Rest
 - Earthquake
 
@@ -13343,12 +13995,12 @@ Music: Swimmer
 Double Battle: Yes
 AI: Basic Trainer
 
-Azumarill
-Level: 35
+Octillery
+Level: 84
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wingull
-Level: 33
+Politoed
+Level: 84
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LILA_AND_ROY_1 ===
@@ -14166,15 +14818,15 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Items: Hyper Potion
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Pelipper
-Level: 33
+Metagross Mega
+Level: 92
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Camerupt
-Level: 33
+Claydol
+Level: 92
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MAXIE_MOSSDEEP ===
@@ -14609,15 +15261,15 @@ Pic: Expert F
 Gender: Female
 Music: Intense
 Items: Hyper Potion
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Roselia
-Level: 33
+Mewtwo Mega Y
+Level: 92
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Medicham
-Level: 33
+Reshiram
+Level: 92
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FABIAN ===
@@ -16876,15 +17528,15 @@ Class: Triathlete
 Pic: Swimming Triathlete M
 Gender: Male
 Music: Swimmer
-Double Battle: No
+Double Battle: Yes
 AI: Basic Trainer
 
-Staryu
-Level: 37
+Staryu @ Eviolite
+Level: 89
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Staryu
-Level: 37
+Starmie
+Level: 86
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_PABLO_3 ===
