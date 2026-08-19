@@ -9393,63 +9393,63 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 33,
-                "max_level": 33,
+                "min_level": 60,
+                "max_level": 68,
                 "species": "SPECIES_PUPITAR"
               },
               {
-                "min_level": 35,
-                "max_level": 35,
+                "min_level": 60,
+                "max_level": 68,
                 "species": "SPECIES_BELDUM"
               },
               {
-                "min_level": 33,
-                "max_level": 33,
+                "min_level": 60,
+                "max_level": 68,
                 "species": "SPECIES_GOLBAT"
               },
               {
-                "min_level": 35,
-                "max_level": 35,
+                "min_level": 60,
+                "max_level": 68,
                 "species": "SPECIES_AGGRON"
               },
               {
-                "min_level": 33,
-                "max_level": 33,
+                "min_level": 60,
+                "max_level": 68,
                 "species": "SPECIES_SNEASEL"
               },
               {
-                "min_level": 37,
-                "max_level": 37,
+                "min_level": 60,
+                "max_level": 68,
                 "species": "SPECIES_SOLROCK"
               },
               {
-                "min_level": 35,
-                "max_level": 35,
+                "min_level": 60,
+                "max_level": 68,
                 "species": "SPECIES_METANG"
               },
               {
-                "min_level": 39,
-                "max_level": 39,
+                "min_level": 60,
+                "max_level": 68,
                 "species": "SPECIES_DUGTRIO"
               },
               {
-                "min_level": 38,
-                "max_level": 38,
+                "min_level": 60,
+                "max_level": 68,
                 "species": "SPECIES_PUPITAR"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 60,
+                "max_level": 68,
                 "species": "SPECIES_SHELGON"
               },
               {
-                "min_level": 38,
-                "max_level": 38,
+                "min_level": 60,
+                "max_level": 68,
                 "species": "SPECIES_ALAKAZAM_MEGA"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 60,
+                "max_level": 68,
                 "species": "SPECIES_CHARIZARD_MEGA_X"
               }
             ]
