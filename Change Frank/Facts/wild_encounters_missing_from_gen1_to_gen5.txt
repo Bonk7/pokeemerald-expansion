@@ -1,6 +1,7 @@
-Count: 62
+Count: 76
 
 Nidoran♂ (Poison, BST 273) — SPECIES_NIDORAN_M
+Litwick (Ghost/Fire, BST 275) — SPECIES_LITWICK
 Nidoran♀ (Poison, BST 275) — SPECIES_NIDORAN_F
 Tynamo (Electric, BST 275) — SPECIES_TYNAMO
 Petilil (Grass, BST 280) — SPECIES_PETILIL
@@ -14,6 +15,7 @@ Shellos (Water, BST 325) — SPECIES_SHELLOS_EAST
 Shellos (Water, BST 325) — SPECIES_SHELLOS_WEST
 Drilbur (Ground, BST 328) — SPECIES_DRILBUR
 Zorua (Dark, BST 330) — SPECIES_ZORUA
+Beedrill (Bug/Poison, BST 405) — SPECIES_BEEDRILL_MEGA
 Eelektrik (Electric, BST 405) — SPECIES_EELEKTRIK
 Castform (Ice, BST 420) — SPECIES_CASTFORM_SNOWY
 Castform (Fire, BST 420) — SPECIES_CASTFORM_SUNNY
@@ -21,7 +23,6 @@ Zweilous (Dark/Dragon, BST 420) — SPECIES_ZWEILOUS
 Swoobat (Psychic/Flying, BST 425) — SPECIES_SWOOBAT
 Klang (Steel, BST 440) — SPECIES_KLANG
 Audino (Normal, BST 445) — SPECIES_AUDINO
-Doublade (Steel/Ghost, BST 448) — SPECIES_DOUBLADE
 Maractus (Grass, BST 461) — SPECIES_MARACTUS
 Sawk (Fighting, BST 465) — SPECIES_SAWK
 Throh (Fighting, BST 465) — SPECIES_THROH
@@ -37,17 +38,30 @@ Seismitoad (Water/Ground, BST 509) — SPECIES_SEISMITOAD
 Medicham (Fighting/Psychic, BST 510) — SPECIES_MEDICHAM_MEGA
 Mienshao (Fighting, BST 510) — SPECIES_MIENSHAO
 Zoroark (Dark, BST 510) — SPECIES_ZOROARK
+Rotom (Electric/Flying, BST 520) — SPECIES_ROTOM_FAN
+Rotom (Electric/Ice, BST 520) — SPECIES_ROTOM_FROST
+Rotom (Electric/Fire, BST 520) — SPECIES_ROTOM_HEAT
+Rotom (Electric/Grass, BST 520) — SPECIES_ROTOM_MOW
+Rotom (Electric/Water, BST 520) — SPECIES_ROTOM_WASH
 Absol (Dark, BST 565) — SPECIES_ABSOL_MEGA
+Manectric (Electric, BST 575) — SPECIES_MANECTRIC_MEGA
+Glalie (Ice, BST 580) — SPECIES_GLALIE_MEGA
 Altaria (Dragon/Fairy, BST 590) — SPECIES_ALTARIA_MEGA
+Kangaskhan (Normal, BST 590) — SPECIES_KANGASKHAN_MEGA
 Slowbro (Water/Psychic, BST 590) — SPECIES_SLOWBRO_MEGA
+Abomasnow (Grass/Ice, BST 594) — SPECIES_ABOMASNOW_MEGA
 Alakazam (Psychic, BST 600) — SPECIES_ALAKAZAM_MEGA
 Gengar (Ghost/Poison, BST 600) — SPECIES_GENGAR_MEGA
 Heracross (Bug/Fighting, BST 600) — SPECIES_HERACROSS_MEGA
+Houndoom (Dark/Fire, BST 600) — SPECIES_HOUNDOOM_MEGA
 Pinsir (Bug/Flying, BST 600) — SPECIES_PINSIR_MEGA
+Steelix (Steel/Ground, BST 610) — SPECIES_STEELIX_MEGA
 Aerodactyl (Rock/Flying, BST 615) — SPECIES_AERODACTYL_MEGA
 Gallade (Psychic/Fighting, BST 618) — SPECIES_GALLADE_MEGA
+Gardevoir (Psychic/Ralts_Family_Type2, BST 618) — SPECIES_GARDEVOIR_MEGA
 Lucario (Fighting/Steel, BST 625) — SPECIES_LUCARIO_MEGA
 Venusaur (Grass/Poison, BST 625) — SPECIES_VENUSAUR_MEGA
+Aggron (Steel, BST 630) — SPECIES_AGGRON_MEGA
 Blastoise (Water, BST 630) — SPECIES_BLASTOISE_MEGA
 Blaziken (Fire/Fighting, BST 630) — SPECIES_BLAZIKEN_MEGA
 Charizard (Fire/Dragon, BST 634) — SPECIES_CHARIZARD_MEGA_X

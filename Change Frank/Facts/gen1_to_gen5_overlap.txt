@@ -1,15 +1,19 @@
-Count: 457
+Count: 475
 
 Sunkern (Grass, BST 180) — SPECIES_SUNKERN
 Azurill (Normal/Fairy, BST 190) — SPECIES_AZURILL
+Kricketot (Bug, BST 194) — SPECIES_KRICKETOT
+Caterpie (Bug, BST 195) — SPECIES_CATERPIE
 Weedle (Bug/Poison, BST 195) — SPECIES_WEEDLE
 Wurmple (Bug, BST 195) — SPECIES_WURMPLE
 Ralts (Psychic/Ralts_Family_Type2, BST 198) — SPECIES_RALTS
 Feebas (Water, BST 200) — SPECIES_FEEBAS
 Magikarp (Water, BST 200) — SPECIES_MAGIKARP
+Cascoon (Bug, BST 205) — SPECIES_CASCOON
 Kakuna (Bug/Poison, BST 205) — SPECIES_KAKUNA
 Metapod (Bug, BST 205) — SPECIES_METAPOD
 Pichu (Electric, BST 205) — SPECIES_PICHU
+Silcoon (Bug, BST 205) — SPECIES_SILCOON
 Igglybuff (BST 210) — SPECIES_IGGLYBUFF
 Tyrogue (Fighting, BST 210) — SPECIES_TYROGUE
 Wooper (Water/Ground, BST 210) — SPECIES_WOOPER
@@ -27,6 +31,7 @@ Combee (Bug/Flying, BST 244) — SPECIES_COMBEE
 Starly (Normal/Flying, BST 245) — SPECIES_STARLY
 Togepi (Togepi_Family_Type, BST 245) — SPECIES_TOGEPI
 Zubat (Poison/Flying, BST 245) — SPECIES_ZUBAT
+Bidoof (Normal, BST 250) — SPECIES_BIDOOF
 Hoppip (Grass/Flying, BST 250) — SPECIES_HOPPIP
 Marill (Water/Fairy, BST 250) — SPECIES_MARILL
 Slugma (Fire, BST 250) — SPECIES_SLUGMA
@@ -35,9 +40,11 @@ Spinarak (Bug/Poison, BST 250) — SPECIES_SPINARAK
 Swinub (Ice/Ground, BST 250) — SPECIES_SWINUB
 Pidgey (Normal/Flying, BST 251) — SPECIES_PIDGEY
 Rattata (Normal, BST 253) — SPECIES_RATTATA
+Patrat (Normal, BST 255) — SPECIES_PATRAT
 Skitty (Normal, BST 260) — SPECIES_SKITTY
 Wynaut (Psychic, BST 260) — SPECIES_WYNAUT
 Hoothoot (Normal/Flying, BST 262) — SPECIES_HOOTHOOT
+Spearow (Normal/Flying, BST 262) — SPECIES_SPEAROW
 Shinx (Electric, BST 263) — SPECIES_SHINX
 Pidove (Normal/Flying, BST 264) — SPECIES_PIDOVE
 Diglett (Ground, BST 265) — SPECIES_DIGLETT
@@ -62,6 +69,7 @@ Barboach (Water/Ground, BST 288) — SPECIES_BARBOACH
 Ditto (Normal, BST 288) — SPECIES_DITTO
 Ekans (Poison, BST 288) — SPECIES_EKANS
 Bonsly (Rock, BST 290) — SPECIES_BONSLY
+Meowth (Normal, BST 290) — SPECIES_MEOWTH
 Pineco (Bug, BST 290) — SPECIES_PINECO
 Spheal (Ice/Water, BST 290) — SPECIES_SPHEAL
 Trapinch (Ground, BST 290) — SPECIES_TRAPINCH
@@ -70,6 +78,8 @@ Duskull (Ghost, BST 295) — SPECIES_DUSKULL
 Electrike (Electric, BST 295) — SPECIES_ELECTRIKE
 Horsea (Water, BST 295) — SPECIES_HORSEA
 Shroomish (Grass, BST 295) — SPECIES_SHROOMISH
+Shuppet (Ghost, BST 295) — SPECIES_SHUPPET
+Vulpix (Fire, BST 299) — SPECIES_VULPIX
 Bagon (Dragon, BST 300) — SPECIES_BAGON
 Baltoy (Ground/Psychic, BST 300) — SPECIES_BALTOY
 Beldum (Steel/Psychic, BST 300) — SPECIES_BELDUM
@@ -91,6 +101,7 @@ Machop (Fighting, BST 305) — SPECIES_MACHOP
 Mankey (Fighting, BST 305) — SPECIES_MANKEY
 Numel (Fire/Ground, BST 305) — SPECIES_NUMEL
 Shellder (Water, BST 305) — SPECIES_SHELLDER
+Smoochum (Ice/Psychic, BST 305) — SPECIES_SMOOCHUM
 Venonat (Bug/Poison, BST 305) — SPECIES_VENONAT
 Corphish (Water, BST 308) — SPECIES_CORPHISH
 Oshawott (Water, BST 308) — SPECIES_OSHAWOTT
@@ -102,6 +113,7 @@ Cyndaquil (Fire, BST 309) — SPECIES_CYNDAQUIL
 Abra (Psychic, BST 310) — SPECIES_ABRA
 Doduo (Normal/Flying, BST 310) — SPECIES_DODUO
 Gastly (Ghost/Poison, BST 310) — SPECIES_GASTLY
+Glameow (Normal, BST 310) — SPECIES_GLAMEOW
 Mudkip (Water, BST 310) — SPECIES_MUDKIP
 Swablu (Normal/Flying, BST 310) — SPECIES_SWABLU
 Torchic (Fire, BST 310) — SPECIES_TORCHIC
@@ -114,6 +126,7 @@ Panpour (Water, BST 316) — SPECIES_PANPOUR
 Pansage (Grass, BST 316) — SPECIES_PANSAGE
 Pansear (Fire, BST 316) — SPECIES_PANSEAR
 Bulbasaur (Grass/Poison, BST 318) — SPECIES_BULBASAUR
+Chikorita (Grass, BST 318) — SPECIES_CHIKORITA
 Turtwig (Grass, BST 318) — SPECIES_TURTWIG
 Cubone (Ground, BST 320) — SPECIES_CUBONE
 Goldeen (Water, BST 320) — SPECIES_GOLDEEN
@@ -123,6 +136,7 @@ Pikachu (Electric, BST 320) — SPECIES_PIKACHU
 Psyduck (Water, BST 320) — SPECIES_PSYDUCK
 Clefairy (BST 323) — SPECIES_CLEFAIRY
 Eevee (Normal, BST 325) — SPECIES_EEVEE
+Exeggcute (Grass/Psychic, BST 325) — SPECIES_EXEGGCUTE
 Grimer (Poison, BST 325) — SPECIES_GRIMER
 Krabby (Water, BST 325) — SPECIES_KRABBY
 Magnemite (Electric/Steel, BST 325) — SPECIES_MAGNEMITE
@@ -179,6 +193,7 @@ Herdier (Normal, BST 370) — SPECIES_HERDIER
 Nosepass (Rock, BST 375) — SPECIES_NOSEPASS
 Mawile (BST 380) — SPECIES_MAWILE
 Sableye (Dark/Ghost, BST 380) — SPECIES_SABLEYE
+Kricketune (Bug, BST 384) — SPECIES_KRICKETUNE
 Dustox (Bug/Poison, BST 385) — SPECIES_DUSTOX
 Lickitung (Normal, BST 385) — SPECIES_LICKITUNG
 Onix (Rock/Ground, BST 385) — SPECIES_ONIX
@@ -441,8 +456,11 @@ Milotic (Water, BST 540) — SPECIES_MILOTIC
 Snorlax (Normal, BST 540) — SPECIES_SNORLAX
 Togekiss (Togepi_Family_Type/Flying, BST 545) — SPECIES_TOGEKISS
 Arcanine (Fire, BST 555) — SPECIES_ARCANINE
+Dragonite (Dragon/Flying, BST 600) — SPECIES_DRAGONITE
 Garchomp (Dragon/Ground, BST 600) — SPECIES_GARCHOMP
 Manaphy (Water, BST 600) — SPECIES_MANAPHY
+Metagross (Steel/Psychic, BST 600) — SPECIES_METAGROSS
+Salamence (Dragon/Flying, BST 600) — SPECIES_SALAMENCE
 Tyranitar (Rock/Dark, BST 600) — SPECIES_TYRANITAR
 Slaking (Normal, BST 670) — SPECIES_SLAKING
 Alakazam (Psychic) — SPECIES_ALAKAZAM
