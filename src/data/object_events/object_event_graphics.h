@@ -377,6 +377,15 @@ const u32 gObjectEventPic_LugiaOld[] = INCBIN_U32("graphics/object_events/pics/p
 const u32 gObjectEventPic_HoOhOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/ho_oh.4bpp");
 const u32 gObjectEventPic_Meloetta[] = INCBIN_U32("graphics/pokemon/meloetta/overworld.4bpp");
 const u32 gObjectEventPic_Celebi[] = INCBIN_U32("graphics/pokemon/celebi/overworld.4bpp");
+const u32 gObjectEventPic_Darkrai[] = INCBIN_U32("graphics/pokemon/darkrai/overworld.4bpp");
+const u16 gObjectEventPal_Darkrai[] = INCBIN_U16("graphics/pokemon/darkrai/overworld_normal.gbapal");
+
+const u32 gObjectEventPic_Victini[] = INCBIN_U32("graphics/pokemon/victini/overworld.4bpp");
+const u16 gObjectEventPal_Victini[] = INCBIN_U16("graphics/pokemon/victini/overworld_normal.gbapal");
+
+const u32 gObjectEventPic_Mewtwo[] = INCBIN_U32("graphics/pokemon/mewtwo/overworld.4bpp");
+const u16 gObjectEventPal_Mewtwo[] = INCBIN_U16("graphics/pokemon/mewtwo/overworld_normal.gbapal");
+
 const u32 gObjectEventPic_GroudonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/groudon.4bpp");
 const u32 gObjectEventPic_KyogreOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/kyogre.4bpp");
 
