@@ -9778,67 +9778,67 @@
           "map": "MAP_SHOAL_CAVE_LOW_TIDE_STAIRS_ROOM",
           "base_label": "gShoalCave_LowTideStairsRoom",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 25,
             "mons": [
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_LAIRON"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_GARDEVOIR"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_ARON"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_ELECTABUZZ"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_VOLBEAT"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_LUDICOLO"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_VOLTORB"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_SEALEO"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_ILLUMISE"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_PRINPLUP"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_SKORUPI"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_GROVYLE"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_TENTACOOL"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_SLOWBRO"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_CORSOLA"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_GROVYLE"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_LILLIGANT"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_DRIFLOON"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_AERODACTYL"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_GLALIE"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_ABSOL"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_TYRANITAR"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_ROGGENROLA"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_TYRANITAR_MEGA"
               }
             ]
           }
@@ -9847,67 +9847,67 @@
           "map": "MAP_SHOAL_CAVE_LOW_TIDE_LOWER_ROOM",
           "base_label": "gShoalCave_LowTideLowerRoom",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 25,
             "mons": [
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_LAIRON"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_GALLADE"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_ARON"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_TOGEKISS"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_VOLBEAT"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_LUCARIO"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_VOLTORB"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_SUNFLORA"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_ILLUMISE"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_AZUMARILL"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_SKORUPI"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_FLAREON"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_TENTACOOL"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_GLACEON"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_CORSOLA"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_LEAFEON"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_LILLIGANT"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_MEGANIUM"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_AERODACTYL"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_GLALIE"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_ABSOL"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_SALAMENCE_MEGA"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_ROGGENROLA"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_BLASTOISE_MEGA"
               }
             ]
           }
@@ -9916,67 +9916,67 @@
           "map": "MAP_SHOAL_CAVE_LOW_TIDE_INNER_ROOM",
           "base_label": "gShoalCave_LowTideInnerRoom",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 25,
             "mons": [
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_LAIRON"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_STEELIX"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_ARON"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_SERVINE"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_VOLBEAT"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_GROTLE"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_VOLTORB"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_ROSELIA"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_ILLUMISE"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_AZUMARILL"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_SKORUPI"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_FLAREON"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_TENTACOOL"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_GLACEON"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_CORSOLA"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_LEAFEON"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_LILLIGANT"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_MEGANIUM"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_AERODACTYL"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_GLALIE"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_ABSOL"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_CHARIZARD_MEGA_X"
               },
               {
-                "min_level": 80,
-                "max_level": 88,
-                "species": "SPECIES_ROGGENROLA"
+                "min_level": 70,
+                "max_level": 80,
+                "species": "SPECIES_GALLADE_MEGA"
               }
             ]
           },

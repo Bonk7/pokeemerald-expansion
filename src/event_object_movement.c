@@ -529,6 +529,42 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
 
     {gObjectEventPal_Mewtwo,              OBJ_EVENT_PAL_TAG_MEWTWO},
 
+    {gObjectEventPal_Regigigas,              OBJ_EVENT_PAL_TAG_REGIGIGAS},
+
+    {gObjectEventPal_Raikou,              OBJ_EVENT_PAL_TAG_RAIKOU},
+
+    {gObjectEventPal_Entei,              OBJ_EVENT_PAL_TAG_ENTEI},
+
+    {gObjectEventPal_Heatran,              OBJ_EVENT_PAL_TAG_HEATRAN},
+
+    {gObjectEventPal_Suicune,              OBJ_EVENT_PAL_TAG_SUICUNE},
+
+    {gObjectEventPal_Mesprit,              OBJ_EVENT_PAL_TAG_MESPRIT},
+
+    {gObjectEventPal_Dialga,              OBJ_EVENT_PAL_TAG_DIALGA},
+
+    {gObjectEventPal_Palkia,              OBJ_EVENT_PAL_TAG_PALKIA},
+
+    {gObjectEventPal_Jirachi,              OBJ_EVENT_PAL_TAG_JIRACHI},
+
+    {gObjectEventPal_Mew,              OBJ_EVENT_PAL_TAG_MEW},
+
+    {gObjectEventPal_Uxie,              OBJ_EVENT_PAL_TAG_UXIE},
+
+    {gObjectEventPal_Azelf,              OBJ_EVENT_PAL_TAG_AZELF},
+
+    {gObjectEventPal_Articuno,              OBJ_EVENT_PAL_TAG_ARTICUNO},
+
+    {gObjectEventPal_Latios,              OBJ_EVENT_PAL_TAG_LATIOS},
+
+    {gObjectEventPal_Moltres,              OBJ_EVENT_PAL_TAG_MOLTRES},
+
+    {gObjectEventPal_Cresselia,              OBJ_EVENT_PAL_TAG_CRESSELIA},
+
+    {gObjectEventPal_Zapdos,              OBJ_EVENT_PAL_TAG_ZAPDOS},
+
+    {gObjectEventPal_Lugia,              OBJ_EVENT_PAL_TAG_LUGIA},
+
     {gObjectEventPal_Lugia,                 OBJ_EVENT_PAL_TAG_LUGIA},
     {gObjectEventPal_RubySapphireBrendan,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
     {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},

@@ -1365,6 +1365,78 @@ static const struct SpriteFrameImage sPicTable_Mewtwo[] = {
     overworld_ascending_frames(gObjectEventPic_Mewtwo, 4, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_Regigigas[] = {
+    overworld_ascending_frames(gObjectEventPic_Regigigas, 8, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_Raikou[] = {
+    overworld_ascending_frames(gObjectEventPic_Raikou, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Entei[] = {
+    overworld_ascending_frames(gObjectEventPic_Entei, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Heatran[] = {
+    overworld_ascending_frames(gObjectEventPic_Heatran, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Suicune[] = {
+    overworld_ascending_frames(gObjectEventPic_Suicune, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Lugia[] = {
+    overworld_ascending_frames(gObjectEventPic_Lugia, 8, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_Mesprit[] = {
+    overworld_ascending_frames(gObjectEventPic_Mesprit, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Dialga[] = {
+    overworld_ascending_frames(gObjectEventPic_Dialga, 8, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_Palkia[] = {
+    overworld_ascending_frames(gObjectEventPic_Palkia, 8, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_Jirachi[] = {
+    overworld_ascending_frames(gObjectEventPic_Jirachi, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Mew[] = {
+    overworld_ascending_frames(gObjectEventPic_Mew, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Uxie[] = {
+    overworld_ascending_frames(gObjectEventPic_Uxie, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Azelf[] = {
+    overworld_ascending_frames(gObjectEventPic_Azelf, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Articuno[] = {
+    overworld_ascending_frames(gObjectEventPic_Articuno, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Latios[] = {
+    overworld_ascending_frames(gObjectEventPic_Latios, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Moltres[] = {
+    overworld_ascending_frames(gObjectEventPic_Moltres, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Cresselia[] = {
+    overworld_ascending_frames(gObjectEventPic_Cresselia, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Zapdos[] = {
+    overworld_ascending_frames(gObjectEventPic_Zapdos, 4, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_RubySapphireBrendan[] = {
     overworld_ascending_frames(gObjectEventPic_RubySapphireBrendanNormal, 2, 4),
 };

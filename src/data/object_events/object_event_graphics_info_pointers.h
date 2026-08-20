@@ -244,6 +244,36 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Victini;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mewtwo;
 
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Regigigas;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Raikou;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Entei;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Heatran;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Suicune;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mesprit;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dialga;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Palkia;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Jirachi;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Uxie;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Azelf;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Articuno;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Moltres;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cresselia;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zapdos;
+
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower;
@@ -504,6 +534,42 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_VICTINI] =                 &gObjectEventGraphicsInfo_Victini,
 
     [OBJ_EVENT_GFX_MEWTWO] =                 &gObjectEventGraphicsInfo_Mewtwo,
+
+    [OBJ_EVENT_GFX_REGIGIGAS] =                 &gObjectEventGraphicsInfo_Regigigas,
+
+    [OBJ_EVENT_GFX_RAIKOU] =                 &gObjectEventGraphicsInfo_Raikou,
+
+    [OBJ_EVENT_GFX_ENTEI] =                 &gObjectEventGraphicsInfo_Entei,
+
+    [OBJ_EVENT_GFX_HEATRAN] =                 &gObjectEventGraphicsInfo_Heatran,
+
+    [OBJ_EVENT_GFX_SUICUNE] =                 &gObjectEventGraphicsInfo_Suicune,
+
+    [OBJ_EVENT_GFX_LUGIA] =                 &gObjectEventGraphicsInfo_Lugia,
+
+    [OBJ_EVENT_GFX_MESPRIT] =                 &gObjectEventGraphicsInfo_Mesprit,
+
+    [OBJ_EVENT_GFX_DIALGA] =                 &gObjectEventGraphicsInfo_Dialga,
+
+    [OBJ_EVENT_GFX_PALKIA] =                 &gObjectEventGraphicsInfo_Palkia,
+
+    [OBJ_EVENT_GFX_JIRACHI] =                 &gObjectEventGraphicsInfo_Jirachi,
+
+    [OBJ_EVENT_GFX_MEW] =                 &gObjectEventGraphicsInfo_Mew,
+
+    [OBJ_EVENT_GFX_UXIE] =                 &gObjectEventGraphicsInfo_Uxie,
+
+    [OBJ_EVENT_GFX_AZELF] =                 &gObjectEventGraphicsInfo_Azelf,
+
+    [OBJ_EVENT_GFX_ARTICUNO] =                 &gObjectEventGraphicsInfo_Articuno,
+
+    [OBJ_EVENT_GFX_LATIOS] =                 &gObjectEventGraphicsInfo_Latios,
+
+    [OBJ_EVENT_GFX_MOLTRES] =                 &gObjectEventGraphicsInfo_Moltres,
+
+    [OBJ_EVENT_GFX_CRESSELIA] =                 &gObjectEventGraphicsInfo_Cresselia,
+
+    [OBJ_EVENT_GFX_ZAPDOS] =                 &gObjectEventGraphicsInfo_Zapdos,
 
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,

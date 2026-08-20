@@ -78,19 +78,34 @@ def available_maps() -> list[Path]:
     return sorted((ROOT / "data" / "maps").glob("**/map.json"))
 
 
-def validate_source(pokemon_dir: Path) -> tuple[Path, Path, Path | None]:
+def sprite_layout(overworld_png: Path) -> dict[str, int | str]:
+    width, height = read_png_size(overworld_png)
+    if width % 6 != 0 or width // 6 != height or width // 6 not in (32, 64):
+        raise ValueError(
+            f"{overworld_png} is {width}x{height}; expected six square frames "
+            "of either 32x32 or 64x64 pixels."
+        )
+    frame_pixels = width // 6
+    frame_tiles = frame_pixels // 8
+    return {
+        "sheet_width": width,
+        "sheet_height": height,
+        "frame_pixels": frame_pixels,
+        "frame_tiles": frame_tiles,
+        "rom_size": frame_pixels * frame_pixels // 2,
+        "oam": f"sOamTables_{frame_pixels}x{frame_pixels}",
+        "oam_base": f"gObjectEventBaseOam_{frame_pixels}x{frame_pixels}",
+    }
+
+
+def validate_source(pokemon_dir: Path) -> tuple[Path, Path, Path | None, dict[str, int | str]]:
     overworld_png = pokemon_dir / "overworld.png"
     normal_palette = pokemon_dir / "overworld_normal.pal"
     shiny_palette = pokemon_dir / "overworld_shiny.pal"
-    width, height = read_png_size(overworld_png)
-    if (width, height) != (192, 32):
-        raise ValueError(
-            f"{overworld_png} is {width}x{height}; expected 192x32 "
-            "(six 32x32 frames)."
-        )
+    layout = sprite_layout(overworld_png)
     if not normal_palette.exists():
         raise FileNotFoundError(f"Missing palette: {normal_palette}")
-    return overworld_png, normal_palette, shiny_palette if shiny_palette.exists() else None
+    return overworld_png, normal_palette, shiny_palette if shiny_palette.exists() else None, layout
 
 
 def read_png_size(path: Path) -> tuple[int, int]:
@@ -200,33 +215,39 @@ def update_graphics_data(pascal_name: str, folder_name: str) -> None:
     write_text(GRAPHICS_DATA, text)
 
 
-def update_pic_tables(pascal_name: str) -> None:
+def update_pic_tables(pascal_name: str, layout: dict[str, int | str]) -> None:
     text = read_text(PIC_TABLES)
     addition = (
         f"static const struct SpriteFrameImage sPicTable_{pascal_name}[] = {{\n"
-        f"    overworld_ascending_frames(gObjectEventPic_{pascal_name}, 4, 4),\n"
+        f"    overworld_ascending_frames(gObjectEventPic_{pascal_name}, "
+        f"{layout['frame_tiles']}, {layout['frame_tiles']}),\n"
         "};\n"
     )
     text = insert_before(text, "static const struct SpriteFrameImage sPicTable_RubySapphireBrendan[]", addition)
     write_text(PIC_TABLES, text)
 
 
-def update_graphics_info(pascal_name: str, graphics_constant: str, palette_constant: str) -> None:
+def update_graphics_info(
+    pascal_name: str,
+    graphics_constant: str,
+    palette_constant: str,
+    layout: dict[str, int | str],
+) -> None:
     text = read_text(GRAPHICS_INFO)
     addition = f"""const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_{pascal_name} = {{
     .tileTag = TAG_NONE,
     .paletteTag = {palette_constant},
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
-    .size = 512,
-    .width = 32,
-    .height = 32,
+    .size = {layout['rom_size']},
+    .width = {layout['frame_pixels']},
+    .height = {layout['frame_pixels']},
     .paletteSlot = PALSLOT_NPC_1,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
     .compressed = FALSE,
     .tracks = TRACKS_FOOT,
-    .oam = &gObjectEventBaseOam_32x32,
-    .subspriteTables = sOamTables_32x32,
+    .oam = &{layout['oam_base']},
+    .subspriteTables = {layout['oam']},
     .anims = sAnimTable_Following,
     .images = sPicTable_{pascal_name},
     .affineAnims = gDummySpriteAffineAnimTable,
@@ -254,7 +275,7 @@ def register_sprite(map_json: Path, pokemon_dir: Path) -> str:
     if not map_json.exists() or map_json.name != "map.json":
         raise FileNotFoundError(f"Expected an existing map.json: {map_json}")
 
-    overworld_png, normal_palette, shiny_palette = validate_source(pokemon_dir)
+    overworld_png, normal_palette, shiny_palette, layout = validate_source(pokemon_dir)
     constant_name, graphics_constant, pascal_name = species_names(pokemon_dir)
     constants_text = read_text(EVENT_OBJECT_CONSTANTS)
     graphics_id, _ = next_graphics_id(constants_text)
@@ -264,17 +285,20 @@ def register_sprite(map_json: Path, pokemon_dir: Path) -> str:
 
     update_constants(graphics_constant, graphics_id, f"OBJ_EVENT_PAL_TAG_{constant_name}", palette_tag)
     update_graphics_data(pascal_name, pokemon_dir.name)
-    update_pic_tables(pascal_name)
+    update_pic_tables(pascal_name, layout)
     update_graphics_info(
         pascal_name,
         graphics_constant,
         f"OBJ_EVENT_PAL_TAG_{constant_name}",
+        layout,
     )
     update_palette_table(pascal_name, f"OBJ_EVENT_PAL_TAG_{constant_name}")
 
     return (
         f"Registered {pokemon_dir.name} successfully.\n"
         f"Graphics ID: {graphics_constant} ({graphics_id})\n"
+        f"Sprite frames: {layout['frame_pixels']}x{layout['frame_pixels']} "
+        f"({layout['sheet_width']}x{layout['sheet_height']} sheet)\n"
         f"Palette tag: 0x{palette_tag:04X}\n"
         "The map itself was not modified."
     )
@@ -337,7 +361,7 @@ def launch_gui() -> None:
 
     ttk.Label(
         frame,
-        text="Expected source: graphics/pokemon/<name>/overworld.png (192x32)",
+        text="Supported source sheets: six 32x32 frames (192x32) or six 64x64 frames (384x64)",
     ).grid(row=2, column=1, sticky="w", padx=(12, 6), pady=(0, 12))
 
     status_label = ttk.Label(frame, textvariable=status, wraplength=680)
