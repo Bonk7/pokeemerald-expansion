@@ -1346,11 +1346,11 @@ static const struct SpriteFrameImage sPicTable_HoOhOld[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_Meloetta[] = {
-    obj_frame_tiles(gObjectEventPic_Meloetta),
+    overworld_ascending_frames(gObjectEventPic_Meloetta, 4, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_Celebi[] = {
-    obj_frame_tiles(gObjectEventPic_Celebi),
+    overworld_ascending_frames(gObjectEventPic_Celebi, 4, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_RubySapphireBrendan[] = {
