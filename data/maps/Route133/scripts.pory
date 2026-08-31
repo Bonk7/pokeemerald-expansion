@@ -38,3 +38,27 @@ Route133_EventScript_Conor::
 	end
 
 `
+
+script Route101_Battle_Lugia{
+	lockall
+	playmoncry(SPECIES_LUGIA, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_LUGIA, 95, ITEM_MASTER_BALL)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Lugia_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Lugia_Caught{
+	setflag(FLAG_STATIC_LUGIA)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(11)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}
+
