@@ -1236,30 +1236,30 @@
 #define FLAG_ITEM_CAVEOFORIGIN_B1F_GALLADITE                        0x49E 
 #define FLAG_ITEM_ROUTE_102_GARDEVOIRITE                            0x49F 
 #define FLAG_STATIC_MELOETTA                                        0x4A0 // meloetta
-#define FLAG_STATIC_CELEBI                                          0x4A1 // Unused Flag
-#define FLAG_STATIC_LUGIA                                           0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
-#define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
-#define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
-#define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
-#define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
-#define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
-#define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag
-#define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag
-#define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
-#define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
-#define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
-#define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
-#define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
-#define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
-#define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
-#define FLAG_UNUSED_0x4B2                                           0x4B2 // Unused Flag
-#define FLAG_UNUSED_0x4B3                                           0x4B3 // Unused Flag
-#define FLAG_UNUSED_0x4B4                                           0x4B4 // Unused Flag
-#define FLAG_UNUSED_0x4B5                                           0x4B5 // Unused Flag
-#define FLAG_UNUSED_0x4B6                                           0x4B6 // Unused Flag
-#define FLAG_UNUSED_0x4B7                                           0x4B7 // Unused Flag
-#define FLAG_UNUSED_0x4B8                                           0x4B8 // Unused Flag
+#define FLAG_STATIC_CELEBI                                          0x4A1 
+#define FLAG_STATIC_LUGIA                                           0x4A2 
+#define FLAG_STATIC_MEWTWO                                          0x4A3 
+#define FLAG_STATIC_DARKRAI                                         0x4A4 
+#define FLAG_STATIC_ZAPDOS                                          0x4A5 // Unused Flag
+#define FLAG_STATIC_MOLTRES                                         0x4A6 // Unused Flag
+#define FLAG_STATIC_ARTICUNO                                        0x4A7 // Unused Flag
+#define FLAG_STATIC_SUICUNE                                         0x4A8 // Unused Flag
+#define FLAG_STATIC_RAIKOU                                          0x4A9 // Unused Flag
+#define FLAG_STATIC_ENTEI                                           0x4AA // Unused Flag
+#define FLAG_STATIC_CRESSELIA                                       0x4AB // Unused Flag
+#define FLAG_STATIC_UXIE                                            0x4AC // Unused Flag
+#define FLAG_STATIC_AZELF                                           0x4AD // Unused Flag
+#define FLAG_STATIC_MESPRIT                                         0x4AE // Unused Flag
+#define FLAG_STATIC_DIALGA                                          0x4AF // Unused Flag
+#define FLAG_STATIC_PALKIA                                          0x4B0 // Unused Flag
+#define FLAG_STATIC_GIRATINA                                        0x4B1 // Unused Flag
+#define FLAG_STATIC_KYUREM                                          0x4B2 // Unused Flag
+#define FLAG_STATIC_RESHIRAM                                        0x4B3 // Unused Flag
+#define FLAG_STATIC_ZEKROM                                          0x4B4 // Unused Flag
+#define FLAG_STATIC_REGIGIGAS                                       0x4B5 // Unused Flag
+#define FLAG_STATIC_VICTINI                                         0x4B6 // Unused Flag
+#define FLAG_STATIC_LATIAS                                           0x4B7 // Unused Flag
+#define FLAG_STATIC_LATIOS                                           0x4B8 // Unused Flag
 #define FLAG_UNUSED_0x4B9                                           0x4B9 // Unused Flag
 #define FLAG_UNUSED_0x4BA                                           0x4BA // Unused Flag
 #define FLAG_UNUSED_0x4BB                                           0x4BB // Unused Flag

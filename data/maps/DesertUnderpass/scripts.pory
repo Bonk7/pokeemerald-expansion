@@ -38,3 +38,25 @@ DesertUnderpass_Text_FoundClawFossil::
 	.string "{PLAYER} found the CLAW FOSSIL.$"
 
 `
+script DesertUnderpass_Battle_Mewtwo{
+	lockall
+	playmoncry(SPECIES_MEWTWO, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_MEWTWO, 55, ITEM_MEWTWONITE_Y)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Mewtwo_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Mewtwo_Caught{
+	setflag(FLAG_STATIC_MEWTWO)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(2)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

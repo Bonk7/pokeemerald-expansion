@@ -617,3 +617,25 @@ MtPyre_Summit_Text_HoennTrioTale:
 	.string "flew off into the wild blue yonder…$"
 
 `
+script MtPyreSummit_Battle_Darkrai{
+	lockall
+	playmoncry(SPECIES_DARKRAI, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_DARKRAI, 65, ITEM_FOCUS_SASH)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Darkrai_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Darkrai_Caught{
+	setflag(FLAG_STATIC_DARKRAI)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(9)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}
