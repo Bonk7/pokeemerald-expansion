@@ -14,3 +14,25 @@ FieryPath_EventScript_MoveScottToFallarbor::
 	return
 
 `
+script FieryPath_Battle_Moltres{
+	lockall
+	playmoncry(SPECIES_MOLTRES, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_MOLTRES, 32, ITEM_SKY_PLATE)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Moltres_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Moltres_Caught{
+	setflag(FLAG_STATIC_MOLTRES)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(8)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

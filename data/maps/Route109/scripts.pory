@@ -564,3 +564,25 @@ Route109_Text_TrainerTipsSign:
 	.string "POKéMON raised by TRAINERS are said\n"
 	.string "to grow stronger than wild POKéMON.$"
 `
+script Route109_Battle_Suicune{
+	lockall
+	playmoncry(SPECIES_SUICUNE, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_Suicune, 52, ITEM_SPLASH_PLATE)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Suicune_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Suicune_Caught{
+	setflag(FLAG_STATIC_SUICUNE)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(25)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

@@ -104,3 +104,48 @@ Route124_Text_HuntersHouse:
 	.string "HUNTER'S HOUSE$"
 
 `
+script Route124_Battle_Latias{
+	lockall
+	playmoncry(SPECIES_LATIAS, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_LATIAS, 70, ITEM_LATIASITE)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Latias_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Latias_Caught{
+	setflag(FLAG_STATIC_LATIAS)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(12)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}
+
+script Route124_Battle_Latios{
+	lockall
+	playmoncry(SPECIES_LATIOS, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_LATIOS, 70, ITEM_LATIOSITE)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Latios_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Latios_Caught{
+	setflag(FLAG_STATIC_LATIOS)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(11)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

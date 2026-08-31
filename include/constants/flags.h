@@ -120,7 +120,7 @@
 #define FLAG_MOSSDEEP_GYM_SWITCH_3           0x66 //
 #define FLAG_MOSSDEEP_GYM_SWITCH_4           0x67 //
 
-#define FLAG_RECEIVED_EXP_CHARM              0x68  // exp charm flag
+#define FLAG_RECEIVED_TICKETS                0x68  // exp charm flag
 
 #define FLAG_OCEANIC_MUSEUM_MET_REPORTER     0x69
 #define FLAG_RECEIVED_HM_STRENGTH            0x6A
@@ -1258,11 +1258,11 @@
 #define FLAG_STATIC_ZEKROM                                          0x4B4 // Unused Flag
 #define FLAG_STATIC_REGIGIGAS                                       0x4B5 // Unused Flag
 #define FLAG_STATIC_VICTINI                                         0x4B6 // Unused Flag
-#define FLAG_STATIC_LATIAS                                           0x4B7 // Unused Flag
-#define FLAG_STATIC_LATIOS                                           0x4B8 // Unused Flag
-#define FLAG_UNUSED_0x4B9                                           0x4B9 // Unused Flag
-#define FLAG_UNUSED_0x4BA                                           0x4BA // Unused Flag
-#define FLAG_UNUSED_0x4BB                                           0x4BB // Unused Flag
+#define FLAG_STATIC_LATIAS                                          0x4B7 // Unused Flag
+#define FLAG_STATIC_LATIOS                                          0x4B8 // Unused Flag
+#define FLAG_STATIC_HEATRAN                                         0x4B9 // Unused Flag
+#define FLAG_STATIC_JIRACHI                                         0x4BA // Unused Flag
+#define FLAG_STATIC_MEW                                             0x4BB // Unused Flag
 #define FLAG_UNUSED_0x4BC                                           0x4BC // Unused Flag
 #define FLAG_UNUSED_0x4BD                                           0x4BD // Unused Flag
 #define FLAG_UNUSED_0x4BE                                           0x4BE // Unused Flag

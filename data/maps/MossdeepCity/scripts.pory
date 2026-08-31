@@ -428,3 +428,26 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "mentored WALLACE.$"
 
 `
+
+script Mossdeep_Battle_Jirachi{
+	lockall
+	playmoncry(SPECIES_JIRACHI, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_JIRACHI, 66, ITEM_SILK_SCARF)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Jirachi_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Jirachi_Caught{
+	setflag(FLAG_STATIC_JIRACHI)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(19)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

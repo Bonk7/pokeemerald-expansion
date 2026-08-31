@@ -721,3 +721,25 @@ Route111_Text_TrainerHillSign:
 	.string "TRAINERS!”$"
 
 `
+script Route111_Battle_Heatran{
+	lockall
+	playmoncry(SPECIES_HEATRAN, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_HEATRAN, 38, ITEM_FLAME_PLATE)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Heatran_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Heatran_Caught{
+	setflag(FLAG_STATIC_HEATRAN)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(49)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

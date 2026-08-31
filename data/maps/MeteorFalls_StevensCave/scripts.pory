@@ -57,3 +57,25 @@ MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
 	.string "Fufufu, even I couldn't tell you that.$"
 
 `
+script MeteorFalls_Battle_Regigigas{
+	lockall
+	playmoncry(SPECIES_REGIGIGAS, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_REGIGIGAS, 86, ITEM_LEFTOVERS)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Regigigas_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Regigigas_Caught{
+	setflag(FLAG_STATIC_REGIGIGAS)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(2)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

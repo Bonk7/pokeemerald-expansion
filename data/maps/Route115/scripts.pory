@@ -145,3 +145,47 @@ Route115_Text_MeteorFallsSign:
 	.string "FALLARBOR TOWN THROUGH HERE$"
 
 `
+script Route115_Battle_Palkia{
+	lockall
+	playmoncry(SPECIES_PALKIA, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_PALKIA, 45, ITEM_LUSTROUS_GLOBE)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Palkia_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Palkia_Caught{
+	setflag(FLAG_STATIC_PALKIA)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(26)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}
+script Route115_Battle_Dialga{
+	lockall
+	playmoncry(SPECIES_DIALGA, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_DIALGA, 45, ITEM_ADAMANT_CRYSTAL)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Dialga_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Dialga_Caught{
+	setflag(FLAG_STATIC_DIALGA)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(25)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

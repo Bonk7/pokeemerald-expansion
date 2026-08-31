@@ -758,3 +758,25 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 	.string "I mean, we are totally happy!$"
 
 `
+script Lilycove_Battle_MEW{
+	lockall
+	playmoncry(SPECIES_MEW, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_MEW, 68, ITEM_LEFTOVERS)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Mew_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Mew_Caught{
+	setflag(FLAG_STATIC_MEW)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(22)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

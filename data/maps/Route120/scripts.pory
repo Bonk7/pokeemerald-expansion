@@ -429,3 +429,25 @@ Route120_Text_RouteSign121:
 	.string "{RIGHT_ARROW} ROUTE 121\n"
 	.string "{LEFT_ARROW} ROUTE 120$"
 `
+script Route120_Battle_Azelf{
+	lockall
+	playmoncry(SPECIES_AZELF, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_AZELF, 60, ITEM_GRISEOUS_ORB)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Azelf_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Azelf_Caught{
+	setflag(FLAG_STATIC_AZELF)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(45)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

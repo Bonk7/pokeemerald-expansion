@@ -8,3 +8,25 @@ AlteringCave_OnTransition:
 	end
 
 `
+script AlteringCave_Battle_Cresselia{
+	lockall
+	playmoncry(SPECIES_CRESSELIA, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_CRESSELIA, 60, ITEM_EXP_CHARM)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Cresselia_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Cresselia_Caught{
+	setflag(FLAG_STATIC_CRESSELIA)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(1)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

@@ -263,3 +263,25 @@ NewMauville_Inside_Text_SteppedOnSwitchGeneratorStopped:
 	.string "The generator appears to have\n"
 	.string "stopped…$"
 `
+script NM_Battle_Raikou{
+	lockall
+	playmoncry(SPECIES_RAIKOU, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_RAIKOU, 48, ITEM_ZAP_PLATE)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Raikou_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Raikou_Caught{
+	setflag(FLAG_STATIC_RAIKOU)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(9)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

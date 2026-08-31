@@ -202,3 +202,25 @@ Route114_Text_LanettesHouse:
 	.string "LANETTE'S HOUSE$"
 
 `
+script Route114_Battle_Entei{
+	lockall
+	playmoncry(SPECIES_ENTEI, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_ENTEI, 42, ITEM_SACRED_ASH)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Entei_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Entei_Caught{
+	setflag(FLAG_STATIC_ENTEI)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(29)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

@@ -42,7 +42,7 @@ script MtPyreExterior_Battle_Zapdos{
 	releaseall
 }
 
-script ZAPDOS_Caught{
+script Zapdos_Caught{
 	setflag(FLAG_STATIC_ZAPDOS)
 	fadescreen(FADE_TO_BLACK)
 	removeobject(4)

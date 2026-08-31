@@ -64,3 +64,25 @@ Route126_EventScript_RematchPablo::
 	end
 
 `
+script Route126_Battle_Mesprit{
+	lockall
+	playmoncry(SPECIES_MESPRIT, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_MESPRIT, 70, ITEM_LUSTROUS_ORB)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Mesprit_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Mesprit_Caught{
+	setflag(FLAG_STATIC_MESPRIT)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(9)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

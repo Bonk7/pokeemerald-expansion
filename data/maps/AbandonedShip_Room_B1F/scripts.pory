@@ -3,3 +3,25 @@ AbandonedShip_Room_B1F_MapScripts::
 	.byte 0
 
 `
+script AbandonedShip_Battle_Victini{
+	lockall
+	playmoncry(SPECIES_VICTINI, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_VICTINI, 58, ITEM_CHARCOAL)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Victini_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Victini_Caught{
+	setflag(FLAG_STATIC_VICTINI)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(2)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

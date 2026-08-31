@@ -353,3 +353,25 @@ Route103_Text_RouteSign:
 	.string "{DOWN_ARROW} OLDALE TOWN$"
 
 `
+script Route103_Battle_Articuno{
+	lockall
+	playmoncry(SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_ARTICUNO, 20, ITEM_NEVERMELTICE)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Articuno_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Articuno_Caught{
+	setflag(FLAG_STATIC_ARTICUNO)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(21)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

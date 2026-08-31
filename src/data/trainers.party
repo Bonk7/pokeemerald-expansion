@@ -10829,8 +10829,8 @@ Class: Rival
 Pic: May
 Gender: Female
 Music: Female
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smarft Trainer
 
 Wingull
 Level: 18
@@ -10843,6 +10843,10 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Combusken
 Level: 20
 Shiny: Yes
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Kirlia
+Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
