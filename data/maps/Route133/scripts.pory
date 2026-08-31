@@ -39,7 +39,7 @@ Route133_EventScript_Conor::
 
 `
 
-script Route101_Battle_Lugia{
+script Route133_Battle_Lugia{
 	lockall
 	playmoncry(SPECIES_LUGIA, CRY_MODE_ENCOUNTER)
 	delay(40)
