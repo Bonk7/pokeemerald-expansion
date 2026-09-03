@@ -3681,13 +3681,30 @@ Name: NOB
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
+Mugshot: Purple
 Music: Intense
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smart Trainer
 
-Machop
-Level: 19
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Bruno (Machamp)
+Shiny: Yes
+Level: 46
+Ability: No Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dynamic Punch
+- Stone Edge
+- Fissure
+- Bullet Punch
+
+Honk (Honchkrow)
+Shiny: Yes
+Level: 46
+Ability: Super Luck
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Night Slash
+- Drill Peck
+- Heat Wave
+- Pursuit
 
 === TRAINER_NOB_2 ===
 Name: NOB
@@ -3698,9 +3715,15 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Machoke
-Level: 27
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Bruno (Machamp)
+Shiny: Yes
+Level: 55
+Ability: No Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dynamic Punch
+- Stone Edge
+- Fissure
+- Bullet Punch
 
 === TRAINER_NOB_3 ===
 Name: NOB
