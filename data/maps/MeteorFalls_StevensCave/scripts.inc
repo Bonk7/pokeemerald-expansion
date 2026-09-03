@@ -112,3 +112,46 @@ MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
 	.string "… … … … … …\p"
 # 57 "data/maps/MeteorFalls_StevensCave/scripts.pory"
 	.string "Fufufu, even I couldn't tell you that.$"
+
+MeteorFalls_Battle_Regigigas::
+# 61 "data/maps/MeteorFalls_StevensCave/scripts.pory"
+	lockall
+# 62 "data/maps/MeteorFalls_StevensCave/scripts.pory"
+	playmoncry SPECIES_REGIGIGAS, CRY_MODE_ENCOUNTER
+# 63 "data/maps/MeteorFalls_StevensCave/scripts.pory"
+	delay 40
+# 64 "data/maps/MeteorFalls_StevensCave/scripts.pory"
+	waitmoncry
+# 65 "data/maps/MeteorFalls_StevensCave/scripts.pory"
+	setwildbattle SPECIES_REGIGIGAS, 86, ITEM_LEFTOVERS
+# 66 "data/maps/MeteorFalls_StevensCave/scripts.pory"
+	dowildbattle
+# 67 "data/maps/MeteorFalls_StevensCave/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 68 "data/maps/MeteorFalls_StevensCave/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq MeteorFalls_Battle_Regigigas_2
+MeteorFalls_Battle_Regigigas_1:
+# 71 "data/maps/MeteorFalls_StevensCave/scripts.pory"
+	waitmessage
+# 72 "data/maps/MeteorFalls_StevensCave/scripts.pory"
+	releaseall
+	return
+
+MeteorFalls_Battle_Regigigas_2:
+# 69 "data/maps/MeteorFalls_StevensCave/scripts.pory"
+	call Regigigas_Caught
+	goto MeteorFalls_Battle_Regigigas_1
+
+
+Regigigas_Caught::
+# 76 "data/maps/MeteorFalls_StevensCave/scripts.pory"
+	setflag FLAG_STATIC_REGIGIGAS
+# 77 "data/maps/MeteorFalls_StevensCave/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 78 "data/maps/MeteorFalls_StevensCave/scripts.pory"
+	removeobject 2
+# 79 "data/maps/MeteorFalls_StevensCave/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

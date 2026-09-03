@@ -74,3 +74,46 @@ Route133_EventScript_Conor::
 	msgbox Route133_Text_ConorPostBattle, MSGBOX_AUTOCLOSE
 # 38 "data/maps/Route133/scripts.pory"
 	end
+
+Route133_Battle_Lugia::
+# 43 "data/maps/Route133/scripts.pory"
+	lockall
+# 44 "data/maps/Route133/scripts.pory"
+	playmoncry SPECIES_LUGIA, CRY_MODE_ENCOUNTER
+# 45 "data/maps/Route133/scripts.pory"
+	delay 40
+# 46 "data/maps/Route133/scripts.pory"
+	waitmoncry
+# 47 "data/maps/Route133/scripts.pory"
+	setwildbattle SPECIES_LUGIA, 95, ITEM_MASTER_BALL
+# 48 "data/maps/Route133/scripts.pory"
+	dowildbattle
+# 49 "data/maps/Route133/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 50 "data/maps/Route133/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route133_Battle_Lugia_2
+Route133_Battle_Lugia_1:
+# 53 "data/maps/Route133/scripts.pory"
+	waitmessage
+# 54 "data/maps/Route133/scripts.pory"
+	releaseall
+	return
+
+Route133_Battle_Lugia_2:
+# 51 "data/maps/Route133/scripts.pory"
+	call Lugia_Caught
+	goto Route133_Battle_Lugia_1
+
+
+Lugia_Caught::
+# 58 "data/maps/Route133/scripts.pory"
+	setflag FLAG_STATIC_LUGIA
+# 59 "data/maps/Route133/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 60 "data/maps/Route133/scripts.pory"
+	removeobject 11
+# 61 "data/maps/Route133/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

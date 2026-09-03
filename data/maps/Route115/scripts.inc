@@ -288,3 +288,89 @@ Route115_Text_MeteorFallsSign:
 	.string "METEOR FALLS\n"
 # 145 "data/maps/Route115/scripts.pory"
 	.string "FALLARBOR TOWN THROUGH HERE$"
+
+Route115_Battle_Palkia::
+# 149 "data/maps/Route115/scripts.pory"
+	lockall
+# 150 "data/maps/Route115/scripts.pory"
+	playmoncry SPECIES_PALKIA, CRY_MODE_ENCOUNTER
+# 151 "data/maps/Route115/scripts.pory"
+	delay 40
+# 152 "data/maps/Route115/scripts.pory"
+	waitmoncry
+# 153 "data/maps/Route115/scripts.pory"
+	setwildbattle SPECIES_PALKIA, 45, ITEM_LUSTROUS_GLOBE
+# 154 "data/maps/Route115/scripts.pory"
+	dowildbattle
+# 155 "data/maps/Route115/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 156 "data/maps/Route115/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route115_Battle_Palkia_2
+Route115_Battle_Palkia_1:
+# 159 "data/maps/Route115/scripts.pory"
+	waitmessage
+# 160 "data/maps/Route115/scripts.pory"
+	releaseall
+	return
+
+Route115_Battle_Palkia_2:
+# 157 "data/maps/Route115/scripts.pory"
+	call Palkia_Caught
+	goto Route115_Battle_Palkia_1
+
+
+Palkia_Caught::
+# 164 "data/maps/Route115/scripts.pory"
+	setflag FLAG_STATIC_PALKIA
+# 165 "data/maps/Route115/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 166 "data/maps/Route115/scripts.pory"
+	removeobject 26
+# 167 "data/maps/Route115/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+
+
+Route115_Battle_Dialga::
+# 171 "data/maps/Route115/scripts.pory"
+	lockall
+# 172 "data/maps/Route115/scripts.pory"
+	playmoncry SPECIES_DIALGA, CRY_MODE_ENCOUNTER
+# 173 "data/maps/Route115/scripts.pory"
+	delay 40
+# 174 "data/maps/Route115/scripts.pory"
+	waitmoncry
+# 175 "data/maps/Route115/scripts.pory"
+	setwildbattle SPECIES_DIALGA, 45, ITEM_ADAMANT_CRYSTAL
+# 176 "data/maps/Route115/scripts.pory"
+	dowildbattle
+# 177 "data/maps/Route115/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 178 "data/maps/Route115/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route115_Battle_Dialga_2
+Route115_Battle_Dialga_1:
+# 181 "data/maps/Route115/scripts.pory"
+	waitmessage
+# 182 "data/maps/Route115/scripts.pory"
+	releaseall
+	return
+
+Route115_Battle_Dialga_2:
+# 179 "data/maps/Route115/scripts.pory"
+	call Dialga_Caught
+	goto Route115_Battle_Dialga_1
+
+
+Dialga_Caught::
+# 186 "data/maps/Route115/scripts.pory"
+	setflag FLAG_STATIC_DIALGA
+# 187 "data/maps/Route115/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 188 "data/maps/Route115/scripts.pory"
+	removeobject 25
+# 189 "data/maps/Route115/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

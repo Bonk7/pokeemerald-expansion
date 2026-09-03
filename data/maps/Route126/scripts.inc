@@ -126,3 +126,46 @@ Route126_EventScript_RematchPablo::
 	msgbox Route126_Text_PabloPostRematch, MSGBOX_AUTOCLOSE
 # 64 "data/maps/Route126/scripts.pory"
 	end
+
+Route126_Battle_Mesprit::
+# 68 "data/maps/Route126/scripts.pory"
+	lockall
+# 69 "data/maps/Route126/scripts.pory"
+	playmoncry SPECIES_MESPRIT, CRY_MODE_ENCOUNTER
+# 70 "data/maps/Route126/scripts.pory"
+	delay 40
+# 71 "data/maps/Route126/scripts.pory"
+	waitmoncry
+# 72 "data/maps/Route126/scripts.pory"
+	setwildbattle SPECIES_MESPRIT, 70, ITEM_LUSTROUS_ORB
+# 73 "data/maps/Route126/scripts.pory"
+	dowildbattle
+# 74 "data/maps/Route126/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 75 "data/maps/Route126/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route126_Battle_Mesprit_2
+Route126_Battle_Mesprit_1:
+# 78 "data/maps/Route126/scripts.pory"
+	waitmessage
+# 79 "data/maps/Route126/scripts.pory"
+	releaseall
+	return
+
+Route126_Battle_Mesprit_2:
+# 76 "data/maps/Route126/scripts.pory"
+	call Mesprit_Caught
+	goto Route126_Battle_Mesprit_1
+
+
+Mesprit_Caught::
+# 83 "data/maps/Route126/scripts.pory"
+	setflag FLAG_STATIC_MESPRIT
+# 84 "data/maps/Route126/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 85 "data/maps/Route126/scripts.pory"
+	removeobject 9
+# 86 "data/maps/Route126/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

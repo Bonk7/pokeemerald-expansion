@@ -526,3 +526,46 @@ NewMauville_Inside_Text_SteppedOnSwitchGeneratorStopped:
 	.string "The generator appears to have\n"
 # 264 "data/maps/NewMauville_Inside/scripts.pory"
 	.string "stopped…$"
+
+NM_Battle_Raikou::
+# 267 "data/maps/NewMauville_Inside/scripts.pory"
+	lockall
+# 268 "data/maps/NewMauville_Inside/scripts.pory"
+	playmoncry SPECIES_RAIKOU, CRY_MODE_ENCOUNTER
+# 269 "data/maps/NewMauville_Inside/scripts.pory"
+	delay 40
+# 270 "data/maps/NewMauville_Inside/scripts.pory"
+	waitmoncry
+# 271 "data/maps/NewMauville_Inside/scripts.pory"
+	setwildbattle SPECIES_RAIKOU, 48, ITEM_ZAP_PLATE
+# 272 "data/maps/NewMauville_Inside/scripts.pory"
+	dowildbattle
+# 273 "data/maps/NewMauville_Inside/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 274 "data/maps/NewMauville_Inside/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq NM_Battle_Raikou_2
+NM_Battle_Raikou_1:
+# 277 "data/maps/NewMauville_Inside/scripts.pory"
+	waitmessage
+# 278 "data/maps/NewMauville_Inside/scripts.pory"
+	releaseall
+	return
+
+NM_Battle_Raikou_2:
+# 275 "data/maps/NewMauville_Inside/scripts.pory"
+	call Raikou_Caught
+	goto NM_Battle_Raikou_1
+
+
+Raikou_Caught::
+# 282 "data/maps/NewMauville_Inside/scripts.pory"
+	setflag FLAG_STATIC_RAIKOU
+# 283 "data/maps/NewMauville_Inside/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 284 "data/maps/NewMauville_Inside/scripts.pory"
+	removeobject 9
+# 285 "data/maps/NewMauville_Inside/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

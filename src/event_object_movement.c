@@ -547,7 +547,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
 
     {gObjectEventPal_Jirachi,              OBJ_EVENT_PAL_TAG_JIRACHI},
 
-    {gObjectEventPal_Mew,              OBJ_EVENT_PAL_TAG_MEW},
+    {gObjectEventPal_MewNew,              OBJ_EVENT_PAL_TAG_MEW_NEW},
 
     {gObjectEventPal_Uxie,              OBJ_EVENT_PAL_TAG_UXIE},
 
@@ -555,7 +555,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
 
     {gObjectEventPal_Articuno,              OBJ_EVENT_PAL_TAG_ARTICUNO},
 
-    {gObjectEventPal_Latios,              OBJ_EVENT_PAL_TAG_LATIOS},
+    {gObjectEventPal_LatiosNew,              OBJ_EVENT_PAL_TAG_LATIOS_NEW},
 
     {gObjectEventPal_Moltres,              OBJ_EVENT_PAL_TAG_MOLTRES},
 
@@ -564,8 +564,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Zapdos,              OBJ_EVENT_PAL_TAG_ZAPDOS},
 
     {gObjectEventPal_Lugia,              OBJ_EVENT_PAL_TAG_LUGIA},
+    {gObjectEventPal_LugiaNew,            OBJ_EVENT_PAL_TAG_LUGIA_NEW},
 
-    {gObjectEventPal_Lugia,                 OBJ_EVENT_PAL_TAG_LUGIA},
     {gObjectEventPal_RubySapphireBrendan,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
     {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},
 #if OW_FOLLOWERS_POKEBALLS

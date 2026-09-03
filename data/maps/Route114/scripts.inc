@@ -402,3 +402,46 @@ Route114_Text_FossilManiacsHouseSign:
 Route114_Text_LanettesHouse:
 # 202 "data/maps/Route114/scripts.pory"
 	.string "LANETTE'S HOUSE$"
+
+Route114_Battle_Entei::
+# 206 "data/maps/Route114/scripts.pory"
+	lockall
+# 207 "data/maps/Route114/scripts.pory"
+	playmoncry SPECIES_ENTEI, CRY_MODE_ENCOUNTER
+# 208 "data/maps/Route114/scripts.pory"
+	delay 40
+# 209 "data/maps/Route114/scripts.pory"
+	waitmoncry
+# 210 "data/maps/Route114/scripts.pory"
+	setwildbattle SPECIES_ENTEI, 42, ITEM_SACRED_ASH
+# 211 "data/maps/Route114/scripts.pory"
+	dowildbattle
+# 212 "data/maps/Route114/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 213 "data/maps/Route114/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route114_Battle_Entei_2
+Route114_Battle_Entei_1:
+# 216 "data/maps/Route114/scripts.pory"
+	waitmessage
+# 217 "data/maps/Route114/scripts.pory"
+	releaseall
+	return
+
+Route114_Battle_Entei_2:
+# 214 "data/maps/Route114/scripts.pory"
+	call Entei_Caught
+	goto Route114_Battle_Entei_1
+
+
+Entei_Caught::
+# 221 "data/maps/Route114/scripts.pory"
+	setflag FLAG_STATIC_ENTEI
+# 222 "data/maps/Route114/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 223 "data/maps/Route114/scripts.pory"
+	removeobject 29
+# 224 "data/maps/Route114/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

@@ -26,3 +26,46 @@ FieryPath_EventScript_MoveScottToFallarbor::
 	clearflag FLAG_HIDE_FALLARBOR_TOWN_BATTLE_TENT_SCOTT
 # 14 "data/maps/FieryPath/scripts.pory"
 	return
+
+FieryPath_Battle_Moltres::
+# 18 "data/maps/FieryPath/scripts.pory"
+	lockall
+# 19 "data/maps/FieryPath/scripts.pory"
+	playmoncry SPECIES_MOLTRES, CRY_MODE_ENCOUNTER
+# 20 "data/maps/FieryPath/scripts.pory"
+	delay 40
+# 21 "data/maps/FieryPath/scripts.pory"
+	waitmoncry
+# 22 "data/maps/FieryPath/scripts.pory"
+	setwildbattle SPECIES_MOLTRES, 32, ITEM_SKY_PLATE
+# 23 "data/maps/FieryPath/scripts.pory"
+	dowildbattle
+# 24 "data/maps/FieryPath/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 25 "data/maps/FieryPath/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq FieryPath_Battle_Moltres_2
+FieryPath_Battle_Moltres_1:
+# 28 "data/maps/FieryPath/scripts.pory"
+	waitmessage
+# 29 "data/maps/FieryPath/scripts.pory"
+	releaseall
+	return
+
+FieryPath_Battle_Moltres_2:
+# 26 "data/maps/FieryPath/scripts.pory"
+	call Moltres_Caught
+	goto FieryPath_Battle_Moltres_1
+
+
+Moltres_Caught::
+# 33 "data/maps/FieryPath/scripts.pory"
+	setflag FLAG_STATIC_MOLTRES
+# 34 "data/maps/FieryPath/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 35 "data/maps/FieryPath/scripts.pory"
+	removeobject 8
+# 36 "data/maps/FieryPath/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

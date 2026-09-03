@@ -206,3 +206,89 @@ Route124_EventScript_Isabella::
 Route124_Text_HuntersHouse:
 # 104 "data/maps/Route124/scripts.pory"
 	.string "HUNTER'S HOUSE$"
+
+Route124_Battle_Latias::
+# 108 "data/maps/Route124/scripts.pory"
+	lockall
+# 109 "data/maps/Route124/scripts.pory"
+	playmoncry SPECIES_LATIAS, CRY_MODE_ENCOUNTER
+# 110 "data/maps/Route124/scripts.pory"
+	delay 40
+# 111 "data/maps/Route124/scripts.pory"
+	waitmoncry
+# 112 "data/maps/Route124/scripts.pory"
+	setwildbattle SPECIES_LATIAS, 70, ITEM_LATIASITE
+# 113 "data/maps/Route124/scripts.pory"
+	dowildbattle
+# 114 "data/maps/Route124/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 115 "data/maps/Route124/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route124_Battle_Latias_2
+Route124_Battle_Latias_1:
+# 118 "data/maps/Route124/scripts.pory"
+	waitmessage
+# 119 "data/maps/Route124/scripts.pory"
+	releaseall
+	return
+
+Route124_Battle_Latias_2:
+# 116 "data/maps/Route124/scripts.pory"
+	call Latias_Caught
+	goto Route124_Battle_Latias_1
+
+
+Latias_Caught::
+# 123 "data/maps/Route124/scripts.pory"
+	setflag FLAG_STATIC_LATIAS
+# 124 "data/maps/Route124/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 125 "data/maps/Route124/scripts.pory"
+	removeobject 12
+# 126 "data/maps/Route124/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+
+
+Route124_Battle_Latios::
+# 131 "data/maps/Route124/scripts.pory"
+	lockall
+# 132 "data/maps/Route124/scripts.pory"
+	playmoncry SPECIES_LATIOS, CRY_MODE_ENCOUNTER
+# 133 "data/maps/Route124/scripts.pory"
+	delay 40
+# 134 "data/maps/Route124/scripts.pory"
+	waitmoncry
+# 135 "data/maps/Route124/scripts.pory"
+	setwildbattle SPECIES_LATIOS, 70, ITEM_LATIOSITE
+# 136 "data/maps/Route124/scripts.pory"
+	dowildbattle
+# 137 "data/maps/Route124/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 138 "data/maps/Route124/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route124_Battle_Latios_2
+Route124_Battle_Latios_1:
+# 141 "data/maps/Route124/scripts.pory"
+	waitmessage
+# 142 "data/maps/Route124/scripts.pory"
+	releaseall
+	return
+
+Route124_Battle_Latios_2:
+# 139 "data/maps/Route124/scripts.pory"
+	call Latios_Caught
+	goto Route124_Battle_Latios_1
+
+
+Latios_Caught::
+# 146 "data/maps/Route124/scripts.pory"
+	setflag FLAG_STATIC_LATIOS
+# 147 "data/maps/Route124/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 148 "data/maps/Route124/scripts.pory"
+	removeobject 11
+# 149 "data/maps/Route124/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

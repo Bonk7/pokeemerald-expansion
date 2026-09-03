@@ -273,6 +273,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Moltres;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cresselia;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zapdos;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LugiaNew;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LatiosNew;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MewNew;
 
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
@@ -545,8 +548,6 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
 
     [OBJ_EVENT_GFX_SUICUNE] =                 &gObjectEventGraphicsInfo_Suicune,
 
-    [OBJ_EVENT_GFX_LUGIA] =                 &gObjectEventGraphicsInfo_Lugia,
-
     [OBJ_EVENT_GFX_MESPRIT] =                 &gObjectEventGraphicsInfo_Mesprit,
 
     [OBJ_EVENT_GFX_DIALGA] =                 &gObjectEventGraphicsInfo_Dialga,
@@ -555,21 +556,20 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
 
     [OBJ_EVENT_GFX_JIRACHI] =                 &gObjectEventGraphicsInfo_Jirachi,
 
-    [OBJ_EVENT_GFX_MEW] =                 &gObjectEventGraphicsInfo_Mew,
-
     [OBJ_EVENT_GFX_UXIE] =                 &gObjectEventGraphicsInfo_Uxie,
 
     [OBJ_EVENT_GFX_AZELF] =                 &gObjectEventGraphicsInfo_Azelf,
 
     [OBJ_EVENT_GFX_ARTICUNO] =                 &gObjectEventGraphicsInfo_Articuno,
 
-    [OBJ_EVENT_GFX_LATIOS] =                 &gObjectEventGraphicsInfo_Latios,
-
     [OBJ_EVENT_GFX_MOLTRES] =                 &gObjectEventGraphicsInfo_Moltres,
 
     [OBJ_EVENT_GFX_CRESSELIA] =                 &gObjectEventGraphicsInfo_Cresselia,
 
     [OBJ_EVENT_GFX_ZAPDOS] =                 &gObjectEventGraphicsInfo_Zapdos,
+    [OBJ_EVENT_GFX_LUGIA_NEW] =              &gObjectEventGraphicsInfo_LugiaNew,
+    [OBJ_EVENT_GFX_LATIOS_NEW] =             &gObjectEventGraphicsInfo_LatiosNew,
+    [OBJ_EVENT_GFX_MEW_NEW] =                &gObjectEventGraphicsInfo_MewNew,
 
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,

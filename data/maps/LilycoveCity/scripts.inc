@@ -1514,3 +1514,46 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 	.string "POKéMON as soon as we arrived.\p"
 # 758 "data/maps/LilycoveCity/scripts.pory"
 	.string "I mean, we are totally happy!$"
+
+Lilycove_Battle_MEW::
+# 762 "data/maps/LilycoveCity/scripts.pory"
+	lockall
+# 763 "data/maps/LilycoveCity/scripts.pory"
+	playmoncry SPECIES_MEW, CRY_MODE_ENCOUNTER
+# 764 "data/maps/LilycoveCity/scripts.pory"
+	delay 40
+# 765 "data/maps/LilycoveCity/scripts.pory"
+	waitmoncry
+# 766 "data/maps/LilycoveCity/scripts.pory"
+	setwildbattle SPECIES_MEW, 68, ITEM_LEFTOVERS
+# 767 "data/maps/LilycoveCity/scripts.pory"
+	dowildbattle
+# 768 "data/maps/LilycoveCity/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 769 "data/maps/LilycoveCity/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Lilycove_Battle_MEW_2
+Lilycove_Battle_MEW_1:
+# 772 "data/maps/LilycoveCity/scripts.pory"
+	waitmessage
+# 773 "data/maps/LilycoveCity/scripts.pory"
+	releaseall
+	return
+
+Lilycove_Battle_MEW_2:
+# 770 "data/maps/LilycoveCity/scripts.pory"
+	call Mew_Caught
+	goto Lilycove_Battle_MEW_1
+
+
+Mew_Caught::
+# 777 "data/maps/LilycoveCity/scripts.pory"
+	setflag FLAG_STATIC_MEW
+# 778 "data/maps/LilycoveCity/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 779 "data/maps/LilycoveCity/scripts.pory"
+	removeobject 22
+# 780 "data/maps/LilycoveCity/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

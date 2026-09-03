@@ -52,3 +52,46 @@ MtPyre_Exterior_EventScript_SunTrigger::
 	doweather
 # 27 "data/maps/MtPyre_Exterior/scripts.pory"
 	end
+
+MtPyreExterior_Battle_Zapdos::
+# 31 "data/maps/MtPyre_Exterior/scripts.pory"
+	lockall
+# 32 "data/maps/MtPyre_Exterior/scripts.pory"
+	playmoncry SPECIES_ZAPDOS, CRY_MODE_ENCOUNTER
+# 33 "data/maps/MtPyre_Exterior/scripts.pory"
+	delay 40
+# 34 "data/maps/MtPyre_Exterior/scripts.pory"
+	waitmoncry
+# 35 "data/maps/MtPyre_Exterior/scripts.pory"
+	setwildbattle SPECIES_ZAPDOS, 65, ITEM_MAGNET
+# 36 "data/maps/MtPyre_Exterior/scripts.pory"
+	dowildbattle
+# 37 "data/maps/MtPyre_Exterior/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 38 "data/maps/MtPyre_Exterior/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq MtPyreExterior_Battle_Zapdos_2
+MtPyreExterior_Battle_Zapdos_1:
+# 41 "data/maps/MtPyre_Exterior/scripts.pory"
+	waitmessage
+# 42 "data/maps/MtPyre_Exterior/scripts.pory"
+	releaseall
+	return
+
+MtPyreExterior_Battle_Zapdos_2:
+# 39 "data/maps/MtPyre_Exterior/scripts.pory"
+	call Zapdos_Caught
+	goto MtPyreExterior_Battle_Zapdos_1
+
+
+Zapdos_Caught::
+# 46 "data/maps/MtPyre_Exterior/scripts.pory"
+	setflag FLAG_STATIC_ZAPDOS
+# 47 "data/maps/MtPyre_Exterior/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 48 "data/maps/MtPyre_Exterior/scripts.pory"
+	removeobject 4
+# 49 "data/maps/MtPyre_Exterior/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

@@ -1128,3 +1128,46 @@ Route109_Text_TrainerTipsSign:
 	.string "POKéMON raised by TRAINERS are said\n"
 # 565 "data/maps/Route109/scripts.pory"
 	.string "to grow stronger than wild POKéMON.$"
+
+Route109_Battle_Suicune::
+# 568 "data/maps/Route109/scripts.pory"
+	lockall
+# 569 "data/maps/Route109/scripts.pory"
+	playmoncry SPECIES_SUICUNE, CRY_MODE_ENCOUNTER
+# 570 "data/maps/Route109/scripts.pory"
+	delay 40
+# 571 "data/maps/Route109/scripts.pory"
+	waitmoncry
+# 572 "data/maps/Route109/scripts.pory"
+	setwildbattle SPECIES_SUICUNE, 52, ITEM_SPLASH_PLATE
+# 573 "data/maps/Route109/scripts.pory"
+	dowildbattle
+# 574 "data/maps/Route109/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 575 "data/maps/Route109/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route109_Battle_Suicune_2
+Route109_Battle_Suicune_1:
+# 578 "data/maps/Route109/scripts.pory"
+	waitmessage
+# 579 "data/maps/Route109/scripts.pory"
+	releaseall
+	return
+
+Route109_Battle_Suicune_2:
+# 576 "data/maps/Route109/scripts.pory"
+	call Suicune_Caught
+	goto Route109_Battle_Suicune_1
+
+
+Suicune_Caught::
+# 583 "data/maps/Route109/scripts.pory"
+	setflag FLAG_STATIC_SUICUNE
+# 584 "data/maps/Route109/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 585 "data/maps/Route109/scripts.pory"
+	removeobject 25
+# 586 "data/maps/Route109/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

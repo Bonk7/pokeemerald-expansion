@@ -74,3 +74,46 @@ DesertUnderpass_Text_FoundRootFossil::
 DesertUnderpass_Text_FoundClawFossil::
 # 38 "data/maps/DesertUnderpass/scripts.pory"
 	.string "{PLAYER} found the CLAW FOSSIL.$"
+
+DesertUnderpass_Battle_Mewtwo::
+# 42 "data/maps/DesertUnderpass/scripts.pory"
+	lockall
+# 43 "data/maps/DesertUnderpass/scripts.pory"
+	playmoncry SPECIES_MEWTWO, CRY_MODE_ENCOUNTER
+# 44 "data/maps/DesertUnderpass/scripts.pory"
+	delay 40
+# 45 "data/maps/DesertUnderpass/scripts.pory"
+	waitmoncry
+# 46 "data/maps/DesertUnderpass/scripts.pory"
+	setwildbattle SPECIES_MEWTWO, 55, ITEM_MEWTWONITE_Y
+# 47 "data/maps/DesertUnderpass/scripts.pory"
+	dowildbattle
+# 48 "data/maps/DesertUnderpass/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 49 "data/maps/DesertUnderpass/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq DesertUnderpass_Battle_Mewtwo_2
+DesertUnderpass_Battle_Mewtwo_1:
+# 52 "data/maps/DesertUnderpass/scripts.pory"
+	waitmessage
+# 53 "data/maps/DesertUnderpass/scripts.pory"
+	releaseall
+	return
+
+DesertUnderpass_Battle_Mewtwo_2:
+# 50 "data/maps/DesertUnderpass/scripts.pory"
+	call Mewtwo_Caught
+	goto DesertUnderpass_Battle_Mewtwo_1
+
+
+Mewtwo_Caught::
+# 57 "data/maps/DesertUnderpass/scripts.pory"
+	setflag FLAG_STATIC_MEWTWO
+# 58 "data/maps/DesertUnderpass/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 59 "data/maps/DesertUnderpass/scripts.pory"
+	removeobject 2
+# 60 "data/maps/DesertUnderpass/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

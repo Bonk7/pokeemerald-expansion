@@ -1440,3 +1440,46 @@ Route111_Text_TrainerHillSign:
 	.string "“Scale the heights, you hot-blooded\n"
 # 721 "data/maps/Route111/scripts.pory"
 	.string "TRAINERS!”$"
+
+Route111_Battle_Heatran::
+# 725 "data/maps/Route111/scripts.pory"
+	lockall
+# 726 "data/maps/Route111/scripts.pory"
+	playmoncry SPECIES_HEATRAN, CRY_MODE_ENCOUNTER
+# 727 "data/maps/Route111/scripts.pory"
+	delay 40
+# 728 "data/maps/Route111/scripts.pory"
+	waitmoncry
+# 729 "data/maps/Route111/scripts.pory"
+	setwildbattle SPECIES_HEATRAN, 38, ITEM_FLAME_PLATE
+# 730 "data/maps/Route111/scripts.pory"
+	dowildbattle
+# 731 "data/maps/Route111/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 732 "data/maps/Route111/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route111_Battle_Heatran_2
+Route111_Battle_Heatran_1:
+# 735 "data/maps/Route111/scripts.pory"
+	waitmessage
+# 736 "data/maps/Route111/scripts.pory"
+	releaseall
+	return
+
+Route111_Battle_Heatran_2:
+# 733 "data/maps/Route111/scripts.pory"
+	call Heatran_Caught
+	goto Route111_Battle_Heatran_1
+
+
+Heatran_Caught::
+# 740 "data/maps/Route111/scripts.pory"
+	setflag FLAG_STATIC_HEATRAN
+# 741 "data/maps/Route111/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 742 "data/maps/Route111/scripts.pory"
+	removeobject 49
+# 743 "data/maps/Route111/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

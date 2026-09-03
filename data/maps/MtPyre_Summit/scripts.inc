@@ -1232,3 +1232,46 @@ MtPyre_Summit_Text_HoennTrioTale:
 	.string "Then, its duty done, the green POKéMON\n"
 # 617 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "flew off into the wild blue yonder…$"
+
+MtPyreSummit_Battle_Darkrai::
+# 621 "data/maps/MtPyre_Summit/scripts.pory"
+	lockall
+# 622 "data/maps/MtPyre_Summit/scripts.pory"
+	playmoncry SPECIES_DARKRAI, CRY_MODE_ENCOUNTER
+# 623 "data/maps/MtPyre_Summit/scripts.pory"
+	delay 40
+# 624 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmoncry
+# 625 "data/maps/MtPyre_Summit/scripts.pory"
+	setwildbattle SPECIES_DARKRAI, 65, ITEM_FOCUS_SASH
+# 626 "data/maps/MtPyre_Summit/scripts.pory"
+	dowildbattle
+# 627 "data/maps/MtPyre_Summit/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 628 "data/maps/MtPyre_Summit/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq MtPyreSummit_Battle_Darkrai_2
+MtPyreSummit_Battle_Darkrai_1:
+# 631 "data/maps/MtPyre_Summit/scripts.pory"
+	waitmessage
+# 632 "data/maps/MtPyre_Summit/scripts.pory"
+	releaseall
+	return
+
+MtPyreSummit_Battle_Darkrai_2:
+# 629 "data/maps/MtPyre_Summit/scripts.pory"
+	call Darkrai_Caught
+	goto MtPyreSummit_Battle_Darkrai_1
+
+
+Darkrai_Caught::
+# 636 "data/maps/MtPyre_Summit/scripts.pory"
+	setflag FLAG_STATIC_DARKRAI
+# 637 "data/maps/MtPyre_Summit/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 638 "data/maps/MtPyre_Summit/scripts.pory"
+	removeobject 9
+# 639 "data/maps/MtPyre_Summit/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

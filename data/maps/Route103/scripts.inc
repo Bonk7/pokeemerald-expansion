@@ -704,3 +704,46 @@ Route103_Text_RouteSign:
 	.string "ROUTE 103\n"
 # 353 "data/maps/Route103/scripts.pory"
 	.string "{DOWN_ARROW} OLDALE TOWN$"
+
+Route103_Battle_Articuno::
+# 357 "data/maps/Route103/scripts.pory"
+	lockall
+# 358 "data/maps/Route103/scripts.pory"
+	playmoncry SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER
+# 359 "data/maps/Route103/scripts.pory"
+	delay 40
+# 360 "data/maps/Route103/scripts.pory"
+	waitmoncry
+# 361 "data/maps/Route103/scripts.pory"
+	setwildbattle SPECIES_ARTICUNO, 20, ITEM_NEVERMELTICE
+# 362 "data/maps/Route103/scripts.pory"
+	dowildbattle
+# 363 "data/maps/Route103/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 364 "data/maps/Route103/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route103_Battle_Articuno_2
+Route103_Battle_Articuno_1:
+# 367 "data/maps/Route103/scripts.pory"
+	waitmessage
+# 368 "data/maps/Route103/scripts.pory"
+	releaseall
+	return
+
+Route103_Battle_Articuno_2:
+# 365 "data/maps/Route103/scripts.pory"
+	call Articuno_Caught
+	goto Route103_Battle_Articuno_1
+
+
+Articuno_Caught::
+# 372 "data/maps/Route103/scripts.pory"
+	setflag FLAG_STATIC_ARTICUNO
+# 373 "data/maps/Route103/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 374 "data/maps/Route103/scripts.pory"
+	removeobject 21
+# 375 "data/maps/Route103/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

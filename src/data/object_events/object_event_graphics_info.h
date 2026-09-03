@@ -4652,6 +4652,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Meloetta = {
     .images = sPicTable_Meloetta,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
+
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Celebi = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_CELEBI,
@@ -4823,9 +4824,9 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Suicune = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lugia = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LugiaNew = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_LUGIA,
+    .paletteTag = OBJ_EVENT_PAL_TAG_LUGIA_NEW,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 2048,
     .width = 64,
@@ -4918,9 +4919,9 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Jirachi = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mew = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MewNew = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_MEW,
+    .paletteTag = OBJ_EVENT_PAL_TAG_MEW_NEW,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 512,
     .width = 32,
@@ -4994,9 +4995,9 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Articuno = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Latios = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LatiosNew = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_LATIOS,
+    .paletteTag = OBJ_EVENT_PAL_TAG_LATIOS_NEW,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 512,
     .width = 32,

@@ -858,3 +858,46 @@ Route120_Text_RouteSign121:
 	.string "{RIGHT_ARROW} ROUTE 121\n"
 # 430 "data/maps/Route120/scripts.pory"
 	.string "{LEFT_ARROW} ROUTE 120$"
+
+Route120_Battle_Azelf::
+# 433 "data/maps/Route120/scripts.pory"
+	lockall
+# 434 "data/maps/Route120/scripts.pory"
+	playmoncry SPECIES_AZELF, CRY_MODE_ENCOUNTER
+# 435 "data/maps/Route120/scripts.pory"
+	delay 40
+# 436 "data/maps/Route120/scripts.pory"
+	waitmoncry
+# 437 "data/maps/Route120/scripts.pory"
+	setwildbattle SPECIES_AZELF, 60, ITEM_GRISEOUS_ORB
+# 438 "data/maps/Route120/scripts.pory"
+	dowildbattle
+# 439 "data/maps/Route120/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 440 "data/maps/Route120/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route120_Battle_Azelf_2
+Route120_Battle_Azelf_1:
+# 443 "data/maps/Route120/scripts.pory"
+	waitmessage
+# 444 "data/maps/Route120/scripts.pory"
+	releaseall
+	return
+
+Route120_Battle_Azelf_2:
+# 441 "data/maps/Route120/scripts.pory"
+	call Azelf_Caught
+	goto Route120_Battle_Azelf_1
+
+
+Azelf_Caught::
+# 448 "data/maps/Route120/scripts.pory"
+	setflag FLAG_STATIC_AZELF
+# 449 "data/maps/Route120/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 450 "data/maps/Route120/scripts.pory"
+	removeobject 45
+# 451 "data/maps/Route120/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

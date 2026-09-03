@@ -1223,25 +1223,70 @@ Route119_Text_TrainerTipsDecoration:
 
 Route119_Eventscript_BattleFrank::
 # 615 "data/maps/Route119/scripts.pory"
-	trainerbattle_single TRAINER_FRANK_119, Route119_Eventscript_BattleFrank_Text_0, Route119_Eventscript_BattleFrank_Text_1, Route119_GiveExpCharm
+	trainerbattle_single TRAINER_FRANK_119, Route119_Eventscript_BattleFrank_Text_0, Route119_Eventscript_BattleFrank_Text_1, Route119_GIVETICKETS
 # 616 "data/maps/Route119/scripts.pory"
 	msgbox Route119_Eventscript_BattleFrank_Text_2, MSGBOX_NPC
 	end
 
 
-Route119_GiveExpCharm::
+Route119_GIVETICKETS::
 # 621 "data/maps/Route119/scripts.pory"
-	giveitem ITEM_EXP_CHARM
+	giveitem ITEM_EON_TICKET
 # 622 "data/maps/Route119/scripts.pory"
-	msgbox Route119_GiveExpCharm_Text_0, MSGBOX_AUTOCLOSE
+	giveitem ITEM_AURORA_TICKET
 # 623 "data/maps/Route119/scripts.pory"
-	setflag FLAG_RECEIVED_EXP_CHARM
+	msgbox Route119_GIVETICKETS_Text_0, MSGBOX_AUTOCLOSE
+# 624 "data/maps/Route119/scripts.pory"
+	setflag FLAG_RECEIVED_TICKETS
 	end
+
+
+Route119_Battle_Uxie::
+# 629 "data/maps/Route119/scripts.pory"
+	lockall
+# 630 "data/maps/Route119/scripts.pory"
+	playmoncry SPECIES_UXIE, CRY_MODE_ENCOUNTER
+# 631 "data/maps/Route119/scripts.pory"
+	delay 40
+# 632 "data/maps/Route119/scripts.pory"
+	waitmoncry
+# 633 "data/maps/Route119/scripts.pory"
+	setwildbattle SPECIES_UXIE, 65, ITEM_ADAMANT_ORB
+# 634 "data/maps/Route119/scripts.pory"
+	dowildbattle
+# 635 "data/maps/Route119/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 636 "data/maps/Route119/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route119_Battle_Uxie_2
+Route119_Battle_Uxie_1:
+# 639 "data/maps/Route119/scripts.pory"
+	waitmessage
+# 640 "data/maps/Route119/scripts.pory"
+	releaseall
+	return
+
+Route119_Battle_Uxie_2:
+# 637 "data/maps/Route119/scripts.pory"
+	call Uxie_Caught
+	goto Route119_Battle_Uxie_1
+
+
+Uxie_Caught::
+# 644 "data/maps/Route119/scripts.pory"
+	setflag FLAG_STATIC_UXIE
+# 645 "data/maps/Route119/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 646 "data/maps/Route119/scripts.pory"
+	removeobject 44
+# 647 "data/maps/Route119/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
 
 
 Route119_Eventscript_BattleFrank_Text_0:
 # 615 "data/maps/Route119/scripts.pory"
-	.string "It has been a while.\n$"
+	.string "Hey again, please let me.\n test your skills again$"
 
 Route119_Eventscript_BattleFrank_Text_1:
 # 615 "data/maps/Route119/scripts.pory"
@@ -1252,6 +1297,6 @@ Route119_Eventscript_BattleFrank_Text_2:
 	.string "You've got some potential.\n"
 	.string "Next time i will beat you!$"
 
-Route119_GiveExpCharm_Text_0:
-# 622 "data/maps/Route119/scripts.pory"
-	.string "This is a gift for you. \nIt will help you gain more experience\p in battle.$"
+Route119_GIVETICKETS_Text_0:
+# 623 "data/maps/Route119/scripts.pory"
+	.string "These tickets grant access \nto strong pokemon. You can \n use the boat in slateport\n to find them$"

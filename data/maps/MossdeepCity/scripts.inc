@@ -854,3 +854,46 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "People tell me the new LEADER once\n"
 # 428 "data/maps/MossdeepCity/scripts.pory"
 	.string "mentored WALLACE.$"
+
+Mossdeep_Battle_Jirachi::
+# 433 "data/maps/MossdeepCity/scripts.pory"
+	lockall
+# 434 "data/maps/MossdeepCity/scripts.pory"
+	playmoncry SPECIES_JIRACHI, CRY_MODE_ENCOUNTER
+# 435 "data/maps/MossdeepCity/scripts.pory"
+	delay 40
+# 436 "data/maps/MossdeepCity/scripts.pory"
+	waitmoncry
+# 437 "data/maps/MossdeepCity/scripts.pory"
+	setwildbattle SPECIES_JIRACHI, 66, ITEM_SILK_SCARF
+# 438 "data/maps/MossdeepCity/scripts.pory"
+	dowildbattle
+# 439 "data/maps/MossdeepCity/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 440 "data/maps/MossdeepCity/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Mossdeep_Battle_Jirachi_2
+Mossdeep_Battle_Jirachi_1:
+# 443 "data/maps/MossdeepCity/scripts.pory"
+	waitmessage
+# 444 "data/maps/MossdeepCity/scripts.pory"
+	releaseall
+	return
+
+Mossdeep_Battle_Jirachi_2:
+# 441 "data/maps/MossdeepCity/scripts.pory"
+	call Jirachi_Caught
+	goto Mossdeep_Battle_Jirachi_1
+
+
+Jirachi_Caught::
+# 448 "data/maps/MossdeepCity/scripts.pory"
+	setflag FLAG_STATIC_JIRACHI
+# 449 "data/maps/MossdeepCity/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 450 "data/maps/MossdeepCity/scripts.pory"
+	removeobject 19
+# 451 "data/maps/MossdeepCity/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+
