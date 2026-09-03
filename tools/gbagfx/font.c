@@ -36,7 +36,7 @@ static void ConvertFromLatinFont(unsigned char *src, unsigned char *dest, unsign
 				}
 			}
 		}
-	}
+	}																																																																																																																																																																																																																			
 }
 
 static void ConvertToLatinFont(unsigned char *src, unsigned char *dest, unsigned int numRows)
