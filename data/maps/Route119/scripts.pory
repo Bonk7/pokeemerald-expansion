@@ -612,7 +612,7 @@ Route119_Text_TrainerTipsDecoration:
 `
 
 script Route119_Eventscript_BattleFrank {
-    trainerbattle_single(TRAINER_FRANK_119, "Hey again, please let me.\n test your skills again", "I lost again?", Route119_GIVETICKETS)
+    trainerbattle_single(TRAINER_FRANK_119, "Hey again, please let me test\nyour skills once more.", "I lost again?", Route119_GIVETICKETS)
 	msgbox(format("You've got some potential.\n Next time i will beat you!"), MSGBOX_NPC)
 	end
 }	
@@ -621,7 +621,7 @@ script Route119_GIVETICKETS {
 	giveitem(ITEM_EON_TICKET)
 	giveitem(ITEM_AURORA_TICKET)
 	giveitem(ITEM_MEGA_RING)
-	msgbox("These tickets grant access \nto strong pokemon. You can \n use the boat in slateport\n to find them. \n The mega ring is \n for enabling mega evolution.", MSGBOX_AUTOCLOSE)
+	msgbox("These tickets grant access \nto strong pokemon. You can \puse the boat in slateport\pto find them.\pThe mega ring is\p for enabling mega evolution.", MSGBOX_AUTOCLOSE)
 	setflag(FLAG_RECEIVED_TICKETS)
 	end
 }

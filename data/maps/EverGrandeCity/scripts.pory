@@ -36,10 +36,31 @@ EverGrandeCity_Text_CitySign:
 	.string "“The paradise of flowers, the sea,\n"
 	.string "and POKéMON.”$"
 
+BattleFrankAfterChampion_Intro:
+	.string "I am so proud of you!\nYou are the best trainer in the world!\pThat is... if i did not exist\pNow it is time for your final test!\pI won't hold back!$"
+
+BattleFrankAfterChampion_Defeat:
+	.string "Will you...$"
+
+BattleFrankAfterChampion_NotEnough:
+	.string "You need at least two Pokémon to battle!$"
+
 `
+script BattleFrankAfterChampion{
+	if(flag(FLAG_IS_CHAMPION) == TRUE && flag(FLAG_FRANK_EGC_DEFEATED) == FALSE) {
+		msgbox("Frank: You really became\nthe Champion, {PLAYER}!", MSGBOX_AUTOCLOSE)
+		trainerbattle_double(TRAINER_FRANK_EGC, BattleFrankAfterChampion_Intro, BattleFrankAfterChampion_Defeat, BattleFrankAfterChampion_NotEnough, BattleFrankAfterChampionAfterBattle)
+	}
+	elif (flag(FLAG_IS_CHAMPION) == FALSE) {
+		if(flag(FLAG_TEMP_5) == FALSE) {
+			setflag(FLAG_TEMP_5)
+			msgbox("Talk to me when you have \nbecome the champion!", MSGBOX_AUTOCLOSE)
+		}
+	}
+}
 
 script EGC_Eventscript_BattleIlse {
-    trainerbattle_single(TRAINER_ILSE_EGC, "Hey my name is Ilse,\n and i will beat you!", "Ah.. you are so lucky!", EGC_GIVEMEWTWO)
+	trainerbattle_double(TRAINER_ILSE_EGC, "Hey my name is Ilse,\n and i will beat you!", "Ah.. you are so lucky!", "You need at least\ntwo Pokémon to battle!", EGC_GIVEMEWTWO)
 	msgbox(format("Behind Victory Road lies the \nPokemon League!\p I think you can defeat the champion!"), MSGBOX_NPC)
 	end
 }	
@@ -87,17 +108,13 @@ EGC_GIVEMEWTWO_DONE:
 	end
 }
 
-script BattleFrankAfterChampion{
-	if(flag(FLAG_IS_CHAMPION) == TRUE) {
-		trainerbattle_single(TRAINER_FRANK_EGC, "I am so proud of you!\nYou are the best trainer in the world!\nThat is... if i did not exit\n Now it is time for your final test!\p I won't hold back", "Will you...", MSGBOX_AUTOCLOSE)
-		do {
-			msgbox("{PLAYER}, will you marry me?", MSGBOX_YESNO)
-		} while (var(VAR_RESULT) == NO)
-		giveitem(ITEM_SWEET_HEART)
-		giveitem(ITEM_HEART_SCALE)
-		msgbox("These items represent the love\nwe share. The heart symbol shows\nthat love will always connect us.", MSGBOX_AUTOCLOSE)
-	}
-	elif (flag(FLAG_IS_CHAMPION) == FALSE) {
-		msgbox("Talk to me when \nyou have become the champion!", MSGBOX_AUTOCLOSE)
-	}
-}
+script BattleFrankAfterChampionAfterBattle {
+	do {
+		msgbox("{PLAYER}, will you marry me?", MSGBOX_YESNO)
+	} while (var(VAR_RESULT) == NO)
+	giveitem(ITEM_SWEET_HEART)
+	giveitem(ITEM_HEART_SCALE)
+	giveitem(ITEM_MEGA_RING)
+	msgbox("{PLAYER}, ik hou van jou!\pDe mega ring had je al,\nmaar je krijgt nu een echte.", MSGBOX_AUTOCLOSE)
+	setflag(FLAG_FRANK_EGC_DEFEATED)
+}	

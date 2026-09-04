@@ -1288,7 +1288,7 @@ Uxie_Caught::
 
 Route119_Eventscript_BattleFrank_Text_0:
 # 615 "data/maps/Route119/scripts.pory"
-	.string "Hey again, please let me.\n test your skills again$"
+	.string "Hey again, please let me test\nyour skills once more.$"
 
 Route119_Eventscript_BattleFrank_Text_1:
 # 615 "data/maps/Route119/scripts.pory"
@@ -1301,4 +1301,4 @@ Route119_Eventscript_BattleFrank_Text_2:
 
 Route119_GIVETICKETS_Text_0:
 # 624 "data/maps/Route119/scripts.pory"
-	.string "These tickets grant access \nto strong pokemon. You can \n use the boat in slateport\n to find them. \n The mega ring is \n for enabling mega evolution.$"
+	.string "These tickets grant access \nto strong pokemon. You can \puse the boat in slateport\pto find them.\pThe mega ring is\p for enabling mega evolution.$"

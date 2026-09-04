@@ -895,15 +895,15 @@ Double Battle: No
 AI: Basic Trainer
 
 Roselia
-Level: 14
+Level: 54
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Shroomish
-Level: 14
+Breloom
+Level: 58
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Roselia
-Level: 14
+Roserade
+Level: 55
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FELIX ===
@@ -18580,7 +18580,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Ice Beam
 - Shadow Ball
 
-=== TRAINER_FRANK_EGC === 
+=== TRAINER_FRANK_EGC ===
 Name: Frank
 Class: Pyramid King
 Pic: Factory Head Noland

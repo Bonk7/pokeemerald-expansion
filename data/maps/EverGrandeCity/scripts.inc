@@ -72,167 +72,208 @@ EverGrandeCity_Text_CitySign:
 	.string "“The paradise of flowers, the sea,\n"
 # 37 "data/maps/EverGrandeCity/scripts.pory"
 	.string "and POKéMON.”$"
+# 38 "data/maps/EverGrandeCity/scripts.pory"
 
-EGC_Eventscript_BattleIlse::
+# 39 "data/maps/EverGrandeCity/scripts.pory"
+BattleFrankAfterChampion_Intro:
+# 40 "data/maps/EverGrandeCity/scripts.pory"
+	.string "I am so proud of you!\nYou are the best trainer in the world!\pThat is... if i did not exist\pNow it is time for your final test!\pI won't hold back!$"
+# 41 "data/maps/EverGrandeCity/scripts.pory"
+
 # 42 "data/maps/EverGrandeCity/scripts.pory"
-	trainerbattle_single TRAINER_ILSE_EGC, EGC_Eventscript_BattleIlse_Text_0, EGC_Eventscript_BattleIlse_Text_1, EGC_GIVEMEWTWO
+BattleFrankAfterChampion_Defeat:
 # 43 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox EGC_Eventscript_BattleIlse_Text_2, MSGBOX_NPC
-	end
+	.string "Will you...$"
+# 44 "data/maps/EverGrandeCity/scripts.pory"
 
-
-EGC_GIVEMEWTWO::
-# 49 "data/maps/EverGrandeCity/scripts.pory"
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MEWTWO_MEGA_Y
-# 50 "data/maps/EverGrandeCity/scripts.pory"
-	givemon SPECIES_MEWTWO_MEGA_Y, 90, ITEM_LIFE_ORB, ITEM_LOVE_BALL, NATURE_MODEST, , , , , , , , , 31, 31, 31, 31, 31, 31, MOVE_PSYSTRIKE, MOVE_SHADOW_BALL, MOVE_THUNDERBOLT, MOVE_ICE_BEAM, TRUE
-# 51 "data/maps/EverGrandeCity/scripts.pory"
-	compare VAR_RESULT, MON_GIVEN_TO_PARTY
-	goto_if_eq EGC_GIVEMEWTWO_2
-EGC_GIVEMEWTWO_1:
-# 54 "data/maps/EverGrandeCity/scripts.pory"
-	compare VAR_RESULT, MON_GIVEN_TO_PC
-	goto_if_eq EGC_GIVEMEWTWO_5
-EGC_GIVEMEWTWO_4:
-# 57 "data/maps/EverGrandeCity/scripts.pory"
-	goto Common_EventScript_NoMoreRoomForPokemon
-# 59 "data/maps/EverGrandeCity/scripts.pory"
-EGC_GIVEMEWTWO_PARTY:
-# 60 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox EGC_GIVEMEWTWO_Text_0, MSGBOX_AUTOCLOSE
-# 61 "data/maps/EverGrandeCity/scripts.pory"
-	showmonpic SPECIES_MEWTWO_MEGA_Y, 0, 0
-# 62 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox EGC_GIVEMEWTWO_Text_1, MSGBOX_YESNO
-# 63 "data/maps/EverGrandeCity/scripts.pory"
-	hidemonpic
-# 64 "data/maps/EverGrandeCity/scripts.pory"
-	compare VAR_RESULT, NO
-	goto_if_eq EGC_GIVEMEWTWO_8
-EGC_GIVEMEWTWO_7:
-# 67 "data/maps/EverGrandeCity/scripts.pory"
-	call Common_EventScript_GetGiftMonPartySlot
-# 68 "data/maps/EverGrandeCity/scripts.pory"
-	call Common_EventScript_NameReceivedPartyMon
-# 69 "data/maps/EverGrandeCity/scripts.pory"
-	goto EGC_GIVEMEWTWO_DONE
-# 71 "data/maps/EverGrandeCity/scripts.pory"
-EGC_GIVEMEWTWO_PC:
-# 72 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox EGC_GIVEMEWTWO_Text_0, MSGBOX_AUTOCLOSE
-# 73 "data/maps/EverGrandeCity/scripts.pory"
-	showmonpic SPECIES_MEWTWO_MEGA_Y, 0, 0
-# 74 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox EGC_GIVEMEWTWO_Text_1, MSGBOX_YESNO
-# 75 "data/maps/EverGrandeCity/scripts.pory"
-	hidemonpic
-# 76 "data/maps/EverGrandeCity/scripts.pory"
-	compare VAR_RESULT, NO
-	goto_if_eq EGC_GIVEMEWTWO_11
-EGC_GIVEMEWTWO_10:
-# 79 "data/maps/EverGrandeCity/scripts.pory"
-	call Common_EventScript_NameReceivedBoxMon
-# 80 "data/maps/EverGrandeCity/scripts.pory"
-	goto EGC_GIVEMEWTWO_TRANSFERRED
-# 82 "data/maps/EverGrandeCity/scripts.pory"
-EGC_GIVEMEWTWO_TRANSFERRED:
-# 83 "data/maps/EverGrandeCity/scripts.pory"
-	call Common_EventScript_TransferredToPC
-# 84 "data/maps/EverGrandeCity/scripts.pory"
-	goto EGC_GIVEMEWTWO_DONE
-# 86 "data/maps/EverGrandeCity/scripts.pory"
-EGC_GIVEMEWTWO_DONE:
-	end
-
-EGC_GIVEMEWTWO_2:
-# 52 "data/maps/EverGrandeCity/scripts.pory"
-	goto EGC_GIVEMEWTWO_PARTY
-	goto EGC_GIVEMEWTWO_1
-
-EGC_GIVEMEWTWO_5:
-# 55 "data/maps/EverGrandeCity/scripts.pory"
-	goto EGC_GIVEMEWTWO_PC
-	goto EGC_GIVEMEWTWO_4
-
-EGC_GIVEMEWTWO_8:
-# 65 "data/maps/EverGrandeCity/scripts.pory"
-	goto EGC_GIVEMEWTWO_DONE
-	goto EGC_GIVEMEWTWO_7
-
-EGC_GIVEMEWTWO_11:
-# 77 "data/maps/EverGrandeCity/scripts.pory"
-	goto EGC_GIVEMEWTWO_TRANSFERRED
-	goto EGC_GIVEMEWTWO_10
-
+# 45 "data/maps/EverGrandeCity/scripts.pory"
+BattleFrankAfterChampion_NotEnough:
+# 46 "data/maps/EverGrandeCity/scripts.pory"
+	.string "You need at least two Pokémon to battle!$"
 
 BattleFrankAfterChampion::
-# 91 "data/maps/EverGrandeCity/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, BattleFrankAfterChampion_1
-# 100 "data/maps/EverGrandeCity/scripts.pory"
+# 50 "data/maps/EverGrandeCity/scripts.pory"
+	goto_if_set FLAG_IS_CHAMPION, BattleFrankAfterChampion_4
+BattleFrankAfterChampion_3:
+# 54 "data/maps/EverGrandeCity/scripts.pory"
 	goto_if_unset FLAG_IS_CHAMPION, BattleFrankAfterChampion_2
 	return
 
 BattleFrankAfterChampion_1:
-# 92 "data/maps/EverGrandeCity/scripts.pory"
-	trainerbattle_single TRAINER_FRANK_EGC, BattleFrankAfterChampion_Text_0, BattleFrankAfterChampion_Text_1, MSGBOX_AUTOCLOSE
-BattleFrankAfterChampion_7:
-# 94 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox BattleFrankAfterChampion_Text_2, MSGBOX_YESNO
-# 95 "data/maps/EverGrandeCity/scripts.pory"
-	compare VAR_RESULT, NO
-	goto_if_eq BattleFrankAfterChampion_7
-# 96 "data/maps/EverGrandeCity/scripts.pory"
-	giveitem ITEM_SWEET_HEART
-# 97 "data/maps/EverGrandeCity/scripts.pory"
-	giveitem ITEM_HEART_SCALE
-# 98 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox BattleFrankAfterChampion_Text_3, MSGBOX_AUTOCLOSE
+# 51 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox BattleFrankAfterChampion_Text_0, MSGBOX_AUTOCLOSE
+# 52 "data/maps/EverGrandeCity/scripts.pory"
+	trainerbattle_double TRAINER_FRANK_EGC, BattleFrankAfterChampion_Intro, BattleFrankAfterChampion_Defeat, BattleFrankAfterChampion_NotEnough, BattleFrankAfterChampionAfterBattle
 	return
 
 BattleFrankAfterChampion_2:
-# 101 "data/maps/EverGrandeCity/scripts.pory"
-	msgbox BattleFrankAfterChampion_Text_4, MSGBOX_AUTOCLOSE
+# 55 "data/maps/EverGrandeCity/scripts.pory"
+	goto_if_unset FLAG_TEMP_5, BattleFrankAfterChampion_7
+	return
+
+BattleFrankAfterChampion_4:
+# 50 "data/maps/EverGrandeCity/scripts.pory"
+	goto_if_unset FLAG_FRANK_EGC_DEFEATED, BattleFrankAfterChampion_1
+	goto BattleFrankAfterChampion_3
+
+BattleFrankAfterChampion_7:
+# 56 "data/maps/EverGrandeCity/scripts.pory"
+	setflag FLAG_TEMP_5
+# 57 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox BattleFrankAfterChampion_Text_1, MSGBOX_AUTOCLOSE
 	return
 
 
+EGC_Eventscript_BattleIlse::
+# 63 "data/maps/EverGrandeCity/scripts.pory"
+	trainerbattle_double TRAINER_ILSE_EGC, EGC_Eventscript_BattleIlse_Text_0, EGC_Eventscript_BattleIlse_Text_1, EGC_Eventscript_BattleIlse_Text_2, EGC_GIVEMEWTWO
+# 64 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EGC_Eventscript_BattleIlse_Text_3, MSGBOX_NPC
+	end
+
+
+EGC_GIVEMEWTWO::
+# 70 "data/maps/EverGrandeCity/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MEWTWO_MEGA_Y
+# 71 "data/maps/EverGrandeCity/scripts.pory"
+	givemon SPECIES_MEWTWO_MEGA_Y, 90, ITEM_LIFE_ORB, ITEM_LOVE_BALL, NATURE_MODEST, , , , , , , , , 31, 31, 31, 31, 31, 31, MOVE_PSYSTRIKE, MOVE_SHADOW_BALL, MOVE_THUNDERBOLT, MOVE_ICE_BEAM, TRUE
+# 72 "data/maps/EverGrandeCity/scripts.pory"
+	compare VAR_RESULT, MON_GIVEN_TO_PARTY
+	goto_if_eq EGC_GIVEMEWTWO_2
+EGC_GIVEMEWTWO_1:
+# 75 "data/maps/EverGrandeCity/scripts.pory"
+	compare VAR_RESULT, MON_GIVEN_TO_PC
+	goto_if_eq EGC_GIVEMEWTWO_5
+EGC_GIVEMEWTWO_4:
+# 78 "data/maps/EverGrandeCity/scripts.pory"
+	goto Common_EventScript_NoMoreRoomForPokemon
+# 80 "data/maps/EverGrandeCity/scripts.pory"
+EGC_GIVEMEWTWO_PARTY:
+# 81 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EGC_GIVEMEWTWO_Text_0, MSGBOX_AUTOCLOSE
+# 82 "data/maps/EverGrandeCity/scripts.pory"
+	showmonpic SPECIES_MEWTWO_MEGA_Y, 0, 0
+# 83 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EGC_GIVEMEWTWO_Text_1, MSGBOX_YESNO
+# 84 "data/maps/EverGrandeCity/scripts.pory"
+	hidemonpic
+# 85 "data/maps/EverGrandeCity/scripts.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq EGC_GIVEMEWTWO_8
+EGC_GIVEMEWTWO_7:
+# 88 "data/maps/EverGrandeCity/scripts.pory"
+	call Common_EventScript_GetGiftMonPartySlot
+# 89 "data/maps/EverGrandeCity/scripts.pory"
+	call Common_EventScript_NameReceivedPartyMon
+# 90 "data/maps/EverGrandeCity/scripts.pory"
+	goto EGC_GIVEMEWTWO_DONE
+# 92 "data/maps/EverGrandeCity/scripts.pory"
+EGC_GIVEMEWTWO_PC:
+# 93 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EGC_GIVEMEWTWO_Text_0, MSGBOX_AUTOCLOSE
+# 94 "data/maps/EverGrandeCity/scripts.pory"
+	showmonpic SPECIES_MEWTWO_MEGA_Y, 0, 0
+# 95 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EGC_GIVEMEWTWO_Text_1, MSGBOX_YESNO
+# 96 "data/maps/EverGrandeCity/scripts.pory"
+	hidemonpic
+# 97 "data/maps/EverGrandeCity/scripts.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq EGC_GIVEMEWTWO_11
+EGC_GIVEMEWTWO_10:
+# 100 "data/maps/EverGrandeCity/scripts.pory"
+	call Common_EventScript_NameReceivedBoxMon
+# 101 "data/maps/EverGrandeCity/scripts.pory"
+	goto EGC_GIVEMEWTWO_TRANSFERRED
+# 103 "data/maps/EverGrandeCity/scripts.pory"
+EGC_GIVEMEWTWO_TRANSFERRED:
+# 104 "data/maps/EverGrandeCity/scripts.pory"
+	call Common_EventScript_TransferredToPC
+# 105 "data/maps/EverGrandeCity/scripts.pory"
+	goto EGC_GIVEMEWTWO_DONE
+# 107 "data/maps/EverGrandeCity/scripts.pory"
+EGC_GIVEMEWTWO_DONE:
+	end
+
+EGC_GIVEMEWTWO_2:
+# 73 "data/maps/EverGrandeCity/scripts.pory"
+	goto EGC_GIVEMEWTWO_PARTY
+	goto EGC_GIVEMEWTWO_1
+
+EGC_GIVEMEWTWO_5:
+# 76 "data/maps/EverGrandeCity/scripts.pory"
+	goto EGC_GIVEMEWTWO_PC
+	goto EGC_GIVEMEWTWO_4
+
+EGC_GIVEMEWTWO_8:
+# 86 "data/maps/EverGrandeCity/scripts.pory"
+	goto EGC_GIVEMEWTWO_DONE
+	goto EGC_GIVEMEWTWO_7
+
+EGC_GIVEMEWTWO_11:
+# 98 "data/maps/EverGrandeCity/scripts.pory"
+	goto EGC_GIVEMEWTWO_TRANSFERRED
+	goto EGC_GIVEMEWTWO_10
+
+
+BattleFrankAfterChampionAfterBattle::
+BattleFrankAfterChampionAfterBattle_3:
+# 113 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox BattleFrankAfterChampionAfterBattle_Text_0, MSGBOX_YESNO
+# 114 "data/maps/EverGrandeCity/scripts.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq BattleFrankAfterChampionAfterBattle_3
+# 115 "data/maps/EverGrandeCity/scripts.pory"
+	giveitem ITEM_SWEET_HEART
+# 116 "data/maps/EverGrandeCity/scripts.pory"
+	giveitem ITEM_HEART_SCALE
+# 117 "data/maps/EverGrandeCity/scripts.pory"
+	giveitem ITEM_MEGA_RING
+# 118 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox BattleFrankAfterChampionAfterBattle_Text_1, MSGBOX_AUTOCLOSE
+# 119 "data/maps/EverGrandeCity/scripts.pory"
+	setflag FLAG_FRANK_EGC_DEFEATED
+	return
+
+
+BattleFrankAfterChampion_Text_0:
+# 51 "data/maps/EverGrandeCity/scripts.pory"
+	.string "Frank: You really became\nthe Champion, {PLAYER}!$"
+
+BattleFrankAfterChampion_Text_1:
+# 57 "data/maps/EverGrandeCity/scripts.pory"
+	.string "Talk to me when you have \nbecome the champion!$"
+
 EGC_Eventscript_BattleIlse_Text_0:
-# 42 "data/maps/EverGrandeCity/scripts.pory"
+# 63 "data/maps/EverGrandeCity/scripts.pory"
 	.string "Hey my name is Ilse,\n and i will beat you!$"
 
 EGC_Eventscript_BattleIlse_Text_1:
-# 42 "data/maps/EverGrandeCity/scripts.pory"
+# 63 "data/maps/EverGrandeCity/scripts.pory"
 	.string "Ah.. you are so lucky!$"
 
 EGC_Eventscript_BattleIlse_Text_2:
-# 43 "data/maps/EverGrandeCity/scripts.pory"
+# 63 "data/maps/EverGrandeCity/scripts.pory"
+	.string "You need at least\ntwo Pokémon to battle!$"
+
+EGC_Eventscript_BattleIlse_Text_3:
+# 64 "data/maps/EverGrandeCity/scripts.pory"
 	.string "Behind Victory Road lies the\n"
 	.string "Pokemon League!\p"
 	.string "I think you can defeat the champion!$"
 
 EGC_GIVEMEWTWO_Text_0:
-# 60 "data/maps/EverGrandeCity/scripts.pory"
+# 81 "data/maps/EverGrandeCity/scripts.pory"
 	.string "Mewtwo wants to help you.\nPlease take good care of him.$"
 
 EGC_GIVEMEWTWO_Text_1:
-# 62 "data/maps/EverGrandeCity/scripts.pory"
+# 83 "data/maps/EverGrandeCity/scripts.pory"
 	.string "Give Mewtwo a nickname?$"
 
-BattleFrankAfterChampion_Text_0:
-# 92 "data/maps/EverGrandeCity/scripts.pory"
-	.string "I am so proud of you!\nYou are the best trainer in the world!\nThat is... if i did not exit\n Now it is time for your final test!\p I won't hold back$"
-
-BattleFrankAfterChampion_Text_1:
-# 92 "data/maps/EverGrandeCity/scripts.pory"
-	.string "Will you...$"
-
-BattleFrankAfterChampion_Text_2:
-# 94 "data/maps/EverGrandeCity/scripts.pory"
+BattleFrankAfterChampionAfterBattle_Text_0:
+# 113 "data/maps/EverGrandeCity/scripts.pory"
 	.string "{PLAYER}, will you marry me?$"
 
-BattleFrankAfterChampion_Text_3:
-# 98 "data/maps/EverGrandeCity/scripts.pory"
-	.string "These items represent the love\nwe share. The heart symbol shows\nthat love will always connect us.$"
-
-BattleFrankAfterChampion_Text_4:
-# 101 "data/maps/EverGrandeCity/scripts.pory"
-	.string "Talk to me when \nyou have become the champion!$"
+BattleFrankAfterChampionAfterBattle_Text_1:
+# 118 "data/maps/EverGrandeCity/scripts.pory"
+	.string "{PLAYER}, ik hou van jou!\pDe mega ring had je al,\nmaar je krijgt nu een echte.$"
