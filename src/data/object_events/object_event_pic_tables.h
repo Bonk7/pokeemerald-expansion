@@ -1437,6 +1437,18 @@ static const struct SpriteFrameImage sPicTable_Zapdos[] = {
     overworld_ascending_frames(gObjectEventPic_Zapdos, 4, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_Cobalion[] = {
+    overworld_ascending_frames(gObjectEventPic_Cobalion, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Virizion[] = {
+    overworld_ascending_frames(gObjectEventPic_Virizion, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Terrakion[] = {
+    overworld_ascending_frames(gObjectEventPic_Terrakion, 4, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_RubySapphireBrendan[] = {
     overworld_ascending_frames(gObjectEventPic_RubySapphireBrendanNormal, 2, 4),
 };

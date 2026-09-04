@@ -8,3 +8,48 @@ ArtisanCave_B1F_OnTransition:
 	end
 
 `
+script AC_Battle_Cobalion{
+	lockall
+	playmoncry(SPECIES_COBALION, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_COBALION, 65, ITEM_FIST_PLATE)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Cobalion_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Cobalion_Caught{
+	setflag(FLAG_STATIC_COBALION)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(2)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}
+
+script AC_Battle_Virizion{
+	lockall
+	playmoncry(SPECIES_VIRIZION, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_VIRIZION, 65, ITEM_FIST_PLATE)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Virizion_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Virizion_Caught{
+	setflag(FLAG_STATIC_VIRIZION)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(2)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

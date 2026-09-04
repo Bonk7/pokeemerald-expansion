@@ -277,6 +277,12 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LugiaNew;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LatiosNew;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MewNew;
 
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cobalion;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Virizion;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Terrakion;
+
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower;
@@ -570,6 +576,12 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LUGIA_NEW] =              &gObjectEventGraphicsInfo_LugiaNew,
     [OBJ_EVENT_GFX_LATIOS_NEW] =             &gObjectEventGraphicsInfo_LatiosNew,
     [OBJ_EVENT_GFX_MEW_NEW] =                &gObjectEventGraphicsInfo_MewNew,
+
+    [OBJ_EVENT_GFX_COBALION] =                 &gObjectEventGraphicsInfo_Cobalion,
+
+    [OBJ_EVENT_GFX_VIRIZION] =                 &gObjectEventGraphicsInfo_Virizion,
+
+    [OBJ_EVENT_GFX_TERRAKION] =                 &gObjectEventGraphicsInfo_Terrakion,
 
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,

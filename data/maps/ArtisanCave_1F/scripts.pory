@@ -3,3 +3,25 @@ ArtisanCave_1F_MapScripts::
 	.byte 0
 
 `
+script AC_Battle_Terrakion{
+	lockall
+	playmoncry(SPECIES_TERRAKION, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_TERRAKION, 65, ITEM_FIST_PLATE)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Terrakion_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Terrakion_Caught{
+	setflag(FLAG_STATIC_TERRAKION)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(2)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

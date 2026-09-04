@@ -441,6 +441,15 @@ const u16 gObjectEventPal_Cresselia[] = INCBIN_U16("graphics/pokemon/cresselia/o
 
 const u16 gObjectEventPal_Zapdos[] = INCBIN_U16("graphics/pokemon/zapdos/overworld_normal.gbapal");
 
+const u32 gObjectEventPic_Cobalion[] = INCBIN_U32("graphics/pokemon/cobalion/overworld.4bpp");
+const u16 gObjectEventPal_Cobalion[] = INCBIN_U16("graphics/pokemon/cobalion/overworld_normal.gbapal");
+
+const u32 gObjectEventPic_Virizion[] = INCBIN_U32("graphics/pokemon/virizion/overworld.4bpp");
+const u16 gObjectEventPal_Virizion[] = INCBIN_U16("graphics/pokemon/virizion/overworld_normal.gbapal");
+
+const u32 gObjectEventPic_Terrakion[] = INCBIN_U32("graphics/pokemon/terrakion/overworld.4bpp");
+const u16 gObjectEventPal_Terrakion[] = INCBIN_U16("graphics/pokemon/terrakion/overworld_normal.gbapal");
+
 const u32 gObjectEventPic_GroudonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/groudon.4bpp");
 const u32 gObjectEventPic_KyogreOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/kyogre.4bpp");
 
