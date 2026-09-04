@@ -165,6 +165,36 @@ EGC_GIVEMEWTWO_11:
 	goto EGC_GIVEMEWTWO_10
 
 
+BattleFrankAfterChampion::
+# 91 "data/maps/EverGrandeCity/scripts.pory"
+	goto_if_set FLAG_IS_CHAMPION, BattleFrankAfterChampion_1
+# 100 "data/maps/EverGrandeCity/scripts.pory"
+	goto_if_unset FLAG_IS_CHAMPION, BattleFrankAfterChampion_2
+	return
+
+BattleFrankAfterChampion_1:
+# 92 "data/maps/EverGrandeCity/scripts.pory"
+	trainerbattle_single TRAINER_FRANK_EGC, BattleFrankAfterChampion_Text_0, BattleFrankAfterChampion_Text_1, MSGBOX_AUTOCLOSE
+BattleFrankAfterChampion_7:
+# 94 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox BattleFrankAfterChampion_Text_2, MSGBOX_YESNO
+# 95 "data/maps/EverGrandeCity/scripts.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq BattleFrankAfterChampion_7
+# 96 "data/maps/EverGrandeCity/scripts.pory"
+	giveitem ITEM_SWEET_HEART
+# 97 "data/maps/EverGrandeCity/scripts.pory"
+	giveitem ITEM_HEART_SCALE
+# 98 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox BattleFrankAfterChampion_Text_3, MSGBOX_AUTOCLOSE
+	return
+
+BattleFrankAfterChampion_2:
+# 101 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox BattleFrankAfterChampion_Text_4, MSGBOX_AUTOCLOSE
+	return
+
+
 EGC_Eventscript_BattleIlse_Text_0:
 # 42 "data/maps/EverGrandeCity/scripts.pory"
 	.string "Hey my name is Ilse,\n and i will beat you!$"
@@ -186,3 +216,23 @@ EGC_GIVEMEWTWO_Text_0:
 EGC_GIVEMEWTWO_Text_1:
 # 62 "data/maps/EverGrandeCity/scripts.pory"
 	.string "Give Mewtwo a nickname?$"
+
+BattleFrankAfterChampion_Text_0:
+# 92 "data/maps/EverGrandeCity/scripts.pory"
+	.string "I am so proud of you!\nYou are the best trainer in the world!\nThat is... if i did not exit\n Now it is time for your final test!\p I won't hold back$"
+
+BattleFrankAfterChampion_Text_1:
+# 92 "data/maps/EverGrandeCity/scripts.pory"
+	.string "Will you...$"
+
+BattleFrankAfterChampion_Text_2:
+# 94 "data/maps/EverGrandeCity/scripts.pory"
+	.string "{PLAYER}, will you marry me?$"
+
+BattleFrankAfterChampion_Text_3:
+# 98 "data/maps/EverGrandeCity/scripts.pory"
+	.string "These items represent the love\nwe share. The heart symbol shows\nthat love will always connect us.$"
+
+BattleFrankAfterChampion_Text_4:
+# 101 "data/maps/EverGrandeCity/scripts.pory"
+	.string "Talk to me when \nyou have become the champion!$"

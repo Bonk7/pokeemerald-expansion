@@ -87,3 +87,17 @@ EGC_GIVEMEWTWO_DONE:
 	end
 }
 
+script BattleFrankAfterChampion{
+	if(flag(FLAG_IS_CHAMPION) == TRUE) {
+		trainerbattle_single(TRAINER_FRANK_EGC, "I am so proud of you!\nYou are the best trainer in the world!\nThat is... if i did not exit\n Now it is time for your final test!\p I won't hold back", "Will you...", MSGBOX_AUTOCLOSE)
+		do {
+			msgbox("{PLAYER}, will you marry me?", MSGBOX_YESNO)
+		} while (var(VAR_RESULT) == NO)
+		giveitem(ITEM_SWEET_HEART)
+		giveitem(ITEM_HEART_SCALE)
+		msgbox("These items represent the love\nwe share. The heart symbol shows\nthat love will always connect us.", MSGBOX_AUTOCLOSE)
+	}
+	elif (flag(FLAG_IS_CHAMPION) == FALSE) {
+		msgbox("Talk to me when \nyou have become the champion!", MSGBOX_AUTOCLOSE)
+	}
+}
