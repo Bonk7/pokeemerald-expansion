@@ -1449,6 +1449,10 @@ static const struct SpriteFrameImage sPicTable_Terrakion[] = {
     overworld_ascending_frames(gObjectEventPic_Terrakion, 4, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_Tornadus[] = {
+    overworld_ascending_frames(gObjectEventPic_Tornadus, 4, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_RubySapphireBrendan[] = {
     overworld_ascending_frames(gObjectEventPic_RubySapphireBrendanNormal, 2, 4),
 };

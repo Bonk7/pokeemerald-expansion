@@ -294,10 +294,12 @@
 
 #define OBJ_EVENT_GFX_TERRAKION                  267
 
+#define OBJ_EVENT_GFX_TORNADUS                   268
+
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        268
+#define NUM_OBJ_EVENT_GFX                        269
 
 
 // These are dynamic object gfx ids.
@@ -476,6 +478,8 @@
 #define OBJ_EVENT_PAL_TAG_VIRIZION               0x113E
 
 #define OBJ_EVENT_PAL_TAG_TERRAKION              0x113F
+
+#define OBJ_EVENT_PAL_TAG_TORNADUS               0x1140
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

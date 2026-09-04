@@ -989,3 +989,25 @@ Route110_Text_KeepAnEyeOutForRival:
 	.string "See you again, {PLAYER}{KUN}!$"
 
 `
+script Route110_Battle_Tornadus{
+	lockall
+	playmoncry(SPECIES_TORNADUS, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_TORNADUS, 50)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Tornadus_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Tornadus_Caught{
+	setflag(FLAG_STATIC_TORNADUS)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(36)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}
