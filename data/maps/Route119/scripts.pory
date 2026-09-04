@@ -620,7 +620,8 @@ script Route119_Eventscript_BattleFrank {
 script Route119_GIVETICKETS {
 	giveitem(ITEM_EON_TICKET)
 	giveitem(ITEM_AURORA_TICKET)
-	msgbox("These tickets grant access \nto strong pokemon. You can \n use the boat in slateport\n to find them", MSGBOX_AUTOCLOSE)
+	giveitem(ITEM_MEGA_RING)
+	msgbox("These tickets grant access \nto strong pokemon. You can \n use the boat in slateport\n to find them. \n The mega ring is \n for enabling mega evolution.", MSGBOX_AUTOCLOSE)
 	setflag(FLAG_RECEIVED_TICKETS)
 	end
 }

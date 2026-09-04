@@ -5127,50 +5127,69 @@ Class: Elite Four
 Pic: Elite Four Sidney
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
-Double Battle: No
-AI: Basic Trainer / Force Setup First Turn
+Items: Full Restore / Full Restore / Full Restore
+Double Battle: Yes
+AI: Smart Trainer
 Mugshot: Purple
 
-Mightyena
-Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Roar
-- Double Edge
-- Sand Attack
-- Crunch
-
-Shiftry
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Torment
-- Double Team
-- Swagger
-- Extrasensory
-
-Cacturne
-Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Leech Seed
-- Feint Attack
-- Needle Arm
-- Cotton Spore
-
-Crawdaunt
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Surf
-- Swords Dance
-- Strength
-- Facade
-
-Absol @ Sitrus Berry
-Level: 49
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
+Darude (Tyranitar) @ Tyranitarite
+Level: 92
+Ball: Dusk Ball
+Nature: Adamant
+Ability: Sand Stream
 - Rock Slide
+- Dragon Dance
+- Crunch
+- Ice Punch
+
+Riddertje (Bisharp) @ Life Orb
+Level: 92 
+Ball: Dusk Ball
+Nature: Adamant
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Knock Off
 - Swords Dance
-- Slash
+- Iron Head
+- Sucker Punch
+
+DoomsieDish (Houndoom) @ Charcoal
+Level: 92
+Ball: Dusk Ball
+Nature: Modest
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Flamethrower
+- Dark Pulse
+- Fire Blast
+- Sunny Day
+
+Schnitzel (Weavile) @ Nevermeltice
+Level: 92
+Ball: Heavy Ball
+Nature: Jolly
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Ice Punch
+- Night Slash
+- Brick Break
+- Swords Dance
+
+Sleepy (Darkrai) @ Leftovers
+Level: 93
+Nature: Modest
+Ability: Bad Dreams
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dark Void
+- Dark Pulse
+- Focus Blast
+- Nasty Plot
+
+Murda (Honchkrow) @ Scope Lens
+Ability: Moxie
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Adamant Nature
+- Sucker Punch
+- Brave Bird
+- Superpower
+- Roost
 
 === TRAINER_PHOEBE ===
 Name: PHOEBE
@@ -5179,49 +5198,60 @@ Pic: Elite Four Phoebe
 Gender: Female
 Music: Elite Four
 Items: Full Restore / Full Restore
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smart Trainer
 Mugshot: Green
 
-Dusclops
-Level: 48
+Mismagius
+Level: 93
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Punch
-- Confuse Ray
-- Curse
-- Protect
+Nature: Timid
+- Nasty Plot
+- Shadow Ball
+- Hidden Power
+- Thunderbolt
 
-Banette
-Level: 49
+Gengar
+Level: 93
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Shadow Ball
-- Grudge
-- Will O Wisp
-- Feint Attack
+- Sludge Bomb
+- Psychic
+- Thunder
 
-Sableye
-Level: 50
+Sableye @ Sablenite
+Level: 93
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Shadow Ball
 - Double Team
 - Night Shade
 - Feint Attack
 
-Banette
-Level: 49
+Banette 
+Level: 93
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Shadow Ball
 - Psychic
 - Thunderbolt
 - Facade
 
-Dusclops @ Sitrus Berry
-Level: 51
+Dusknoir @ Sitrus Berry
+Level: 93
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Shadow Ball
 - Ice Beam
 - Rock Slide
 - Earthquake
+
+Hades (Giratina) @ Griseous Core
+Level: 94
+Shiny: Yes
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Draco Meteor
+- Shadow Sneak
+- Earthquake
+- Outrage
 
 === TRAINER_GLACIA ===
 Name: GLACIA
@@ -5230,49 +5260,68 @@ Pic: Elite Four Glacia
 Gender: Female
 Music: Elite Four
 Items: Full Restore / Full Restore
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smart Trainer
 Mugshot: Pink
 
-Sealeo
-Level: 50
+Mamoswine @ Focus Sash  
+Ability: Thick Fat  
+Level: 94
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Encore
-- Body Slam
-- Hail
+Nature: Jolly
+- Ice Shard  
+- Earthquake  
+- Endeavor  
+- Stealth Rock  
+
+Froslass @ Air Balloon 
+Level: 94
+Ability: Cursed Body  
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Nature: Timid
+- Blizzard  
+- Shadow Ball  
+- Thunder  
+- Destiny Bond  
+
+Cloyster @ Focus Sash  
+Level: 94
+Ability: Skill Link  
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Nature: Jolly 
+- Icicle Spear  
+- Rock Blast  
+- Spikes  
+- Rapid Spin  
+
+Kyurem White @ Leftovers
+Level: 94
+Shiny: Yes
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Draco Meteor
+- Ice Beam
+- Focus Blast
+- Fusion Flare
+
+Walrein (M) @ Leftovers  
+Ability: Ice Body  
+Level: 94
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Nature: Bold 
+- Substitute  
 - Ice Ball
+- Protect  
+- Surf  
 
-Glalie
-Level: 50
+Kyurem Black @ Sitrus Berry
+Ability: Teravolt  
+Level: 95
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Light Screen
-- Crunch
-- Icy Wind
-- Ice Beam
-
-Sealeo
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Attract
-- Double Edge
-- Hail
-- Blizzard
-
-Glalie
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Explosion
-- Hail
-- Ice Beam
-
-Walrein @ Sitrus Berry
-Level: 53
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Surf
-- Body Slam
-- Ice Beam
-- Sheer Cold
+Jolly Nature  
+- Outrage  
+- Dragon Claw  
+- Fusion Bolt  
+- Ice Beam  
 
 === TRAINER_DRAKE ===
 Name: DRAKE
@@ -5281,49 +5330,67 @@ Pic: Elite Four Drake
 Gender: Male
 Music: Elite Four
 Items: Full Restore / Full Restore
-Double Battle: No
-AI: Basic Trainer
+Double Battle: Yes
+AI: Smart Trainer
 Mugshot: Blue
 
-Shelgon
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Rock Tomb
-- Dragon Claw
-- Protect
-- Double Edge
 
-Altaria
-Level: 54
+Dragonite @ Lum Berry
+Level: 95
+Ability: Multiscale
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Edge
-- Dragon Breath
+Nature: Adamant
 - Dragon Dance
-- Aerial Ace
-
-Kingdra
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Smokescreen
-- Dragon Dance
-- Surf
-- Body Slam
-
-Flygon
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Flamethrower
-- Crunch
-- Dragon Breath
+- Outrage
 - Earthquake
+- Extreme Speed
 
-Salamence @ Sitrus Berry
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
+Haxorus @ Scope Lens
+Level: 95
+Nature: Adamant
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Dragon Dance
+- Dual Chop
+- Outrage
+- Superpower
+
+Salamence @ Salamencite  
+Ability: Moxie
+Level: 95
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Nature: Jolly
+- Dragon Dance
+- Outrage
+- Earthquake
 - Dragon Claw
-- Rock Slide
-- Crunch
+
+Flygon @ Choice Band
+Level: 95
+Nature: Adamant
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Outrage
+- Earthquake
+- U-turn
+- Fire Punch
+
+Dialga @ Adamant Orb  
+Level: 95
+Nature: Modest
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Aura Sphere
+- Roar of Time
+- Flash Cannon
+- Dragon Pulse
+
+Slifer (Rayquaza) @ Lum Berry
+Shiny: Yes  
+Level: 96
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Nature: Adamant
+- Dragon Claw
+- Dragon Ascent
+- Earthquake
+- Extreme Speed
 
 === TRAINER_ROXANNE_1 ===
 Name: ROXANNE
@@ -6843,57 +6910,59 @@ Pic: Champion Wallace
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore / Full Restore
-Double Battle: No
-AI: Basic Trainer
-Mugshot: Yellow
+Double Battle: Yes
+AI: Smart Trainer
+Mugshot: Blue
 
-Wailord
-Level: 57
+Kyogre @ Blue Orb
+Level: 96
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rain Dance
-- Water Spout
-- Double Edge
-- Blizzard
-
-Tentacruel
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Toxic
-- Hydro Pump
-- Sludge Bomb
+- Calm Mind
+- Surf
+- Thunder
 - Ice Beam
 
-Ludicolo
-Level: 56
+Zekrom
+Level: 96
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Surf
-- Leech Seed
-- Double Team
+- Bolt Strike
+- Draco Meteor
+- Dragon Claw
+- Focus Blast
 
-Whiscash
-Level: 56
+Palkia
+Level: 97
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Surf
+- Spacial Rend
+- Fire Blast
+- Thunder
+
+Latios Mega
+Level: 97
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Luster Purge
 - Earthquake
-- Surf
-- Amnesia
-- Hyper Beam
+- Draco Meteor
+- Dragon Claw
 
-Gyarados
-Level: 56
+Latias Mega
+Level: 98
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dragon Dance
-- Earthquake
-- Hyper Beam
-- Surf
-
-Milotic @ Sitrus Berry
-Level: 58
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Recover
-- Surf
+- Thunderbolt
 - Ice Beam
-- Toxic
+- Mist Ball
+- Thunder Wave
+
+Final Boss (Metagross) @ Life Orb
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Zen Headbutt
+- Meteor Mash
+- Bullet Punch
+- Ice Punch
 
 === TRAINER_ANDREW ===
 Name: ANDREW
@@ -13297,7 +13366,7 @@ IVs: 0 Atk / 0 Spe
 - Helping Hand  
 - Hypnosis  
 
-flashbacer (Kingdra) @ Life Orb  
+Flashbacer (Kingdra) @ Life Orb  
 Ability: Swift Swim  
 EVs: 4 Def / 252 SpA / 252 Spe  
 Modest Nature  

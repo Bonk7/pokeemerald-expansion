@@ -1235,51 +1235,53 @@ Route119_GIVETICKETS::
 # 622 "data/maps/Route119/scripts.pory"
 	giveitem ITEM_AURORA_TICKET
 # 623 "data/maps/Route119/scripts.pory"
-	msgbox Route119_GIVETICKETS_Text_0, MSGBOX_AUTOCLOSE
+	giveitem ITEM_MEGA_RING
 # 624 "data/maps/Route119/scripts.pory"
+	msgbox Route119_GIVETICKETS_Text_0, MSGBOX_AUTOCLOSE
+# 625 "data/maps/Route119/scripts.pory"
 	setflag FLAG_RECEIVED_TICKETS
 	end
 
 
 Route119_Battle_Uxie::
-# 629 "data/maps/Route119/scripts.pory"
-	lockall
 # 630 "data/maps/Route119/scripts.pory"
-	playmoncry SPECIES_UXIE, CRY_MODE_ENCOUNTER
+	lockall
 # 631 "data/maps/Route119/scripts.pory"
-	delay 40
+	playmoncry SPECIES_UXIE, CRY_MODE_ENCOUNTER
 # 632 "data/maps/Route119/scripts.pory"
-	waitmoncry
+	delay 40
 # 633 "data/maps/Route119/scripts.pory"
-	setwildbattle SPECIES_UXIE, 65, ITEM_ADAMANT_ORB
+	waitmoncry
 # 634 "data/maps/Route119/scripts.pory"
-	dowildbattle
+	setwildbattle SPECIES_UXIE, 65, ITEM_ADAMANT_ORB
 # 635 "data/maps/Route119/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	dowildbattle
 # 636 "data/maps/Route119/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 637 "data/maps/Route119/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq Route119_Battle_Uxie_2
 Route119_Battle_Uxie_1:
-# 639 "data/maps/Route119/scripts.pory"
-	waitmessage
 # 640 "data/maps/Route119/scripts.pory"
+	waitmessage
+# 641 "data/maps/Route119/scripts.pory"
 	releaseall
 	return
 
 Route119_Battle_Uxie_2:
-# 637 "data/maps/Route119/scripts.pory"
+# 638 "data/maps/Route119/scripts.pory"
 	call Uxie_Caught
 	goto Route119_Battle_Uxie_1
 
 
 Uxie_Caught::
-# 644 "data/maps/Route119/scripts.pory"
-	setflag FLAG_STATIC_UXIE
 # 645 "data/maps/Route119/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	setflag FLAG_STATIC_UXIE
 # 646 "data/maps/Route119/scripts.pory"
-	removeobject 44
+	fadescreen FADE_TO_BLACK
 # 647 "data/maps/Route119/scripts.pory"
+	removeobject 44
+# 648 "data/maps/Route119/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 	return
 
@@ -1298,5 +1300,5 @@ Route119_Eventscript_BattleFrank_Text_2:
 	.string "Next time i will beat you!$"
 
 Route119_GIVETICKETS_Text_0:
-# 623 "data/maps/Route119/scripts.pory"
-	.string "These tickets grant access \nto strong pokemon. You can \n use the boat in slateport\n to find them$"
+# 624 "data/maps/Route119/scripts.pory"
+	.string "These tickets grant access \nto strong pokemon. You can \n use the boat in slateport\n to find them. \n The mega ring is \n for enabling mega evolution.$"
