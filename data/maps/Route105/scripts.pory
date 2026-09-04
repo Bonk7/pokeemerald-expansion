@@ -97,3 +97,25 @@ Route104_Text_RegisteredDadInPokenav:
 	.string "Registered DAD NORMAN\n"
 	.string "in the POKéNAV.$"
 `
+script Route105_Battle_Thundurus{
+	lockall
+	playmoncry(SPECIES_THUNDURUS, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_THUNDURUS, 65)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Thundurus_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Thundurus_Caught{
+	setflag(FLAG_STATIC_THUNDURUS)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(3)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

@@ -285,6 +285,10 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Terrakion;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tornadus;
 
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Thundurus;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Landorus;
+
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower;
@@ -586,6 +590,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_TERRAKION] =                 &gObjectEventGraphicsInfo_Terrakion,
 
     [OBJ_EVENT_GFX_TORNADUS] =                 &gObjectEventGraphicsInfo_Tornadus,
+
+    [OBJ_EVENT_GFX_THUNDURUS] =                 &gObjectEventGraphicsInfo_Thundurus,
+
+    [OBJ_EVENT_GFX_LANDORUS] =                 &gObjectEventGraphicsInfo_Landorus,
 
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,

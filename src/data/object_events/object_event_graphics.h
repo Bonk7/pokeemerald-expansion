@@ -453,6 +453,12 @@ const u16 gObjectEventPal_Terrakion[] = INCBIN_U16("graphics/pokemon/terrakion/o
 const u32 gObjectEventPic_Tornadus[] = INCBIN_U32("graphics/pokemon/tornadus/overworld.4bpp");
 const u16 gObjectEventPal_Tornadus[] = INCBIN_U16("graphics/pokemon/tornadus/overworld_normal.gbapal");
 
+const u32 gObjectEventPic_Thundurus[] = INCBIN_U32("graphics/pokemon/thundurus/overworld.4bpp");
+const u16 gObjectEventPal_Thundurus[] = INCBIN_U16("graphics/pokemon/thundurus/overworld_normal.gbapal");
+
+const u32 gObjectEventPic_Landorus[] = INCBIN_U32("graphics/pokemon/landorus/overworld.4bpp");
+const u16 gObjectEventPal_Landorus[] = INCBIN_U16("graphics/pokemon/landorus/overworld_normal.gbapal");
+
 const u32 gObjectEventPic_GroudonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/groudon.4bpp");
 const u32 gObjectEventPic_KyogreOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/kyogre.4bpp");
 
