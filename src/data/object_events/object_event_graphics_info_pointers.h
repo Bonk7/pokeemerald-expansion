@@ -289,6 +289,12 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Thundurus;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Landorus;
 
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kyurem;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Reshiram;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zekrom;
+
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower;
@@ -594,6 +600,12 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_THUNDURUS] =                 &gObjectEventGraphicsInfo_Thundurus,
 
     [OBJ_EVENT_GFX_LANDORUS] =                 &gObjectEventGraphicsInfo_Landorus,
+
+    [OBJ_EVENT_GFX_KYUREM] =                 &gObjectEventGraphicsInfo_Kyurem,
+
+    [OBJ_EVENT_GFX_RESHIRAM] =                 &gObjectEventGraphicsInfo_Reshiram,
+
+    [OBJ_EVENT_GFX_ZEKROM] =                 &gObjectEventGraphicsInfo_Zekrom,
 
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,

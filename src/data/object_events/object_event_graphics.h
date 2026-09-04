@@ -459,6 +459,15 @@ const u16 gObjectEventPal_Thundurus[] = INCBIN_U16("graphics/pokemon/thundurus/o
 const u32 gObjectEventPic_Landorus[] = INCBIN_U32("graphics/pokemon/landorus/overworld.4bpp");
 const u16 gObjectEventPal_Landorus[] = INCBIN_U16("graphics/pokemon/landorus/overworld_normal.gbapal");
 
+const u32 gObjectEventPic_Kyurem[] = INCBIN_U32("graphics/pokemon/kyurem/overworld.4bpp");
+const u16 gObjectEventPal_Kyurem[] = INCBIN_U16("graphics/pokemon/kyurem/overworld_normal.gbapal");
+
+const u32 gObjectEventPic_Reshiram[] = INCBIN_U32("graphics/pokemon/reshiram/overworld.4bpp");
+const u16 gObjectEventPal_Reshiram[] = INCBIN_U16("graphics/pokemon/reshiram/overworld_normal.gbapal");
+
+const u32 gObjectEventPic_Zekrom[] = INCBIN_U32("graphics/pokemon/zekrom/overworld.4bpp");
+const u16 gObjectEventPal_Zekrom[] = INCBIN_U16("graphics/pokemon/zekrom/overworld_normal.gbapal");
+
 const u32 gObjectEventPic_GroudonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/groudon.4bpp");
 const u32 gObjectEventPic_KyogreOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/kyogre.4bpp");
 

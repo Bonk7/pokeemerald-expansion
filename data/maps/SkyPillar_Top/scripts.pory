@@ -183,3 +183,25 @@ SkyPillar_Top_Text_RayquazaFlewOff:
 	.string "The awakened RAYQUAZA flew off…$"
 
 `
+script SP_Battle_Zekrom{
+	lockall
+	playmoncry(SPECIES_ZEKROM, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_ZEKROM, 70, ITEM_DRAGON_FANG)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Zekrom_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Zekrom_Caught{
+	setflag(FLAG_STATIC_ZEKROM)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(3)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}

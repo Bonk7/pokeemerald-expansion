@@ -1461,6 +1461,18 @@ static const struct SpriteFrameImage sPicTable_Landorus[] = {
     overworld_ascending_frames(gObjectEventPic_Landorus, 4, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_Kyurem[] = {
+    overworld_ascending_frames(gObjectEventPic_Kyurem, 8, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_Reshiram[] = {
+    overworld_ascending_frames(gObjectEventPic_Reshiram, 8, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_Zekrom[] = {
+    overworld_ascending_frames(gObjectEventPic_Zekrom, 8, 8),
+};
+
 static const struct SpriteFrameImage sPicTable_RubySapphireBrendan[] = {
     overworld_ascending_frames(gObjectEventPic_RubySapphireBrendanNormal, 2, 4),
 };

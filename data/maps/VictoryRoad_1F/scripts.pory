@@ -218,3 +218,25 @@ VictoryRoad_1F_Text_KatelynnPostBattle:
 	.string "Humph, go right on ahead.\n"
 	.string "See if I care.$"
 `
+script VR_Battle_Reshiram{
+	lockall
+	playmoncry(SPECIES_RESHIRAM, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_RESHIRAM, 68, ITEM_REVEAL_GLASS)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+		call(Reshiram_Caught)
+	}
+	waitmessage
+	releaseall
+}
+
+script Reshiram_Caught{
+	setflag(FLAG_STATIC_RESHIRAM)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(12)
+	fadescreen(FADE_FROM_BLACK)
+	return
+}
