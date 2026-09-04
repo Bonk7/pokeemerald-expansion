@@ -6919,7 +6919,7 @@ Level: 96
 Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Calm Mind
-- Surf
+- Origin Pulse
 - Thunder
 - Ice Beam
 
@@ -18452,7 +18452,7 @@ Gender: Male
 Music: Rich
 Items: Revive / Hyper Potion 
 Double Battle: Yes
-AI: Basic Trainer 
+AI: Smart Trainer 
 Mugshot: Purple
 
 Slaking @ Silk Scarf
@@ -18579,3 +18579,77 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunderbolt
 - Ice Beam
 - Shadow Ball
+
+=== TRAINER_FRANK_EGC === 
+Name: Frank
+Class: Pyramid King
+Pic: Factory Head Noland
+Gender: Male
+Music: Rich
+Items: Full Restore / Full Restore 
+Double Battle: Yes
+AI: Smart Trainer 
+Mugshot: Green
+
+Feraligatr @ Life Orb
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Sheer Force 
+Nature: Jolly
+Shiny: Yes
+- Dragon Dance
+- Liquidation
+- Ice Punch
+- Crunch
+
+Blaziken @ Focus Sash
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Shiny: Yes
+Ability: Speed Boost
+Nature: Adamant
+- Protect
+- Flare Blitz
+- Low Kick
+- Swords Dance
+
+Kyurem-White @ Life Orb
+Level: 100
+Shiny: Yes
+Ability: Turboblaze
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ice Beam
+- Draco Meteor
+- Fusion Flare
+- Roost
+
+Rayquaza @ Yache Berry
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Shiny: Yes
+Nature: Adamant
+- Dragon Ascent
+- Extremespeed
+- Dragon Dance
+- Outrage
+
+Groudon @ Red Orb
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Shiny: Yes
+Nature: Adamant
+- Thunder Wave
+- Swords Dance
+- Rock Slide
+- Precipice Blades
+
+Kyogre @ Blue Orb
+Level: 100
+Nature: Modest
+Shiny: Yes
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Calm Mind
+- Origin Pulse
+- Thunder
+- Ice Beam
