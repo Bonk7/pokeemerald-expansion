@@ -49,7 +49,7 @@ script AC_Battle_Virizion{
 script Virizion_Caught{
 	setflag(FLAG_STATIC_VIRIZION)
 	fadescreen(FADE_TO_BLACK)
-	removeobject(2)
+	removeobject(3)
 	fadescreen(FADE_FROM_BLACK)
 	return
 }
