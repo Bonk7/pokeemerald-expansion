@@ -115,7 +115,7 @@ script Route105_Battle_Thundurus{
 script Thundurus_Caught{
 	setflag(FLAG_STATIC_THUNDURUS)
 	fadescreen(FADE_TO_BLACK)
-	removeobject(3)
+	removeobject(9)
 	fadescreen(FADE_FROM_BLACK)
 	return
 }
