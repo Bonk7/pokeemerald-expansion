@@ -1263,7 +1263,7 @@
 #define FLAG_STATIC_HEATRAN                                         0x4B9 // Unused Flag
 #define FLAG_STATIC_JIRACHI                                         0x4BA // Unused Flag
 #define FLAG_STATIC_MEW                                             0x4BB // Unused Flag
-#define FLAG_UNUSED_0x4BC                                           0x4BC // Unused Flag
+#define FLAG_BATTLE_ILSE                                          0x4BC // Unused Flag
 #define FLAG_UNUSED_0x4BD                                           0x4BD // Unused Flag
 #define FLAG_UNUSED_0x4BE                                           0x4BE // Unused Flag
 #define FLAG_UNUSED_0x4BF                                           0x4BF // Unused Flag

@@ -18503,3 +18503,79 @@ IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
 - Hidden Power
 - Toxic
 - Nasty Plot
+
+=== TRAINER_ILSE_EGC ===
+Name: Ilse
+Class: Pike Queen
+Pic: Pike Queen Lucy
+Gender: Female
+Music: Rich
+Items: Full Restore / Full Restore
+Double Battle: Yes
+AI: Smart Trainer 
+Mugshot: Purple
+
+Togetic @ Eviolite
+Level: 92
+Ability: Serene Grace
+Shiny: Yes
+Ball: Quick Ball
+Nature: Calm
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Nasty Plot
+- Baton Pass
+- Roost
+- Hyper Voice
+
+Gengar Mega @ Poison Barb
+Level: 92
+Shiny: Yes
+Ball: Heavy Ball
+Nature: Modest
+- Sludge Bomb
+- Destiny Bond
+- Shadow Ball
+- Icy Wind
+
+Heracross Mega @ Scope Lens
+Level: 92
+Shiny: Yes
+Ball: Love Ball
+Nature: Adamant
+- Rock Blast
+- Bullet Seed
+- Arm Thrust
+- Pin Missile
+
+Milotic @ Leftovers
+Level: 92
+Ability: Serene Grace
+Shiny: Yes
+Ball: Level Ball
+Nature: Bold
+- Scald
+- Recover
+- Ice Beam
+- Haze
+
+Rayquaza @ Scope Lens
+Level: 92
+Shiny: Yes
+Nature: Adamant
+Ball: Master Ball
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Ascent
+- Outrage
+- Extremespeed
+- V-Create
+
+Mewtwo Mega Y @ Life Orb
+Level: 92
+Shiny: Yes
+Nature: Modest
+Ball: Love Ball
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psystrike
+- Thunderbolt
+- Ice Beam
+- Shadow Ball

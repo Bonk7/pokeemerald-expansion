@@ -72,3 +72,117 @@ EverGrandeCity_Text_CitySign:
 	.string "“The paradise of flowers, the sea,\n"
 # 37 "data/maps/EverGrandeCity/scripts.pory"
 	.string "and POKéMON.”$"
+
+EGC_Eventscript_BattleIlse::
+# 42 "data/maps/EverGrandeCity/scripts.pory"
+	trainerbattle_single TRAINER_ILSE_EGC, EGC_Eventscript_BattleIlse_Text_0, EGC_Eventscript_BattleIlse_Text_1, EGC_GIVEMEWTWO
+# 43 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EGC_Eventscript_BattleIlse_Text_2, MSGBOX_NPC
+	end
+
+
+EGC_GIVEMEWTWO::
+# 49 "data/maps/EverGrandeCity/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MEWTWO_MEGA_Y
+# 50 "data/maps/EverGrandeCity/scripts.pory"
+	givemon SPECIES_MEWTWO_MEGA_Y, 90, ITEM_LIFE_ORB, ITEM_LOVE_BALL, NATURE_MODEST, , , , , , , , , 31, 31, 31, 31, 31, 31, MOVE_PSYSTRIKE, MOVE_SHADOW_BALL, MOVE_THUNDERBOLT, MOVE_ICE_BEAM, TRUE
+# 51 "data/maps/EverGrandeCity/scripts.pory"
+	compare VAR_RESULT, MON_GIVEN_TO_PARTY
+	goto_if_eq EGC_GIVEMEWTWO_2
+EGC_GIVEMEWTWO_1:
+# 54 "data/maps/EverGrandeCity/scripts.pory"
+	compare VAR_RESULT, MON_GIVEN_TO_PC
+	goto_if_eq EGC_GIVEMEWTWO_5
+EGC_GIVEMEWTWO_4:
+# 57 "data/maps/EverGrandeCity/scripts.pory"
+	goto Common_EventScript_NoMoreRoomForPokemon
+# 59 "data/maps/EverGrandeCity/scripts.pory"
+EGC_GIVEMEWTWO_PARTY:
+# 60 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EGC_GIVEMEWTWO_Text_0, MSGBOX_AUTOCLOSE
+# 61 "data/maps/EverGrandeCity/scripts.pory"
+	showmonpic SPECIES_MEWTWO_MEGA_Y, 0, 0
+# 62 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EGC_GIVEMEWTWO_Text_1, MSGBOX_YESNO
+# 63 "data/maps/EverGrandeCity/scripts.pory"
+	hidemonpic
+# 64 "data/maps/EverGrandeCity/scripts.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq EGC_GIVEMEWTWO_8
+EGC_GIVEMEWTWO_7:
+# 67 "data/maps/EverGrandeCity/scripts.pory"
+	call Common_EventScript_GetGiftMonPartySlot
+# 68 "data/maps/EverGrandeCity/scripts.pory"
+	call Common_EventScript_NameReceivedPartyMon
+# 69 "data/maps/EverGrandeCity/scripts.pory"
+	goto EGC_GIVEMEWTWO_DONE
+# 71 "data/maps/EverGrandeCity/scripts.pory"
+EGC_GIVEMEWTWO_PC:
+# 72 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EGC_GIVEMEWTWO_Text_0, MSGBOX_AUTOCLOSE
+# 73 "data/maps/EverGrandeCity/scripts.pory"
+	showmonpic SPECIES_MEWTWO_MEGA_Y, 0, 0
+# 74 "data/maps/EverGrandeCity/scripts.pory"
+	msgbox EGC_GIVEMEWTWO_Text_1, MSGBOX_YESNO
+# 75 "data/maps/EverGrandeCity/scripts.pory"
+	hidemonpic
+# 76 "data/maps/EverGrandeCity/scripts.pory"
+	compare VAR_RESULT, NO
+	goto_if_eq EGC_GIVEMEWTWO_11
+EGC_GIVEMEWTWO_10:
+# 79 "data/maps/EverGrandeCity/scripts.pory"
+	call Common_EventScript_NameReceivedBoxMon
+# 80 "data/maps/EverGrandeCity/scripts.pory"
+	goto EGC_GIVEMEWTWO_TRANSFERRED
+# 82 "data/maps/EverGrandeCity/scripts.pory"
+EGC_GIVEMEWTWO_TRANSFERRED:
+# 83 "data/maps/EverGrandeCity/scripts.pory"
+	call Common_EventScript_TransferredToPC
+# 84 "data/maps/EverGrandeCity/scripts.pory"
+	goto EGC_GIVEMEWTWO_DONE
+# 86 "data/maps/EverGrandeCity/scripts.pory"
+EGC_GIVEMEWTWO_DONE:
+	end
+
+EGC_GIVEMEWTWO_2:
+# 52 "data/maps/EverGrandeCity/scripts.pory"
+	goto EGC_GIVEMEWTWO_PARTY
+	goto EGC_GIVEMEWTWO_1
+
+EGC_GIVEMEWTWO_5:
+# 55 "data/maps/EverGrandeCity/scripts.pory"
+	goto EGC_GIVEMEWTWO_PC
+	goto EGC_GIVEMEWTWO_4
+
+EGC_GIVEMEWTWO_8:
+# 65 "data/maps/EverGrandeCity/scripts.pory"
+	goto EGC_GIVEMEWTWO_DONE
+	goto EGC_GIVEMEWTWO_7
+
+EGC_GIVEMEWTWO_11:
+# 77 "data/maps/EverGrandeCity/scripts.pory"
+	goto EGC_GIVEMEWTWO_TRANSFERRED
+	goto EGC_GIVEMEWTWO_10
+
+
+EGC_Eventscript_BattleIlse_Text_0:
+# 42 "data/maps/EverGrandeCity/scripts.pory"
+	.string "Hey my name is Ilse,\n and i will beat you!$"
+
+EGC_Eventscript_BattleIlse_Text_1:
+# 42 "data/maps/EverGrandeCity/scripts.pory"
+	.string "Ah.. you are so lucky!$"
+
+EGC_Eventscript_BattleIlse_Text_2:
+# 43 "data/maps/EverGrandeCity/scripts.pory"
+	.string "Behind Victory Road lies the\n"
+	.string "Pokemon League!\p"
+	.string "I think you can defeat the champion!$"
+
+EGC_GIVEMEWTWO_Text_0:
+# 60 "data/maps/EverGrandeCity/scripts.pory"
+	.string "Mewtwo wants to help you.\nPlease take good care of him.$"
+
+EGC_GIVEMEWTWO_Text_1:
+# 62 "data/maps/EverGrandeCity/scripts.pory"
+	.string "Give Mewtwo a nickname?$"

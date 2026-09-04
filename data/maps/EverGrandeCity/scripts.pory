@@ -37,3 +37,53 @@ EverGrandeCity_Text_CitySign:
 	.string "and POKéMON.”$"
 
 `
+
+script EGC_Eventscript_BattleIlse {
+    trainerbattle_single(TRAINER_ILSE_EGC, "Hey my name is Ilse,\n and i will beat you!", "Ah.. you are so lucky!", EGC_GIVEMEWTWO)
+	msgbox(format("Behind Victory Road lies the \nPokemon League!\p I think you can defeat the champion!"), MSGBOX_NPC)
+	end
+}	
+
+script EGC_GIVEMEWTWO
+{
+	setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MEWTWO_MEGA_Y)
+	givemon(SPECIES_MEWTWO_MEGA_Y, 90, ITEM_LIFE_ORB, ITEM_LOVE_BALL, NATURE_MODEST,,,,,,,,,31,31,31,31,31,31, MOVE_PSYSTRIKE, MOVE_SHADOW_BALL, MOVE_THUNDERBOLT, MOVE_ICE_BEAM, TRUE )	
+	if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY) {
+		goto(EGC_GIVEMEWTWO_PARTY)
+	}
+	if(var(VAR_RESULT) == MON_GIVEN_TO_PC) {
+		goto(EGC_GIVEMEWTWO_PC)
+	}
+	goto(Common_EventScript_NoMoreRoomForPokemon)
+
+EGC_GIVEMEWTWO_PARTY:
+	msgbox("Mewtwo wants to help you.\nPlease take good care of him.", MSGBOX_AUTOCLOSE)
+	showmonpic(SPECIES_MEWTWO_MEGA_Y, 0, 0)
+	msgbox("Give Mewtwo a nickname?", MSGBOX_YESNO)
+	hidemonpic
+	if(var(VAR_RESULT) == NO) {
+		goto(EGC_GIVEMEWTWO_DONE)
+	}
+	call(Common_EventScript_GetGiftMonPartySlot)
+	call(Common_EventScript_NameReceivedPartyMon)
+	goto(EGC_GIVEMEWTWO_DONE)
+
+EGC_GIVEMEWTWO_PC:
+	msgbox("Mewtwo wants to help you.\nPlease take good care of him.", MSGBOX_AUTOCLOSE)
+	showmonpic(SPECIES_MEWTWO_MEGA_Y, 0, 0)
+	msgbox("Give Mewtwo a nickname?", MSGBOX_YESNO)
+	hidemonpic
+	if(var(VAR_RESULT) == NO) {
+		goto(EGC_GIVEMEWTWO_TRANSFERRED)
+	}
+	call(Common_EventScript_NameReceivedBoxMon)
+	goto(EGC_GIVEMEWTWO_TRANSFERRED)
+
+EGC_GIVEMEWTWO_TRANSFERRED:
+	call(Common_EventScript_TransferredToPC)
+	goto(EGC_GIVEMEWTWO_DONE)
+
+EGC_GIVEMEWTWO_DONE:
+	end
+}
+
