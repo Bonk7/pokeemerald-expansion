@@ -763,7 +763,7 @@ script Lilycove_Battle_MEW{
 	playmoncry(SPECIES_MEW, CRY_MODE_ENCOUNTER)
 	delay(40)
 	waitmoncry
-	setwildbattle(SPECIES_MEW, 68, ITEM_LEFTOVERS)
+	setwildbattle(SPECIES_MEW, 68, ITEM_OLD_SEA_MAP)
 	dowildbattle
 	specialvar(VAR_RESULT, GetBattleOutcome)
 	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {

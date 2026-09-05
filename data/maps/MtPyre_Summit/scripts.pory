@@ -622,7 +622,7 @@ script MtPyreSummit_Battle_Darkrai{
 	playmoncry(SPECIES_DARKRAI, CRY_MODE_ENCOUNTER)
 	delay(40)
 	waitmoncry
-	setwildbattle(SPECIES_DARKRAI, 65, ITEM_FOCUS_SASH)
+	setwildbattle(SPECIES_DARKRAI, 65, ITEM_MYSTIC_TICKET)
 	dowildbattle
 	specialvar(VAR_RESULT, GetBattleOutcome)
 	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
