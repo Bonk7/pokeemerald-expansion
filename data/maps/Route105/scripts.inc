@@ -194,3 +194,46 @@ Route104_Text_RegisteredDadInPokenav:
 	.string "Registered DAD NORMAN\n"
 # 98 "data/maps/Route105/scripts.pory"
 	.string "in the POKéNAV.$"
+
+Route105_Battle_Thundurus::
+# 101 "data/maps/Route105/scripts.pory"
+	lockall
+# 102 "data/maps/Route105/scripts.pory"
+	playmoncry SPECIES_THUNDURUS, CRY_MODE_ENCOUNTER
+# 103 "data/maps/Route105/scripts.pory"
+	delay 40
+# 104 "data/maps/Route105/scripts.pory"
+	waitmoncry
+# 105 "data/maps/Route105/scripts.pory"
+	setwildbattle SPECIES_THUNDURUS, 65
+# 106 "data/maps/Route105/scripts.pory"
+	dowildbattle
+# 107 "data/maps/Route105/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 108 "data/maps/Route105/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route105_Battle_Thundurus_2
+Route105_Battle_Thundurus_1:
+# 111 "data/maps/Route105/scripts.pory"
+	waitmessage
+# 112 "data/maps/Route105/scripts.pory"
+	releaseall
+	return
+
+Route105_Battle_Thundurus_2:
+# 109 "data/maps/Route105/scripts.pory"
+	call Thundurus_Caught
+	goto Route105_Battle_Thundurus_1
+
+
+Thundurus_Caught::
+# 116 "data/maps/Route105/scripts.pory"
+	setflag FLAG_STATIC_THUNDURUS
+# 117 "data/maps/Route105/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 118 "data/maps/Route105/scripts.pory"
+	removeobject 9
+# 119 "data/maps/Route105/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

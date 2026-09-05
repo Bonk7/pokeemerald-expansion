@@ -283,11 +283,11 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Virizion;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Terrakion;
 
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tornadus;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TornadusIncarnate;
 
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Thundurus;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ThundurusIncarnate;
 
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Landorus;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LandorusIncarnate;
 
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kyurem;
 
@@ -595,11 +595,11 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
 
     [OBJ_EVENT_GFX_TERRAKION] =                 &gObjectEventGraphicsInfo_Terrakion,
 
-    [OBJ_EVENT_GFX_TORNADUS] =                 &gObjectEventGraphicsInfo_Tornadus,
+    [OBJ_EVENT_GFX_TORNADUS] =                 &gObjectEventGraphicsInfo_TornadusIncarnate,
 
-    [OBJ_EVENT_GFX_THUNDURUS] =                 &gObjectEventGraphicsInfo_Thundurus,
+    [OBJ_EVENT_GFX_THUNDURUS] =                 &gObjectEventGraphicsInfo_ThundurusIncarnate,
 
-    [OBJ_EVENT_GFX_LANDORUS] =                 &gObjectEventGraphicsInfo_Landorus,
+    [OBJ_EVENT_GFX_LANDORUS] =                 &gObjectEventGraphicsInfo_LandorusIncarnate,
 
     [OBJ_EVENT_GFX_KYUREM] =                 &gObjectEventGraphicsInfo_Kyurem,
 

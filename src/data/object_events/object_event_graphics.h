@@ -19,6 +19,15 @@ extern const u32 gObjectEventPic_Latios[];
 extern const u32 gObjectEventPic_Moltres[];
 extern const u32 gObjectEventPic_Cresselia[];
 extern const u32 gObjectEventPic_Zapdos[];
+extern const u32 gObjectEventPic_Zekrom[];
+extern const u32 gObjectEventPic_Reshiram[];
+extern const u32 gObjectEventPic_Kyurem[];
+extern const u32 gObjectEventPic_TornadusIncarnate[];
+extern const u32 gObjectEventPic_LandorusIncarnate[];
+extern const u32 gObjectEventPic_ThundurusIncarnate[];
+extern const u32 gObjectEventPic_Cobalion[];
+extern const u32 gObjectEventPic_Virizion[];
+extern const u32 gObjectEventPic_Terrakion[];
 
 const u32 gObjectEventPic_BrendanNormalRunning[] = INCBIN_U32("graphics/object_events/pics/people/brendan/walking.4bpp", "graphics/object_events/pics/people/brendan/running.4bpp");
 const u16 gObjectEventPal_Brendan[] = INCBIN_U16("graphics/object_events/palettes/brendan.gbapal");
@@ -440,32 +449,17 @@ const u16 gObjectEventPal_Moltres[] = INCBIN_U16("graphics/pokemon/moltres/overw
 const u16 gObjectEventPal_Cresselia[] = INCBIN_U16("graphics/pokemon/cresselia/overworld_normal.gbapal");
 
 const u16 gObjectEventPal_Zapdos[] = INCBIN_U16("graphics/pokemon/zapdos/overworld_normal.gbapal");
-
-const u32 gObjectEventPic_Cobalion[] = INCBIN_U32("graphics/pokemon/cobalion/overworld.4bpp");
 const u16 gObjectEventPal_Cobalion[] = INCBIN_U16("graphics/pokemon/cobalion/overworld_normal.gbapal");
-
-const u32 gObjectEventPic_Virizion[] = INCBIN_U32("graphics/pokemon/virizion/overworld.4bpp");
 const u16 gObjectEventPal_Virizion[] = INCBIN_U16("graphics/pokemon/virizion/overworld_normal.gbapal");
-
-const u32 gObjectEventPic_Terrakion[] = INCBIN_U32("graphics/pokemon/terrakion/overworld.4bpp");
 const u16 gObjectEventPal_Terrakion[] = INCBIN_U16("graphics/pokemon/terrakion/overworld_normal.gbapal");
-
-const u32 gObjectEventPic_Tornadus[] = INCBIN_U32("graphics/pokemon/tornadus/overworld.4bpp");
 const u16 gObjectEventPal_Tornadus[] = INCBIN_U16("graphics/pokemon/tornadus/overworld_normal.gbapal");
-
-const u32 gObjectEventPic_Thundurus[] = INCBIN_U32("graphics/pokemon/thundurus/overworld.4bpp");
 const u16 gObjectEventPal_Thundurus[] = INCBIN_U16("graphics/pokemon/thundurus/overworld_normal.gbapal");
-
-const u32 gObjectEventPic_Landorus[] = INCBIN_U32("graphics/pokemon/landorus/overworld.4bpp");
 const u16 gObjectEventPal_Landorus[] = INCBIN_U16("graphics/pokemon/landorus/overworld_normal.gbapal");
 
-const u32 gObjectEventPic_Kyurem[] = INCBIN_U32("graphics/pokemon/kyurem/overworld.4bpp");
 const u16 gObjectEventPal_Kyurem[] = INCBIN_U16("graphics/pokemon/kyurem/overworld_normal.gbapal");
 
-const u32 gObjectEventPic_Reshiram[] = INCBIN_U32("graphics/pokemon/reshiram/overworld.4bpp");
 const u16 gObjectEventPal_Reshiram[] = INCBIN_U16("graphics/pokemon/reshiram/overworld_normal.gbapal");
 
-const u32 gObjectEventPic_Zekrom[] = INCBIN_U32("graphics/pokemon/zekrom/overworld.4bpp");
 const u16 gObjectEventPal_Zekrom[] = INCBIN_U16("graphics/pokemon/zekrom/overworld_normal.gbapal");
 
 const u32 gObjectEventPic_GroudonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/groudon.4bpp");

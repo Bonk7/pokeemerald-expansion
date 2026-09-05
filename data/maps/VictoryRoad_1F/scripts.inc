@@ -436,3 +436,46 @@ VictoryRoad_1F_Text_KatelynnPostBattle:
 	.string "Humph, go right on ahead.\n"
 # 219 "data/maps/VictoryRoad_1F/scripts.pory"
 	.string "See if I care.$"
+
+VR_Battle_Reshiram::
+# 222 "data/maps/VictoryRoad_1F/scripts.pory"
+	lockall
+# 223 "data/maps/VictoryRoad_1F/scripts.pory"
+	playmoncry SPECIES_RESHIRAM, CRY_MODE_ENCOUNTER
+# 224 "data/maps/VictoryRoad_1F/scripts.pory"
+	delay 40
+# 225 "data/maps/VictoryRoad_1F/scripts.pory"
+	waitmoncry
+# 226 "data/maps/VictoryRoad_1F/scripts.pory"
+	setwildbattle SPECIES_RESHIRAM, 68, ITEM_REVEAL_GLASS
+# 227 "data/maps/VictoryRoad_1F/scripts.pory"
+	dowildbattle
+# 228 "data/maps/VictoryRoad_1F/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 229 "data/maps/VictoryRoad_1F/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq VR_Battle_Reshiram_2
+VR_Battle_Reshiram_1:
+# 232 "data/maps/VictoryRoad_1F/scripts.pory"
+	waitmessage
+# 233 "data/maps/VictoryRoad_1F/scripts.pory"
+	releaseall
+	return
+
+VR_Battle_Reshiram_2:
+# 230 "data/maps/VictoryRoad_1F/scripts.pory"
+	call Reshiram_Caught
+	goto VR_Battle_Reshiram_1
+
+
+Reshiram_Caught::
+# 237 "data/maps/VictoryRoad_1F/scripts.pory"
+	setflag FLAG_STATIC_RESHIRAM
+# 238 "data/maps/VictoryRoad_1F/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 239 "data/maps/VictoryRoad_1F/scripts.pory"
+	removeobject 12
+# 240 "data/maps/VictoryRoad_1F/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

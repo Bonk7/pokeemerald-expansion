@@ -1976,3 +1976,46 @@ Route110_Text_KeepAnEyeOutForRival:
 	.string "Well, I had better get going.\n"
 # 989 "data/maps/Route110/scripts.pory"
 	.string "See you again, {PLAYER}{KUN}!$"
+
+Route110_Battle_Tornadus::
+# 993 "data/maps/Route110/scripts.pory"
+	lockall
+# 994 "data/maps/Route110/scripts.pory"
+	playmoncry SPECIES_TORNADUS, CRY_MODE_ENCOUNTER
+# 995 "data/maps/Route110/scripts.pory"
+	delay 40
+# 996 "data/maps/Route110/scripts.pory"
+	waitmoncry
+# 997 "data/maps/Route110/scripts.pory"
+	setwildbattle SPECIES_TORNADUS, 50
+# 998 "data/maps/Route110/scripts.pory"
+	dowildbattle
+# 999 "data/maps/Route110/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 1000 "data/maps/Route110/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route110_Battle_Tornadus_2
+Route110_Battle_Tornadus_1:
+# 1003 "data/maps/Route110/scripts.pory"
+	waitmessage
+# 1004 "data/maps/Route110/scripts.pory"
+	releaseall
+	return
+
+Route110_Battle_Tornadus_2:
+# 1001 "data/maps/Route110/scripts.pory"
+	call Tornadus_Caught
+	goto Route110_Battle_Tornadus_1
+
+
+Tornadus_Caught::
+# 1008 "data/maps/Route110/scripts.pory"
+	setflag FLAG_STATIC_TORNADUS
+# 1009 "data/maps/Route110/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 1010 "data/maps/Route110/scripts.pory"
+	removeobject 36
+# 1011 "data/maps/Route110/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

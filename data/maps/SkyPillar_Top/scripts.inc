@@ -364,3 +364,46 @@ SkyPillar_Top_Movement_CameraPanDown:
 SkyPillar_Top_Text_RayquazaFlewOff:
 # 183 "data/maps/SkyPillar_Top/scripts.pory"
 	.string "The awakened RAYQUAZA flew off…$"
+
+SP_Battle_Zekrom::
+# 187 "data/maps/SkyPillar_Top/scripts.pory"
+	lockall
+# 188 "data/maps/SkyPillar_Top/scripts.pory"
+	playmoncry SPECIES_ZEKROM, CRY_MODE_ENCOUNTER
+# 189 "data/maps/SkyPillar_Top/scripts.pory"
+	delay 40
+# 190 "data/maps/SkyPillar_Top/scripts.pory"
+	waitmoncry
+# 191 "data/maps/SkyPillar_Top/scripts.pory"
+	setwildbattle SPECIES_ZEKROM, 70, ITEM_DRAGON_FANG
+# 192 "data/maps/SkyPillar_Top/scripts.pory"
+	dowildbattle
+# 193 "data/maps/SkyPillar_Top/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 194 "data/maps/SkyPillar_Top/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq SP_Battle_Zekrom_2
+SP_Battle_Zekrom_1:
+# 197 "data/maps/SkyPillar_Top/scripts.pory"
+	waitmessage
+# 198 "data/maps/SkyPillar_Top/scripts.pory"
+	releaseall
+	return
+
+SP_Battle_Zekrom_2:
+# 195 "data/maps/SkyPillar_Top/scripts.pory"
+	call Zekrom_Caught
+	goto SP_Battle_Zekrom_1
+
+
+Zekrom_Caught::
+# 202 "data/maps/SkyPillar_Top/scripts.pory"
+	setflag FLAG_STATIC_ZEKROM
+# 203 "data/maps/SkyPillar_Top/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 204 "data/maps/SkyPillar_Top/scripts.pory"
+	removeobject 3
+# 205 "data/maps/SkyPillar_Top/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+

@@ -1450,15 +1450,15 @@ static const struct SpriteFrameImage sPicTable_Terrakion[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_Tornadus[] = {
-    overworld_ascending_frames(gObjectEventPic_Tornadus, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_TornadusIncarnate, 4, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_Thundurus[] = {
-    overworld_ascending_frames(gObjectEventPic_Thundurus, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_ThundurusIncarnate, 4, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_Landorus[] = {
-    overworld_ascending_frames(gObjectEventPic_Landorus, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_LandorusIncarnate, 4, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_Kyurem[] = {
