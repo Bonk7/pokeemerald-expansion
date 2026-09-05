@@ -1,6 +1,7 @@
 # Checklist: Pokémon die nog moeten worden toegevoegd aan wild encounters
-Count: 29
+Count: 30
 
+- [ ] Xatu (Psychic/Flying, BST 470) — SPECIES_XATU
 - [ ] Articuno (Ice/Flying, BST 580) — SPECIES_ARTICUNO
 - [ ] Azelf (Psychic, BST 580) — SPECIES_AZELF
 - [ ] Cresselia (Psychic, BST 580) — SPECIES_CRESSELIA

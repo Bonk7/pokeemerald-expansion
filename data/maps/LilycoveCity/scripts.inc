@@ -1525,7 +1525,7 @@ Lilycove_Battle_MEW::
 # 765 "data/maps/LilycoveCity/scripts.pory"
 	waitmoncry
 # 766 "data/maps/LilycoveCity/scripts.pory"
-	setwildbattle SPECIES_MEW, 68, ITEM_LEFTOVERS
+	setwildbattle SPECIES_MEW, 68, ITEM_OLD_SEA_MAP
 # 767 "data/maps/LilycoveCity/scripts.pory"
 	dowildbattle
 # 768 "data/maps/LilycoveCity/scripts.pory"

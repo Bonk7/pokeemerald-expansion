@@ -1,29 +1,6 @@
 Gen 1-5 Pokémon missing from wild encounters
 =====================================
 
-Count: 29
+Count: 30
 
-//Articuno — SPECIES_ARTICUNO — BST 580
-//Azelf — SPECIES_AZELF — BST 580
-//Cresselia — SPECIES_CRESSELIA — BST 580
-//Entei — SPECIES_ENTEI — BST 580    // 
-//Mesprit — SPECIES_MESPRIT — BST 580
-//Moltres — SPECIES_MOLTRES — BST 580
-//Raikou — SPECIES_RAIKOU — BST 580   //
-//Suicune — SPECIES_SUICUNE — BST 580
-//Uxie — SPECIES_UXIE — BST 580
-//Zapdos — SPECIES_ZAPDOS — BST 580
-//Darkrai — SPECIES_DARKRAI — BST 600
-//Heatran — SPECIES_HEATRAN — BST 600
-//Jirachi — SPECIES_JIRACHI — BST 600
-//Latias — SPECIES_LATIAS — BST 600
-//Latios — SPECIES_LATIOS — BST 600
-//Mew — SPECIES_MEW — BST 600
-//Victini — SPECIES_VICTINI — BST 600
-
-//Regigigas — SPECIES_REGIGIGAS — BST 670
-//Dialga — SPECIES_DIALGA — BST 680
-//Lugia — SPECIES_LUGIA — BST 680
-//Mewtwo — SPECIES_MEWTWO — BST 680
-//Palkia — SPECIES_PALKIA — BST 680
-
+Xatu — SPECIES_XATU — BST 470

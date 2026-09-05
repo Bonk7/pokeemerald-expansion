@@ -1243,7 +1243,7 @@ MtPyreSummit_Battle_Darkrai::
 # 624 "data/maps/MtPyre_Summit/scripts.pory"
 	waitmoncry
 # 625 "data/maps/MtPyre_Summit/scripts.pory"
-	setwildbattle SPECIES_DARKRAI, 65, ITEM_FOCUS_SASH
+	setwildbattle SPECIES_DARKRAI, 65, ITEM_MYSTIC_TICKET
 # 626 "data/maps/MtPyre_Summit/scripts.pory"
 	dowildbattle
 # 627 "data/maps/MtPyre_Summit/scripts.pory"

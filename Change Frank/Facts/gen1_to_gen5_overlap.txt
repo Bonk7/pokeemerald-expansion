@@ -1,4 +1,4 @@
-Count: 475
+Count: 474
 
 Sunkern (Grass, BST 180) — SPECIES_SUNKERN
 Azurill (Normal/Fairy, BST 190) — SPECIES_AZURILL
@@ -320,7 +320,6 @@ Whiscash (Water/Ground, BST 468) — SPECIES_WHISCASH
 Dodrio (Normal/Flying, BST 470) — SPECIES_DODRIO
 Grumpig (Psychic, BST 470) — SPECIES_GRUMPIG
 Torkoal (Fire, BST 470) — SPECIES_TORKOAL
-Xatu (Psychic/Flying, BST 470) — SPECIES_XATU
 Hariyama (Fighting, BST 474) — SPECIES_HARIYAMA
 Vespiquen (Bug/Flying, BST 474) — SPECIES_VESPIQUEN
 Cacturne (Grass/Dark, BST 475) — SPECIES_CACTURNE

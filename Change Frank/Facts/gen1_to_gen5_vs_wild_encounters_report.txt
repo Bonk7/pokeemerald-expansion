@@ -2,10 +2,10 @@ Gen 1-5 vs Wild Encounters Report
 ================================
 
 Gen 1-5 lijst: 504
-Wild encounters: 551
-Overlap: 475
-Gen 1-5 zonder wild-encounter: 29
-Wild encounters zonder Gen 1-5: 76
+Wild encounters: 566
+Overlap: 474
+Gen 1-5 zonder wild-encounter: 30
+Wild encounters zonder Gen 1-5: 92
 
 ## Gen 1-5 lijst
 - Sunkern (Grass, BST 180) — SPECIES_SUNKERN
@@ -579,6 +579,7 @@ Wild encounters zonder Gen 1-5: 76
 - Mareep (Electric, BST 280) — SPECIES_MAREEP
 - Meditite (Fighting/Psychic, BST 280) — SPECIES_MEDITITE
 - Petilil (Grass, BST 280) — SPECIES_PETILIL
+- Roggenrola (Rock, BST 280) — SPECIES_ROGGENROLA
 - Slakoth (Normal, BST 280) — SPECIES_SLAKOTH
 - Purrloin (Dark, BST 281) — SPECIES_PURRLOIN
 - Chingling (Psychic, BST 285) — SPECIES_CHINGLING
@@ -652,6 +653,7 @@ Wild encounters zonder Gen 1-5: 76
 - Bulbasaur (Grass/Poison, BST 318) — SPECIES_BULBASAUR
 - Chikorita (Grass, BST 318) — SPECIES_CHIKORITA
 - Turtwig (Grass, BST 318) — SPECIES_TURTWIG
+- Axew (Dragon, BST 320) — SPECIES_AXEW
 - Cubone (Ground, BST 320) — SPECIES_CUBONE
 - Goldeen (Water, BST 320) — SPECIES_GOLDEEN
 - Natu (Psychic/Flying, BST 320) — SPECIES_NATU
@@ -792,6 +794,7 @@ Wild encounters zonder Gen 1-5: 76
 - Marowak (Ground, BST 425) — SPECIES_MAROWAK
 - Sunflora (Grass, BST 425) — SPECIES_SUNFLORA
 - Swoobat (Psychic/Flying, BST 425) — SPECIES_SWOOBAT
+- Emolga (Electric/Flying, BST 428) — SPECIES_EMOLGA
 - Gligar (Ground/Flying, BST 430) — SPECIES_GLIGAR
 - Illumise (Bug, BST 430) — SPECIES_ILLUMISE
 - Lairon (Steel/Rock, BST 430) — SPECIES_LAIRON
@@ -860,7 +863,8 @@ Wild encounters zonder Gen 1-5: 76
 - Dodrio (Normal/Flying, BST 470) — SPECIES_DODRIO
 - Grumpig (Psychic, BST 470) — SPECIES_GRUMPIG
 - Torkoal (Fire, BST 470) — SPECIES_TORKOAL
-- Xatu (Psychic/Flying, BST 470) — SPECIES_XATU
+- Stunfisk (Ground/Electric, BST 471) — SPECIES_STUNFISK
+- Garbodor (Poison, BST 474) — SPECIES_GARBODOR
 - Hariyama (Fighting, BST 474) — SPECIES_HARIYAMA
 - Vespiquen (Bug/Flying, BST 474) — SPECIES_VESPIQUEN
 - Cacturne (Grass/Dark, BST 475) — SPECIES_CACTURNE
@@ -871,6 +875,7 @@ Wild encounters zonder Gen 1-5: 76
 - Skuntank (Poison/Dark, BST 479) — SPECIES_SKUNTANK
 - Froslass (Ice/Ghost, BST 480) — SPECIES_FROSLASS
 - Glalie (Ice, BST 480) — SPECIES_GLALIE
+- Lilligant (Grass, BST 480) — SPECIES_LILLIGANT
 - Lopunny (Normal, BST 480) — SPECIES_LOPUNNY
 - Ludicolo (Water/Grass, BST 480) — SPECIES_LUDICOLO
 - Octillery (Water, BST 480) — SPECIES_OCTILLERY
@@ -954,6 +959,7 @@ Wild encounters zonder Gen 1-5: 76
 - Weavile (Dark/Ice, BST 510) — SPECIES_WEAVILE
 - Zoroark (Dark, BST 510) — SPECIES_ZOROARK
 - Aerodactyl (Rock/Flying, BST 515) — SPECIES_AERODACTYL
+- Eelektross (Electric, BST 515) — SPECIES_EELEKTROSS
 - Lickilicky (Normal, BST 515) — SPECIES_LICKILICKY
 - Porygon2 (Normal, BST 515) — SPECIES_PORYGON2
 - Roserade (Grass/Poison, BST 515) — SPECIES_ROSERADE
@@ -965,7 +971,6 @@ Wild encounters zonder Gen 1-5: 76
 - Rotom (Electric/Flying, BST 520) — SPECIES_ROTOM_FAN
 - Rotom (Electric/Ice, BST 520) — SPECIES_ROTOM_FROST
 - Rotom (Electric/Fire, BST 520) — SPECIES_ROTOM_HEAT
-- Rotom (Electric/Grass, BST 520) — SPECIES_ROTOM_MOW
 - Rotom (Electric/Water, BST 520) — SPECIES_ROTOM_WASH
 - Starmie (Water/Psychic, BST 520) — SPECIES_STARMIE
 - Luxray (Electric, BST 523) — SPECIES_LUXRAY
@@ -1007,6 +1012,7 @@ Wild encounters zonder Gen 1-5: 76
 - Blissey (Normal, BST 540) — SPECIES_BLISSEY
 - Electivire (Electric, BST 540) — SPECIES_ELECTIVIRE
 - Gyarados (Water/Flying, BST 540) — SPECIES_GYARADOS
+- Haxorus (Dragon, BST 540) — SPECIES_HAXORUS
 - Kingdra (Water/Dragon, BST 540) — SPECIES_KINGDRA
 - Magmortar (Fire, BST 540) — SPECIES_MAGMORTAR
 - Milotic (Water, BST 540) — SPECIES_MILOTIC
@@ -1030,6 +1036,7 @@ Wild encounters zonder Gen 1-5: 76
 - Metagross (Steel/Psychic, BST 600) — SPECIES_METAGROSS
 - Pinsir (Bug/Flying, BST 600) — SPECIES_PINSIR_MEGA
 - Salamence (Dragon/Flying, BST 600) — SPECIES_SALAMENCE
+- Scizor (Bug/Steel, BST 600) — SPECIES_SCIZOR_MEGA
 - Tyranitar (Rock/Dark, BST 600) — SPECIES_TYRANITAR
 - Steelix (Steel/Ground, BST 610) — SPECIES_STEELIX_MEGA
 - Aerodactyl (Rock/Flying, BST 615) — SPECIES_AERODACTYL_MEGA
@@ -1040,6 +1047,7 @@ Wild encounters zonder Gen 1-5: 76
 - Aggron (Steel, BST 630) — SPECIES_AGGRON_MEGA
 - Blastoise (Water, BST 630) — SPECIES_BLASTOISE_MEGA
 - Blaziken (Fire/Fighting, BST 630) — SPECIES_BLAZIKEN_MEGA
+- Sceptile (Grass/Dragon, BST 630) — SPECIES_SCEPTILE_MEGA
 - Charizard (Fire/Dragon, BST 634) — SPECIES_CHARIZARD_MEGA_X
 - Charizard (Fire/Flying, BST 634) — SPECIES_CHARIZARD_MEGA_Y
 - Swampert (Water/Ground, BST 635) — SPECIES_SWAMPERT_MEGA
@@ -1049,6 +1057,7 @@ Wild encounters zonder Gen 1-5: 76
 - Salamence (Dragon/Flying, BST 700) — SPECIES_SALAMENCE_MEGA
 - Tyranitar (Rock/Dark, BST 700) — SPECIES_TYRANITAR_MEGA
 - Mewtwo (Psychic/Fighting, BST 780) — SPECIES_MEWTWO_MEGA_X
+- Mewtwo (Psychic, BST 780) — SPECIES_MEWTWO_MEGA_Y
 - Alakazam (Psychic) — SPECIES_ALAKAZAM
 - Ampharos (Electric) — SPECIES_AMPHAROS
 - Beedrill (Bug/Poison) — SPECIES_BEEDRILL
@@ -1063,6 +1072,12 @@ Wild encounters zonder Gen 1-5: 76
 - Pidgeot (Normal/Flying) — SPECIES_PIDGEOT
 - Raichu (Electric) — SPECIES_RAICHU
 - Unown — SPECIES_UNOWN
+- Unown B — SPECIES_UNOWN_B
+- Unown C — SPECIES_UNOWN_C
+- Unown D — SPECIES_UNOWN_D
+- Unown E — SPECIES_UNOWN_E
+- Unown Exclamation — SPECIES_UNOWN_EXCLAMATION
+- Unown Q — SPECIES_UNOWN_Q
 - Victreebel (Grass/Poison) — SPECIES_VICTREEBEL
 - Wigglytuff — SPECIES_WIGGLYTUFF
 
@@ -1387,7 +1402,6 @@ Wild encounters zonder Gen 1-5: 76
 - Dodrio (Normal/Flying, BST 470) — SPECIES_DODRIO
 - Grumpig (Psychic, BST 470) — SPECIES_GRUMPIG
 - Torkoal (Fire, BST 470) — SPECIES_TORKOAL
-- Xatu (Psychic/Flying, BST 470) — SPECIES_XATU
 - Hariyama (Fighting, BST 474) — SPECIES_HARIYAMA
 - Vespiquen (Bug/Flying, BST 474) — SPECIES_VESPIQUEN
 - Cacturne (Grass/Dark, BST 475) — SPECIES_CACTURNE
@@ -1544,6 +1558,7 @@ Wild encounters zonder Gen 1-5: 76
 - Wigglytuff — SPECIES_WIGGLYTUFF
 
 ## Gen 1-5 zonder wild-encounter
+- Xatu (Psychic/Flying, BST 470) — SPECIES_XATU
 - Articuno (Ice/Flying, BST 580) — SPECIES_ARTICUNO
 - Azelf (Psychic, BST 580) — SPECIES_AZELF
 - Cresselia (Psychic, BST 580) — SPECIES_CRESSELIA
@@ -1580,11 +1595,13 @@ Wild encounters zonder Gen 1-5: 76
 - Nidoran♀ (Poison, BST 275) — SPECIES_NIDORAN_F
 - Tynamo (Electric, BST 275) — SPECIES_TYNAMO
 - Petilil (Grass, BST 280) — SPECIES_PETILIL
+- Roggenrola (Rock, BST 280) — SPECIES_ROGGENROLA
 - Sandile (Ground/Dark, BST 292) — SPECIES_SANDILE
 - Golett (Ground/Ghost, BST 303) — SPECIES_GOLETT
 - Yamask (Ghost, BST 303) — SPECIES_YAMASK
 - Sewaddle (Bug/Grass, BST 310) — SPECIES_SEWADDLE
 - Darumaka (Fire, BST 315) — SPECIES_DARUMAKA
+- Axew (Dragon, BST 320) — SPECIES_AXEW
 - Dwebble (Bug/Rock, BST 325) — SPECIES_DWEBBLE
 - Shellos (Water, BST 325) — SPECIES_SHELLOS_EAST
 - Shellos (Water, BST 325) — SPECIES_SHELLOS_WEST
@@ -1596,12 +1613,16 @@ Wild encounters zonder Gen 1-5: 76
 - Castform (Fire, BST 420) — SPECIES_CASTFORM_SUNNY
 - Zweilous (Dark/Dragon, BST 420) — SPECIES_ZWEILOUS
 - Swoobat (Psychic/Flying, BST 425) — SPECIES_SWOOBAT
+- Emolga (Electric/Flying, BST 428) — SPECIES_EMOLGA
 - Klang (Steel, BST 440) — SPECIES_KLANG
 - Audino (Normal, BST 445) — SPECIES_AUDINO
 - Maractus (Grass, BST 461) — SPECIES_MARACTUS
 - Sawk (Fighting, BST 465) — SPECIES_SAWK
 - Throh (Fighting, BST 465) — SPECIES_THROH
+- Stunfisk (Ground/Electric, BST 471) — SPECIES_STUNFISK
+- Garbodor (Poison, BST 474) — SPECIES_GARBODOR
 - Pidgeot (Normal/Flying, BST 478) — SPECIES_PIDGEOT_MEGA
+- Lilligant (Grass, BST 480) — SPECIES_LILLIGANT
 - Whimsicott (BST 480) — SPECIES_WHIMSICOTT
 - Durant (Bug/Steel, BST 484) — SPECIES_DURANT
 - Druddigon (Dragon, BST 485) — SPECIES_DRUDDIGON
@@ -1613,11 +1634,12 @@ Wild encounters zonder Gen 1-5: 76
 - Medicham (Fighting/Psychic, BST 510) — SPECIES_MEDICHAM_MEGA
 - Mienshao (Fighting, BST 510) — SPECIES_MIENSHAO
 - Zoroark (Dark, BST 510) — SPECIES_ZOROARK
+- Eelektross (Electric, BST 515) — SPECIES_EELEKTROSS
 - Rotom (Electric/Flying, BST 520) — SPECIES_ROTOM_FAN
 - Rotom (Electric/Ice, BST 520) — SPECIES_ROTOM_FROST
 - Rotom (Electric/Fire, BST 520) — SPECIES_ROTOM_HEAT
-- Rotom (Electric/Grass, BST 520) — SPECIES_ROTOM_MOW
 - Rotom (Electric/Water, BST 520) — SPECIES_ROTOM_WASH
+- Haxorus (Dragon, BST 540) — SPECIES_HAXORUS
 - Absol (Dark, BST 565) — SPECIES_ABSOL_MEGA
 - Manectric (Electric, BST 575) — SPECIES_MANECTRIC_MEGA
 - Glalie (Ice, BST 580) — SPECIES_GLALIE_MEGA
@@ -1630,6 +1652,7 @@ Wild encounters zonder Gen 1-5: 76
 - Heracross (Bug/Fighting, BST 600) — SPECIES_HERACROSS_MEGA
 - Houndoom (Dark/Fire, BST 600) — SPECIES_HOUNDOOM_MEGA
 - Pinsir (Bug/Flying, BST 600) — SPECIES_PINSIR_MEGA
+- Scizor (Bug/Steel, BST 600) — SPECIES_SCIZOR_MEGA
 - Steelix (Steel/Ground, BST 610) — SPECIES_STEELIX_MEGA
 - Aerodactyl (Rock/Flying, BST 615) — SPECIES_AERODACTYL_MEGA
 - Gallade (Psychic/Fighting, BST 618) — SPECIES_GALLADE_MEGA
@@ -1639,6 +1662,7 @@ Wild encounters zonder Gen 1-5: 76
 - Aggron (Steel, BST 630) — SPECIES_AGGRON_MEGA
 - Blastoise (Water, BST 630) — SPECIES_BLASTOISE_MEGA
 - Blaziken (Fire/Fighting, BST 630) — SPECIES_BLAZIKEN_MEGA
+- Sceptile (Grass/Dragon, BST 630) — SPECIES_SCEPTILE_MEGA
 - Charizard (Fire/Dragon, BST 634) — SPECIES_CHARIZARD_MEGA_X
 - Charizard (Fire/Flying, BST 634) — SPECIES_CHARIZARD_MEGA_Y
 - Swampert (Water/Ground, BST 635) — SPECIES_SWAMPERT_MEGA
@@ -1647,7 +1671,14 @@ Wild encounters zonder Gen 1-5: 76
 - Salamence (Dragon/Flying, BST 700) — SPECIES_SALAMENCE_MEGA
 - Tyranitar (Rock/Dark, BST 700) — SPECIES_TYRANITAR_MEGA
 - Mewtwo (Psychic/Fighting, BST 780) — SPECIES_MEWTWO_MEGA_X
+- Mewtwo (Psychic, BST 780) — SPECIES_MEWTWO_MEGA_Y
 - Castform — SPECIES_CASTFORM
 - Darmanitan — SPECIES_DARMANITAN
 - Gastrodon — SPECIES_GASTRODON
 - None — SPECIES_NONE
+- Unown B — SPECIES_UNOWN_B
+- Unown C — SPECIES_UNOWN_C
+- Unown D — SPECIES_UNOWN_D
+- Unown E — SPECIES_UNOWN_E
+- Unown Exclamation — SPECIES_UNOWN_EXCLAMATION
+- Unown Q — SPECIES_UNOWN_Q
