@@ -938,3 +938,46 @@ Route116_Text_TrainerTipsBagHasPockets:
 	.string "No TRAINER can afford to be without\n"
 # 470 "data/maps/Route116/scripts.pory"
 	.string "a BAG of their own.$"
+
+Route116_Battle_Giratina::
+# 474 "data/maps/Route116/scripts.pory"
+	lockall
+# 475 "data/maps/Route116/scripts.pory"
+	playmoncry SPECIES_GIRATINA, CRY_MODE_ENCOUNTER
+# 476 "data/maps/Route116/scripts.pory"
+	delay 40
+# 477 "data/maps/Route116/scripts.pory"
+	waitmoncry
+# 478 "data/maps/Route116/scripts.pory"
+	setwildbattle SPECIES_GIRATINA, 30, ITEM_GRISEOUS_CORE
+# 479 "data/maps/Route116/scripts.pory"
+	dowildbattle
+# 480 "data/maps/Route116/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 481 "data/maps/Route116/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq Route116_Battle_Giratina_2
+Route116_Battle_Giratina_1:
+# 484 "data/maps/Route116/scripts.pory"
+	waitmessage
+# 485 "data/maps/Route116/scripts.pory"
+	releaseall
+	return
+
+Route116_Battle_Giratina_2:
+# 482 "data/maps/Route116/scripts.pory"
+	call Giratina_Caught
+	goto Route116_Battle_Giratina_1
+
+
+Giratina_Caught::
+# 489 "data/maps/Route116/scripts.pory"
+	setflag FLAG_STATIC_GIRATINA
+# 490 "data/maps/Route116/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 491 "data/maps/Route116/scripts.pory"
+	removeobject 28
+# 492 "data/maps/Route116/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+	return
+
